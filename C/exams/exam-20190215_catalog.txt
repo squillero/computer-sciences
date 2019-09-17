@@ -1,0 +1,12 @@
+HW111333
+door_opener remote remote_access
+SW22222222
+HW111444
+door_opener local_access no_remote
+SW22222222
+HW222444
+thermo remote remote_access
+SW12112121
+HW222555
+door_opener cu si_remote 
+SW33335555
