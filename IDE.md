@@ -3,7 +3,7 @@ Compilers and Integrated Development Environments (IDEs)
 
 ## Compilers
 
-The course focuses on the C language, the reference is the current standard [ISO/IEC 9899:2011](https://en.wikipedia.org/wiki/C11_%28C_standard_revision%29). Possible compilers include [gcc](https://gcc.gnu.org/) 5, recent Apple's Clang.
+The course focuses on the C language. The reference is **C11** ([ISO/IEC 9899:2011](https://en.wikipedia.org/wiki/C11_(C_standard_revision))), as the current C18 ([ISO/IEC 9899:2018](https://en.wikipedia.org/wiki/C18_(C_standard_revision))) did not introduce new features. Valid compilers include recent [gcc](https://gcc.gnu.org/) and [Clang](https://clang.llvm.org/).
 
 **Note:** Microsoft Visual Studio's compiler does not fully conform with the current ISO/IEC standard.
 
@@ -13,7 +13,7 @@ The course focuses on the C language, the reference is the current standard [ISO
 
 * Site: [http://codeblocks.org/](http://codeblocks.org/).
 
-Free, open source, cross platform IDE for C, C++, and Fortran. Some setup packages with *mingw* in their name include the *gcc 4* compiler, but a compiler could also be added at a later time (*gcc 4* is not fully compliant with the current ISO/IEC standard).
+Free, open source, cross platform IDE for C, C++, and Fortran. Some setup packages with *mingw* in their name include a *gcc* compiler, but a compiler could also be added at a later time.
 
 Code::Blocks runs on most Windows and Linux boxes, but several problems have been reported on Mac's, especially the newest ones. Available in all Politecnico labs.
 
@@ -21,7 +21,7 @@ Code::Blocks runs on most Windows and Linux boxes, but several problems have bee
 
 * Site: [http://www.codelite.org/](http://www.codelite.org/).
 
-Free, open source, cross platform IDE for C, C++, PHP, and Node.js. Compiler and debugger must be downloaded separately (on windows: [TDM-GCC](http://tdm-gcc.tdragon.net/download)).
+Free, open source, cross platform IDE for C, C++, PHP, and Node.js. Compiler and debugger must be downloaded separately.
 
 CodeLite runs smoothly with all recent Windows (7, 8, 10), Mac OS X, Linux. Not available in Politecnico labs.
 
