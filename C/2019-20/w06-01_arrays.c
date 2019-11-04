@@ -42,19 +42,16 @@ int main()
     for(int u = 0; u < array_size; ++u) {
         // look for element u
         int target = array[u];
-        int counter = 0;     // counter
-        // int at_least_one = 0;   // a flag! much better
-        for(int t = 0; t < array_size; ++t) {
+        int at_least_one = 0;   // a flag! much better
+        for(int t = 0; t < u && at_least_one == 0; ++t) {
             if(array[t] == target) {
-                counter += 1;
+                at_least_one = 1;
             }
-            // if(array[t] == target) { at_least_one = 1; }
         }
-        if(counter > 1) {
+        if(at_least_one != 0) {
             all_unique_elements = 0;
-            printf("Found %d in array (%d times)\n", target, counter);
+            //printf("Found %d in array!\n", target);
         }
-        // if(at_least_one != 0) { printf("Found %d in array!\n", target); }
     }
     if(all_unique_elements == 1) {
         printf("Whoa! The array does not contain duplicated elements!!!\n");
