@@ -10,11 +10,9 @@
 *               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
 \****************************************************************************/
 
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <strings.h>
-
 
 #define MAX_FRIEND_NAME 32
 #define MAX_FRIENDS_NUM 8

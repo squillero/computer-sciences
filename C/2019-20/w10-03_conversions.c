@@ -10,7 +10,6 @@
 *               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
 \****************************************************************************/
 
-
 #include <stdio.h>
 #include <stdlib.h>
 

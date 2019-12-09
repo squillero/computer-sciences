@@ -10,9 +10,7 @@
 *               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
 \****************************************************************************/
 
-
 // int -> 16 bit  -> 65,535  [ -32,768 +32,767 ]
-
 
 #include <stdio.h>
 #include <stdlib.h>
