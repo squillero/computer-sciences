@@ -15,12 +15,24 @@
 
 int main()
 {
+    printf("%d vs. ", sizeof (char) + sizeof (char) + sizeof (int));
+
     struct foo {
-        char foo, bar;
-        int x;
+        char x, y;
+        int z;
     };
 
-    printf("%d\n", sizeof (char) + sizeof (char) + sizeof (int));
     printf("%d\n", sizeof (struct foo));
+
+    struct bar {
+        int x;
+        double y;
+        char z;
+    };
+
+    printf("%d vs. ", sizeof (int) + sizeof (double) + sizeof (char));
+    printf("%d\n", sizeof (struct bar));
+    //printf("%d\n", sizeof (struct bar[2]));
+
     return 0;
 }
