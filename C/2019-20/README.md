@@ -1,3 +1,8 @@
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+
 ```python
 /********************************************************************-*-c-*-*\
 *               *  Code example for Computer Sciences 2019-20                *
