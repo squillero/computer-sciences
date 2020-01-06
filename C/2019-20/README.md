@@ -1,8 +1,3 @@
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
-
 ```c
 /********************************************************************-*-c-*-*\
 *               *  Code example for Computer Sciences 2019-20                *
