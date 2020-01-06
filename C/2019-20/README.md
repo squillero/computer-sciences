@@ -1,6 +1,18 @@
 ```javascript
-fpp;
+var s = "JavaScript syntax highlighting";
+alert(s);
 ```
+ 
+```python
+s = "Python syntax highlighting"
+print s
+```
+ 
+```
+No language indicated, so no syntax highlighting. 
+But let's throw in a <b>tag</b>.
+```
+
 ```c
 /********************************************************************-*-c-*-*\
 *               *  Code example for Computer Sciences 2019-20                *
