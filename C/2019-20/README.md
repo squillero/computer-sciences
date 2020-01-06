@@ -1,9 +1,5 @@
 ![](https://www.google-analytics.com/collect?v=1&t=pageview&tid=UA-28094298-5&cid=4f34399f-f437-4f67-9390-61c649f9b8b2&dl&dl=https%3A%2F%2Fgithub.com%2Fsquillero%2Fcomputer-sciences%2F)
 
-```
-No language indicated, so no syntax highlighting. 
-But let's throw in a <b>tag</b>.
-```
 
 ```c
 /********************************************************************-*-c-*-*\
