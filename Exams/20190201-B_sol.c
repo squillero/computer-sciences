@@ -16,7 +16,7 @@
 #define NAME_LENGTH 20
 #define LINKS_NUMBER 25
 #define MAX_SEGMENTS 3
-#define FARE_FILE "exam-201902-fares.txt"
+#define FARE_FILE "20190201-B_fares.txt"
 
 typedef struct _LINK {
     char from[NAME_LENGTH +1];
