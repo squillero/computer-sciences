@@ -14,8 +14,8 @@
 
 #define NUM_SENSORS 10
 #define ROLLING_AVERAGE_STEPS 5
-#define FILENAME_LIMITS "exam-20170203C_limits.txt"
-#define FILENAME_MEASURES "exam-20170203C_measures.txt"
+#define FILENAME_LIMITS "20170203-C_limits.txt"
+#define FILENAME_MEASURES "20170203-C_measures.txt"
 
 typedef struct _SENSOR_DEF {
 	double min, max;
