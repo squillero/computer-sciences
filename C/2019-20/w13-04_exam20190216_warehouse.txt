@@ -1,0 +1,6 @@
+Book 6
+Toy 18
+Bike 0
+Ball 98
+Tablet 20
+Guitar 0

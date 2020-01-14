@@ -37,6 +37,10 @@ int main(int argc, char *argv[])
     // boilerplate end
 
     fscanf(input, "%d", &sensor_number);
+    if(argc < 3 || argc > 2 + sensor_number) {
+        fprintf(stderr, "Yeuch: Illegal number of arguments\n");
+        exit(EXIT_FAILURE);
+    }
     for(int t = 2; t < argc; ++t) {
         int sens = atoi(argv[t]);
         // pedantic check ?
