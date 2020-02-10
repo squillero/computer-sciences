@@ -22,7 +22,7 @@ typedef struct _DISPLACEMENT {
 
 /* prototypes */
 void swap_maps(void);
-void print_map(void);
+int anyone_left(char army);
 
 char foreground_map[N][N];
 char background_map[N][N];
@@ -62,10 +62,6 @@ int main(int argc, char *argv[])
     fclose(map1);
     swap_maps();
 
-    // debug print
-    printf("Initial:\n");
-    print_map();
-
     char buffer[BUFFER_SIZE];
     while(fgets(buffer, BUFFER_SIZE, orders) != NULL) {     
         // never mix char (%c) and token (%d) input from a file!
@@ -103,12 +99,11 @@ int main(int argc, char *argv[])
             }
         }
         swap_maps();
+        if(!anyone_left(army)) {
+            printf("The army '%c' left the field.\n", army);
+        }
     }
     fclose(orders);
-
-    // debug print
-    printf("\n\nFinal:\n");
-    print_map();
 
     for(int r = 0; r < N; ++r) {
         for(int c = 0; c < N; ++c) {
@@ -131,13 +126,11 @@ void swap_maps(void)
     }
 }
 
-// unrequested debug function
-void print_map(void)
+int anyone_left(char army)
 {
-    for(int r = 0; r < N; ++r) {
-        for(int c = 0; c < N; ++c) {
-            printf("%c", foreground_map[r][c]);
-        }
-        printf("\n");
-    }
+    for(int r = 0; r < N; ++r)
+        for(int c = 0; c < N; ++c)
+            if(foreground_map[r][c] == army)
+                return 1;
+    return 0;
 }
