@@ -1,14 +1,13 @@
-/********************************************************************-*-c-*-*\
-*               *  Code example for Computer Sciences (04JCJ••)              *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*-**********************************************************************-*\
+*             * CLASS SAMPLE FOR "COMPUTER SCIENCES" (04JCJ**)             *
+*   #####     * (!) 2020, Giovanni Squillero <squillero@polito.it>         *
+*  ######     *                                                            *
+*  ###   \    * Copying and distributing this file, either with or without *
+*   ##G  c\   * modification, is permitted in any medium without royalty,  *
+*   #     _\  * provided that this 10-line comment is preserved.           *
+*   |  _/     *                                                            *
+*             * ===> THIS FILE IS OFFERED AS-IS, WITHOUT ANY WARRANTY <=== *
+\*-**********************************************************************-*/
 
 #include <stdio.h>
 #include <stdlib.h>
