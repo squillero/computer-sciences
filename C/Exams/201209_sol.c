@@ -1,6 +1,4 @@
 /*****************************************************-*-c-*-*\
-*  Code sample for Computer Sciences 2015-16                  *
-*  See: http://staff.polito.it/giovanni.squillero/dida.php    *
 *  (!) 2016, Guoping Xiao                                     *
 *                                                             *
 *  Copying and distribution of this file, with or without     *

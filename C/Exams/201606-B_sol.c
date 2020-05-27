@@ -14,8 +14,8 @@
 #include <string.h>
 #include <time.h>
 
-#define INPUT_FILE_CALLS "exam-201606B_calls.dat"
-#define INPUT_FILE_RATES "exam-201606B_rates.dat"
+#define INPUT_FILE_CALLS "201606-B_calls.dat"
+#define INPUT_FILE_RATES "201606-B_rates.dat"
 #define NUM_RATES 4
 
 // Time: [h]our, [m]inute, and [s]econd
