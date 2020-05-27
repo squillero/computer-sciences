@@ -1,20 +1,20 @@
-/*-**********************************************************************-*\
-*             * CLASS SAMPLE FOR "COMPUTER SCIENCES" (04JCJ**)             *
-*   #####     * (!) 2018, Giovanni Squillero <squillero@polito.it>         *
-*  ######     *                                                            *
-*  ###   \    * Copying and distributing this file, either with or without *
-*   ##G  c\   * modification, is permitted in any medium without royalty,  *
-*   #     _\  * provided that this 10-line comment is preserved.           *
-*   |  _/     *                                                            *
-*             * ===> THIS FILE IS OFFERED AS-IS, WITHOUT ANY WARRANTY <=== *
-\*-**********************************************************************-*/
+/*--------------*-----------------------------------------------------------*\
+*|   ######     | CLASS SAMPLE FOR "COMPUTER SCIENCES" (04JCJ**)             *
+*|  #######     | (!) Giovanni Squillero <squillero@polito.it>               *
+*|  ####   \    |------------------------------------------------------------*
+*|   ##G   c\   | Copying and distributing this file for classroom use,      *
+*|   ##     _\  | either with or without modification, are permitted without *
+*|   |    _/    | royalties provided that this 9-line comment is preserved.  *
+*|   |   _/     | ===> THIS FILE IS OFFERED AS-IS, WITHOUT ANY WARRANTY <=== *
+\*--------------*-----------------------------------------------------------*/
+
 
 #include <stdio.h>
 #include <stdlib.h>
 
-#define FILE_IN_1 "exam-201806_primo.txt"
-#define FILE_IN_2 "exam-201806_secondo.txt"
-#define FILE_OUT "exam-201806_burton.txt"
+#define FILE_IN_1 "0180622-A_primo.txt"
+#define FILE_IN_2 "0180622-A_secondo.txt"
+#define FILE_OUT "0180622-A_burton.txt"
 
 typedef struct _MEASURE {
     int h, m, s;

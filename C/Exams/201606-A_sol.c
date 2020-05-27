@@ -1,20 +1,19 @@
-/*-**********************************************************************-*\
-*             * CLASS SAMPLE FOR "COMPUTER SCIENCES" (04JCJ**)             *
-*   #####     * (!) 2016, Giovanni Squillero <squillero@polito.it>         *
-*  ######     *                                                            *
-*  ###   \    * Copying and distributing this file, either with or without *
-*   ##G  c\   * modification, is permitted in any medium without royalty,  *
-*   #     _\  * provided that this 10-line comment is preserved.           *
-*   |  _/     *                                                            *
-*             * ===> THIS FILE IS OFFERED AS-IS, WITHOUT ANY WARRANTY <=== *
-\*-**********************************************************************-*/
+/*--------------*-----------------------------------------------------------*\
+*|   ######     | CLASS SAMPLE FOR "COMPUTER SCIENCES" (04JCJ**)             *
+*|  #######     | (!) Giovanni Squillero <squillero@polito.it>               *
+*|  ####   \    |------------------------------------------------------------*
+*|   ##G   c\   | Copying and distributing this file for classroom use,      *
+*|   ##     _\  | either with or without modification, are permitted without *
+*|   |    _/    | royalties provided that this 9-line comment is preserved.  *
+*|   |   _/     | ===> THIS FILE IS OFFERED AS-IS, WITHOUT ANY WARRANTY <=== *
+\*--------------*-----------------------------------------------------------*/
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
 
-#define INPUT_FILE "exam-201606-A.dat"
+#define INPUT_FILE "201606-A.dat"
 #define BOMB 'B'
 #define BOMB_INACTIVE 'b'
 #define WALL '.'

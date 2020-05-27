@@ -1,6 +1,4 @@
 /*****************************************************-*-c-*-*\
-*  Code sample for Computer Sciences 2015-16                  *
-*  See: http://staff.polito.it/giovanni.squillero/dida.php    *
 *  (!) 2016, Guoping Xiao                                     *
 *                                                             *
 *  Copying and distribution of this file, with or without     *
@@ -14,7 +12,7 @@
 #include<stdlib.h>
 
 #define LENGTH 100
-//program argument: 20130705_serialA.txt 20130705_filter.txt
+
 int main(int argc, char* arg[]){
 
     //int LENGTH = 100;
