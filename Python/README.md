@@ -12,9 +12,9 @@ The *official* text book for all Politecnico's courses is:
 
 The web is full of free, high-quality resources. This is an incomplete, already outdated list: you should look for something like **"PYTHON FREE BEGINNERS"** on your favorite search engine.
 
-* Python For Beginners (aka. "getting started with Python"): [https://www.python.org/about/gettingstarted/](https://www.python.org/about/gettingstarted/)
-* Free Interactive Python Tutorial: [https://www.learnpython.org/](https://www.learnpython.org/)
-*  Google's Python Class: [https://developers.google.com/edu/python/](https://developers.google.com/edu/python/)
+* Python For Beginners (aka. "getting started with Python") ([https://www.python.org/about/gettingstarted/](https://www.python.org/about/gettingstarted/))
+* Free Interactive Python Tutorial ([https://www.learnpython.org/](https://www.learnpython.org/))
+*  Google's Python Class ([https://developers.google.com/edu/python/](https://developers.google.com/edu/)python/)
 
 ## IDEs
 
