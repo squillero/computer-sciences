@@ -19,5 +19,5 @@ The web is full of free, high-quality resources. This is an incomplete, already 
 ## IDEs
 
 * **PyCharm**: full-fledged, powerful environment. The Professional version is **free** for Politecnico's students, just [apply](https://www.jetbrains.com/community/education/#students) for the educational license <[https://www.jetbrains.com/pycharm/](https://www.jetbrains.com/pycharm/)>
-* **Spyder**: free, full-fledged, powerful environment <[https://www.spyder-ide.org/](https://www.spyder-ide.org/)>. 
-* **Wing 101**: oversimplified IDE for novices <[https://wingware.com/downloads/wingide-101](https://wingware.com/downloads/wingide-101)>.
+* **Spyder**: free, full-fledged, powerful environment <[https://www.spyder-ide.org/](https://www.spyder-ide.org/)>
+* **Wing 101**: oversimplified IDE for novices <[https://wingware.com/downloads/wingide-101](https://wingware.com/downloads/wingide-101)>
