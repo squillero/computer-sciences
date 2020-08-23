@@ -8,5 +8,5 @@ Please note that in 2020/21 the course switched from [C](./C) to [Python](./Pyth
 * 04JCJ Computer Sciences (C)
 * 07JCJ Computer Sciences (Python)
 
-> [![CC BY-NC-ND 4.0](https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/) 
-> Unless expressly noted in the individual files, ou are free to copy and redistribute this material under a [Creative Commons Attribution Non-Commercial No-Derivatives 4.0 International License]((https://creativecommons.org/licenses/by-nc-nd/4.0/)) ([CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)).
+> [![CC BY-NC-ND 4.0](https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/)  
+> Unless expressly noted in the individual files, ou are free to copy and redistribute this material under a [Creative Commons Attribution Non-Commercial No-Derivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/) ([CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)).
