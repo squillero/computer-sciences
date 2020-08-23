@@ -18,9 +18,9 @@ The web is full of free, high-quality resources. This is an incomplete, already 
 
 ## IDEs
 
-* [**PyCharm**](https://www.jetbrains.com/pycharm/): full-fledged, powerful environment — the Professional version is **free** for Politecnico's students, just [apply](https://www.jetbrains.com/community/education/#students) for the educational license <[https://www.jetbrains.com/pycharm/]>
+* [**PyCharm**](https://www.jetbrains.com/pycharm/): full-fledged, powerful environment — the professional version is **free** for Politecnico's students, just [apply](https://www.jetbrains.com/community/education/#students) for the educational license
 * [**Spyder**](https://www.spyder-ide.org/): free, full-fledged, powerful environment
 * [**Wing 101**](https://wingware.com/downloads/wingide-101): oversimplified IDE for novices
 * [**repl.it**](http://repl.it): free on-line Jupyter environment — requires registration
 * [**NOTEBOOKS_**](https://notebooks.ai/dashboard): free on-line Jupyter environment — requires registration
-* [**Colab**](https://colab.research.google.com): free on-line Jupyter environment that stores its notebooks on Google Drive — requires a Google account
+* [**Colab**](https://colab.research.google.com): free on-line Jupyter environment that stores notebooks on Google Drive — requires a Google account
