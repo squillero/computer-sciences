@@ -3,9 +3,10 @@ Computer Sciences
 
 This repo contains old exams, notes, and all the code fragments developed during my lectures of *Computer Sciences* at [Politecnico di Torino](https://www.polito.it/?lang=en).
 
-Please note that the course switched from C to Python:
-* Up to 2019/20 the code starts with **04JCJ** and students should refer to directory [C](./C)
-* From 2020/21 the code starts with **07JCJ** and students should refer to directory [Python](./Python)
+Please note that we switched from C to Python:
+
+* Up to 2019/20 the course name starts with **04**JCJ and students should refer to directory [C](./C)
+* Since 2020/21 the course name starts with **07**JCJ and students should refer to directory [Python](./Python)
 
 ------------------------------------------------------------------------------
 
