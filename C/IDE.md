@@ -35,7 +35,7 @@ The official IDE from Apple, available for free. Extremely powerful, with tons o
 
 * Site: [https://www.visualstudio.com/](https://www.visualstudio.com/)
 
-The official IDE from Microsoft. Available in a multitude of versions, some free. Extremely powerful, with tons of features that will not be used in the course. It only works with Microsoft OS. The C compiler is not fully compliant with the ISO/IEC standard.
+The official IDE from Microsoft. Available in a multitude of versions, some free. Extremely powerful, with tons of features that will not be used in the course. It only works with Microsoft OS. Double check whether the compiler is fully compliant with the ISO/IEC standard.
 
 ### Online IDEs
 
