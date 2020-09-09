@@ -3,7 +3,7 @@ Compilers and Integrated Development Environments (IDEs)
 
 ## Compilers
 
-The course focuses on the C language. The reference is **C11** ([ISO/IEC 9899:2011](https://en.wikipedia.org/wiki/C11_(C_standard_revision))), as the current C18 ([ISO/IEC 9899:2018](https://en.wikipedia.org/wiki/C18_(C_standard_revision))) did not introduce new features. Valid compilers include recent [gcc](https://gcc.gnu.org/) and [Clang](https://clang.llvm.org/).
+The course focuses on the C language. The reference is **C11** ([ISO/IEC 9899:2011](https://en.wikipedia.org/wiki/C11_(C_standard_revision))), as the **C18** ([ISO/IEC 9899:2018](https://en.wikipedia.org/wiki/C18_(C_standard_revision))) did not introduce new features. Valid compilers include recent [gcc](https://gcc.gnu.org/) and [Clang](https://clang.llvm.org/).
 
 **Note:** Microsoft Visual Studio's compiler does not fully conform with the current ISO/IEC standard.
 
