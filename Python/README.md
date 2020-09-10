@@ -18,7 +18,7 @@ The web is full of free, high-quality resources. This is an incomplete, already 
 
 ## Support
 
-Students are invited to join the rather informal support group **CA@POLITO** on [*Telegram*](https://en.wikipedia.org/wiki/Telegram_(software)): [`https://t.me/cseng_polito`](https://t.me/cseng_polito)
+All students are invited to join the rather informal support group [**CA@POLITO**](https://t.me/cseng_polito) on [*Telegram*](https://en.wikipedia.org/wiki/Telegram_(software)) ([`https://t.me/cseng_polito`](https://t.me/cseng_polito)).
 
 ## IDEs
 
