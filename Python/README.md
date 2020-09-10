@@ -16,6 +16,10 @@ The web is full of free, high-quality resources. This is an incomplete, already 
 * Free Interactive Python Tutorial <[https://www.learnpython.org/](https://www.learnpython.org/)>
 *  Google's Python Class <[https://developers.google.com/edu/python/](https://developers.google.com/edu/python/)>
 
+## Support
+
+Students are invited to join the rather informal support group **CA@POLITO** on [*Telegram*](https://en.wikipedia.org/wiki/Telegram_(software)): [`https://t.me/cseng_polito`](https://t.me/cseng_polito)
+
 ## IDEs
 
 * [**PyCharm**](https://www.jetbrains.com/pycharm/): full-fledged, powerful environment — the professional version is **free** for Politecnico's students, just [apply](https://www.jetbrains.com/community/education/#students) for the educational license
