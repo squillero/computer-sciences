@@ -13,7 +13,7 @@ All students are invited to join the rather informal support group [**CS@POLITO*
 
 The *official* text book for all Politecnico's courses is:
 
-![BOOK](/z/images/cover.jpg)
+![BOOK](../z/images/cover.jpg)
 
 * Cay Horstmann, Rance D. Necaise; [*Python for Everyone*](https://www.wiley.com/en-it/Python+For+Everyone,+3rd+Edition-p-9781119498537); John Wiley & Sons Inc. [**3rd edition**]
 * Cay Horstmann, Rance D. Necaise; [*Concetti di informatica e fondamenti di Python*](http://www.apogeoeducation.com/concetti-di-informatica-e-fondamenti-di-python.html) (Edizione italiana a cura di Marcello Dalpasso); Apogeo Education [**Seconda edizione**]
