@@ -9,8 +9,8 @@ The *official* text book for all Politecnico's courses is:
 
 ![BOOK](https://media.wiley.com/product_data/coverImage300/50/11197399/1119739950.jpg)
 
-* :+1: Cay Horstmann, Rance D. Necaise; [*Python for Everyone*](https://www.wiley.com/en-it/Python+For+Everyone,+3rd+Edition-p-9781119498537); John Wiley & Sons Inc. [**3rd edition**]
-* Cay Horstmann, Rance D. Necaise; [*Concetti di informatica e fondamenti di Python*](http://www.apogeoeducation.com/concetti-di-informatica-e-fondamenti-di-python.html) (Edizione italiana a cura di Marcello Dalpasso); Apogeo Education [**Seconda edizione**]
+* :uk: Cay Horstmann, Rance D. Necaise; [*Python for Everyone*](https://www.wiley.com/en-it/Python+For+Everyone,+3rd+Edition-p-9781119498537); John Wiley & Sons Inc. [**3rd edition**]
+* :it: Cay Horstmann, Rance D. Necaise; [*Concetti di informatica e fondamenti di Python*](http://www.apogeoeducation.com/concetti-di-informatica-e-fondamenti-di-python.html) (Edizione italiana a cura di Marcello Dalpasso); Apogeo Education [**Seconda edizione**]
 
 The web is full of free, high-quality resources. This is an incomplete, already outdated list: you should look for something like **"PYTHON FREE BEGINNERS"** on your favorite search engine.
 
