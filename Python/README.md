@@ -28,7 +28,7 @@ The web is full of free, high-quality resources. This is an incomplete, already 
 
 ### Offline
 
-* :warning: First of all, you need to download and install a recent version of Python
+* :warning: You need a recent version of Python
     - [**Python**](https://www.python.org/downloads/): Official Python distribution
     - [**Anaconda**](https://docs.anaconda.com/anaconda/install/):  Free distribution of Python (and R) for scientific computing 
 * [**Wing 101**](https://wingware.com/downloads/wingide-101): oversimplified IDE for novices
