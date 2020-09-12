@@ -26,12 +26,12 @@ The web is full of free, high-quality resources. This is an incomplete, already 
 
 ## Programming Environment (IDEs)
 
-:warning: You need to download and install a recent version of Python
-
-* [**Python**](https://www.python.org/downloads/): Official Python distribution
-* [**Anaconda**](https://docs.anaconda.com/anaconda/install/):  Free distribution of Python (and R) for scientific computing 
-
 ### Offline
+
+* :warning: First of all, you need to download and install a recent version of Python
+
+    - [**Python**](https://www.python.org/downloads/): Official Python distribution
+    - [**Anaconda**](https://docs.anaconda.com/anaconda/install/):  Free distribution of Python (and R) for scientific computing 
 
 * [**Wing 101**](https://wingware.com/downloads/wingide-101): oversimplified IDE for novices
 * [**PyCharm**](https://www.jetbrains.com/pycharm/): full-fledged, powerful environment — the professional version is **free** for Politecnico's students, just [apply](https://www.jetbrains.com/community/education/#students) for the educational license
