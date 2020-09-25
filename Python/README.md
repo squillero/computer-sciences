@@ -37,7 +37,7 @@ The web is full of free, high-quality resources. This is an incomplete, already 
 * [**Wing 101**](https://wingware.com/downloads/wingide-101): oversimplified IDE for novices
 * [**Spyder**](https://www.spyder-ide.org/): free, full-fledged, powerful environment
 
-Bartolomeo Montrucchio created a [YouTube video](https://youtu.be/_yg7S8hLCKw) with some instructions (in Italian), alternative instructions (in any language) can be found online.
+[Bartolomeo Montrucchio](https://staff.polito.it/bartolomeo.montrucchio/) created a [YouTube video](https://youtu.be/_yg7S8hLCKw) with some instructions (in Italian), alternative instructions (in any language) can be found online.
 
 ### Online
 
