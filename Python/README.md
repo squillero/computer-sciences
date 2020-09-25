@@ -15,6 +15,8 @@ The *official* text book for all Politecnico's courses is:
 
 * Cay Horstmann, Rance D. Necaise; [*Python for Everyone*](https://www.wiley.com/en-it/Python+For+Everyone,+3rd+Edition-p-9781119498537); John Wiley & Sons Inc. [**3rd edition**]
 * Cay Horstmann, Rance D. Necaise; [*Concetti di informatica e fondamenti di Python*](http://www.apogeoeducation.com/concetti-di-informatica-e-fondamenti-di-python.html) (Edizione italiana a cura di Marcello Dalpasso); Apogeo Education [**Seconda edizione**]
+    - [CLuT](https://www.clut.it/ita/elettrotecnica-elettronica-informatica/-/concetti-di-informatica-e-fondamenti-di-python/348.html)
+    - [Levrotto e Bella](https://www.levrotto-bella.net/concetti-informatica-fondamenti-python-horstmann)
 
 ### Online
 
@@ -31,8 +33,9 @@ The web is full of free, high-quality resources. This is an incomplete, already 
 * :warning: You need a recent version of Python
     - [**Python**](https://www.python.org/downloads/): Official Python distribution
     - [**Anaconda**](https://docs.anaconda.com/anaconda/install/):  Free distribution of Python (and R) for scientific computing 
-* [**Wing 101**](https://wingware.com/downloads/wingide-101): oversimplified IDE for novices
+* [**PyCharm EDU**](https://www.jetbrains.com/pycharm-edu/): simplified IDE for novices [**suggested choice**]
 * [**PyCharm**](https://www.jetbrains.com/pycharm/): full-fledged, powerful environment — the professional version is **free** for Politecnico's students, just [apply](https://www.jetbrains.com/community/education/#students) for the educational license
+* [**Wing 101**](https://wingware.com/downloads/wingide-101): oversimplified IDE for novices
 * [**Spyder**](https://www.spyder-ide.org/): free, full-fledged, powerful environment
 
 ### Online
