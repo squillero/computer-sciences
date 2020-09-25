@@ -32,7 +32,7 @@ The web is full of free, high-quality resources. This is an incomplete, already 
 * :warning: You need a recent version of Python
     - [**Python**](https://www.python.org/downloads/): Official Python distribution
     - [**Anaconda**](https://docs.anaconda.com/anaconda/install/):  Free distribution of Python (and R) for scientific computing 
-* [**PyCharm EDU**](https://www.jetbrains.com/pycharm-edu/): simplified IDE for novices; this is the **suggested choice**, and it is licensed under [Apache-2.0](https://www.tldrlegal.com/l/apache2)
+* [**PyCharm EDU**](https://www.jetbrains.com/pycharm-edu/): simplified IDE for novices, licensed under [Apache-2.0](https://www.tldrlegal.com/l/apache2) — this is the **suggested option for the course**
 * [**PyCharm**](https://www.jetbrains.com/pycharm/): full-fledged, powerful environment — the professional version is **free** for Politecnico's students, just [apply](https://www.jetbrains.com/community/education/#students) for the educational license
 * [**Wing 101**](https://wingware.com/downloads/wingide-101): oversimplified IDE for novices
 * [**Spyder**](https://www.spyder-ide.org/): free, full-fledged, powerful environment
