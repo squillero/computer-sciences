@@ -37,6 +37,8 @@ The web is full of free, high-quality resources. This is an incomplete, already 
 * [**Wing 101**](https://wingware.com/downloads/wingide-101): oversimplified IDE for novices
 * [**Spyder**](https://www.spyder-ide.org/): free, full-fledged, powerful environment
 
+Bartolomeo Montrucchio created a video with the instructions for [installing Python and PyCharm](https://youtu.be/_yg7S8hLCKw), alternative instructions can be easily found online.
+
 ### Online
 
 * [**repl.it**](http://repl.it): free on-line Jupyter environment — requires registration
