@@ -5,7 +5,7 @@ Computer Sciences is now in [Python](https://en.wikipedia.org/wiki/Python_(progr
 
 ## Support Group
 
-All students are invited to join the rather informal support group [**CS@POLITO**](https://t.me/joinchat/GS3RWEpSJpxTC5Y8EYUzSA) on [*Telegram*](https://en.wikipedia.org/wiki/Telegram_(software)) ([`https://t.me/cseng_polito`](https://t.me/cseng_polito)).
+All students are invited to join the rather informal support group [**CS@POLITO**](https://t.me/joinchat/GS3RWEpSJpxTC5Y8EYUzSA) on [*Telegram*](https://en.wikipedia.org/wiki/Telegram_(software)) ([`https://t.me/joinchat/GS3RWEpSJpxTC5Y8EYUzSA`](https://t.me/cseng_polito)).
 
 ## References
 
