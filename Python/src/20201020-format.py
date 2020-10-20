@@ -11,6 +11,7 @@
 ##--------------#-----------------------------------------------------------#
 
 foo = 4.2
+bar = 7
 
 print(foo);
 
@@ -22,10 +23,9 @@ print("The value of foo is %f!" % (foo,))    # Note the comma!
 print("The value of foo is %.1f!" % (foo/10,))
 # Best one
 print("The value of foo is %g %g %g!" % (foo, foo*10, foo/10))
-bar = 7
 print("[%10d] [%-10d] [%+-10d]" % (bar, bar, bar))
 
-# format method (quite but not completely similar to %)
+# format method (quite similar to % but not equal)
 print("The value of foo is {}!".format(foo))
 print("[{foo:10d}] [{foo:<10d}] [{foo:<+10d}]".format(foo=bar)) # note < instead of - 
 
