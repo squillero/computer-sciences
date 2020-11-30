@@ -22,7 +22,7 @@ def main():
     cnt = 0
     while token != '':
         num = float(token)
-        sum_ += num     # ie. sum+ = sum_ + num
+        sum_ += num     # ie. sum = sum_ + num
         cnt += 1        # ie. cnt = cnt + 1
         output_file.write(f"{num:.2f}\n")
         token = input_file.readline()
