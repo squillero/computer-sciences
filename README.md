@@ -11,6 +11,6 @@ Please note that we updated the syllabus:
 ------------------------------------------------------------------------------
 
 > [![CC BY-NC-ND 4.0](https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/)  
-> Unless expressly noted in the individual files, you are allowed to copy and redistribute this material under a [Creative Commons Attribution Non-Commercial No-Derivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+> Unless expressly noted in the individual files, all material in this site is distributed under the *Creative Commons Attribution Non-Commercial Share-Alike* license ([CC BY-NC-SA 4.0](https://tldrlegal.com/license/creative-commons-attribution-noncommercial-sharealike-4.0-international-%28cc-by-nc-sa-4.0%29)).
 
 ------------------------------------------------------------------------------
