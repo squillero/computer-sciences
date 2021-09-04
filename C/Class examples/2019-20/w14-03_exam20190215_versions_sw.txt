@@ -1,0 +1,8 @@
+SW22222222
+base software operating system eCos
+SW12112121
+software version1 operating system VxWorks
+SW33334444
+software version2 operating system VxWorks
+SW44445555
+software version3 operating system eCos
