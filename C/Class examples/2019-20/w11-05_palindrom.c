@@ -1,6 +1,6 @@
 /*  ######       /******************************************************\
 |*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (04JCJ**)      *
-|*  ####   \     * https://github.com/squillero/computer-science        *
+|*  ####   \     * https://github.com/squillero/computer-sciences       *
 |*   ###G  c\    *                                                      *
 |*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
 |*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 
     /*  ######       /******************************************************\
 |*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (04JCJ**)      *
-|*  ####   \     * https://github.com/squillero/computer-science        *
+|*  ####   \     * https://github.com/squillero/computer-sciences       *
 |*   ###G  c\    *                                                      *
 |*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
 |*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
