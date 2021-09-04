@@ -9,4 +9,4 @@ Please note that we updated the syllabus:
 * Since 2020/21 the course name starts with **07**JCJ and students should refer to directory [Python](./Python)
 
 
-> Unless expressly noted in the individual files, all material in this site is licensed under the [EUPL-1.2](https://eupl.eu/).
+> Unless expressly noted in the individual files, all the material is licensed under the [EUPL-1.2](https://eupl.eu/).
