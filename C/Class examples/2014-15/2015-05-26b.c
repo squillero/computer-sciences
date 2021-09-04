@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Class examples for Computer Sciences 2014-15              *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://www.cad.polito.it/staff/squillero/dida/       *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -18,7 +14,8 @@ void Remain(int first, FILE *in, FILE *out);
 
 int main(int argc, char *argv[])
 {
-    if(argc != 3) {
+    if (argc != 3)
+    {
         fprintf(stderr, "Need 2 args!\n");
         exit(EXIT_FAILURE);
     }
@@ -30,7 +27,8 @@ int main(int argc, char *argv[])
     in2 = fopen(argv[2], "r");
     out = fopen("out.gx", "w");
 
-    if(in1==NULL || in2==NULL || out==NULL) {
+    if (in1 == NULL || in2 == NULL || out == NULL)
+    {
         fprintf(stderr, "File error!\n");
         exit(EXIT_FAILURE);
     }
@@ -53,11 +51,15 @@ int main(int argc, char *argv[])
     //    fprintf(out, "%d\n", no);
     //}
 
-    while( !feof(in1) && !feof(in2) ) {
-        if(n1 < n2) {
+    while (!feof(in1) && !feof(in2))
+    {
+        if (n1 < n2)
+        {
             no = n1;
             fscanf(in1, "%d", &n1);
-        } else {
+        }
+        else
+        {
             no = n2;
             fscanf(in2, "%d", &n2);
         }
@@ -65,9 +67,12 @@ int main(int argc, char *argv[])
         fprintf(out, "%d\n", no);
     }
     printf("\n");
-    if(feof(in1)) {
+    if (feof(in1))
+    {
         Remain(n2, in2, out);
-    } else {
+    }
+    else
+    {
         Remain(n1, in1, out);
     }
 
@@ -79,9 +84,10 @@ int main(int argc, char *argv[])
 
 void Remain(int first, FILE *in, FILE *out)
 {
-    do {
+    do
+    {
         printf("%d\n", first);
         fprintf(out, "%d\n", first);
         fscanf(in, "%d", &first);
-    } while(!feof(in));
+    } while (!feof(in));
 }

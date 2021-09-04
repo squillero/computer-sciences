@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Class examples for Computer Sciences 2014-15              *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://www.cad.polito.it/staff/squillero/dida/       *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -18,18 +14,20 @@
 #define MAX_STR 42
 #define ID_LEN 8
 
-typedef struct student_s {
-    char name[MAX_STR +1];      // size: MAX_STR+1  = 43
-    char surname[MAX_STR +1];   // size: MAX_STR+1  = 43
-    char id[ID_LEN +1];         // size: ID_LEN+1   = 9
-    double avg;                 // size:              8
+typedef struct student_s
+{
+    char name[MAX_STR + 1];    // size: MAX_STR+1  = 43
+    char surname[MAX_STR + 1]; // size: MAX_STR+1  = 43
+    char id[ID_LEN + 1];       // size: ID_LEN+1   = 9
+    double avg;                // size:              8
 } student_t;
 
-typedef union student2_s {
-    char name[MAX_STR +1];      // size: MAX_STR+1  = 43
-    char surname[MAX_STR +1];   // size: MAX_STR+1  = 43
-    char id[ID_LEN +1];         // size: ID_LEN+1   = 9
-    double avg;                 // size:              8
+typedef union student2_s
+{
+    char name[MAX_STR + 1];    // size: MAX_STR+1  = 43
+    char surname[MAX_STR + 1]; // size: MAX_STR+1  = 43
+    char id[ID_LEN + 1];       // size: ID_LEN+1   = 9
+    double avg;                // size:              8
 } student2_t;
 
 /* PROTOS */
@@ -60,10 +58,10 @@ int main()
     strcpy(giovanni.id, "63452");
     paola.avg = 29.9;
 
-    if(CompareStud(paola, giovanni)==0) {
+    if (CompareStud(paola, giovanni) == 0)
+    {
         printf("Paola == Giovanni ????\n");
     }
-
 
     return EXIT_SUCCESS;
 }
@@ -75,16 +73,20 @@ int main()
 int CompareStud(struct student_s s1, struct student_s s2)
 {
     int ret_val = 0;
-    if(strcmp(s1.name, s2.name) != 0) {
+    if (strcmp(s1.name, s2.name) != 0)
+    {
         ret_val = 1;
     }
-    if(strcmp(s1.surname, s2.surname) != 0) {
+    if (strcmp(s1.surname, s2.surname) != 0)
+    {
         ret_val = 1;
     }
-    if(strcmp(s1.id, s2.id) != 0) {
+    if (strcmp(s1.id, s2.id) != 0)
+    {
         ret_val = 1;
     }
-    if(s1.avg != s2.avg) {
+    if (s1.avg != s2.avg)
+    {
         ret_val = 1;
     }
     return ret_val;

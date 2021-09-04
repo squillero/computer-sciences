@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Code examples for Computer Sciences 2016-17               *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -21,13 +17,14 @@ int main(int argc, char *argv[])
 {
     int num;
     int list[MAX_LEN];
-    int deleted[MAX_LEN] = { 0 };
+    int deleted[MAX_LEN] = {0};
     int list_size;
 
     printf("Just another exam!\n");
 
     // Commandline
-    if(argc != 2) {
+    if (argc != 2)
+    {
         fprintf(stderr, "Yeuch: One argument is required.\n");
         exit(EXIT_FAILURE);
     }
@@ -35,13 +32,15 @@ int main(int argc, char *argv[])
 
     // Input
     FILE *in = fopen(FILENAME, "r");
-    if(in == NULL) {
+    if (in == NULL)
+    {
         fprintf(stderr, "Yeuch: Can't open \"%s\" for reading.\n", FILENAME);
         exit(EXIT_FAILURE);
     }
     char line[MAX_LINE];
     list_size = 0;
-    while(fgets(line, MAX_LINE, in) != NULL) {
+    while (fgets(line, MAX_LINE, in) != NULL)
+    {
         sscanf(line, "%d", &list[list_size]);
         ++list_size;
     }
@@ -49,15 +48,19 @@ int main(int argc, char *argv[])
 
     // Debug
     printf("LIST:");
-    for(int t = 0; t < list_size; ++t) {
+    for (int t = 0; t < list_size; ++t)
+    {
         printf(" %d", list[t]);
     }
     printf("\n");
 
     // Core algorithm
-    for(int t = 0; t < list_size; ++t) {
-        for(int u = t + 1; u < list_size; ++u) {
-            if(list[t] + list[u] == num) {
+    for (int t = 0; t < list_size; ++t)
+    {
+        for (int u = t + 1; u < list_size; ++u)
+        {
+            if (list[t] + list[u] == num)
+            {
                 deleted[t] = deleted[u] = 1;
             }
         }
@@ -65,8 +68,10 @@ int main(int argc, char *argv[])
 
     // Debug
     printf("LIST:");
-    for(int t = 0; t < list_size; ++t) {
-        if(!deleted[t]) {
+    for (int t = 0; t < list_size; ++t)
+    {
+        if (!deleted[t])
+        {
             printf(" %d", list[t]);
         }
     }
@@ -74,12 +79,15 @@ int main(int argc, char *argv[])
 
     // Output
     FILE *out = fopen(FILENAME, "w");
-    if(in == NULL) {
+    if (in == NULL)
+    {
         fprintf(stderr, "Yeuch: Can't open \"%s\" for writing.\n", FILENAME);
         exit(EXIT_FAILURE);
     }
-    for(int t = 0; t < list_size; ++t) {
-        if(!deleted[t]) {
+    for (int t = 0; t < list_size; ++t)
+    {
+        if (!deleted[t])
+        {
             fprintf(out, "%d\n", list[t]);
         }
     }

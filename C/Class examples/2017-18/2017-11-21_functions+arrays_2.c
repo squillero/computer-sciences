@@ -1,19 +1,15 @@
-/********************************************************************-*-c-*-*\
-*               *  Code examples for Computer Sciences 2017-18               *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
 
-#define ARRAY_SIZE  256
+#define ARRAY_SIZE 256
 
 // protos
 // get the index of the max element
@@ -27,7 +23,8 @@ int main()
 
     int array[ARRAY_SIZE];
     srand(time(NULL));
-    for(int t = 0; t < ARRAY_SIZE; ++t) {
+    for (int t = 0; t < ARRAY_SIZE; ++t)
+    {
         array[t] = rand() % 1000;
     }
 
@@ -45,8 +42,10 @@ int get_max_index(int *a)
     printf("a: %p\n", a);
 
     int max_pos = 0;
-    for(int t = 1; t < ARRAY_SIZE; ++t) {
-        if(a[t] > a[max_pos]) {
+    for (int t = 1; t < ARRAY_SIZE; ++t)
+    {
+        if (a[t] > a[max_pos])
+        {
             max_pos = t;
         }
     }
@@ -55,7 +54,8 @@ int get_max_index(int *a)
 
 void print_array(int *b, int len)
 {
-    for(int t = 0; t < len; ++t) {
+    for (int t = 0; t < len; ++t)
+    {
         printf(" %d", b[t]);
     }
     printf("\n");
@@ -63,7 +63,8 @@ void print_array(int *b, int len)
 
 void fill_with_zero(int arr[], int len)
 {
-    for(int t = 0; t < len; ++t) {
+    for (int t = 0; t < len; ++t)
+    {
         arr[t] = 0;
     }
 }

@@ -1,26 +1,23 @@
-/********************************************************************-*-c-*-*\
-*               *  Code example for Computer Sciences 2019-20                *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_PRODUCTS_WAREHOUSE  100
-#define MAX_PRODUCTS_REQUESTS  200
+#define MAX_PRODUCTS_WAREHOUSE 100
+#define MAX_PRODUCTS_REQUESTS 200
 #define PRODUCT_NAME_LENGTH 15
 #define BUFFER_SIZE 4096
 
-typedef struct _PRODUCT {
-    char name[PRODUCT_NAME_LENGTH +1];
+typedef struct _PRODUCT
+{
+    char name[PRODUCT_NAME_LENGTH + 1];
     int quantity;
 } PRODUCT;
 
@@ -33,18 +30,21 @@ int main(int argc, char *argv[])
     PRODUCT warehouse[MAX_PRODUCTS_WAREHOUSE];
     int num_product;
 
-    if(argc != 3) {
+    if (argc != 3)
+    {
         fprintf(stderr, "Yeuch. Wrong number of arguments.\n");
         exit(EXIT_FAILURE);
     }
-    if(!(warehouse_file = fopen(argv[1], "r"))) {
+    if (!(warehouse_file = fopen(argv[1], "r")))
+    {
         fprintf(stderr, "Yeuch. Can't open \"%s\".\n", argv[1]);
         exit(EXIT_FAILURE);
     }
     char line[BUFFER_SIZE];
     num_product = 0;
-    while(fgets(line, BUFFER_SIZE, warehouse_file) != NULL) {
-    // valid alt: while(fgets(line, BUFFER_SIZE, warehouse_file)) {
+    while (fgets(line, BUFFER_SIZE, warehouse_file) != NULL)
+    {
+        // valid alt: while(fgets(line, BUFFER_SIZE, warehouse_file)) {
         sscanf(line, "%s %d", warehouse[num_product].name, &warehouse[num_product].quantity);
         ++num_product;
     }
@@ -57,33 +57,43 @@ int main(int argc, char *argv[])
     fclose(warehouse_file);
 
     FILE *reqs = fopen(argv[2], "r");
-    if(reqs == NULL) {
-    // valid alt: if(reqs) {
+    if (reqs == NULL)
+    {
+        // valid alt: if(reqs) {
         fprintf(stderr, "Yeuch. Can't open \"%s\".\n", argv[2]);
         exit(EXIT_FAILURE);
     }
-    char missing_products[MAX_PRODUCTS_REQUESTS][PRODUCT_NAME_LENGTH +1] = { 0 };\
+    char missing_products[MAX_PRODUCTS_REQUESTS][PRODUCT_NAME_LENGTH + 1] = {0};
     int num_missing_items = 0;
-    char product[PRODUCT_NAME_LENGTH +1];
-    while(fscanf(reqs, "%s", product) != EOF) {
+    char product[PRODUCT_NAME_LENGTH + 1];
+    while (fscanf(reqs, "%s", product) != EOF)
+    {
         int pos = find_position(warehouse, num_product, product);
-        if(pos == -1) {
+        if (pos == -1)
+        {
             strcpy(missing_products[num_missing_items++], product);
-        } else {
+        }
+        else
+        {
             --warehouse[pos].quantity;
         }
     }
 
-    if(!(warehouse_file = fopen(argv[1], "w"))) {
+    if (!(warehouse_file = fopen(argv[1], "w")))
+    {
         fprintf(stderr, "Yeuch. Can't open \"%s\".\n", argv[1]);
         exit(EXIT_FAILURE);
     }
-    for(int p = 0; p < num_product; ++p) {
-        if(warehouse[p].quantity < 0) {
+    for (int p = 0; p < num_product; ++p)
+    {
+        if (warehouse[p].quantity < 0)
+        {
             printf("The excess quantity of %s required is: %d\n",
                    warehouse[p].name, -warehouse[p].quantity);
             fprintf(warehouse_file, "%s 0\n", warehouse[p].name);
-        } else {
+        }
+        else
+        {
             fprintf(warehouse_file, "%s %d\n",
                     warehouse[p].name, warehouse[p].quantity);
         }
@@ -91,7 +101,8 @@ int main(int argc, char *argv[])
     fclose(warehouse_file);
 
     printf("Missing products:");
-    for(int p = 0; p < num_missing_items; ++p) {
+    for (int p = 0; p < num_missing_items; ++p)
+    {
         printf(" %s", missing_products[p]);
         // todo: remuve dups
     }
@@ -103,11 +114,12 @@ int main(int argc, char *argv[])
 // return the index of the product key, or -1
 int find_position(PRODUCT *plist, int plist_len, char *key)
 {
-    for(int p = 0; p < plist_len; ++p) {
-        if(strcmp(plist[p].name, key) == 0) {
+    for (int p = 0; p < plist_len; ++p)
+    {
+        if (strcmp(plist[p].name, key) == 0)
+        {
             return p;
         }
     }
     return -1;
 }
-

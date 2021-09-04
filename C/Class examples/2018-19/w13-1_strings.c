@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Code example for Computer Sciences 2018-19                *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -28,26 +24,34 @@ int main()
     int num_max_vowel = -1;
 
     FILE *input = fopen(FILE_NAME, "r");
-    if(input == NULL) {
+    if (input == NULL)
+    {
         fprintf(stderr, "Yeuch! Can't open %s\n", FILE_NAME);
         exit(EXIT_FAILURE);
     }
 
-    while(fgets(line, MAX_LINE, input) != NULL) {
+    while (fgets(line, MAX_LINE, input) != NULL)
+    {
         char word[MAX_LINE];
         int w = 0;
-        for(int t  = 0; line[t] != '\0'; ++t) {
-            if(isspace(line[t])) {
+        for (int t = 0; line[t] != '\0'; ++t)
+        {
+            if (isspace(line[t]))
+            {
                 word[w] = '\0';
-                if(w > 0) {
+                if (w > 0)
+                {
                     printf("Word: \"%s\" (%d vowels)\n", word, count_vowels(word));
-                    if(count_vowels(word) > num_max_vowel) {
+                    if (count_vowels(word) > num_max_vowel)
+                    {
                         num_max_vowel = count_vowels(word);
                         strcpy(w_max_vowel, word);
                     }
                 }
                 w = 0;
-            } else {
+            }
+            else
+            {
                 word[w++] = line[t];
             }
         }
@@ -62,8 +66,10 @@ int main()
 int count_vowels(char *str)
 {
     int n_vowels = 0;
-    for(int t = 0; str[t] != '\0'; ++t) {
-        if(toupper(str[t]) == 'A' || toupper(str[t]) == 'E' || toupper(str[t]) == 'I' || toupper(str[t]) == 'O' || toupper(str[t]) == 'U') {
+    for (int t = 0; str[t] != '\0'; ++t)
+    {
+        if (toupper(str[t]) == 'A' || toupper(str[t]) == 'E' || toupper(str[t]) == 'I' || toupper(str[t]) == 'O' || toupper(str[t]) == 'U')
+        {
             ++n_vowels;
         }
     }

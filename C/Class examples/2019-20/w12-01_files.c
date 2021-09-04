@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Code example for Computer Sciences 2019-20                *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -17,9 +13,10 @@
 #define MAX_FRIEND_NUM 100
 #define MAX_STR_LEN 50
 
-struct _FRIEND {
-    char name[MAX_STR_LEN +1];
-    char surname[MAX_STR_LEN +1];
+struct _FRIEND
+{
+    char name[MAX_STR_LEN + 1];
+    char surname[MAX_STR_LEN + 1];
 };
 typedef struct _FRIEND FRIEND;
 
@@ -28,7 +25,8 @@ int main()
     FRIEND maroon[MAX_FRIEND_NUM];
 
     FILE *input = fopen(FILE_NAME, "r");
-    if(input == NULL) {
+    if (input == NULL)
+    {
         fprintf(stderr, "Yeuch. Can't open \"%s\"!\n", FILE_NAME);
         exit(EXIT_FAILURE);
     }
@@ -45,10 +43,10 @@ int main()
     /*** take 2 ***/
     int num_friends = 0;
 
-    while(fscanf(input, "%s %s", maroon[num_friends].name, maroon[num_friends].surname) != EOF) {
+    while (fscanf(input, "%s %s", maroon[num_friends].name, maroon[num_friends].surname) != EOF)
+    {
         ++num_friends;
     }
-
 
     /*** take 3
     int num_friends = 0;
@@ -62,8 +60,9 @@ int main()
     fclose(input);
 
     /*** print ***/
-    for(int t = 0; t < num_friends; ++t) {
-        printf("%d) %s %s\n", t+1, maroon[t].name, maroon[t].surname);
+    for (int t = 0; t < num_friends; ++t)
+    {
+        printf("%d) %s %s\n", t + 1, maroon[t].name, maroon[t].surname);
     }
 
     return EXIT_SUCCESS;

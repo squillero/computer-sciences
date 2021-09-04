@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Code example for Computer Sciences 2018-19                *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -22,18 +18,24 @@ int main()
 
     scanf("%c", &c);
 
-    if(c == 'f') {
+    if (c == 'f')
+    {
         scanf("%lg", &fa);
         ce = (fa - 32.0) * 5.0 / 9.0;
-    } else if(c == 'c') {
+    }
+    else if (c == 'c')
+    {
         scanf("%lg", &ce);
         fa = ce * 9.0 / 5.0 + 32.0;
-    } else if(c == '!') {
+    }
+    else if (c == '!')
+    {
         printf("BANG!\n");
-    } else {
+    }
+    else
+    {
         printf("D'ho!\n");
     }
-
 
     return 0;
 }

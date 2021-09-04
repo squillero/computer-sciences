@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Class examples for Computer Sciences 2014-15              *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://www.cad.polito.it/staff/squillero/dida/       *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -28,7 +24,8 @@ int main()
 
     PrintArray(array);
     scanf("%d", &v);
-    if( SeekValue(array, v) != -1 ) {
+    if (SeekValue(array, v) != -1)
+    {
         printf("Whoa!\n");
     }
 
@@ -39,8 +36,10 @@ int SeekValue(int v[], int val)
 {
     int t;
 
-    for(t=0; t<DIM; ++t) {
-        if(v[t] == val) {
+    for (t = 0; t < DIM; ++t)
+    {
+        if (v[t] == val)
+        {
             return t;
         }
     }
@@ -50,7 +49,8 @@ int SeekValue(int v[], int val)
 void PrintArray(int v[])
 {
     int t;
-    for(t=0; t<DIM; ++t) {
+    for (t = 0; t < DIM; ++t)
+    {
         printf(" %d", v[t]);
     }
     printf("\n");
@@ -61,7 +61,8 @@ void Init(int v[])
 {
     int t;
     printf("Initiliazing array @%p\n", v);
-    for(t=0; t<DIM; ++t) {
+    for (t = 0; t < DIM; ++t)
+    {
         v[t] = 0;
     }
 }

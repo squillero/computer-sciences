@@ -1,22 +1,25 @@
-/********************************************************************-*-c-*-*\
-*               *  Class examples for Computer Sciences 2014-15              *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://www.cad.polito.it/staff/squillero/dida/       *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
-enum { FIRST_QUADRANT, SECOND_QUADRANT, THIRD_QUADRANT, FOURTH_QUADRANT };
+enum
+{
+    FIRST_QUADRANT,
+    SECOND_QUADRANT,
+    THIRD_QUADRANT,
+    FOURTH_QUADRANT
+};
 
-typedef struct _point_t {
+typedef struct _point_t
+{
     double x;
     double y;
 } point_t;
@@ -37,7 +40,7 @@ int main()
 double DistanceFromOrigin(point_t p)
 {
     double dist;
-    dist = sqrt( p.x*p.x + p.y*p.y );
+    dist = sqrt(p.x * p.x + p.y * p.y);
     return dist;
 }
 
@@ -52,16 +55,22 @@ double Distance(point_t p1, point_t p2)
 
 int Quadrant(point_t p)
 {
-    if(p.x >= 0.0 && p.y >= 0.0) {
+    if (p.x >= 0.0 && p.y >= 0.0)
+    {
         return FIRST_QUADRANT;
-    } else if(p.x < 0.0 && p.y >= 0.0) {
+    }
+    else if (p.x < 0.0 && p.y >= 0.0)
+    {
         return SECOND_QUADRANT;
-    } else if(p.x < 0.0 && p.y < 0.0) {
+    }
+    else if (p.x < 0.0 && p.y < 0.0)
+    {
         return THIRD_QUADRANT;
-    } else {
+    }
+    else
+    {
         return FOURTH_QUADRANT;
     }
-
 }
 
 int Intersect(point_t p1, point_t p2)

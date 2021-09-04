@@ -1,29 +1,24 @@
-/********************************************************************-*-c-*-*\
-*               *  Code examples for Computer Sciences 2016-17               *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
 #define FRIEND_NUM 5
-#define FRIEND_NAME_MAX_LEN 50+1
+#define FRIEND_NAME_MAX_LEN 50 + 1
 
 char OldFriend[FRIEND_NUM][FRIEND_NAME_MAX_LEN] = {
-    { 'A', 'l', 'i', 'c', 'e', '\0' },
-    { 'B', 'o', 'b', '\0' },
-    { 'C', 'a', 'r', 'l', '\0' },
-    { 'D', 'e', 'n', 'i', 's', 'e', '\0' },
-    { 'E', 'a', 'r', 'l', '\0' }
-};
+    {'A', 'l', 'i', 'c', 'e', '\0'},
+    {'B', 'o', 'b', '\0'},
+    {'C', 'a', 'r', 'l', '\0'},
+    {'D', 'e', 'n', 'i', 's', 'e', '\0'},
+    {'E', 'a', 'r', 'l', '\0'}};
 
 char *OldFriend_Alt[] = {
     "Alice",
@@ -32,12 +27,12 @@ char *OldFriend_Alt[] = {
     "Earl",
     "Francis",
     "George",
-    ""
-};
+    ""};
 
 int main(int argc, char *argv[])
 {
-    if(argc != 2) {
+    if (argc != 2)
+    {
         printf("Yeuch. A name is required\n");
         exit(EXIT_FAILURE);
     }
@@ -58,14 +53,19 @@ int main(int argc, char *argv[])
     **/
 
     int found = 0;
-    for(int t = 0; strlen(OldFriend_Alt[t]) > 0; ++t) {
-        if(stricmp(OldFriend_Alt[t], argv[1]) == 0) {
+    for (int t = 0; strlen(OldFriend_Alt[t]) > 0; ++t)
+    {
+        if (stricmp(OldFriend_Alt[t], argv[1]) == 0)
+        {
             found = 1;
         }
     }
-    if(found) {
+    if (found)
+    {
         printf("I already knew %s\n", argv[1]);
-    } else {
+    }
+    else
+    {
         printf("Who's %s?\n", argv[1]);
     }
     return 0;

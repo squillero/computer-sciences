@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Code examples for Computer Sciences 2017-18               *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -22,11 +18,13 @@ int main()
 
     sum = 0.0;
     cnt = 0;
-    while(cnt < REQ_VALUES) {
+    while (cnt < REQ_VALUES)
+    {
         int num;
         printf("Input val %02d: ", cnt + 1);
         scanf("%d", &num);
-        if(num >= 0 && num <= 10) {
+        if (num >= 0 && num <= 10)
+        {
             sum = sum + (double)num;
             cnt = cnt + 1;
         }

@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Code examples for Computer Sciences 2017-18               *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -25,20 +21,27 @@ int main()
 
     int num_words = 0;
     state = 1;
-    if(isalnum(line[0])) {
+    if (isalnum(line[0]))
+    {
         ++num_words;
     }
-    for(int t = 0; line[t] != '\0'; ++t) {
-        if(state == 0) {
+    for (int t = 0; line[t] != '\0'; ++t)
+    {
+        if (state == 0)
+        {
             // between words
-            if(!isspace(line[t])) {
-               state = 1;
-               ++num_words;
+            if (!isspace(line[t]))
+            {
+                state = 1;
+                ++num_words;
             }
-        } else if(state == 1) {
+        }
+        else if (state == 1)
+        {
             // inside a word
-            if(!isalnum(line[t])) {
-               state = 0;
+            if (!isalnum(line[t]))
+            {
+                state = 0;
             }
         }
     }

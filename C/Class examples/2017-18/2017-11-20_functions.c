@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Code examples for Computer Sciences 2017-18               *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -16,7 +12,8 @@
 int lunch_time(int parameter)
 {
     int t;
-    for(t = 0; t < 10; ++t) {
+    for (t = 0; t < 10; ++t)
+    {
         printf("lunch time!!!!\n");
     }
     return t * parameter;
@@ -29,4 +26,3 @@ int main()
     printf("%d\n", z);
     return 0;
 }
-

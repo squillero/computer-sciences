@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Code example for Computer Sciences 2018-19                *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -23,13 +19,15 @@ void remove_first_char(char *s);
 
 int main(int argc, char *argv[])
 {
-    if(argc != 4) {
+    if (argc != 4)
+    {
         fprintf(stderr, "ERROR: Exactly 4 args required.\n");
         exit(EXIT_FAILURE);
     }
     FILE *input = fopen(argv[1], "r");
     FILE *output = fopen(OUTPUT_FILENAME, "w");
-    if(input == NULL || output == NULL) {
+    if (input == NULL || output == NULL)
+    {
         fprintf(stderr, "ERROR: Can't open files.\n");
         exit(EXIT_FAILURE);
     }
@@ -38,20 +36,23 @@ int main(int argc, char *argv[])
 
     char number[32];
     int rtp_num = 0;
-    while(fscanf(input, "%s", number) != EOF) {
-        if(atoi(number) >= limit_min && atoi(number) <= limit_max
-           && ltp(number)) {
+    while (fscanf(input, "%s", number) != EOF)
+    {
+        if (atoi(number) >= limit_min && atoi(number) <= limit_max && ltp(number))
+        {
             fprintf(output, "%s\n", number);
             ++rtp_num;
         }
     }
-    if(rtp_num > 0) {
+    if (rtp_num > 0)
+    {
         printf("The file contains %d left-truncatable prime numbers between %d and %d\n",
                rtp_num, limit_min, limit_max);
-    } else {
+    }
+    else
+    {
         printf("No Number Found\n");
     }
-
 
     fclose(input);
     fclose(output);
@@ -61,9 +62,11 @@ int main(int argc, char *argv[])
 int ltp(char *num)
 {
     int check = 1;
-    while(check && strcmp(num, "") != 0) {
+    while (check && strcmp(num, "") != 0)
+    {
         fprintf(stderr, "Checking %s\n", num);
-        if(!prime(atoi(num))) {
+        if (!prime(atoi(num)))
+        {
             check = 0;
         }
         remove_first_char(num);
@@ -74,20 +77,24 @@ int ltp(char *num)
 void remove_first_char(char *s)
 {
     int t;
-    for(t = 1; s[t] != '\0'; ++t) {
-        s[t-1] = s[t];
+    for (t = 1; s[t] != '\0'; ++t)
+    {
+        s[t - 1] = s[t];
     }
-    s[t-1] = '\0';
+    s[t - 1] = '\0';
 }
 
 int prime(int num)
 {
     int p = 1;
-    if(num < 2) {
+    if (num < 2)
+    {
         p = 0;
     }
-    for(int t = 2; p && t < num / 2; ++t) {
-        if(num % t == 0) {
+    for (int t = 2; p && t < num / 2; ++t)
+    {
+        if (num % t == 0)
+        {
             p = 0;
         }
     }

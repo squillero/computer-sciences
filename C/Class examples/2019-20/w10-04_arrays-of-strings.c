@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Code example for Computer Sciences 2019-20                *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -19,18 +15,20 @@
 
 int main()
 {
-    char friend[MAX_FRIEND_NAME +1];
-    char paranoid_facebook[MAX_FRIENDS_NUM][MAX_FRIEND_NAME +1];
+    char friend[MAX_FRIEND_NAME + 1];
+    char paranoid_facebook[MAX_FRIENDS_NUM][MAX_FRIEND_NAME + 1];
 
     int num_frineds;
     printf("How many friends: ");
     scanf("%d", &num_frineds);
-    for(int t = 0; t < num_frineds; ++t) {
+    for (int t = 0; t < num_frineds; ++t)
+    {
         scanf("%s", paranoid_facebook[t]);
     }
 
-    for(int t = 0; t < num_frineds; ++t) {
-        printf("%2d) %s\n", t+1, paranoid_facebook[t]);
+    for (int t = 0; t < num_frineds; ++t)
+    {
+        printf("%2d) %s\n", t + 1, paranoid_facebook[t]);
     }
 
     // sort
@@ -47,29 +45,31 @@ int main()
     ***/
 
     char foo[496];
-    foo <--> &foo[0]
-    foo is "char *"
+    foo<--> &foo[0] foo is "char *"
 
-    char *p;
+        char *p;
     ++p;
 
-
-    for(int sort=0; sort<num_frineds; ++sort) {
+    for (int sort = 0; sort < num_frineds; ++sort)
+    {
 
         int first_inndex = sort;
-        for(int t = sort; t < num_frineds; ++t) {
-            if(strcmp(paranoid_facebook[first_inndex], paranoid_facebook[t]) > 0) {
+        for (int t = sort; t < num_frineds; ++t)
+        {
+            if (strcmp(paranoid_facebook[first_inndex], paranoid_facebook[t]) > 0)
+            {
                 first_inndex = t;
             }
         }
-        char tmp[MAX_FRIEND_NAME +1];
+        char tmp[MAX_FRIEND_NAME + 1];
         strcpy(tmp, paranoid_facebook[sort]);
         strcpy(paranoid_facebook[sort], paranoid_facebook[first_inndex]);
         strcpy(paranoid_facebook[first_inndex], tmp);
     }
 
-    for(int t = 0; t < num_frineds; ++t) {
-        printf("%d) %s\n", t+1, paranoid_facebook[t]);
+    for (int t = 0; t < num_frineds; ++t)
+    {
+        printf("%d) %s\n", t + 1, paranoid_facebook[t]);
     }
 
     return 0;

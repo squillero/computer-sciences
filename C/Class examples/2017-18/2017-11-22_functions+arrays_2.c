@@ -1,19 +1,15 @@
-/********************************************************************-*-c-*-*\
-*               *  Code examples for Computer Sciences 2017-18               *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
 
-#define ARRAY_SIZE  10
+#define ARRAY_SIZE 10
 
 // protos
 int len(int *a);
@@ -35,9 +31,12 @@ int main()
     print_array(array);
 
     pos = find_sub_squence(array, sub);
-    if(pos == -1) {
+    if (pos == -1)
+    {
         printf("Yeuch, can't find sub seq...\n");
-    } else {
+    }
+    else
+    {
         printf("Whoa! Found sub seq at position %d!!!!\n", pos);
     }
 
@@ -47,7 +46,8 @@ int main()
 void print_array(int a[])
 {
     int t;
-    for(t = 0; t < ARRAY_SIZE; ++t) {
+    for (t = 0; t < ARRAY_SIZE; ++t)
+    {
         printf("%d ", a[t]);
     }
     printf("\n");
@@ -62,14 +62,18 @@ int find_sub_squence(int array[], int *sub)
     int found;
 
     found = -1;
-    for(j = 0; found == -1 && j < ARRAY_SIZE - len(sub); ++j) {
+    for (j = 0; found == -1 && j < ARRAY_SIZE - len(sub); ++j)
+    {
         different = 0;
-        for(i = 0; sub[i] != -1; ++i) {
-            if(array[i + j] != sub[i]) {
+        for (i = 0; sub[i] != -1; ++i)
+        {
+            if (array[i + j] != sub[i])
+            {
                 different = 1;
             }
         }
-        if(different == 0) {
+        if (different == 0)
+        {
             found = j;
         }
     }
@@ -79,9 +83,9 @@ int find_sub_squence(int array[], int *sub)
 int len(int *a)
 {
     int t = 0;
-    while(a[t] != -1) {
+    while (a[t] != -1)
+    {
         ++t;
     }
     return t;
 }
-

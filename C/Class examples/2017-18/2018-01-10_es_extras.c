@@ -1,30 +1,29 @@
-/********************************************************************-*-c-*-*\
-*               *  Code examples for Computer Sciences 2017-18               *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
 
 // Define STRUCT & declare VARIABLE
-struct FOO {
+struct FOO
+{
     int a, b, c;
 } foo;
 
 // Define UNNAMED STRUCT & declare VARIABLE
-struct {
+struct
+{
     int x, y;
 } bar;
 
 // Define STRUCT and TYPEDEF a new type
-typedef struct _POINT {
+typedef struct _POINT
+{
     double x, y;
 } POINT;
 
@@ -40,9 +39,9 @@ int main()
 void func(void)
 {
     // interesting stuff
-    struct {
+    struct
+    {
         int zap, zop;
     } tmp;
     // use tmp
-
 }

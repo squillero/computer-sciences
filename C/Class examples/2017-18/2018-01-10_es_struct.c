@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Code examples for Computer Sciences 2017-18               *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -16,7 +12,8 @@
 
 #define NUM_POINTS 10
 
-typedef struct _POINT {
+typedef struct _POINT
+{
     double x, y;
     int foo, bar, baz; // new fields
 } POINT;
@@ -39,22 +36,26 @@ int main()
     int array_dim;
     int array2_dim;
 
-    for(t = 0; t < NUM_POINTS; ++t) {
-        point[t].x = (rand()%2000 - 1000) / 100.0;
-        point[t].y = (rand()%2000 - 1000) / 100.0;
+    for (t = 0; t < NUM_POINTS; ++t)
+    {
+        point[t].x = (rand() % 2000 - 1000) / 100.0;
+        point[t].y = (rand() % 2000 - 1000) / 100.0;
     }
 
-    for(t = 0; t < NUM_POINTS; ++t) {
+    for (t = 0; t < NUM_POINTS; ++t)
+    {
         printf("P%d = (%g, %g)\n", t, point[t].x, point[t].y);
     }
 
     array_dim = NUM_POINTS;
     array2_dim = 0;
-    for(t = 0; t < NUM_POINTS; ++t) {
+    for (t = 0; t < NUM_POINTS; ++t)
+    {
         // scan array
         min = 0; // whoa!
-        for(u = 0; u < array_dim; ++u) {
-            if(dist(point[u]) > dist(point[min]))
+        for (u = 0; u < array_dim; ++u)
+        {
+            if (dist(point[u]) > dist(point[min]))
                 min = u;
         }
         /**
@@ -77,7 +78,8 @@ int main()
     **/
 
     printf("\nFIRST ARRAY AFTER SORTING\n");
-    for(t = 0; t < NUM_POINTS; ++t) {
+    for (t = 0; t < NUM_POINTS; ++t)
+    {
         printf("P%d = (%g, %g) [dist=%g]\n", t, point[t].x, point[t].y, dist(point[t]));
     }
 

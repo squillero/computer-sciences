@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Code examples for Computer Sciences 2017-18               *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -29,7 +25,6 @@ int main()
     sprintf(str, "%x", foo);
     printf("(Unsigned) Hexadecimal: %s\n", str);
 
-
     float bar;
 
     strcpy(str, "4.2");
@@ -39,15 +34,12 @@ int main()
     sscanf("4.1200000000", "%f", &bar);
     printf("bar: %g\n", bar);
 
-
     char time[] = "23:58:12";
     int h, m, s;
     int magic = sscanf(time, "%2d:%2d:%2d", &h, &m, &s);
     // magic is the number of correctly assigned variables
     printf("Magic is %d\n", magic);
     printf("%02d#%02d#%02d", h, m, s);
-
-
 
     return 0;
 }

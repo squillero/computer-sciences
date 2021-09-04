@@ -1,12 +1,10 @@
-/*--------------*-----------------------------------------------------------*\
-*|   ######     | CLASS SAMPLE FOR "COMPUTER SCIENCES" (04JCJ**)             *
-*|  #######     | (!) Giovanni Squillero <squillero@polito.it>               *
-*|  ####   \    |------------------------------------------------------------*
-*|   ##G   c\   | Copying and distributing this file for classroom use,      *
-*|   ##     _\  | either with or without modification, are permitted without *
-*|   |    _/    | royalties provided that this 9-line comment is preserved.  *
-*|   |   _/     | ===> THIS FILE IS OFFERED AS-IS, WITHOUT ANY WARRANTY <=== *
-\*--------------*-----------------------------------------------------------*/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -19,17 +17,19 @@
 #define LEN_DESCRIPTION 100
 #define MAX_DESCRIPTIONS 50
 
-typedef struct _SOFTWARE {
-    char swcode[LEN_SWCODE +1];
-    char description[LEN_DESCRIPTION +1];
-    char first_device[LEN_HWCODE +1];
+typedef struct _SOFTWARE
+{
+    char swcode[LEN_SWCODE + 1];
+    char description[LEN_DESCRIPTION + 1];
+    char first_device[LEN_HWCODE + 1];
     int count;
 } SOFTWARE;
 
-typedef struct _DEVICE {
-    char hwcode[LEN_HWCODE +1];
-    char keyword[3][LEN_KEYWORD +1];
-    char swcode[LEN_SWCODE +1];
+typedef struct _DEVICE
+{
+    char hwcode[LEN_HWCODE + 1];
+    char keyword[3][LEN_KEYWORD + 1];
+    char swcode[LEN_SWCODE + 1];
 } DEVICE;
 
 // protos
@@ -37,26 +37,29 @@ int find_software(SOFTWARE *sw, char *code);
 
 int main(int argc, char *argv[])
 {
-    SOFTWARE software[MAX_DESCRIPTIONS +1];
+    SOFTWARE software[MAX_DESCRIPTIONS + 1];
     int num_softwares = 0;
 
     // boilerplate code
-    if(argc != 4) {
+    if (argc != 4)
+    {
         fprintf(stderr, "Three arguments required!\n");
         exit(EXIT_FAILURE);
     }
 
     // read & store the SECOND file
     FILE *softwares_in = fopen(argv[3], "r");
-    if(softwares_in == NULL) {
+    if (softwares_in == NULL)
+    {
         fprintf(stderr, "Can't read file \"%s\".\n", argv[3]);
         exit(EXIT_FAILURE);
     }
     char tmp[LEN_MAXLINE];
-    while(fgets(tmp, LEN_MAXLINE, softwares_in) != NULL) {
+    while (fgets(tmp, LEN_MAXLINE, softwares_in) != NULL)
+    {
         sscanf(tmp, "%s", software[num_softwares].swcode);
         fgets(tmp, LEN_MAXLINE, softwares_in);
-        tmp[strlen(tmp) -1] = '\0';
+        tmp[strlen(tmp) - 1] = '\0';
         strcpy(software[num_softwares].description, tmp);
         software[num_softwares].count = 0;
         strcpy(software[num_softwares].first_device, "");
@@ -72,20 +75,24 @@ int main(int argc, char *argv[])
 
     // let's roll: open the first file
     FILE *catalog_in = fopen(argv[1], "r");
-    if(catalog_in == NULL) {
+    if (catalog_in == NULL)
+    {
         fprintf(stderr, "Can't read file \"%s\".\n", argv[1]);
         exit(EXIT_FAILURE);
     }
     DEVICE dev;
-    while(fscanf(catalog_in, "%s %s %s %s %s", dev.hwcode,
-            dev.keyword[0], dev.keyword[1], dev.keyword[2], dev.swcode) != EOF) {
+    while (fscanf(catalog_in, "%s %s %s %s %s", dev.hwcode,
+                  dev.keyword[0], dev.keyword[1], dev.keyword[2], dev.swcode) != EOF)
+    {
         int sw = find_software(software, dev.swcode);
         software[sw].count += 1;
-        if(software[sw].count == 1 || strcmp(software[sw].first_device, dev.hwcode) > 0) {
+        if (software[sw].count == 1 || strcmp(software[sw].first_device, dev.hwcode) > 0)
+        {
             strcpy(software[sw].first_device, dev.hwcode);
         }
 
-        if(strcmp(dev.keyword[0], argv[2]) == 0 || strcmp(dev.keyword[1], argv[2]) == 0 || strcmp(dev.keyword[2], argv[2]) == 0 ) {
+        if (strcmp(dev.keyword[0], argv[2]) == 0 || strcmp(dev.keyword[1], argv[2]) == 0 || strcmp(dev.keyword[2], argv[2]) == 0)
+        {
             printf("%s %s %s\n", dev.hwcode, dev.swcode, software[sw].description);
         }
     }
@@ -93,11 +100,15 @@ int main(int argc, char *argv[])
 
     // final statistics
     printf("\nStatistics\n");
-    for(int t = 0; t < num_softwares; ++t) {
+    for (int t = 0; t < num_softwares; ++t)
+    {
         printf("%s ", software[t].swcode);
-        if(software[t].count > 0) {
+        if (software[t].count > 0)
+        {
             printf("used by %d devices, first device: %s\n", software[t].count, software[t].first_device);
-        } else {
+        }
+        else
+        {
             printf("not used by any device\n");
         }
     }
@@ -109,7 +120,8 @@ int main(int argc, char *argv[])
 int find_software(SOFTWARE *sw, char *code)
 {
     int t = 0;
-    while(strcmp(sw[t].swcode, "") != 0 && strcmp(sw[t].swcode, code) != 0) {
+    while (strcmp(sw[t].swcode, "") != 0 && strcmp(sw[t].swcode, code) != 0)
+    {
         t += 1;
     }
     return t;

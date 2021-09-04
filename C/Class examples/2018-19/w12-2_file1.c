@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Code example for Computer Sciences 2018-19                *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -22,12 +18,14 @@ int main()
     // token by token
     printf("Read token by token\n");
     FILE *fin = fopen("x.dat", "r");
-    if(fin == NULL) {
+    if (fin == NULL)
+    {
         fprintf(stderr, "Oh dear, we had a problem...\n");
         exit(EXIT_FAILURE);
     }
     int t;
-    while(fscanf(fin, "%d", &t) != EOF) { // READ N' CHECK
+    while (fscanf(fin, "%d", &t) != EOF)
+    { // READ N' CHECK
         printf("Got %d!\n", t);
     }
     fclose(fin);
@@ -35,20 +33,23 @@ int main()
     // line by line
     printf("Read line by line\n");
     fin = fopen("x.dat", "r");
-    if(fin == NULL) {
+    if (fin == NULL)
+    {
         fprintf(stderr, "Oh dear, we had a problem...\n");
         exit(EXIT_FAILURE);
     }
     char line[MAX_LINE];
-    while(fgets(line, MAX_LINE, fin) != NULL) {
-        line[strlen(line)-1] = '\0'; // chomp!
+    while (fgets(line, MAX_LINE, fin) != NULL)
+    {
+        line[strlen(line) - 1] = '\0'; // chomp!
         printf("Got \"%s\"\n", line);
     }
     fclose(fin);
 
     // and now output
     FILE *fout = fopen("y.dat", "w");
-    if(fout == NULL) {
+    if (fout == NULL)
+    {
         fprintf(stderr, "Oh dear, we had a problem...\n");
         exit(EXIT_FAILURE);
     }
@@ -58,7 +59,8 @@ int main()
 
     // finally, appending
     fout = fopen("y.dat", "a");
-    if(fout == NULL) {
+    if (fout == NULL)
+    {
         fprintf(stderr, "Oh dear, we had a problem...\n");
         exit(EXIT_FAILURE);
     }

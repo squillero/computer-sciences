@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Class examples for Computer Sciences 2014-15              *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://www.cad.polito.it/staff/squillero/dida/       *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -30,14 +26,19 @@ int main()
     int flag = 0;
     int t;
     int len = length(w1);
-    for(t=0; w1[t]!='\0'; ++t) {
-        if(w1[t] != w1[len-t-1]) {
-            flag=1;
+    for (t = 0; w1[t] != '\0'; ++t)
+    {
+        if (w1[t] != w1[len - t - 1])
+        {
+            flag = 1;
         }
     }
-    if(flag==0) {
+    if (flag == 0)
+    {
         printf("BOB!\n");
-    } else {
+    }
+    else
+    {
         printf("no\n");
     }
 
@@ -46,8 +47,9 @@ int main()
 
 int length(char w[])
 {
-    int t=0;
-    while(w[t]!='\0') {
+    int t = 0;
+    while (w[t] != '\0')
+    {
         ++t;
     }
     return t;

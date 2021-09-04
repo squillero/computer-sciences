@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Code example for Computer Sciences 2018-19                *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -17,7 +13,8 @@
 #define DIMY 10
 #define FILE_NAME "map.gx"
 
-struct _POINT {
+struct _POINT
+{
     int x, y;
 };
 typedef struct _POINT POINT;
@@ -28,8 +25,7 @@ void print_map(void);
 POINT find_first(char type);
 int add_one_star();
 
-char Map[DIMY][DIMX +1+1];
-
+char Map[DIMY][DIMX + 1 + 1];
 
 int main()
 {
@@ -42,7 +38,8 @@ int main()
     Map[p.y][p.x] = '*';
     print_map();
 
-    while(add_one_star()) {
+    while (add_one_star())
+    {
         printf("\n\n");
         print_map();
     }
@@ -50,9 +47,12 @@ int main()
     print_map();
 
     p = find_first('#');
-    if(p.x == -1 && p.y == -1) {
+    if (p.x == -1 && p.y == -1)
+    {
         printf("Whoa! All land connected!!!!!!!\n");
-    } else {
+    }
+    else
+    {
         printf("2+ islands...\n");
     }
 
@@ -62,20 +62,24 @@ int main()
 void read_map(char *filename)
 {
     FILE *in = fopen(filename, "r");
-    if(in == NULL) {
+    if (in == NULL)
+    {
         fprintf(stderr, "Can't open \"%s\"\n", filename);
         exit(EXIT_FAILURE);
     }
-    for(int t = 0; t < DIMY; ++t) {
-        fgets(Map[t], DIMX +1+1, in);
+    for (int t = 0; t < DIMY; ++t)
+    {
+        fgets(Map[t], DIMX + 1 + 1, in);
     }
     fclose(in);
 }
 
 void print_map(void)
 {
-    for(int y = 0; y < DIMY; ++y) {
-        for(int x = 0; x < DIMX; ++x) {
+    for (int y = 0; y < DIMY; ++y)
+    {
+        for (int x = 0; x < DIMX; ++x)
+        {
             printf("%c", Map[y][x]);
         }
         printf("\n");
@@ -85,9 +89,12 @@ void print_map(void)
 POINT find_first(char type)
 {
     POINT p;
-    for(p.x = 0; p.x < DIMX; ++p.x) {
-        for(p.y = 0; p.y < DIMY; ++p.y) {
-            if(Map[p.y][p.x] == type) {
+    for (p.x = 0; p.x < DIMX; ++p.x)
+    {
+        for (p.y = 0; p.y < DIMY; ++p.y)
+        {
+            if (Map[p.y][p.x] == type)
+            {
                 return p;
             }
         }
@@ -99,23 +106,30 @@ POINT find_first(char type)
 int add_one_star()
 {
     int found = 0;
-    for(int y = 0; !found && y < DIMY; ++y) {
-        for(int x = 0; !found && x < DIMX; ++x) {
-            if(Map[y][x] == '*') {
-                if(y > 0 && Map[y-1][x] == '#') {
-                    Map[y-1][x] = '*';
+    for (int y = 0; !found && y < DIMY; ++y)
+    {
+        for (int x = 0; !found && x < DIMX; ++x)
+        {
+            if (Map[y][x] == '*')
+            {
+                if (y > 0 && Map[y - 1][x] == '#')
+                {
+                    Map[y - 1][x] = '*';
                     found = 1;
                 }
-                if(y < DIMY-1 && Map[y+1][x] == '#') {
-                    Map[y+1][x] = '*';
+                if (y < DIMY - 1 && Map[y + 1][x] == '#')
+                {
+                    Map[y + 1][x] = '*';
                     found = 1;
                 }
-                if(x > 0 && Map[y][x-1] == '#') {
-                    Map[y][x-1] = '*';
+                if (x > 0 && Map[y][x - 1] == '#')
+                {
+                    Map[y][x - 1] = '*';
                     found = 1;
                 }
-                if(x < DIMX-1 && Map[y][x+1] == '#') {
-                    Map[y][x+1] = '*';
+                if (x < DIMX - 1 && Map[y][x + 1] == '#')
+                {
+                    Map[y][x + 1] = '*';
                     found = 1;
                 }
             }

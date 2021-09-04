@@ -1,40 +1,41 @@
-/********************************************************************-*-c-*-*\
-*               *  Code examples for Computer Sciences 2017-18               *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
 
-#define ARRAY_SIZE  10
+#define ARRAY_SIZE 10
 
 int main()
 {
     int array[ARRAY_SIZE];
 
-    for(int t = 0; t < ARRAY_SIZE; ++t) {
+    for (int t = 0; t < ARRAY_SIZE; ++t)
+    {
         array[t] = rand() % 100;
     }
     printf("Original array:");
-    for(int t = 0; t < ARRAY_SIZE; ++t) {
+    for (int t = 0; t < ARRAY_SIZE; ++t)
+    {
         printf(" %d", array[t]);
     }
     printf("\n");
 
     int already_sorted = 1;
-    for(int t = 1; t < ARRAY_SIZE; ++t) {
-        if(array[t] < array[t-1]) {
+    for (int t = 1; t < ARRAY_SIZE; ++t)
+    {
+        if (array[t] < array[t - 1])
+        {
             already_sorted = 0;
         }
     }
-    if(already_sorted == 1) {
+    if (already_sorted == 1)
+    {
         printf("Whoa! Sorted!!!\n");
     }
 
@@ -44,11 +45,14 @@ int main()
 
     int array_size = ARRAY_SIZE;
 
-    while(array_size > 0) {
+    while (array_size > 0)
+    {
         // find index of min
         int i_max = 0;
-        for(int t = 1; t < array_size; ++t) {
-            if(array[t] > array[i_max]) {
+        for (int t = 1; t < array_size; ++t)
+        {
+            if (array[t] > array[i_max])
+            {
                 i_max = t;
             }
         }
@@ -60,11 +64,13 @@ int main()
         --array_size;
 
         printf("Original array:");
-        for(int t = 0; t < array_size; ++t) {
+        for (int t = 0; t < array_size; ++t)
+        {
             printf(" %d", array[t]);
         }
         printf(" ||");
-        for(int t = array_size; t < ARRAY_SIZE; ++t) {
+        for (int t = array_size; t < ARRAY_SIZE; ++t)
+        {
             printf(" %d", array[t]);
         }
         printf("\n");
@@ -80,8 +86,6 @@ int main()
         printf("\n");
         **/
     }
-
-
 
     return 0;
 }

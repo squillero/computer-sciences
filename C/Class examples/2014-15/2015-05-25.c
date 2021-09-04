@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Class examples for Computer Sciences 2014-15              *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://www.cad.polito.it/staff/squillero/dida/       *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -23,7 +19,8 @@ int main(int argc, char *argv[])
     char mode[3];
     int fileNameIndex;
 
-    if(argc < 2) {
+    if (argc < 2)
+    {
         fprintf(stderr, "At least one arg required!\n");
         exit(EXIT_FAILURE);
     }
@@ -31,9 +28,11 @@ int main(int argc, char *argv[])
     // defaults
     strcpy(mode, "w");
     fileNameIndex = 1;
-    if(argv[1][0] == '-') {
+    if (argv[1][0] == '-')
+    {
         ++fileNameIndex;
-        switch(argv[1][1]) {
+        switch (argv[1][1])
+        {
         case 'a':
         case 'A':
             // append!
@@ -49,13 +48,15 @@ int main(int argc, char *argv[])
         }
     }
 
-    if(argc == fileNameIndex) {
+    if (argc == fileNameIndex)
+    {
         fprintf(stderr, "The file should be specified!!\n");
         exit(EXIT_FAILURE);
     }
 
     out = fopen(argv[fileNameIndex], mode);
-    if(out == NULL) {
+    if (out == NULL)
+    {
         fprintf(stderr, "Yeuch, can't open the file!\n");
         exit(EXIT_FAILURE);
     }
