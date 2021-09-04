@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Code example for Computer Sciences 2018-19                *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -22,14 +18,20 @@ int main()
 
     // parser!
     int d, m, y;
-    if(sscanf(date, "%d-%d-%d", &d, &m, &y) == 3) {
+    if (sscanf(date, "%d-%d-%d", &d, &m, &y) == 3)
+    {
         // oh yeah, it worked!
-    } else {
-        char month[3 +1];
+    }
+    else
+    {
+        char month[3 + 1];
         sscanf(date, "%d-%3s-%d", &d, month, &y);
-        if(stricmp(month, "jan") == 0) {
+        if (stricmp(month, "jan") == 0)
+        {
             m = 1;
-        } else {
+        }
+        else
+        {
             ;
         }
     }

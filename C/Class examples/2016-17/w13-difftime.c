@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Code examples for Computer Sciences 2016-17               *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -18,7 +14,8 @@
  * prog 12,00 13:23 -> error
  */
 
-struct _TIME {
+struct _TIME
+{
     int h;
     int m;
 };
@@ -30,7 +27,8 @@ int main(int argc, char *argv[])
 {
     printf("DiffTime-o-matic\n");
 
-    if(argc != 3) {
+    if (argc != 3)
+    {
         fprintf(stderr, "Yeuch: two args required\n");
         exit(EXIT_FAILURE);
     }
@@ -52,7 +50,8 @@ TIME parsetime(char *s)
     TIME t;
     int result;
     result = sscanf(s, "%2d:%2d", &t.h, &t.m);
-    if(result != 2 || t.h < 0 || t.h > 24 || t.m < 0 || t.m > 60) {
+    if (result != 2 || t.h < 0 || t.h > 24 || t.m < 0 || t.m > 60)
+    {
         fprintf(stderr, "Yeuch: \"%s\" is not a valid time.\n", s);
         exit(EXIT_FAILURE);
     }

@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Code examples for Computer Sciences 2017-18               *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -26,25 +22,37 @@ int main()
     scanf("%d", &c);
     printf("%d x**2 + %d x + %d = 0\n", a, b, c);
 
-    if(a == 0) {
-        a = b;  // I'm LAZY
+    if (a == 0)
+    {
+        a = b; // I'm LAZY
         b = c;
-        if(a == 0) {
-            if(b == 0) {
+        if (a == 0)
+        {
+            if (b == 0)
+            {
                 printf("Truism\n");
-            } else {
+            }
+            else
+            {
                 printf("No solutions, pal!\n");
             }
-        } else {
-            float x = -(float)b / (float)a;     // requires >= C99
+        }
+        else
+        {
+            float x = -(float)b / (float)a; // requires >= C99
             printf("Solution: x = %g\n", x);
         }
-    } else {
+    }
+    else
+    {
         int delta = b * b - 4 * a * c;
 
-        if(delta < 0) {
+        if (delta < 0)
+        {
             printf("No real roots.\n");
-        } else {
+        }
+        else
+        {
             double x1 = (-b + sqrt(delta)) / (2 * a);
             double x2 = (-b - sqrt(delta)) / (2 * a);
 
@@ -52,7 +60,6 @@ int main()
             printf("x2 = %g\n", x2);
         }
     }
-
 
     return 0;
 }

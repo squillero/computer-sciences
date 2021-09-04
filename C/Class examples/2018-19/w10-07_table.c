@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Code example for Computer Sciences 2018-19                *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -30,14 +26,16 @@ int main()
 
     sum_rows(tmp_array); // or sum_rows(&tmp_array[0]);
     printf("\nRows:");
-    for(int t = 0; t < DIM; ++t) {
+    for (int t = 0; t < DIM; ++t)
+    {
         printf(" %d", tmp_array[t]);
     }
     printf("\n");
 
     sum_cols(tmp_array); // or sum_rows(&tmp_array[0]);
     printf("\nColumns:");
-    for(int t = 0; t < DIM; ++t) {
+    for (int t = 0; t < DIM; ++t)
+    {
         printf(" %d", tmp_array[t]);
     }
     printf("\n");
@@ -47,17 +45,21 @@ int main()
 
 void fill(void)
 {
-    for(int t = 0; t < DIM; ++t) {
-        for(int u = 0; u < DIM; ++u) {
-            Table[t][u] = (t+1)*(u+1);
+    for (int t = 0; t < DIM; ++t)
+    {
+        for (int u = 0; u < DIM; ++u)
+        {
+            Table[t][u] = (t + 1) * (u + 1);
         }
     }
 }
 
 void print(void)
 {
-    for(int t = 0; t < DIM; ++t) {
-        for(int u = 0; u < DIM; ++u) {
+    for (int t = 0; t < DIM; ++t)
+    {
+        for (int u = 0; u < DIM; ++u)
+        {
             printf("%4d", Table[t][u]);
         }
         printf("\n");
@@ -66,12 +68,15 @@ void print(void)
 
 void sum_rows(int *its_fine)
 {
-    for(int t = 0; t < DIM; ++t) {
+    for (int t = 0; t < DIM; ++t)
+    {
         its_fine[t] = 0;
     }
 
-    for(int t = 0; t < DIM; ++t) {
-        for(int u = 0; u < DIM; ++u) {
+    for (int t = 0; t < DIM; ++t)
+    {
+        for (int u = 0; u < DIM; ++u)
+        {
             its_fine[t] += Table[t][u];
         }
     }
@@ -79,12 +84,15 @@ void sum_rows(int *its_fine)
 
 void sum_cols(int *its_fine)
 {
-    for(int t = 0; t < DIM; ++t) {
+    for (int t = 0; t < DIM; ++t)
+    {
         its_fine[t] = 0;
     }
 
-    for(int t = 0; t < DIM; ++t) {
-        for(int u = 0; u < DIM; ++u) {
+    for (int t = 0; t < DIM; ++t)
+    {
+        for (int u = 0; u < DIM; ++u)
+        {
             its_fine[u] += Table[t][u];
         }
     }

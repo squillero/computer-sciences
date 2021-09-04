@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Code examples for Computer Sciences 2017-18               *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <string.h>
@@ -27,19 +23,24 @@ int main()
 
     // strcmp -> case sensitive
     // stricmp -> case insensitive
-    if(stricmp(str1, str2) == 0) {
+    if (stricmp(str1, str2) == 0)
+    {
         printf("%s == %s !!!\n", str1, str2);
-    } else if(stricmp(str1, str2) > 0) {
+    }
+    else if (stricmp(str1, str2) > 0)
+    {
         printf("%s > %s !!!\n", str1, str2);
-    } else {
+    }
+    else
+    {
         printf("%s < %s !!!\n", str1, str2);
     }
 
     char txt[MAX_STR_LEN];
     // txt = str1 + " " + str2
-    strcpy(txt, str1);  // ie. txt = str1
-    strcat(txt, " ");   // ie. txt += " "
-    strcat(txt, str2);  // ie. txt += str2
+    strcpy(txt, str1); // ie. txt = str1
+    strcat(txt, " ");  // ie. txt += " "
+    strcat(txt, str2); // ie. txt += str2
     printf(">>>%s<<<\n", txt);
 
     // "delete" a string
@@ -55,9 +56,12 @@ int main()
     printf(">>>%s<<<\n", str2);
 
     // subSTRing
-    if(strstr(txt, "foo") == NULL) {
+    if (strstr(txt, "foo") == NULL)
+    {
         printf("Can't find \"%s\" in \"%s\"\n", "foo", txt);
-    } else {
+    }
+    else
+    {
         printf("Found \"%s\" in \"%s\"\n", "foo", txt);
     }
 

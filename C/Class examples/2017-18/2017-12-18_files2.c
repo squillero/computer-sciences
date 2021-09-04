@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Code examples for Computer Sciences 2017-18               *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -21,12 +17,14 @@ int main()
 {
     // char-based i/o
     FILE *fin1 = fopen(INPUT_FILE, "r");
-    if(fin1 == NULL) {
+    if (fin1 == NULL)
+    {
         fprintf(stderr, "Yeuch: Can't open \"%s\"\n", INPUT_FILE);
         exit(EXIT_FAILURE);
     }
     int c;
-    while((c = fgetc(fin1)) != EOF) {
+    while ((c = fgetc(fin1)) != EOF)
+    {
         printf("%c", c);
     }
     fclose(fin1);
@@ -35,12 +33,14 @@ int main()
 
     // token-based i/o
     FILE *fin2 = fopen(INPUT_FILE, "r");
-    if(fin2 == NULL) {
+    if (fin2 == NULL)
+    {
         fprintf(stderr, "Yeuch: Can't open \"%s\"\n", INPUT_FILE);
         exit(EXIT_FAILURE);
     }
-    char word[WORD_LEN +1];
-    while(fscanf(fin2, "%s", word) != EOF) {
+    char word[WORD_LEN + 1];
+    while (fscanf(fin2, "%s", word) != EOF)
+    {
         printf("[%s] ", word);
     }
     fclose(fin2);
@@ -49,12 +49,14 @@ int main()
 
     // line-based i/o
     FILE *fin3 = fopen(INPUT_FILE, "r");
-    if(fin3 == NULL) {
+    if (fin3 == NULL)
+    {
         fprintf(stderr, "Yeuch: Can't open \"%s\"\n", INPUT_FILE);
         exit(EXIT_FAILURE);
     }
     char line[BUFFER_LEN];
-    while(fgets(line, BUFFER_LEN, fin3) != NULL) {
+    while (fgets(line, BUFFER_LEN, fin3) != NULL)
+    {
         line[strlen(line) - 1] = '\0'; // if needed
         printf("|%s|\n", line);
     }

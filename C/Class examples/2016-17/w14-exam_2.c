@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Code examples for Computer Sciences 2016-17               *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <strings.h>
@@ -18,12 +14,14 @@
 #define MAX_GOODS 4096
 #define MAX_LINE 256
 
-typedef struct _DATE {
+typedef struct _DATE
+{
     int d, m, y;
 } DATE;
 
-typedef struct _GOOD {
-    char name[NAME_LEN +1];
+typedef struct _GOOD
+{
+    char name[NAME_LEN + 1];
     DATE last_op;
     int tot_load;
     double tot_income;
@@ -35,38 +33,44 @@ int get_index(GOOD *goods, char *name);
 
 int main(int argc, char *argv[])
 {
-    GOOD goods[MAX_GOODS] = { 0 };
+    GOOD goods[MAX_GOODS] = {0};
 
-    if(argc != 2) {
+    if (argc != 2)
+    {
         fprintf(stderr, "One argument is required!\n");
         exit(EXIT_FAILURE);
     }
     FILE *input = fopen(argv[1], "r");
-    if(input == NULL) {
+    if (input == NULL)
+    {
         fprintf(stderr, "Can't open file \"%s\"\n", argv[1]);
         exit(EXIT_FAILURE);
     }
 
     char line[MAX_LINE];
-    while(fgets(line, MAX_LINE, input) != NULL) {
-        char name[NAME_LEN +1];
+    while (fgets(line, MAX_LINE, input) != NULL)
+    {
+        char name[NAME_LEN + 1];
         DATE dop;
         int qty;
         sscanf(line, "%s %2d-%2d-%4d %d",
                name, &dop.d, &dop.m, &dop.y, &qty);
 
         int index = get_index(goods, name);
-        if(qty > 0) {
+        if (qty > 0)
+        {
             goods[index].tot_load += qty;
             goods[index].tot_income += 10.0 + 0.01 * qty;
-            if(date_cmp(goods[index].last_op, dop) < 0) {
+            if (date_cmp(goods[index].last_op, dop) < 0)
+            {
                 goods[index].last_op = dop;
             }
         }
     }
     fclose(input);
 
-    for(int t = 0; goods[t].name[0] != '\0'; ++t) {
+    for (int t = 0; goods[t].name[0] != '\0'; ++t)
+    {
         printf("Total quintals of loaded %s: %.2f\n",
                goods[t].name, goods[t].tot_load / 100.0);
         printf("Date of last loading op: %02d-%02d-%04d\n",
@@ -79,11 +83,16 @@ int main(int argc, char *argv[])
 
 int date_cmp(DATE d1, DATE d2)
 {
-    if(d1.y != d2.y) {
+    if (d1.y != d2.y)
+    {
         return d1.y - d2.y;
-    } else if(d1.m != d2.m) {
+    }
+    else if (d1.m != d2.m)
+    {
         return d1.m - d2.m;
-    } else {
+    }
+    else
+    {
         return d1.d - d2.d;
     }
 }
@@ -91,8 +100,10 @@ int date_cmp(DATE d1, DATE d2)
 int get_index(GOOD *goods, char *name)
 {
     int t;
-    for(t = 0; strcmp(goods[t].name, "") != 0; ++t) {
-        if(strcmp(goods[t].name, name) == 0) {
+    for (t = 0; strcmp(goods[t].name, "") != 0; ++t)
+    {
+        if (strcmp(goods[t].name, name) == 0)
+        {
             return t;
         }
     }

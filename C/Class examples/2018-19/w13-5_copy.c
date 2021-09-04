@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Code example for Computer Sciences 2018-19                *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -26,7 +22,8 @@
 
 int main(int argc, char *argv[])
 {
-    if(argc != 3 && argc != 4) {
+    if (argc != 3 && argc != 4)
+    {
         fprintf(stderr, "Wrong number of args!\n");
         exit(EXIT_FAILURE);
     }
@@ -35,26 +32,33 @@ int main(int argc, char *argv[])
     FILE *out;
 
     char operation[256] = "copied";
-    if(strcmp(argv[1], "-a") == 0) {
-    in = fopen(argv[2], "r");
-        if(in == NULL) {
+    if (strcmp(argv[1], "-a") == 0)
+    {
+        in = fopen(argv[2], "r");
+        if (in == NULL)
+        {
             fprintf(stderr, "Can't read from %s\n", argv[2]);
             exit(EXIT_FAILURE);
         }
         out = fopen(argv[3], "a");
-        if(in == NULL) {
+        if (in == NULL)
+        {
             fprintf(stderr, "Can't append to %s\n", argv[3]);
             exit(EXIT_FAILURE);
         }
         strcpy(operation, "appended");
-    } else {
-    in = fopen(argv[1], "r");
-        if(in == NULL) {
+    }
+    else
+    {
+        in = fopen(argv[1], "r");
+        if (in == NULL)
+        {
             fprintf(stderr, "Can't read from %s\n", argv[1]);
             exit(EXIT_FAILURE);
         }
         out = fopen(argv[2], "w");
-        if(in == NULL) {
+        if (in == NULL)
+        {
             fprintf(stderr, "Can't write to %s\n", argv[2]);
             exit(EXIT_FAILURE);
         }
@@ -62,7 +66,8 @@ int main(int argc, char *argv[])
 
     int cnt = 0;
     int c;
-    while((c = fgetc(in)) != EOF) {
+    while ((c = fgetc(in)) != EOF)
+    {
         fputc(c, out);
         ++cnt;
     }

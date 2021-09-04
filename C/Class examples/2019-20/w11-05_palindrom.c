@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Code example for Computer Sciences 2019-20                *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -16,22 +12,19 @@
 
 int main(int argc, char *argv[])
 {
-    if(argc != 2) {
+    if (argc != 2)
+    {
         printf("Yeuch!\n");
         exit(1);
     }
 
-/********************************************************************-*-c-*-*\
-*               *  Code example for Computer Sciences 2019-20                *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+    /*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -40,37 +33,43 @@ int main(int argc, char *argv[])
 
 #define BUFFER_LEN 8192
 
-int main(int argc, char *argv[])
-{
-    char word[BUFFER_LEN];
+    int main(int argc, char *argv[])
+    {
+        char word[BUFFER_LEN];
 
-    if(argc != 2) {
-        printf("Yeuch!\n");
-        exit(1);
-    }
-
-    int d = 0;
-    for(int s = 0; argv[1][s] != '\0'; ++s) {
-        if(isalnum(argv[1][s])) {
-            word[d++] = toupper(argv[1][s]);
+        if (argc != 2)
+        {
+            printf("Yeuch!\n");
+            exit(1);
         }
-    }
-    word[d] = '\0';
 
-    printf("%s\n", word);
-
-    int pal = 1;
-    for(int t = 0; word[t] != '\0'; ++t) {
-        if(word[t] != word[strlen(word)-1-t]) {
-            pal = 0;
+        int d = 0;
+        for (int s = 0; argv[1][s] != '\0'; ++s)
+        {
+            if (isalnum(argv[1][s]))
+            {
+                word[d++] = toupper(argv[1][s]);
+            }
         }
-    }
-    if(pal) {
-        printf("Yeah!\n");
-    }
+        word[d] = '\0';
 
-    return 0;
-}
+        printf("%s\n", word);
+
+        int pal = 1;
+        for (int t = 0; word[t] != '\0'; ++t)
+        {
+            if (word[t] != word[strlen(word) - 1 - t])
+            {
+                pal = 0;
+            }
+        }
+        if (pal)
+        {
+            printf("Yeah!\n");
+        }
+
+        return 0;
+    }
 
     return 0;
 }

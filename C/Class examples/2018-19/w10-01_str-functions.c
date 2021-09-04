@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Code example for Computer Sciences 2018-19                *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -40,11 +36,16 @@ int main()
     strcat(str3, str2);
     printf("str3 is now \"%s\"\n", str3);
 
-    if(stricmp(str1, str2) < 0) {
+    if (stricmp(str1, str2) < 0)
+    {
         printf("\"%s\" < \"%s\"\n", str1, str2);
-    } else if(stricmp(str1, str2) == 0) {
+    }
+    else if (stricmp(str1, str2) == 0)
+    {
         printf("\"%s\" == \"%s\"\n", str1, str2);
-    } else if(stricmp(str1, str2) > 0) {
+    }
+    else if (stricmp(str1, str2) > 0)
+    {
         printf("\"%s\" > \"%s\"\n", str1, str2);
     }
 
@@ -58,13 +59,15 @@ int my_own_strcmp_case_insensitive(const char *s1, const char *s2)
 
     // copy ts1 = s1, then lowercase everything
     strcpy(ts1, s1);
-    for(int t = 0; ts1[t] != '\0'; ++t) {
+    for (int t = 0; ts1[t] != '\0'; ++t)
+    {
         ts1[t] = tolower(ts1[t]);
     }
 
     // lowercase WHILE copying
     int t;
-    for(t = 0; s2[t] != '\0'; ++t) {
+    for (t = 0; s2[t] != '\0'; ++t)
+    {
         ts2[t] = tolower(s2[t]);
     }
     ts2[t] = '\0';

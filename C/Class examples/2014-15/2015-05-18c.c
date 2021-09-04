@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Class examples for Computer Sciences 2014-15              *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://www.cad.polito.it/staff/squillero/dida/       *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -29,15 +25,16 @@ int main(int argc, char *argv[])
     }
     **/
 
-    while( gets(string) != NULL ) {
+    while (gets(string) != NULL)
+    {
         char string2[STR_SIZE];
-        while( convert(string, string2) ) {
+        while (convert(string, string2))
+        {
             char string3[STR_SIZE];
             strcpy(string3, string2);
             strcpy(string2, string);
             strcpy(string, string3);
-        }
-            ;
+        };
         printf(">> %s\n", string2);
     }
     printf("Whoa!!!!!!!!!\n");
@@ -50,29 +47,39 @@ int convert(char s1[], char s2[])
     int read = 0, write = 0;
     int flag = 0;
 
-    while(s1[read] != '\0') {
-        if(s1[read] == 'c' && s1[read+1] == 'h') {
+    while (s1[read] != '\0')
+    {
+        if (s1[read] == 'c' && s1[read + 1] == 'h')
+        {
             s2[write] = 'k';
             read += 2;
             write += 1;
             flag = 1;
-        } else if(s1[read] == s1[read+1]) {
+        }
+        else if (s1[read] == s1[read + 1])
+        {
             s2[write] = s1[read];
             read += 2;
             write += 1;
             flag = 1;
-        } else if(s1[read] == 'o') {
+        }
+        else if (s1[read] == 'o')
+        {
             s2[write] = '0';
             read += 1;
             write += 1;
             flag = 1;
-        } else if(s1[read] == 'f') {
+        }
+        else if (s1[read] == 'f')
+        {
             s2[write] = 'p';
-            s2[write+1] = 'h';
+            s2[write + 1] = 'h';
             read += 1;
             write += 2;
             flag = 1;
-        } else {
+        }
+        else
+        {
             s2[write] = s1[read];
             read += 1;
             write += 1;

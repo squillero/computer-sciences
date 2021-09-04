@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Code example for Computer Sciences 2018-19                *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -40,7 +36,8 @@ int main()
     ***/
 
     /*** using gets (the easy way) ***/
-    while(gets(line) != NULL) {
+    while (gets(line) != NULL)
+    {
         leet(line);
     }
 
@@ -53,34 +50,58 @@ void leet(char *line)
 
     int c = 0;
     int t = 0;
-    while(line[t] != '\0') {
-        if(tolower(line[t]) == 'e' && tolower(line[t+1]) == 'd') {
-            code[c++] = 'd';    // "pwned" becomes "pwnd"
+    while (line[t] != '\0')
+    {
+        if (tolower(line[t]) == 'e' && tolower(line[t + 1]) == 'd')
+        {
+            code[c++] = 'd'; // "pwned" becomes "pwnd"
             t += 1;
-        } else if(tolower(line[t]) == 'a' && tolower(line[t+1]) == 'n' && tolower(line[t+2]) == 'd') {
-            code[c++] = '&';    // "sandbox" becomes "s&box"
+        }
+        else if (tolower(line[t]) == 'a' && tolower(line[t + 1]) == 'n' && tolower(line[t + 2]) == 'd')
+        {
+            code[c++] = '&'; // "sandbox" becomes "s&box"
             t += 2;
-        } else if(tolower(line[t]) == 'f' && tolower(line[t+1]) == 'o' && tolower(line[t+2]) == 'r') {
-            code[c++] = '4';    // "for" becomes "4"
+        }
+        else if (tolower(line[t]) == 'f' && tolower(line[t + 1]) == 'o' && tolower(line[t + 2]) == 'r')
+        {
+            code[c++] = '4'; // "for" becomes "4"
             t += 2;
-        } else if(tolower(line[t]) == 'f') {
+        }
+        else if (tolower(line[t]) == 'f')
+        {
             code[c++] = 'p';
             code[c++] = 'h';
-        } else if(tolower(line[t]) == 'a') {
+        }
+        else if (tolower(line[t]) == 'a')
+        {
             code[c++] = '4';
-        } else if(tolower(line[t]) == 'e') {
+        }
+        else if (tolower(line[t]) == 'e')
+        {
             code[c++] = '3';
-        } else if(tolower(line[t]) == 'i') {
+        }
+        else if (tolower(line[t]) == 'i')
+        {
             code[c++] = '1';
-        } else if(tolower(line[t]) == 'l') {
+        }
+        else if (tolower(line[t]) == 'l')
+        {
             code[c++] = '1';
-        } else if(tolower(line[t]) == 'o') {
+        }
+        else if (tolower(line[t]) == 'o')
+        {
             code[c++] = '0';
-        } else if(tolower(line[t]) == 'b') {
+        }
+        else if (tolower(line[t]) == 'b')
+        {
             code[c++] = '8';
-        } else if(tolower(line[t]) == 't') {
+        }
+        else if (tolower(line[t]) == 't')
+        {
             code[c++] = '7';
-        } else {
+        }
+        else
+        {
             code[c++] = line[t];
         }
 
@@ -88,10 +109,14 @@ void leet(char *line)
     }
     code[c] = '\0';
 
-    for(int t = 0; code[t] != '\0'; ++t) {
-        if(rand() % 1000 < 500) {
+    for (int t = 0; code[t] != '\0'; ++t)
+    {
+        if (rand() % 1000 < 500)
+        {
             code[t] = toupper(code[t]);
-        } else {
+        }
+        else
+        {
             code[t] = tolower(code[t]);
         }
     }

@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Code example for Computer Sciences 2019-20                *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -18,7 +14,8 @@ int main(int argc, char *argv[])
     printf("Little calculator!\n");
 
     // first, check argc
-    if(argc != 4) {
+    if (argc != 4)
+    {
         printf("Yeuch\n");
         exit(1);
     }
@@ -28,8 +25,9 @@ int main(int argc, char *argv[])
     sscanf(argv[1], "%lf", &val1);
     sscanf(argv[3], "%lf", &val2);
 
-    int valid = 1;  // ie. valis is true
-    switch(argv[2][0]) {
+    int valid = 1; // ie. valis is true
+    switch (argv[2][0])
+    {
     case '+':
         result = val1 + val2;
         break;
@@ -45,10 +43,11 @@ int main(int argc, char *argv[])
         break;
     default:
         printf("D'ho!?\n");
-        valid = 0;  // ie. valis is false
+        valid = 0; // ie. valis is false
     }
 
-    if(valid) {
+    if (valid)
+    {
         printf("%g %c %g = %g\n", val1, argv[2][0], val2, result);
     }
 

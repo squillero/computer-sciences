@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Code example for Computer Sciences 2018-19                *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -24,8 +20,10 @@ int array[DIM_X][DIM_Y] = {1, 2, 3, 4, 5, 6};
 int main()
 {
 
-    for(int t = 0; t < 3; ++t) {
-        for(int u = 0; u < 2; ++u) {
+    for (int t = 0; t < 3; ++t)
+    {
+        for (int u = 0; u < 2; ++u)
+        {
             printf("%3d", array[t][u]);
         }
         printf("\n");
@@ -39,7 +37,8 @@ int main()
 int sum(int v[], int n_elem)
 {
     int tot = 0;
-    for(int t = 0; t < n_elem; ++t) {
+    for (int t = 0; t < n_elem; ++t)
+    {
         tot += v[t];
     }
     return tot;
@@ -49,7 +48,8 @@ int sum(int v[], int n_elem)
 int sum2d()
 {
     int tot = 0;
-    for(int t = 0; t < DIM_X; ++t) {
+    for (int t = 0; t < DIM_X; ++t)
+    {
         // array[t] is an array of int
         tot += sum(array[t], DIM_Y);
     }

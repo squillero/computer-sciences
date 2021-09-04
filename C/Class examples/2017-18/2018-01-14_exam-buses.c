@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Code examples for Computer Sciences 2017-18               *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -19,7 +15,8 @@
 #define MAX_BUSES 100
 #define MAX_LINE_SIZE 256
 
-struct _BUS {
+struct _BUS
+{
     char id[ID_SIZE + 1];
     int line;
     int pos_x, pos_y;
@@ -35,7 +32,7 @@ void print_time(int tot_sec);
 
 // Global variables, Quick 'n dirty
 BUS BusList[MAX_BUSES];
-int BusNumber = 0;  // redundant, already initialized!
+int BusNumber = 0; // redundant, already initialized!
 
 void print_bus(BUS b)
 {
@@ -50,13 +47,17 @@ void print_bus(BUS b)
 int update_bus(BUS bus)
 {
     int i = 0;
-    while(i < BusNumber && strcmp(BusList[i].id, bus.id) != 0) {
+    while (i < BusNumber && strcmp(BusList[i].id, bus.id) != 0)
+    {
         ++i;
     }
-    if(i == BusNumber) {
+    if (i == BusNumber)
+    {
         printf("Adding bus: %s\n", bus.id);
         BusList[BusNumber++] = bus;
-    } else {
+    }
+    else
+    {
         printf("Updating bus %d: %s\n", i, bus.id);
         BusList[i].time_end = bus.time_start;
         double last = (BusList[i].pos_x - bus.pos_x) * (BusList[i].pos_x - bus.pos_x) +
@@ -79,34 +80,39 @@ void print_time(int tot_sec)
 int main(int argc, char *argv[])
 {
 
-    if(argc != 3) {
+    if (argc != 3)
+    {
         fprintf(stderr, "Error: Wrong number of arguments.\n");
         exit(EXIT_FAILURE);
     }
 
     FILE *input = fopen(argv[1], "r");
-    if(input == NULL) {
+    if (input == NULL)
+    {
         fprintf(stderr, "Error: Can't open \"%s\".\n", argv[1]);
         exit(EXIT_FAILURE);
     }
 
     char line[MAX_LINE_SIZE];
-    while(fgets(line, MAX_LINE_SIZE, input) != NULL) {
-        BUS b = { 0 };
+    while (fgets(line, MAX_LINE_SIZE, input) != NULL)
+    {
+        BUS b = {0};
         sscanf(line, "%s %d %d %d %d",
                b.id, &b.line, &b.pos_x, &b.pos_y, &b.time_start);
 
         update_bus(b);
         printf("==========\n");
-        for(int t = 0; t < BusNumber; ++t)
+        for (int t = 0; t < BusNumber; ++t)
             print_bus(BusList[t]);
         printf("==========\n\n\n");
     }
     fclose(input);
 
-    switch(argv[2][1]) {
+    switch (argv[2][1])
+    {
     case 'd':
-        for(int t = 0; t < BusNumber; ++t) {
+        for (int t = 0; t < BusNumber; ++t)
+        {
             printf("%s: %.0fm - first check: ",
                    BusList[t].id, BusList[t].distance);
             print_time(BusList[t].time_start);
@@ -117,7 +123,8 @@ int main(int argc, char *argv[])
         break;
 
     case 'v':
-        for(int t = 0; t < BusNumber; ++t) {
+        for (int t = 0; t < BusNumber; ++t)
+        {
             printf("%s: %0.1f km/h\n",
                    BusList[t].id,
                    1.0 * BusList[t].distance / (BusList[t].time_end - BusList[t].time_start) / 60 / 60);

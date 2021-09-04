@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Class examples for Computer Sciences 2014-15              *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://www.cad.polito.it/staff/squillero/dida/       *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -17,8 +13,9 @@
 #define N 8
 #define M 5
 
-typedef struct _BUS_DATA {
-    char data[N +1];
+typedef struct _BUS_DATA
+{
+    char data[N + 1];
     int dist;
 } BUS_DATA;
 
@@ -29,7 +26,8 @@ void update_adjacent(BUS_DATA adj[], char *data, int dist);
 
 int main(int argc, char *argv[])
 {
-    if(argc != 3) {
+    if (argc != 3)
+    {
         fprintf(stderr, "Wrong number of args\n");
         exit(EXIT_FAILURE);
     }
@@ -37,12 +35,13 @@ int main(int argc, char *argv[])
     FILE *in, *out;
     in = fopen(argv[1], "r");
     out = fopen(argv[2], "w");
-    if(in == NULL || out == NULL) {
+    if (in == NULL || out == NULL)
+    {
         fprintf(stderr, "Yeuch! I/O error...\n");
         abort();
     }
 
-    char last_read[N +1], last_wrote[N +1];
+    char last_read[N + 1], last_wrote[N + 1];
     char i_n;
     int dist;
     BUS_DATA adjacent[M];
@@ -51,19 +50,24 @@ int main(int argc, char *argv[])
     fscanf(in, "%s", last_wrote);
     fprintf(out, "%s N\n", last_wrote);
     int t;
-    for(t=0; t<M; ++t) {
+    for (t = 0; t < M; ++t)
+    {
         strcpy(adjacent[t].data, "?");
-        adjacent[t].dist = N +1;
+        adjacent[t].dist = N + 1;
     }
 
-    while(fscanf(in, "%s", last_read) != EOF) {
+    while (fscanf(in, "%s", last_read) != EOF)
+    {
         dist = hamming(last_read, last_wrote);
 
-        if(dist > N/2) {
+        if (dist > N / 2)
+        {
             invert(last_read);
             i_n = 'I';
             dist = N - dist;
-        } else {
+        }
+        else
+        {
             i_n = 'N';
         }
         strcpy(last_wrote, last_read);
@@ -72,7 +76,8 @@ int main(int argc, char *argv[])
         update_adjacent(adjacent, last_wrote, dist);
     }
 
-    for(t=0; t<M; ++t) {
+    for (t = 0; t < M; ++t)
+    {
         printf(" %s (%d)", adjacent[t].data, adjacent[t].dist);
     }
 
@@ -86,8 +91,10 @@ int main(int argc, char *argv[])
 void invert(char *s)
 {
     int t;
-    for(t=0; s[t]!='\0'; ++t) {
-        switch(s[t]) {
+    for (t = 0; s[t] != '\0'; ++t)
+    {
+        switch (s[t])
+        {
         case '0':
             s[t] = '1';
             break;
@@ -104,8 +111,10 @@ int hamming(char *s1, char *s2)
 {
     int d = 0;
     int t;
-    for(t=0; s1[t]!='\0'; ++t) {
-        if(s1[t] != s2[t]) {
+    for (t = 0; s1[t] != '\0'; ++t)
+    {
+        if (s1[t] != s2[t])
+        {
             d += 1;
         }
     }
@@ -116,12 +125,15 @@ void update_adjacent(BUS_DATA adj[], char *data, int dist)
 {
     int max = 0;
     int t;
-    for(t=1; t<M; ++t) {
-        if(adj[t].dist > adj[max].dist) {
+    for (t = 1; t < M; ++t)
+    {
+        if (adj[t].dist > adj[max].dist)
+        {
             max = t;
         }
     }
-    if(adj[max].dist > dist) {
+    if (adj[max].dist > dist)
+    {
         adj[max].dist = dist;
         strcpy(adj[max].data, data);
     }

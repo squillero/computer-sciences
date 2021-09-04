@@ -1,14 +1,10 @@
-/********************************************************************-*-c-*-*\
-*               *  Code examples for Computer Sciences 2017-18               *
-*    #####      *  (!) Giovanni Squillero <giovanni.squillero@polito.it>     *
-*   ######      *                                                            *
-*   ###   \     *  Copying and distribution of this file, with or without    *
-*    ##G  c\    *  modification, are permitted in any medium without royalty *
-*    #     _\   *  provided this notice is preserved.                        *
-*    |   _/     *  This file is offered as-is, without any warranty.         *
-*    |  _/      *                                                            *
-*               *  See: http://staff.polito.it/giovanni.squillero/dida.php   *
-\****************************************************************************/
+/*  ######       /******************************************************\
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  ####   \     * https://github.com/squillero/computer-science        *
+|*   ###G  c\    *                                                      *
+|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
+|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+\*   |   _/      \******************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -35,11 +31,15 @@ int main(int argc, char *argv[])
 
     biggest = -1;
     PrintMap();
-    for(int y = 0; y < MAP_DIM_Y; ++y) {
-        for(int x = 0; x < MAP_DIM_X; ++x) {
-            if(Map[y][x] == '#') {
+    for (int y = 0; y < MAP_DIM_Y; ++y)
+    {
+        for (int x = 0; x < MAP_DIM_X; ++x)
+        {
+            if (Map[y][x] == '#')
+            {
                 int size = GotIsland(x, y);
-                if(size > biggest) {
+                if (size > biggest)
+                {
                     biggest = size;
                 }
                 PrintMap();
@@ -54,7 +54,8 @@ int main(int argc, char *argv[])
 int GotIsland(int x, int y)
 {
     Map[y][x] = '!';
-    while(FloodFill()) {
+    while (FloodFill())
+    {
         // fillin' up :-)
     }
     int size = Count('!');
@@ -66,17 +67,21 @@ int GotIsland(int x, int y)
 void ReadMap(void)
 {
     FILE *f = fopen(MAP_FILE, "r");
-    if(f == NULL) {
+    if (f == NULL)
+    {
         fprintf(stderr, "Yeuch\n");
         exit(EXIT_FAILURE);
     }
-    for(int y = 0; y < MAP_DIM_Y; ++y) {
-        for(int x = 0; x < MAP_DIM_X; ++x) {
+    for (int y = 0; y < MAP_DIM_Y; ++y)
+    {
+        for (int x = 0; x < MAP_DIM_X; ++x)
+        {
             fscanf(f, "%c", &Map[y][x]);
         }
         char c;
         fscanf(f, "%c", &c);
-        if(c != '\n') {
+        if (c != '\n')
+        {
             fprintf(stderr, "D'ho\n");
             exit(EXIT_FAILURE);
         }
@@ -86,8 +91,10 @@ void ReadMap(void)
 
 void PrintMap(void)
 {
-    for(int y = 0; y < MAP_DIM_Y; ++y) {
-        for(int x = 0; x < MAP_DIM_X; ++x) {
+    for (int y = 0; y < MAP_DIM_Y; ++y)
+    {
+        for (int x = 0; x < MAP_DIM_X; ++x)
+        {
             printf("%c", Map[y][x]);
         }
         printf("\n");
@@ -97,23 +104,29 @@ void PrintMap(void)
 int FloodFill(void)
 {
     int added = 0;
-    for(int y = 0; y < MAP_DIM_Y; ++y) {
-        for(int x = 0; x < MAP_DIM_X; ++x) {
-            if(y > 0 && Map[y][x] == '!' && Map[y-1][x] == '#') {
+    for (int y = 0; y < MAP_DIM_Y; ++y)
+    {
+        for (int x = 0; x < MAP_DIM_X; ++x)
+        {
+            if (y > 0 && Map[y][x] == '!' && Map[y - 1][x] == '#')
+            {
                 added = 1;
-                Map[y-1][x] = '!';
+                Map[y - 1][x] = '!';
             }
-            if(y < MAP_DIM_Y - 1 && Map[y][x] == '!' && Map[y+1][x] == '#') {
+            if (y < MAP_DIM_Y - 1 && Map[y][x] == '!' && Map[y + 1][x] == '#')
+            {
                 added = 1;
-                Map[y+1][x] = '!';
+                Map[y + 1][x] = '!';
             }
-            if(x > 0 && Map[y][x] == '!' && Map[y][x-1] == '#') {
+            if (x > 0 && Map[y][x] == '!' && Map[y][x - 1] == '#')
+            {
                 added = 1;
-                Map[y][x-1] = '!';
+                Map[y][x - 1] = '!';
             }
-            if(x < MAP_DIM_X - 1 && Map[y][x] == '!' && Map[y][x+1] == '#') {
+            if (x < MAP_DIM_X - 1 && Map[y][x] == '!' && Map[y][x + 1] == '#')
+            {
                 added = 1;
-                Map[y][x+1] = '!';
+                Map[y][x + 1] = '!';
             }
         }
     }
@@ -123,9 +136,12 @@ int FloodFill(void)
 int Count(char c)
 {
     int count = 0;
-    for(int y = 0; y < MAP_DIM_Y; ++y) {
-        for(int x = 0; x < MAP_DIM_X; ++x) {
-            if(Map[y][x] == c) {
+    for (int y = 0; y < MAP_DIM_Y; ++y)
+    {
+        for (int x = 0; x < MAP_DIM_X; ++x)
+        {
+            if (Map[y][x] == c)
+            {
                 ++count;
             }
         }
@@ -135,9 +151,12 @@ int Count(char c)
 
 void Replace(char c1, char c2)
 {
-    for(int y = 0; y < MAP_DIM_Y; ++y) {
-        for(int x = 0; x < MAP_DIM_X; ++x) {
-            if(Map[y][x] == c1) {
+    for (int y = 0; y < MAP_DIM_Y; ++y)
+    {
+        for (int x = 0; x < MAP_DIM_X; ++x)
+        {
+            if (Map[y][x] == c1)
+            {
                 Map[y][x] = c2;
             }
         }
