@@ -1,5 +1,5 @@
 /*  ######       /******************************************************\
-|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)      *
+|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (04JCJ**)      *
 |*  ####   \     * https://github.com/squillero/computer-science        *
 |*   ###G  c\    *                                                      *
 |*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
