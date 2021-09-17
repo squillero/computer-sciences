@@ -111,6 +111,7 @@ def load_customers():
 
 
 def average_ages(customers):
+    """Calculate average ages for reliable and un-reliable customers, return both values"""
     reliable_age = list()
     unreliable_age = list()
     for c in customers:
@@ -127,6 +128,7 @@ def average_ages(customers):
 
 
 def get_min_enrollment_time(customers, reliability):
+    """Get the minimum enrollement time for customers of a given reliability"""
     tmp = list()
     for c in customers:
         if c[RELIABILITY] == reliability:
@@ -137,13 +139,14 @@ def get_min_enrollment_time(customers, reliability):
 
 
 def get_percentage_own_house(customers, reliability):
+    """Get the percentage of owned houses for customers of a given reliability"""
     cnt_tot, cnt = 0, 0
     for c in customers:
         if c[RELIABILITY] == reliability:
             cnt_tot += 1
             if c[HOME] == 'o':
                 cnt += 1
-    return 100 * cnt / cnt_tot
+    return cnt / cnt_tot
 
 
 def main():
@@ -180,7 +183,7 @@ def main():
         print(f"The Reliable customers have the same average age of the Unreliable ones")
 
     print(
-        f"Minimum EnrollmentTime of the Reliable customers: {min_enroll_reliable:.1f} years {perc_reliable_own_house:.0f}% of the Reliable customers own the house where they live"
+        f"Minimum EnrollmentTime of the Reliable customers: {min_enroll_reliable:.1f} years {100*perc_reliable_own_house:.0f}% of the Reliable customers own the house where they live"
     )
 
 
