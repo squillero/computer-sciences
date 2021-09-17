@@ -175,7 +175,7 @@ def main():
         print(
             f"The Reliable customers have an average age of {avg_age_reliable-avg_age_unreliable:.1f} years higher than the Unreliable ones"
         )
-    elif avg_age_reliable > avg_age_unreliable:
+    elif avg_age_reliable < avg_age_unreliable:
         print(
             f"The Unreliable customers have an average age of {avg_age_unreliable-avg_age_reliable:.1f} years higher than the Reliable ones"
         )
