@@ -5,8 +5,8 @@ This repo contains old exams, notes, and all the code fragments developed during
 
 Please note that we updated the syllabus:
 
-* Up to 2019/20 the course name starts with **04**JCJ and students should refer to directory [C](./C)
-* Since 2020/21 the course name starts with **07**JCJ and students should refer to directory [Python](./Python)
+* Up to 2019/20 the course code starts with **04**JCJ and students should refer to directory [C](./C)
+* Since 2020/21 the course code starts with **07**JCJ and students should refer to directory [Python](./Python)
 
 
 > Unless expressly noted in the individual files, all the material is licensed under the [EUPL-1.2](https://eupl.eu/).
