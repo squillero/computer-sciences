@@ -9,4 +9,5 @@ Please note that we updated the syllabus:
 * Since 2020/21 the course name starts with **07**JCJ and students should refer to directory [Python](./Python)
 
 
-> Unless expressly noted in the individual files, all the material is licensed under the [EUPL-1.2](https://eupl.eu/).
+> **Copyright (c) 2015-2021 [Giovanni Squillero](https://squillero.github.io/) <[squillero@polito.it](mailto:squillero@polito.it)**>  
+Copying and distributing these files for classroom use are permitted under certain conditions, see [LICENSE](./LICENSE.md) for details.  

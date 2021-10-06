@@ -3,7 +3,7 @@
 |*  ####   \     * https://github.com/squillero/computer-sciences       *
 |*   ###G  c\    *                                                      *
 |*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
-|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+|*   |    _/     * Free for personal or classroom use.                  *
 \*   |   _/      \******************************************************/
 
 // int -> 16 bit  -> 65,535  [ -32,768 +32,767 ]
