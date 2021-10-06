@@ -3,7 +3,7 @@
 #   ####   \      | https://github.com/squillero/computer-sciences  |
 #    ###G  c\     |                                                 |
 #    ##     _\    | © 2020 Giovanni Squillero <squillero@polito.it> |
-#    |    _/      | Licensed under the EUPL-1.2 <https://eupl.eu/>  |
+#    |    _/      | Free for personal or classroom use.             |
 #    |   _/       \=================================================/
 
 max_num = int(input("Max num: "))
