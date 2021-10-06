@@ -3,7 +3,7 @@
 |*  ####   \     * https://github.com/squillero/computer-sciences       *
 |*   ###G  c\    *                                                      *
 |*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
-|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+|*   |    _/     * Free for personal or classroom use.                  *
 \*   |   _/      \******************************************************/
 
 #include <stdio.h>
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 |*  ####   \     * https://github.com/squillero/computer-sciences       *
 |*   ###G  c\    *                                                      *
 |*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
-|*   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>       *
+|*   |    _/     * Free for personal or classroom use.                  *
 \*   |   _/      \******************************************************/
 
 #include <stdio.h>
