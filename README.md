@@ -10,4 +10,4 @@ Please note that we updated the syllabus:
 
 
 > **Copyright (c) 2015-2021 [Giovanni Squillero](https://squillero.github.io/) <[squillero@polito.it](mailto:squillero@polito.it)**>  
-Copying and distributing these files for classroom use are permitted under certain conditions, see [LICENSE](./LICENSE.md) for details.  
+Permission to make copies is granted under certain conditions, see [LICENSE](./LICENSE.md) for details.  
