@@ -3,7 +3,7 @@
 #   ####   \      | https://github.com/squillero/computer-sciences  |
 #    ###G  c\     |                                                 |
 #    ##     _\    | © 2021 Giovanni Squillero <squillero@polito.it> |
-#    |    _/      | Licensed under the EUPL-1.2 <https://eupl.eu/>  |
+#    |    _/      | Free for personal or classroom use.             |
 #    |   _/       \=================================================/
 
 DATAFILE = '20210701_wines.dat'
