@@ -9,4 +9,4 @@ Please note that we updated the syllabus:
 * Since 2020/21 the course code starts with **07**JCJ and students should refer to directory [Python](./Python)
 
 > **Copyright (c) 2015-2021 [Giovanni Squillero](https://squillero.github.io/) <[squillero@polito.it](mailto:squillero@polito.it)**>  
-Permission to make copies is granted under certain conditions, see [LICENSE](./LICENSE.md) for details.  
+Copying and distributing these files are permitted under certain conditions, see [LICENSE](./LICENSE.md) for details.  
