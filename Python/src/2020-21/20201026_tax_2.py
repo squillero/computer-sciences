@@ -1,6 +1,6 @@
-#  Copyright © 2020 Giovanni Squillero <squillero@polito.it>
-#  Free for personal or classroom use; see 'LICENCE.md' for details.
-#  https://github.com/squillero/computer-sciences
+# Copyright © 2020 Giovanni Squillero <squillero@polito.it>
+# Free for personal or classroom use; see 'LICENCE.md' for details.
+# https://github.com/squillero/computer-sciences
 
 single = input("Are you single? [y/n] ")
 income = float(input("Income: "))

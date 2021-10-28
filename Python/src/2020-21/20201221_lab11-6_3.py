@@ -1,6 +1,6 @@
-#  Copyright © 2020 Giovanni Squillero <squillero@polito.it>
-#  Free for personal or classroom use; see 'LICENCE.md' for details.
-#  https://github.com/squillero/computer-sciences
+# Copyright © 2020 Giovanni Squillero <squillero@polito.it>
+# Free for personal or classroom use; see 'LICENCE.md' for details.
+# https://github.com/squillero/computer-sciences
 FILE_URL = 'https://www.cia.gov/library/publications/the-world-factbook/rankorder/rawdata_2004.txt'
 
 import urllib.request as req
