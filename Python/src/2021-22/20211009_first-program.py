@@ -1,6 +1,6 @@
-#  Copyright © 2021 Giovanni Squillero <squillero@polito.it>
-#  Free for personal or classroom use; see 'LICENCE.md' for details.
-#  https://github.com/squillero/computer-sciences
+# Copyright © 2021 Giovanni Squillero <squillero@polito.it>
+# Free for personal or classroom use; see 'LICENCE.md' for details.
+# https://github.com/squillero/computer-sciences
 
 MINUTE = 60
 HOUR = 60 * MINUTE

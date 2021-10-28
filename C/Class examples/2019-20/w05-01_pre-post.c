@@ -1,10 +1,6 @@
-/*  ######       /******************************************************\
-|*  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (04JCJ**)      *
-|*  ####   \     * https://github.com/squillero/computer-sciences       *
-|*   ###G  c\    *                                                      *
-|*   ##     _\   * Copyright © Giovanni Squillero <squillero@polito.it> *
-|*   |    _/     * Free for personal or classroom use.                  *
-\*   |   _/      \******************************************************/
+// Copyright © 2019-2020 Giovanni Squillero <squillero@polito.it>
+// Free for personal or classroom use; see 'LICENCE.md' for details.
+// https://github.com/squillero/computer-sciences
 
 #include <stdio.h>
 #include <stdlib.h>
