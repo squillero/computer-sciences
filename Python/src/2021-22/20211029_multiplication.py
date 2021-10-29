@@ -2,12 +2,11 @@
 # Free for personal or classroom use; see 'LICENCE.md' for details.
 # https://github.com/squillero/computer-sciences
 
+TABLE_SIZE = 10
 
-num = int(input(": "))
+for r in range(1, TABLE_SIZE + 1):
+    for c in range(1, TABLE_SIZE + 1):
+        print(f"{r*c:8d}", end='')
+    print()
 
-for n in range(1_000):
-    if n % num == 0:
-        print(n)
-
-for n in range(, 1_000, num):
-    print(n)
+print("All done.")
