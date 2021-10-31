@@ -2,12 +2,7 @@
 # Free for personal or classroom use; see 'LICENCE.md' for details.
 # https://github.com/squillero/computer-sciences
 
-# string = input()
-string = 'VanaTallinn'
+string = input()
 
 # A 1-line solution using list comprehnesion (and a generator)
-
-print("\n".join(string[a:a + b]
-                for b in range(1,
-                               len(string) + 1)
-                for a in range(len(string) - b + 1)))
+print("\n".join(string[a:a + b + 1] for b in range(len(string)) for a in range(len(string) - b)))
