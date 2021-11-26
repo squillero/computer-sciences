@@ -5,6 +5,7 @@
 FILE_NAME_OLD = 'stairway.txt'
 FILE_NAME = 'C:\\Users\\John Nefastis\\Documents\\C\\2018-19\\w04_12-for2\\w04_12-for2.c'
 
+
 def main():
     with open(FILE_NAME) as song:
         for num, line in enumerate(song):

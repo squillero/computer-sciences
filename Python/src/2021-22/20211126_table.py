@@ -17,7 +17,7 @@ def main():
     # fill in values
     for r in range(TABLE_SIZE):
         for c in range(TABLE_SIZE):
-            table[r][c] = (r+1)*(c+1)
+            table[r][c] = (r + 1) * (c + 1)
     pprint(table)
 
 
