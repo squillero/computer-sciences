@@ -2,6 +2,7 @@
 # Free for personal or classroom use; see 'LICENCE.md' for details.
 # https://github.com/squillero/computer-sciences
 
+
 def main():
     input_file = open('stairway.txt')
     foo = input_file.readline()

@@ -3,6 +3,7 @@
 # https://github.com/squillero/computer-sciences
 
 from pprint import pprint
+
 SYMBOL = ['X', 'O']
 
 
@@ -37,13 +38,13 @@ def main():
     game_over = False
     while not game_over:
         move = int(input())
-        move_r = (move-1)//3
-        move_c = (move-1)%3
+        move_r = (move - 1) // 3
+        move_c = (move - 1) % 3
         board[move_r][move_c] = SYMBOL[player]
         if won(board, SYMBOL[player]):
             print(f"Player {SYMBOL[player]} won!")
             game_over = True
-        player = 1-player
+        player = 1 - player
         print_board(board)
 
 
