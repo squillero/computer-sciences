@@ -2,7 +2,7 @@
 # Free for personal or classroom use; see 'LICENCE.md' for details.
 # https://github.com/squillero/computer-sciences
 
-FILE_NAME = 'stairway.txt'
+FILE_NAME = '20211126_stairway.txt'
 
 
 def main():
