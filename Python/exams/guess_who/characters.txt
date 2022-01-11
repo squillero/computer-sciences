@@ -1,0 +1,25 @@
+Name; Gender; Hair Color; Hair Length; Glasses; Hat; Mustache; Beard; Bald
+Alex; Male; Black; Short; NO; NO; YES; NO; NO
+Alfred; Man; Red; Long; NO; NO; YES; NO; NO
+Anita; Woman; Blonde; Long; NO; NO; NO; NO; NO
+Anne; Female; Black; Short; NO; NO; NO; NO; NO
+Bernard; Male; Brown; Short; NO; YES; NO; NO; NO
+Bill; Man; Red; Short; NO; NO; NO; YES; YES
+Charles; Man; Blond; Short; NO; NO; YES; NO; NO
+Claire; Woman; Red; Short; YES; YES; NO; NO; NO
+David; Man; Blond; Short; NO; NO; NO; YES; NO
+Eric; Man; Blonde; Short; NO; YES; NO; NO; NO
+Frans; Man; Red; Short; NO; NO; NO; NO; NO
+George; Male; White; Short; NO; YES; NO; NO; NO
+Herman; Man; Red; Short; NO; NO; NO; NO; YES
+Joe; Man; Blonde; Short; YES; NO; NO; NO; NO
+Maria; Woman; Brown; Long; NO; YES; NO; NO; NO
+Max; Male; Black; Short; NO; NO; YES; NO; NO
+Paul; Man; White; Short; YES; NO; NO; NO; NO
+Peter; Male; White; Short; NO; NO; NO; NO; NO
+Philip; Male; Black; Short; NO; NO; NO; YES; NO
+Richard; Male; Brown; Short; NO; NO; YES; YES; YES
+Robert; Male; Brown; Short; NO; NO; NO; NO; NO
+Sam; Male; White; Short; YES; NO; NO; NO; YES
+Susan; Female; White; Long; NO; NO; NO; NO; NO
+Tom; Man; Black; Short; YES; NO; NO; NO; YES 
