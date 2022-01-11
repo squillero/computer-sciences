@@ -38,6 +38,6 @@ the program output should be the following:
     Veronica Servente, ITA - Score: 27.2
     
     Overall nations ranking:
-    1 °) ITA - Total score: 55.9
-    2nd) USA - Final Score: 52.2
-    3 °) GRB - Final Score: 50.4 
+    1) ITA - Total score: 55.9
+    2) USA - Final Score: 52.2
+    3) GRB - Final Score: 50.4 
