@@ -8,15 +8,14 @@ The program must:
 - read the necessary ingredients from a recipe file. In particular, each recipe is described in the following
   format:
 
-  ...
-  Ingredients:
-  Ingredient name 1; needed ingredient 1 grams
-  Ingredient name 2; necessary ingredient 2 grams
-  ...
-  Ingredient name n; grams needed ingredient n
-  Method:
-  Description of the procedure for making the recipe
-  ...
+      Ingredients:
+      Ingredient name 1; needed ingredient 1 grams
+      Ingredient name 2; necessary ingredient 2 grams
+      ...
+      Ingredient name n; grams needed ingredient n
+      Method:
+      Description of the procedure for making the recipe
+      ...
 
   Note that the ingredient list is preceded by the keyword "Ingredients", which the ingredients are
   reported one per line, together with the required quantity (in grams), and that after the list of ingredients is
@@ -36,14 +35,12 @@ The program must:
 
 Example of program output, based on the `polenta_concia.txt` file:
 
-...
-Ingrediants:
-Corn flour - 500.0
-Toma - 200.0
-Fontina - 200.0
-Butter - 200.0
-
-Number of ingredients: 4
-Recipe cost: 7.52
-Recipe calories: 2928.00
-...
+    Ingredients:
+    Corn flour - 500.0
+    Toma - 200.0
+    Fontina - 200.0
+    Butter - 200.0
+    
+    Number of ingredients: 4
+    Recipe cost: 7.52
+    Recipe calories: 2928.00
