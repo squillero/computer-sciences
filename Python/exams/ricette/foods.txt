@@ -1,0 +1,8 @@
+Corn flour; 2.21; 3620
+Toma; 19.8; 3710
+Fontina; 13.8; 3430
+Butter; 3.99; 7500
+Passed; 2.49; 180
+Olive; 11.65; 1420
+Capers; 18; 250
+Fusilli; 1.71; 3500 
