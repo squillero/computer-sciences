@@ -6,7 +6,7 @@ text `products.txt` is created by the parent company and contains, for each prod
 official dealer who is authorized to sell the product. There are two for each line in the file
 information (strings separated by a space):
 
-product_id reseller_id
+    product_id reseller_id
 
 Each product and each seller are identified by a unique alphanumeric code.
 
@@ -27,14 +27,14 @@ sale.
 
 ## Example products.txt:
 
-P234HF22222 r1011
-P234HF22223 r1112
-P234HF22225 r1114
-P111TG11115 r1015
-P111TG11115 r1216
-P331LS00110 r1017
-P331LS00120 r1318
-P331LS00130 r1019
+    P234HF22222 r1011  
+    P234HF22223 r1112  
+    P234HF22225 r1114  
+    P111TG11115 r1015  
+    P111TG11115 r1216  
+    P331LS00110 r1017  
+    P331LS00120 r1318  
+    P331LS00130 r1019  
 
 ## Example purchases.txt
 
