@@ -15,8 +15,8 @@ program will have to print the list of tops on the screen, following the followi
 starting from 0. It is assumed that the contents of the file are correct and conform to the description. If there are no tops,
 report it.
 
-    column row height
-    column row height
+    height column row  
+    height column row  
 
 At the end, print the average height of the tops.
 
