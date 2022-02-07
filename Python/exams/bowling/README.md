@@ -34,9 +34,9 @@ The program must:
 
 The program must print on the screen:
 
-    Giuseppe Verdi 113  
+    Verdi Giuseppe 113  
     Montalbano Salvo 98  
-    Rossi Maximum 85  
+    Rossi Massimo 85  
     De Piscopo Tullio 65  
     Montalbano Salvo has knocked down all the pins 8 times  
     De Piscopo Tullio has missed all the pins 1 time (s)   
