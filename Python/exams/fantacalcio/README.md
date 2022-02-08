@@ -6,7 +6,7 @@ listed in the `fantafoot.txt` file, organized as follows:
 surname, team, role, price
 
 The players are listed in the file in alphabetical order by surname. The role of the player is one of the following:
-goalkeeper, defender, midfielder, attacker. The quote is a strictly positive integer and represents the
+goalkeeper, defender, midfielder, forward. The quote is a strictly positive integer and represents the
 value (in Millions of Fanta_USDs) of the player.
 
 The squad of the virtual team is made up of 25 players:
@@ -19,7 +19,7 @@ The squad of the virtual team is made up of 25 players:
 The budget available to form the team is 260 Millions of Fanta_USDs.
 
 Write a plan to form the virtual team squad. 20 Millions of Fanta_USDs are destined for goalkeepers, 40 for
-defenders, 80 to midfielders and 120 to attackers. For each role, the program buys the most expensive footballer
+defenders, 80 to midfielders and 120 to forwards. For each role, the program buys the most expensive footballer
 among those that meet the following two conditions:
 
 - the player's price is less than or equal to the budget
@@ -27,9 +27,9 @@ among those that meet the following two conditions:
   still to buy.
 
 The second condition ensures that you can buy all the players required for each position. Indeed, for each role there
-are many players with a rating of 1 Millions of Fanta_USDs. For example, the budget for buying the first striker is 120 -
-5 = 115 Millions of Fanta_USDs. If the price of the purchased attacker is 56, the remaining budget is 120 - 56 = 64. The budget
-for the purchase of the second attacker it is therefore 64 - 4 = 60. For each role, the program prints on the screen the list of
+are many players with a rating of 1 Millions of Fanta_USDs. For example, the budget for buying the first forward is 120 -
+5 = 115 Millions of Fanta_USDs. If the price of the purchased forward is 56, the remaining budget is 120 - 56 = 64. The budget
+for the purchase of the second forward it is therefore 64 - 4 = 60. For each role, the program prints on the screen the list of
 players purchased and their price.
 
 ** N.B.: ** After purchasing a player, he must be removed from the list of real players to avoid
