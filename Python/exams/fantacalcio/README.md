@@ -42,7 +42,8 @@ next or lose it (both solutions are fine).
 
 ## Example file fantafoot.txt (for the sake of brevity, only the goalkeepers are shown, but the real file contains all the roles):
 
-```Alia, Lazio, goalkeeper, 1
+```text
+Alia, Lazio, goalkeeper, 1
 Aresti, Cagliari, goalkeeper, 1
 Audero, Sampdoria, goalkeeper, 17
 Advice, Sassuolo, goalkeeper, 14
@@ -60,7 +61,8 @@ Szczesny, Juventus, goalkeeper, 22
 
 ## Example program output:
 
-```Goalkeepers: Pau Lopez 18 Alia 1 Aresti 1
+```text
+Goalkeepers: Pau Lopez 18 Alia 1 Aresti 1
 
 Defenders: Hakimi 33 Armini 1 Balogh 1 Good morning 1 Calafiori 1 Dragusin 1 Ferigra 1 Khailoti 1
  
