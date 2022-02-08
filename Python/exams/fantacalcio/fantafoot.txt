@@ -1,582 +1,582 @@
-Acampora, Spezia, centrocampista, 4
-Acerbi, Lazio, difensore, 18
-Adopo, Torino, centrocampista, 1
-Adorante, Parma, attaccante, 1
-Agoume, Spezia, centrocampista, 4
-Agudelo, Spezia, centrocampista, 12
-Akpa-Akpro, Lazio, centrocampista, 4
-Alex Sandro, Juventus, difensore, 15
-Alia, Lazio, portiere, 1
-Amione, Verona, difensore, 2
-Amrabat, Fiorentina, centrocampista, 14
-Anderson D, Lazio, centrocampista, 3
-Ansaldi, Torino, difensore, 16
-Aresti, Cagliari, portiere, 1
-Armini, Lazio, difensore, 1
-Arslan, Udinese, centrocampista, 11
-Arthur, Juventus, centrocampista, 17
-Askildsen, Sampdoria, centrocampista, 4
-Asoro, Genoa, attaccante, 8
-Audero, Sampdoria, portiere, 17
-Augello, Sampdoria, difensore, 10
-Avogadri, Sampdoria, portiere, 1
-Ayhan, Sassuolo, difensore, 8
-Badelj, Genoa, centrocampista, 9
-Bakayoko, Napoli, centrocampista, 15
-Baldursson, Bologna, centrocampista, 1
-Balogh, Parma, difensore, 1
-Bani, Genoa, difensore, 8
-Barak, Verona, centrocampista, 18
-Barba, Benevento, difensore, 8
-Barella, Inter, centrocampista, 21
-Barreca, Fiorentina, difensore, 5
-Barrow, Bologna, attaccante, 20
-Baselli, Torino, centrocampista, 12
-Basit, Benevento, centrocampista, 1
-Bastoni, Inter, difensore, 12
-Bastoni S, Spezia, difensore, 6
-Becao, Udinese, difensore, 8
-Behrami, Genoa, centrocampista, 8
-Belotti, Torino, attaccante, 37
-Benali, Crotone, centrocampista, 12
-Benassi, Verona, centrocampista, 13
-Bennacer, Milan, centrocampista, 14
-Bentancur, Juventus, centrocampista, 15
-Berardi, Sassuolo, attaccante, 34
-Berardi A, Verona, portiere, 1
-Bereszynski, Sampdoria, difensore, 7
-Bernardeschi, Juventus, centrocampista, 15
-Biraghi, Fiorentina, difensore, 14
-Biraschi, Genoa, difensore, 7
-Boer, Roma, portiere, 1
-Boga, Sassuolo, attaccante, 24
-Bonaventura, Fiorentina, centrocampista, 12
-Bonazzoli, Torino, attaccante, 16
-Bonifazi, Udinese, difensore, 8
-Bonucci, Juventus, difensore, 18
-Borja Valero, Fiorentina, centrocampista, 12
-Bourabia, Sassuolo, centrocampista, 9
-Brancolini, Fiorentina, portiere, 1
-Bremer, Torino, difensore, 16
-Breza, Bologna, portiere, 1
-Brlek, Genoa, centrocampista, 4
-Brozovic, Inter, centrocampista, 20
-Brugman, Parma, centrocampista, 8
-Brunetta, Parma, centrocampista, 11
-Bruno Alves, Parma, difensore, 9
-Bruno Peres, Roma, difensore, 10
-Buffon, Juventus, portiere, 6
-Buongiorno, Torino, difensore, 1
-Busi, Parma, difensore, 4
-C Ronaldo, Juventus, attaccante, 56
-Caceres, Fiorentina, difensore, 10
-Caicedo, Lazio, attaccante, 23
-Calabresi, Bologna, difensore, 3
-Calabria, Milan, difensore, 15
-Calafiori, Roma, difensore, 1
-Caldara, Atalanta, difensore, 8
-Caldirola, Benevento, difensore, 11
-Calhanoglu, Milan, centrocampista, 25
-Caligara, Cagliari, centrocampista, 2
-Callejon, Fiorentina, centrocampista, 17
-Candreva, Sampdoria, centrocampista, 25
-Capradossi, Spezia, difensore, 3
-Caprari, Benevento, attaccante, 15
-Caputo, Sassuolo, attaccante, 32
-Carboni A, Cagliari, difensore, 5
-Caso, Genoa, attaccante, 1
-Cassata, Genoa, centrocampista, 7
-Castillejo, Milan, centrocampista, 15
-Castrovilli, Fiorentina, centrocampista, 19
-Cataldi, Lazio, centrocampista, 8
-Caviglia, Parma, centrocampista, 3
-Ceccherini, Verona, difensore, 8
-Ceppitelli, Cagliari, difensore, 9
-Cerri, Cagliari, attaccante, 7
-Cetin, Verona, difensore, 4
-Chabot, Spezia, difensore, 8
-Chiellini, Juventus, difensore, 15
-Chiesa, Juventus, centrocampista, 33
-Chiriches, Sassuolo, difensore, 9
-Cigarini, Crotone, centrocampista, 6
-Cleonise, Genoa, attaccante, 1
-Colley, Sampdoria, difensore, 10
-Colley E, Verona, attaccante, 9
-Colombi, Parma, portiere, 1
-Colombo, Milan, attaccante, 1
-Consigli, Sassuolo, portiere, 14
-Conti, Milan, difensore, 9
-Contini, Napoli, portiere, 1
-Cordaz, Crotone, portiere, 7
-Cornelius, Parma, attaccante, 14
-Correa, Lazio, attaccante, 21
-Cragno, Cagliari, portiere, 14
-Crespi, Crotone, portiere, 1
-Criscito, Genoa, difensore, 20
-Cristante, Roma, centrocampista, 12
-Crociata, Crotone, centrocampista, 8
-Cuadrado, Juventus, difensore, 17
-Cuomo, Crotone, difensore, 4
-Cyprien, Parma, centrocampista, 12
-Czyborra, Genoa, difensore, 6
-D'ambrosio, Inter, difensore, 19
-Da Costa, Bologna, portiere, 3
-Dabo, Benevento, centrocampista, 9
-Dalot, Milan, difensore, 7
-Damsgaard, Sampdoria, centrocampista, 17
-Danilo, Bologna, difensore, 11
-Danilo L, Juventus, difensore, 14
-Danzi, Verona, centrocampista, 1
-Darmian, Inter, difensore, 12
-Dawidowicz, Verona, difensore, 8
-De Ligt, Juventus, difensore, 17
-De Maio, Udinese, difensore, 7
-De Paul, Udinese, centrocampista, 26
-De Roon, Atalanta, centrocampista, 20
-De Silvestri, Bologna, difensore, 11
-De Vrij, Inter, difensore, 21
-Defrel, Sassuolo, attaccante, 16
-Deiola, Spezia, centrocampista, 6
-Dellorco, Spezia, difensore, 7
-Demiral, Juventus, difensore, 13
-Demme, Napoli, centrocampista, 14
-Depaoli, Atalanta, centrocampista, 5
-Destro, Genoa, attaccante, 19
-Deulofeu, Udinese, attaccante, 19
-Dezi, Parma, centrocampista, 6
-Di Carmine, Verona, attaccante, 14
-Di Gaudio, Verona, attaccante, 5
-Di Lorenzo, Napoli, difensore, 14
-Di Serio, Benevento, attaccante, 1
-Diawara, Roma, centrocampista, 11
-Diaz B, Milan, centrocampista, 16
-Dijks, Bologna, difensore, 7
-Dimarco, Verona, difensore, 16
-Djidji, Crotone, difensore, 5
-Djimsiti, Atalanta, difensore, 15
-Djuricic, Sassuolo, centrocampista, 19
-Dodo', Sampdoria, difensore, 3
-Dominguez, Bologna, centrocampista, 9
-Donnarumma A, Milan, portiere, 1
-Donnarumma G, Milan, portiere, 25
-Dragowski, Fiorentina, portiere, 21
-Dragus, Crotone, attaccante, 5
-Dragusin, Juventus, difensore, 1
-Duncan, Fiorentina, centrocampista, 13
-Durmisi, Lazio, difensore, 4
-Dybala, Juventus, attaccante, 31
-Dzeko, Roma, attaccante, 33
-Ebongue, Genoa, centrocampista, 1
-Edera, Torino, attaccante, 7
-Ekdal, Sampdoria, centrocampista, 14
-Elmas, Napoli, centrocampista, 13
-Eriksen, Inter, centrocampista, 21
-Erlic, Spezia, difensore, 5
-Escalante, Lazio, centrocampista, 8
-Estevez, Spezia, centrocampista, 8
-Eysseric, Fiorentina, centrocampista, 6
-Fabian Ruiz, Napoli, centrocampista, 17
-Farago', Cagliari, difensore, 7
-Faraoni, Verona, difensore, 16
-Farelli, Roma, portiere, 1
-Fares, Lazio, difensore, 7
-Farias, Spezia, attaccante, 13
-Favilli, Verona, attaccante, 13
-Fazio, Roma, difensore, 10
-Ferigra, Torino, difensore, 1
-Ferrari A, Sampdoria, difensore, 5
-Ferrari G, Sassuolo, difensore, 11
-Ferrer, Spezia, difensore, 5
-Festa, Crotone, portiere, 1
-Forestieri, Udinese, attaccante, 12
-Foulon, Benevento, difensore, 5
-Frabotta, Juventus, difensore, 5
-Freuler, Atalanta, centrocampista, 22
-Fuzato, Roma, portiere, 1
-Gabbia, Milan, difensore, 5
-Gabbiadini, Sampdoria, attaccante, 20
-Gagliardini, Inter, centrocampista, 15
-Gagliolo, Parma, difensore, 14
-Galabinov, Spezia, attaccante, 14
-Gasparini, Udinese, portiere, 1
-Gazzola, Parma, difensore, 3
-Gervinho, Parma, attaccante, 24
-Ghiglione, Genoa, difensore, 9
-Ghoulam, Napoli, difensore, 12
-Glik, Benevento, difensore, 12
-Godin, Cagliari, difensore, 17
-Gojak, Torino, centrocampista, 11
-Goldaniga, Genoa, difensore, 8
-Golemic, Crotone, difensore, 10
-Gollini, Atalanta, portiere, 21
-Gomelt, Crotone, centrocampista, 2
-Gomez A, Atalanta, centrocampista, 29
-Gori, Benevento, portiere, 1
-Gosens, Atalanta, difensore, 32
-Grassi, Parma, centrocampista, 7
-Gunter, Verona, difensore, 8
-Gyabuaa, Atalanta, centrocampista, 1
-Gyasi, Spezia, attaccante, 12
-Hakimi, Inter, difensore, 33
-Handanovic, Inter, portiere, 20
-Haraslin, Sassuolo, attaccante, 8
-Hateboer, Atalanta, difensore, 17
-Hauge, Milan, attaccante, 12
-Henrique E, Crotone, centrocampista, 6
-Hernandez T, Milan, difensore, 30
-Hernani, Parma, centrocampista, 13
-Hetemaj, Benevento, centrocampista, 8
-Hickey, Bologna, difensore, 6
-Hoedt, Lazio, difensore, 6
-Hysaj, Napoli, difensore, 10
-Iacoponi, Parma, difensore, 8
-Iago Falque, Benevento, attaccante, 17
-Ibanez, Roma, difensore, 9
-Ibrahimovic, Milan, attaccante, 45
-Igor, Fiorentina, difensore, 9
-Ilic, Verona, centrocampista, 7
-Ilicic, Atalanta, attaccante, 35
-Immobile, Lazio, attaccante, 46
-Improta, Benevento, centrocampista, 11
-Inglese, Parma, attaccante, 14
-Insigne, Napoli, attaccante, 33
-Insigne R, Benevento, attaccante, 15
-Ionita, Benevento, centrocampista, 10
-Ismajli, Spezia, difensore, 5
-Izzo, Torino, difensore, 18
-Jajalo, Udinese, centrocampista, 7
-Jankto, Sampdoria, centrocampista, 20
-Joao Pedro, Cagliari, attaccante, 34
-Jocic, Verona, centrocampista, 1
-Juan Jesus, Roma, difensore, 4
-Juwara, Bologna, attaccante, 4
-Kalinic, Verona, attaccante, 17
-Kalulu, Milan, difensore, 5
-Karamoh, Parma, attaccante, 10
-Karsdorp, Roma, difensore, 10
-Keita B, Sampdoria, attaccante, 18
-Kessie, Milan, centrocampista, 27
-Khailoti, Bologna, difensore, 1
-Khedira, Juventus, centrocampista, 8
-Kingsley, Bologna, centrocampista, 1
-Kiyine, Lazio, centrocampista, 6
-Kjaer, Milan, difensore, 14
-Klavan, Cagliari, difensore, 6
-Kolarov, Inter, difensore, 19
-Kouame, Fiorentina, attaccante, 16
-Koulibaly, Napoli, difensore, 17
-Krapikas, Spezia, portiere, 1
-Krunic, Milan, centrocampista, 7
-Kucka, Parma, centrocampista, 19
-Kulusevski, Juventus, centrocampista, 28
-Kumbulla, Roma, difensore, 15
-Kurtic, Parma, centrocampista, 14
-Kyriakopoulos, Sassuolo, difensore, 8
-La Gumina, Sampdoria, attaccante, 8
-Lammers, Atalanta, attaccante, 16
-Lapadula, Benevento, attaccante, 19
-Laribi, Verona, centrocampista, 5
-Larsen, Udinese, difensore, 12
-Lasagna, Udinese, attaccante, 18
-Laurini, Parma, difensore, 4
-Lazovic, Verona, centrocampista, 14
-Lazzari M, Lazio, difensore, 15
-Leao, Milan, attaccante, 24
-Lerager, Genoa, centrocampista, 8
-Leris, Sampdoria, centrocampista, 7
-Letica, Sampdoria, portiere, 1
-Letizia, Benevento, difensore, 16
-Linetty, Torino, centrocampista, 13
-Llorente, Napoli, attaccante, 10
-Lobotka, Napoli, centrocampista, 10
-Locatelli M, Sassuolo, centrocampista, 17
-Lopez M, Sassuolo, centrocampista, 12
-Lovato, Verona, difensore, 4
-Lozano, Napoli, attaccante, 27
-Lucas Leiva, Lazio, centrocampista, 11
-Lucatelli, Benevento, portiere, 1
-Luis Alberto, Lazio, centrocampista, 31
-Luiz Felipe, Lazio, difensore, 10
-Lukaku R, Inter, attaccante, 44
-Lukic, Torino, centrocampista, 13
-Lulic, Lazio, difensore, 14
-Luperto, Crotone, difensore, 5
-Luvumbo, Cagliari, attaccante, 1
-Lyanco, Torino, difensore, 6
-Lykogiannis, Cagliari, difensore, 10
-Maehle, Atalanta, difensore, 10
-Magallan, Crotone, difensore, 5
-Maggio, Benevento, difensore, 7
-Maggiore, Spezia, centrocampista, 10
-Magnanelli, Sassuolo, centrocampista, 5
-Magnani, Verona, difensore, 7
-Makengo, Udinese, centrocampista, 6
-Maksimovic, Napoli, difensore, 8
-Malcuit, Napoli, difensore, 5
-Maldini D, Milan, centrocampista, 1
-Males, Genoa, attaccante, 6
-Malinovskyi, Atalanta, centrocampista, 23
-Mancini, Roma, difensore, 18
-Mandragora, Udinese, centrocampista, 10
-Manfredini, Benevento, portiere, 1
-Manolas, Napoli, difensore, 16
-Marchetti, Genoa, portiere, 2
-Marchizza, Spezia, difensore, 6
-Marin R, Cagliari, centrocampista, 11
-Mario Rui, Napoli, difensore, 11
-Marlon, Sassuolo, difensore, 7
-Marrone, Crotone, difensore, 5
-Martinez L, Inter, attaccante, 34
-Martinez Q, Fiorentina, difensore, 8
-Marusic, Lazio, difensore, 9
-Masiello A, Genoa, difensore, 7
-Mastinu, Spezia, centrocampista, 9
-Mattiello, Spezia, difensore, 6
-Mayoral, Roma, attaccante, 19
-Mazzotta, Crotone, difensore, 4
-Mbaye, Bologna, difensore, 4
-McKennie, Juventus, centrocampista, 19
-Medel, Bologna, centrocampista, 10
-Meite, Torino, centrocampista, 11
-Melegoni, Genoa, centrocampista, 4
-Meret, Napoli, portiere, 8
-Mertens, Napoli, attaccante, 31
-Messias, Crotone, attaccante, 23
-Micin, Udinese, attaccante, 2
-Miguel Veloso, Verona, centrocampista, 18
-Mihaila, Parma, attaccante, 5
-Milenkovic, Fiorentina, difensore, 18
-Milik, Napoli, attaccante, 23
-Milinkovic-Savic, Lazio, centrocampista, 30
-Milinkovic-Savic V, Torino, portiere, 2
-Miranchuk, Atalanta, centrocampista, 21
-Mirante, Roma, portiere, 8
-Mkhitaryan, Roma, centrocampista, 39
-Mojica, Atalanta, difensore, 6
-Molina, Crotone, centrocampista, 11
-Molina N, Udinese, difensore, 6
-Moncini, Benevento, attaccante, 11
-Montiel, Fiorentina, centrocampista, 1
-Montipo', Benevento, portiere, 13
-Mora, Spezia, centrocampista, 6
-Morata, Juventus, attaccante, 28
-Moro R, Lazio, attaccante, 1
-Muldur, Sassuolo, difensore, 10
-Muriel, Atalanta, attaccante, 39
-Muriqi, Lazio, attaccante, 15
-Murru, Torino, difensore, 5
-Musacchio, Milan, difensore, 6
-Musso, Udinese, portiere, 15
-Mustacchio, Crotone, centrocampista, 6
-Nainggolan, Cagliari, centrocampista, 21
-Nandez, Cagliari, centrocampista, 16
-Nestorovski, Udinese, attaccante, 13
-Nkoulou, Torino, difensore, 14
-Nuytinck, Udinese, difensore, 10
-Nzola, Spezia, attaccante, 27
-Obiang, Sassuolo, centrocampista, 8
-Oddei, Sassuolo, attaccante, 1
-Okaka, Udinese, attaccante, 18
-Oliva, Cagliari, centrocampista, 6
-Orsolini, Bologna, attaccante, 22
-Osimhen, Napoli, attaccante, 28
-Osorio Y, Parma, difensore, 8
-Ospina, Napoli, portiere, 17
-Ounas, Cagliari, attaccante, 14
-Ouwejan, Udinese, difensore, 7
-Padelli, Inter, portiere, 1
-Pagliuca M, Bologna, attaccante, 1
-Pajac, Cagliari, difensore, 3
-Palacio, Bologna, attaccante, 16
-Paleari, Genoa, portiere, 2
-Palomino, Atalanta, difensore, 14
-Palumbo, Udinese, centrocampista, 1
-Pandev, Genoa, attaccante, 17
-Pandur, Verona, portiere, 1
-Parigini, Genoa, attaccante, 5
-Parolo, Lazio, centrocampista, 11
-Pasalic, Atalanta, centrocampista, 23
-Pastina, Benevento, difensore, 1
-Pastore, Roma, centrocampista, 9
-Patric, Lazio, difensore, 7
-Pau Lopez, Roma, portiere, 18
-Pavoletti, Cagliari, attaccante, 17
-Paz, Bologna, difensore, 8
-Pedro R, Roma, attaccante, 22
-Pegolo, Sassuolo, portiere, 2
-Pellegrini, Roma, centrocampista, 24
-Pellegrini Lu, Genoa, difensore, 9
-Peluso, Sassuolo, difensore, 3
-Pereira A, Lazio, centrocampista, 13
-Pereira P, Crotone, difensore, 7
-Pereiro G, Cagliari, attaccante, 11
-Pereyra, Udinese, centrocampista, 17
-Perez C, Roma, attaccante, 15
-Perin, Genoa, portiere, 13
-Perisic, Inter, attaccante, 15
-Pessina, Atalanta, centrocampista, 17
-Petagna, Napoli, attaccante, 20
-Petriccione, Crotone, centrocampista, 5
-Pezzella, Parma, difensore, 7
-Pezzella G, Fiorentina, difensore, 14
-Piccini, Atalanta, difensore, 7
-Piccinini, Sassuolo, difensore, 1
-Piccoli, Spezia, attaccante, 7
-Pinamonti, Inter, attaccante, 12
-Pinsoglio, Juventus, portiere, 1
-Pisacane, Cagliari, difensore, 7
-Pjaca, Genoa, attaccante, 13
-Pobega, Spezia, centrocampista, 13
-Poli, Bologna, centrocampista, 11
-Politano, Napoli, centrocampista, 19
-Portanova, Juventus, centrocampista, 2
-Prodl, Udinese, difensore, 4
-Proto, Lazio, portiere, 1
-Provedel, Spezia, portiere, 9
-Pulgar, Fiorentina, centrocampista, 17
-Pussetto, Udinese, attaccante, 17
-Quagliarella, Sampdoria, attaccante, 28
-R Vieira, Verona, centrocampista, 7
-Rabbi, Bologna, attaccante, 1
-Rabiot, Juventus, centrocampista, 14
-Radovanovic, Genoa, centrocampista, 7
-Radu, Lazio, difensore, 9
-Radu I, Inter, portiere, 1
-Rafael, Spezia, portiere, 1
-Ramirez, Sampdoria, centrocampista, 14
-Ramos J, Spezia, difensore, 2
-Ramsey, Juventus, centrocampista, 18
-Ranocchia, Inter, difensore, 7
-Raspadori, Sassuolo, attaccante, 12
-Ravaglia, Sampdoria, portiere, 1
-Ravaglia F, Bologna, portiere, 1
-Rebic, Milan, attaccante, 27
-Reca, Crotone, difensore, 11
-Regini, Sampdoria, difensore, 3
-Reina, Lazio, portiere, 9
-Ribery, Fiorentina, attaccante, 22
-Ricci G, Parma, difensore, 2
-Ricci M, Spezia, centrocampista, 10
-Rinaldi, Parma, portiere, 1
-Rincon, Torino, centrocampista, 12
-Rispoli, Crotone, difensore, 7
-Riviere, Crotone, attaccante, 13
-Rocha, Sampdoria, difensore, 1
-Rodriguez R, Torino, difensore, 9
-Rog, Cagliari, centrocampista, 13
-Rogerio, Sassuolo, difensore, 8
-Rojas, Crotone, centrocampista, 1
-Romagna, Sassuolo, difensore, 5
-Romagnoli A, Milan, difensore, 16
-Romero A, Crotone, centrocampista, 3
-Romero C, Atalanta, difensore, 10
-Rosati, Torino, portiere, 1
-Rossi F, Atalanta, portiere, 1
-Rovella, Genoa, centrocampista, 3
-Rrahmani, Napoli, difensore, 8
-Ruegg, Verona, difensore, 7
-Ruggeri, Atalanta, difensore, 2
-Saelemaekers, Milan, centrocampista, 18
-Sala, Spezia, difensore, 4
-Salcedo, Verona, attaccante, 10
-Samir, Udinese, difensore, 11
-Sanchez, Inter, attaccante, 19
-Sansone N, Bologna, attaccante, 11
-Santander, Bologna, attaccante, 10
-Santon, Roma, difensore, 5
-Saponara, Spezia, centrocampista, 12
-Sau, Benevento, attaccante, 18
-Scamacca, Genoa, attaccante, 14
-Schiappacasse, Sassuolo, attaccante, 4
-Schiattarella, Benevento, centrocampista, 11
-Schouten, Bologna, centrocampista, 9
-Scuffet, Udinese, portiere, 1
-Segre, Torino, centrocampista, 7
-Sena, Spezia, centrocampista, 4
-Sensi, Inter, centrocampista, 14
-Sepe, Parma, portiere, 12
-Shomurodov, Genoa, attaccante, 17
-Siligardi, Crotone, attaccante, 8
-Silva A, Sampdoria, centrocampista, 10
-Silvestri, Verona, portiere, 20
-Simeone, Cagliari, attaccante, 23
-Simonetti, Parma, centrocampista, 1
-Simy, Crotone, attaccante, 17
-Singo, Torino, difensore, 9
-Sirigu, Torino, portiere, 13
-Skorupski, Bologna, portiere, 11
-Skov Olsen, Bologna, attaccante, 11
-Skriniar, Inter, difensore, 20
-Smalling, Roma, difensore, 18
-Sohm, Parma, centrocampista, 4
-Soriano, Bologna, centrocampista, 27
-Sottil, Cagliari, centrocampista, 14
-Soumaoro, Bologna, difensore, 7
-Spinazzola, Roma, difensore, 17
-Sportiello, Atalanta, portiere, 5
-Sprocati, Parma, attaccante, 7
-Strakosha, Lazio, portiere, 17
-Strootman, Genoa, centrocampista, 12
-Sturaro, Genoa, centrocampista, 11
-Sutalo, Atalanta, difensore, 5
-Svanberg, Bologna, centrocampista, 11
-Szczesny, Juventus, portiere, 22
-Tameze, Verona, centrocampista, 13
-Tatarusanu, Milan, portiere, 1
-Tello A, Benevento, centrocampista, 5
-Terracciano, Fiorentina, portiere, 1
-Terzi, Spezia, difensore, 8
-Thorsby, Sampdoria, centrocampista, 13
-Toljan, Sassuolo, difensore, 7
-Toloi, Atalanta, difensore, 18
-Tomiyasu, Bologna, difensore, 15
-Tonali, Milan, centrocampista, 11
-Tonelli, Sampdoria, difensore, 5
-Torregrossa, Sampdoria, attaccante, 13
-Tramoni, Cagliari, centrocampista, 1
-Traore, Sassuolo, centrocampista, 17
-Tripaldelli, Cagliari, difensore, 3
-Tuia, Benevento, difensore, 8
-Turati, Sassuolo, portiere, 1
-Udogie, Verona, difensore, 1
-Udogie, Verona, difensore, 1
-Ujkani, Torino, portiere, 1
-Valenti, Parma, difensore, 7
-Vavro, Lazio, difensore, 5
-Vecino, Inter, centrocampista, 11
-Venuti, Fiorentina, difensore, 6
-Verde, Spezia, attaccante, 13
-Verdi, Torino, centrocampista, 16
-Veretout, Roma, centrocampista, 30
-Vergani, Bologna, attaccante, 1
-Verre, Sampdoria, centrocampista, 16
-Vicario, Cagliari, portiere, 1
-Vidal, Inter, centrocampista, 21
-Vignali, Spezia, difensore, 4
-Vignato, Bologna, attaccante, 13
-Villar, Roma, centrocampista, 8
-Viola, Benevento, centrocampista, 9
-Vlahovic, Fiorentina, attaccante, 22
-Vojvoda, Torino, difensore, 6
-Volta, Benevento, difensore, 4
-Vrioni, Juventus, attaccante, 1
-Vulic, Crotone, centrocampista, 9
-Walace, Udinese, centrocampista, 7
-Walukiewicz, Cagliari, difensore, 8
-Wesley, Juventus, difensore, 1
-Yeboah Ankrah, Verona, attaccante, 1
-Yoshida, Sampdoria, difensore, 11
-Young, Inter, difensore, 16
-Zaccagni, Verona, centrocampista, 23
-Zajc, Genoa, centrocampista, 13
-Zanellato, Crotone, centrocampista, 7
-Zaniolo, Roma, centrocampista, 25
-Zapata C, Genoa, difensore, 7
-Zapata D, Atalanta, attaccante, 38
-Zappa, Cagliari, difensore, 8
-Zappacosta, Genoa, difensore, 13
-Zaza, Torino, attaccante, 12
-Zeegelaar, Udinese, difensore, 9
-Zielinski, Napoli, centrocampista, 24
-Zima, Genoa, portiere, 1
-Zoet, Spezia, portiere, 8
+Acampora, Spezia, midfielder, 4
+Acerbi, Lazio, defender, 18
+Adopo, Torino, midfielder, 1
+Adorante, Parma, forward, 1
+Agoume, Spezia, midfielder, 4
+Agudelo, Spezia, midfielder, 12
+Akpa-Akpro, Lazio, midfielder, 4
+Alex Sandro, Juventus, defender, 15
+Alia, Lazio, goalkeeper, 1
+Amione, Verona, defender, 2
+Amrabat, Fiorentina, midfielder, 14
+Anderson D, Lazio, midfielder, 3
+Ansaldi, Torino, defender, 16
+Aresti, Cagliari, goalkeeper, 1
+Armini, Lazio, defender, 1
+Arslan, Udinese, midfielder, 11
+Arthur, Juventus, midfielder, 17
+Askildsen, Sampdoria, midfielder, 4
+Asoro, Genoa, forward, 8
+Audero, Sampdoria, goalkeeper, 17
+Augello, Sampdoria, defender, 10
+Avogadri, Sampdoria, goalkeeper, 1
+Ayhan, Sassuolo, defender, 8
+Badelj, Genoa, midfielder, 9
+Bakayoko, Napoli, midfielder, 15
+Baldursson, Bologna, midfielder, 1
+Balogh, Parma, defender, 1
+Bani, Genoa, defender, 8
+Barak, Verona, midfielder, 18
+Barba, Benevento, defender, 8
+Barella, Inter, midfielder, 21
+Barreca, Fiorentina, defender, 5
+Barrow, Bologna, forward, 20
+Baselli, Torino, midfielder, 12
+Basit, Benevento, midfielder, 1
+Bastoni, Inter, defender, 12
+Bastoni S, Spezia, defender, 6
+Becao, Udinese, defender, 8
+Behrami, Genoa, midfielder, 8
+Belotti, Torino, forward, 37
+Benali, Crotone, midfielder, 12
+Benassi, Verona, midfielder, 13
+Bennacer, Milan, midfielder, 14
+Bentancur, Juventus, midfielder, 15
+Berardi, Sassuolo, forward, 34
+Berardi A, Verona, goalkeeper, 1
+Bereszynski, Sampdoria, defender, 7
+Bernardeschi, Juventus, midfielder, 15
+Biraghi, Fiorentina, defender, 14
+Biraschi, Genoa, defender, 7
+Boer, Roma, goalkeeper, 1
+Boga, Sassuolo, forward, 24
+Bonaventura, Fiorentina, midfielder, 12
+Bonazzoli, Torino, forward, 16
+Bonifazi, Udinese, defender, 8
+Bonucci, Juventus, defender, 18
+Borja Valero, Fiorentina, midfielder, 12
+Bourabia, Sassuolo, midfielder, 9
+Brancolini, Fiorentina, goalkeeper, 1
+Bremer, Torino, defender, 16
+Breza, Bologna, goalkeeper, 1
+Brlek, Genoa, midfielder, 4
+Brozovic, Inter, midfielder, 20
+Brugman, Parma, midfielder, 8
+Brunetta, Parma, midfielder, 11
+Bruno Alves, Parma, defender, 9
+Bruno Peres, Roma, defender, 10
+Buffon, Juventus, goalkeeper, 6
+Buongiorno, Torino, defender, 1
+Busi, Parma, defender, 4
+C Ronaldo, Juventus, forward, 56
+Caceres, Fiorentina, defender, 10
+Caicedo, Lazio, forward, 23
+Calabresi, Bologna, defender, 3
+Calabria, Milan, defender, 15
+Calafiori, Roma, defender, 1
+Caldara, Atalanta, defender, 8
+Caldirola, Benevento, defender, 11
+Calhanoglu, Milan, midfielder, 25
+Caligara, Cagliari, midfielder, 2
+Callejon, Fiorentina, midfielder, 17
+Candreva, Sampdoria, midfielder, 25
+Capradossi, Spezia, defender, 3
+Caprari, Benevento, forward, 15
+Caputo, Sassuolo, forward, 32
+Carboni A, Cagliari, defender, 5
+Caso, Genoa, forward, 1
+Cassata, Genoa, midfielder, 7
+Castillejo, Milan, midfielder, 15
+Castrovilli, Fiorentina, midfielder, 19
+Cataldi, Lazio, midfielder, 8
+Caviglia, Parma, midfielder, 3
+Ceccherini, Verona, defender, 8
+Ceppitelli, Cagliari, defender, 9
+Cerri, Cagliari, forward, 7
+Cetin, Verona, defender, 4
+Chabot, Spezia, defender, 8
+Chiellini, Juventus, defender, 15
+Chiesa, Juventus, midfielder, 33
+Chiriches, Sassuolo, defender, 9
+Cigarini, Crotone, midfielder, 6
+Cleonise, Genoa, forward, 1
+Colley, Sampdoria, defender, 10
+Colley E, Verona, forward, 9
+Colombi, Parma, goalkeeper, 1
+Colombo, Milan, forward, 1
+Consigli, Sassuolo, goalkeeper, 14
+Conti, Milan, defender, 9
+Contini, Napoli, goalkeeper, 1
+Cordaz, Crotone, goalkeeper, 7
+Cornelius, Parma, forward, 14
+Correa, Lazio, forward, 21
+Cragno, Cagliari, goalkeeper, 14
+Crespi, Crotone, goalkeeper, 1
+Criscito, Genoa, defender, 20
+Cristante, Roma, midfielder, 12
+Crociata, Crotone, midfielder, 8
+Cuadrado, Juventus, defender, 17
+Cuomo, Crotone, defender, 4
+Cyprien, Parma, midfielder, 12
+Czyborra, Genoa, defender, 6
+D'ambrosio, Inter, defender, 19
+Da Costa, Bologna, goalkeeper, 3
+Dabo, Benevento, midfielder, 9
+Dalot, Milan, defender, 7
+Damsgaard, Sampdoria, midfielder, 17
+Danilo, Bologna, defender, 11
+Danilo L, Juventus, defender, 14
+Danzi, Verona, midfielder, 1
+Darmian, Inter, defender, 12
+Dawidowicz, Verona, defender, 8
+De Ligt, Juventus, defender, 17
+De Maio, Udinese, defender, 7
+De Paul, Udinese, midfielder, 26
+De Roon, Atalanta, midfielder, 20
+De Silvestri, Bologna, defender, 11
+De Vrij, Inter, defender, 21
+Defrel, Sassuolo, forward, 16
+Deiola, Spezia, midfielder, 6
+Dellorco, Spezia, defender, 7
+Demiral, Juventus, defender, 13
+Demme, Napoli, midfielder, 14
+Depaoli, Atalanta, midfielder, 5
+Destro, Genoa, forward, 19
+Deulofeu, Udinese, forward, 19
+Dezi, Parma, midfielder, 6
+Di Carmine, Verona, forward, 14
+Di Gaudio, Verona, forward, 5
+Di Lorenzo, Napoli, defender, 14
+Di Serio, Benevento, forward, 1
+Diawara, Roma, midfielder, 11
+Diaz B, Milan, midfielder, 16
+Dijks, Bologna, defender, 7
+Dimarco, Verona, defender, 16
+Djidji, Crotone, defender, 5
+Djimsiti, Atalanta, defender, 15
+Djuricic, Sassuolo, midfielder, 19
+Dodo', Sampdoria, defender, 3
+Dominguez, Bologna, midfielder, 9
+Donnarumma A, Milan, goalkeeper, 1
+Donnarumma G, Milan, goalkeeper, 25
+Dragowski, Fiorentina, goalkeeper, 21
+Dragus, Crotone, forward, 5
+Dragusin, Juventus, defender, 1
+Duncan, Fiorentina, midfielder, 13
+Durmisi, Lazio, defender, 4
+Dybala, Juventus, forward, 31
+Dzeko, Roma, forward, 33
+Ebongue, Genoa, midfielder, 1
+Edera, Torino, forward, 7
+Ekdal, Sampdoria, midfielder, 14
+Elmas, Napoli, midfielder, 13
+Eriksen, Inter, midfielder, 21
+Erlic, Spezia, defender, 5
+Escalante, Lazio, midfielder, 8
+Estevez, Spezia, midfielder, 8
+Eysseric, Fiorentina, midfielder, 6
+Fabian Ruiz, Napoli, midfielder, 17
+Farago', Cagliari, defender, 7
+Faraoni, Verona, defender, 16
+Farelli, Roma, goalkeeper, 1
+Fares, Lazio, defender, 7
+Farias, Spezia, forward, 13
+Favilli, Verona, forward, 13
+Fazio, Roma, defender, 10
+Ferigra, Torino, defender, 1
+Ferrari A, Sampdoria, defender, 5
+Ferrari G, Sassuolo, defender, 11
+Ferrer, Spezia, defender, 5
+Festa, Crotone, goalkeeper, 1
+Forestieri, Udinese, forward, 12
+Foulon, Benevento, defender, 5
+Frabotta, Juventus, defender, 5
+Freuler, Atalanta, midfielder, 22
+Fuzato, Roma, goalkeeper, 1
+Gabbia, Milan, defender, 5
+Gabbiadini, Sampdoria, forward, 20
+Gagliardini, Inter, midfielder, 15
+Gagliolo, Parma, defender, 14
+Galabinov, Spezia, forward, 14
+Gasparini, Udinese, goalkeeper, 1
+Gazzola, Parma, defender, 3
+Gervinho, Parma, forward, 24
+Ghiglione, Genoa, defender, 9
+Ghoulam, Napoli, defender, 12
+Glik, Benevento, defender, 12
+Godin, Cagliari, defender, 17
+Gojak, Torino, midfielder, 11
+Goldaniga, Genoa, defender, 8
+Golemic, Crotone, defender, 10
+Gollini, Atalanta, goalkeeper, 21
+Gomelt, Crotone, midfielder, 2
+Gomez A, Atalanta, midfielder, 29
+Gori, Benevento, goalkeeper, 1
+Gosens, Atalanta, defender, 32
+Grassi, Parma, midfielder, 7
+Gunter, Verona, defender, 8
+Gyabuaa, Atalanta, midfielder, 1
+Gyasi, Spezia, forward, 12
+Hakimi, Inter, defender, 33
+Handanovic, Inter, goalkeeper, 20
+Haraslin, Sassuolo, forward, 8
+Hateboer, Atalanta, defender, 17
+Hauge, Milan, forward, 12
+Henrique E, Crotone, midfielder, 6
+Hernandez T, Milan, defender, 30
+Hernani, Parma, midfielder, 13
+Hetemaj, Benevento, midfielder, 8
+Hickey, Bologna, defender, 6
+Hoedt, Lazio, defender, 6
+Hysaj, Napoli, defender, 10
+Iacoponi, Parma, defender, 8
+Iago Falque, Benevento, forward, 17
+Ibanez, Roma, defender, 9
+Ibrahimovic, Milan, forward, 45
+Igor, Fiorentina, defender, 9
+Ilic, Verona, midfielder, 7
+Ilicic, Atalanta, forward, 35
+Immobile, Lazio, forward, 46
+Improta, Benevento, midfielder, 11
+Inglese, Parma, forward, 14
+Insigne, Napoli, forward, 33
+Insigne R, Benevento, forward, 15
+Ionita, Benevento, midfielder, 10
+Ismajli, Spezia, defender, 5
+Izzo, Torino, defender, 18
+Jajalo, Udinese, midfielder, 7
+Jankto, Sampdoria, midfielder, 20
+Joao Pedro, Cagliari, forward, 34
+Jocic, Verona, midfielder, 1
+Juan Jesus, Roma, defender, 4
+Juwara, Bologna, forward, 4
+Kalinic, Verona, forward, 17
+Kalulu, Milan, defender, 5
+Karamoh, Parma, forward, 10
+Karsdorp, Roma, defender, 10
+Keita B, Sampdoria, forward, 18
+Kessie, Milan, midfielder, 27
+Khailoti, Bologna, defender, 1
+Khedira, Juventus, midfielder, 8
+Kingsley, Bologna, midfielder, 1
+Kiyine, Lazio, midfielder, 6
+Kjaer, Milan, defender, 14
+Klavan, Cagliari, defender, 6
+Kolarov, Inter, defender, 19
+Kouame, Fiorentina, forward, 16
+Koulibaly, Napoli, defender, 17
+Krapikas, Spezia, goalkeeper, 1
+Krunic, Milan, midfielder, 7
+Kucka, Parma, midfielder, 19
+Kulusevski, Juventus, midfielder, 28
+Kumbulla, Roma, defender, 15
+Kurtic, Parma, midfielder, 14
+Kyriakopoulos, Sassuolo, defender, 8
+La Gumina, Sampdoria, forward, 8
+Lammers, Atalanta, forward, 16
+Lapadula, Benevento, forward, 19
+Laribi, Verona, midfielder, 5
+Larsen, Udinese, defender, 12
+Lasagna, Udinese, forward, 18
+Laurini, Parma, defender, 4
+Lazovic, Verona, midfielder, 14
+Lazzari M, Lazio, defender, 15
+Leao, Milan, forward, 24
+Lerager, Genoa, midfielder, 8
+Leris, Sampdoria, midfielder, 7
+Letica, Sampdoria, goalkeeper, 1
+Letizia, Benevento, defender, 16
+Linetty, Torino, midfielder, 13
+Llorente, Napoli, forward, 10
+Lobotka, Napoli, midfielder, 10
+Locatelli M, Sassuolo, midfielder, 17
+Lopez M, Sassuolo, midfielder, 12
+Lovato, Verona, defender, 4
+Lozano, Napoli, forward, 27
+Lucas Leiva, Lazio, midfielder, 11
+Lucatelli, Benevento, goalkeeper, 1
+Luis Alberto, Lazio, midfielder, 31
+Luiz Felipe, Lazio, defender, 10
+Lukaku R, Inter, forward, 44
+Lukic, Torino, midfielder, 13
+Lulic, Lazio, defender, 14
+Luperto, Crotone, defender, 5
+Luvumbo, Cagliari, forward, 1
+Lyanco, Torino, defender, 6
+Lykogiannis, Cagliari, defender, 10
+Maehle, Atalanta, defender, 10
+Magallan, Crotone, defender, 5
+Maggio, Benevento, defender, 7
+Maggiore, Spezia, midfielder, 10
+Magnanelli, Sassuolo, midfielder, 5
+Magnani, Verona, defender, 7
+Makengo, Udinese, midfielder, 6
+Maksimovic, Napoli, defender, 8
+Malcuit, Napoli, defender, 5
+Maldini D, Milan, midfielder, 1
+Males, Genoa, forward, 6
+Malinovskyi, Atalanta, midfielder, 23
+Mancini, Roma, defender, 18
+Mandragora, Udinese, midfielder, 10
+Manfredini, Benevento, goalkeeper, 1
+Manolas, Napoli, defender, 16
+Marchetti, Genoa, goalkeeper, 2
+Marchizza, Spezia, defender, 6
+Marin R, Cagliari, midfielder, 11
+Mario Rui, Napoli, defender, 11
+Marlon, Sassuolo, defender, 7
+Marrone, Crotone, defender, 5
+Martinez L, Inter, forward, 34
+Martinez Q, Fiorentina, defender, 8
+Marusic, Lazio, defender, 9
+Masiello A, Genoa, defender, 7
+Mastinu, Spezia, midfielder, 9
+Mattiello, Spezia, defender, 6
+Mayoral, Roma, forward, 19
+Mazzotta, Crotone, defender, 4
+Mbaye, Bologna, defender, 4
+McKennie, Juventus, midfielder, 19
+Medel, Bologna, midfielder, 10
+Meite, Torino, midfielder, 11
+Melegoni, Genoa, midfielder, 4
+Meret, Napoli, goalkeeper, 8
+Mertens, Napoli, forward, 31
+Messias, Crotone, forward, 23
+Micin, Udinese, forward, 2
+Miguel Veloso, Verona, midfielder, 18
+Mihaila, Parma, forward, 5
+Milenkovic, Fiorentina, defender, 18
+Milik, Napoli, forward, 23
+Milinkovic-Savic, Lazio, midfielder, 30
+Milinkovic-Savic V, Torino, goalkeeper, 2
+Miranchuk, Atalanta, midfielder, 21
+Mirante, Roma, goalkeeper, 8
+Mkhitaryan, Roma, midfielder, 39
+Mojica, Atalanta, defender, 6
+Molina, Crotone, midfielder, 11
+Molina N, Udinese, defender, 6
+Moncini, Benevento, forward, 11
+Montiel, Fiorentina, midfielder, 1
+Montipo', Benevento, goalkeeper, 13
+Mora, Spezia, midfielder, 6
+Morata, Juventus, forward, 28
+Moro R, Lazio, forward, 1
+Muldur, Sassuolo, defender, 10
+Muriel, Atalanta, forward, 39
+Muriqi, Lazio, forward, 15
+Murru, Torino, defender, 5
+Musacchio, Milan, defender, 6
+Musso, Udinese, goalkeeper, 15
+Mustacchio, Crotone, midfielder, 6
+Nainggolan, Cagliari, midfielder, 21
+Nandez, Cagliari, midfielder, 16
+Nestorovski, Udinese, forward, 13
+Nkoulou, Torino, defender, 14
+Nuytinck, Udinese, defender, 10
+Nzola, Spezia, forward, 27
+Obiang, Sassuolo, midfielder, 8
+Oddei, Sassuolo, forward, 1
+Okaka, Udinese, forward, 18
+Oliva, Cagliari, midfielder, 6
+Orsolini, Bologna, forward, 22
+Osimhen, Napoli, forward, 28
+Osorio Y, Parma, defender, 8
+Ospina, Napoli, goalkeeper, 17
+Ounas, Cagliari, forward, 14
+Ouwejan, Udinese, defender, 7
+Padelli, Inter, goalkeeper, 1
+Pagliuca M, Bologna, forward, 1
+Pajac, Cagliari, defender, 3
+Palacio, Bologna, forward, 16
+Paleari, Genoa, goalkeeper, 2
+Palomino, Atalanta, defender, 14
+Palumbo, Udinese, midfielder, 1
+Pandev, Genoa, forward, 17
+Pandur, Verona, goalkeeper, 1
+Parigini, Genoa, forward, 5
+Parolo, Lazio, midfielder, 11
+Pasalic, Atalanta, midfielder, 23
+Pastina, Benevento, defender, 1
+Pastore, Roma, midfielder, 9
+Patric, Lazio, defender, 7
+Pau Lopez, Roma, goalkeeper, 18
+Pavoletti, Cagliari, forward, 17
+Paz, Bologna, defender, 8
+Pedro R, Roma, forward, 22
+Pegolo, Sassuolo, goalkeeper, 2
+Pellegrini, Roma, midfielder, 24
+Pellegrini Lu, Genoa, defender, 9
+Peluso, Sassuolo, defender, 3
+Pereira A, Lazio, midfielder, 13
+Pereira P, Crotone, defender, 7
+Pereiro G, Cagliari, forward, 11
+Pereyra, Udinese, midfielder, 17
+Perez C, Roma, forward, 15
+Perin, Genoa, goalkeeper, 13
+Perisic, Inter, forward, 15
+Pessina, Atalanta, midfielder, 17
+Petagna, Napoli, forward, 20
+Petriccione, Crotone, midfielder, 5
+Pezzella, Parma, defender, 7
+Pezzella G, Fiorentina, defender, 14
+Piccini, Atalanta, defender, 7
+Piccinini, Sassuolo, defender, 1
+Piccoli, Spezia, forward, 7
+Pinamonti, Inter, forward, 12
+Pinsoglio, Juventus, goalkeeper, 1
+Pisacane, Cagliari, defender, 7
+Pjaca, Genoa, forward, 13
+Pobega, Spezia, midfielder, 13
+Poli, Bologna, midfielder, 11
+Politano, Napoli, midfielder, 19
+Portanova, Juventus, midfielder, 2
+Prodl, Udinese, defender, 4
+Proto, Lazio, goalkeeper, 1
+Provedel, Spezia, goalkeeper, 9
+Pulgar, Fiorentina, midfielder, 17
+Pussetto, Udinese, forward, 17
+Quagliarella, Sampdoria, forward, 28
+R Vieira, Verona, midfielder, 7
+Rabbi, Bologna, forward, 1
+Rabiot, Juventus, midfielder, 14
+Radovanovic, Genoa, midfielder, 7
+Radu, Lazio, defender, 9
+Radu I, Inter, goalkeeper, 1
+Rafael, Spezia, goalkeeper, 1
+Ramirez, Sampdoria, midfielder, 14
+Ramos J, Spezia, defender, 2
+Ramsey, Juventus, midfielder, 18
+Ranocchia, Inter, defender, 7
+Raspadori, Sassuolo, forward, 12
+Ravaglia, Sampdoria, goalkeeper, 1
+Ravaglia F, Bologna, goalkeeper, 1
+Rebic, Milan, forward, 27
+Reca, Crotone, defender, 11
+Regini, Sampdoria, defender, 3
+Reina, Lazio, goalkeeper, 9
+Ribery, Fiorentina, forward, 22
+Ricci G, Parma, defender, 2
+Ricci M, Spezia, midfielder, 10
+Rinaldi, Parma, goalkeeper, 1
+Rincon, Torino, midfielder, 12
+Rispoli, Crotone, defender, 7
+Riviere, Crotone, forward, 13
+Rocha, Sampdoria, defender, 1
+Rodriguez R, Torino, defender, 9
+Rog, Cagliari, midfielder, 13
+Rogerio, Sassuolo, defender, 8
+Rojas, Crotone, midfielder, 1
+Romagna, Sassuolo, defender, 5
+Romagnoli A, Milan, defender, 16
+Romero A, Crotone, midfielder, 3
+Romero C, Atalanta, defender, 10
+Rosati, Torino, goalkeeper, 1
+Rossi F, Atalanta, goalkeeper, 1
+Rovella, Genoa, midfielder, 3
+Rrahmani, Napoli, defender, 8
+Ruegg, Verona, defender, 7
+Ruggeri, Atalanta, defender, 2
+Saelemaekers, Milan, midfielder, 18
+Sala, Spezia, defender, 4
+Salcedo, Verona, forward, 10
+Samir, Udinese, defender, 11
+Sanchez, Inter, forward, 19
+Sansone N, Bologna, forward, 11
+Santander, Bologna, forward, 10
+Santon, Roma, defender, 5
+Saponara, Spezia, midfielder, 12
+Sau, Benevento, forward, 18
+Scamacca, Genoa, forward, 14
+Schiappacasse, Sassuolo, forward, 4
+Schiattarella, Benevento, midfielder, 11
+Schouten, Bologna, midfielder, 9
+Scuffet, Udinese, goalkeeper, 1
+Segre, Torino, midfielder, 7
+Sena, Spezia, midfielder, 4
+Sensi, Inter, midfielder, 14
+Sepe, Parma, goalkeeper, 12
+Shomurodov, Genoa, forward, 17
+Siligardi, Crotone, forward, 8
+Silva A, Sampdoria, midfielder, 10
+Silvestri, Verona, goalkeeper, 20
+Simeone, Cagliari, forward, 23
+Simonetti, Parma, midfielder, 1
+Simy, Crotone, forward, 17
+Singo, Torino, defender, 9
+Sirigu, Torino, goalkeeper, 13
+Skorupski, Bologna, goalkeeper, 11
+Skov Olsen, Bologna, forward, 11
+Skriniar, Inter, defender, 20
+Smalling, Roma, defender, 18
+Sohm, Parma, midfielder, 4
+Soriano, Bologna, midfielder, 27
+Sottil, Cagliari, midfielder, 14
+Soumaoro, Bologna, defender, 7
+Spinazzola, Roma, defender, 17
+Sportiello, Atalanta, goalkeeper, 5
+Sprocati, Parma, forward, 7
+Strakosha, Lazio, goalkeeper, 17
+Strootman, Genoa, midfielder, 12
+Sturaro, Genoa, midfielder, 11
+Sutalo, Atalanta, defender, 5
+Svanberg, Bologna, midfielder, 11
+Szczesny, Juventus, goalkeeper, 22
+Tameze, Verona, midfielder, 13
+Tatarusanu, Milan, goalkeeper, 1
+Tello A, Benevento, midfielder, 5
+Terracciano, Fiorentina, goalkeeper, 1
+Terzi, Spezia, defender, 8
+Thorsby, Sampdoria, midfielder, 13
+Toljan, Sassuolo, defender, 7
+Toloi, Atalanta, defender, 18
+Tomiyasu, Bologna, defender, 15
+Tonali, Milan, midfielder, 11
+Tonelli, Sampdoria, defender, 5
+Torregrossa, Sampdoria, forward, 13
+Tramoni, Cagliari, midfielder, 1
+Traore, Sassuolo, midfielder, 17
+Tripaldelli, Cagliari, defender, 3
+Tuia, Benevento, defender, 8
+Turati, Sassuolo, goalkeeper, 1
+Udogie, Verona, defender, 1
+Udogie, Verona, defender, 1
+Ujkani, Torino, goalkeeper, 1
+Valenti, Parma, defender, 7
+Vavro, Lazio, defender, 5
+Vecino, Inter, midfielder, 11
+Venuti, Fiorentina, defender, 6
+Verde, Spezia, forward, 13
+Verdi, Torino, midfielder, 16
+Veretout, Roma, midfielder, 30
+Vergani, Bologna, forward, 1
+Verre, Sampdoria, midfielder, 16
+Vicario, Cagliari, goalkeeper, 1
+Vidal, Inter, midfielder, 21
+Vignali, Spezia, defender, 4
+Vignato, Bologna, forward, 13
+Villar, Roma, midfielder, 8
+Viola, Benevento, midfielder, 9
+Vlahovic, Fiorentina, forward, 22
+Vojvoda, Torino, defender, 6
+Volta, Benevento, defender, 4
+Vrioni, Juventus, forward, 1
+Vulic, Crotone, midfielder, 9
+Walace, Udinese, midfielder, 7
+Walukiewicz, Cagliari, defender, 8
+Wesley, Juventus, defender, 1
+Yeboah Ankrah, Verona, forward, 1
+Yoshida, Sampdoria, defender, 11
+Young, Inter, defender, 16
+Zaccagni, Verona, midfielder, 23
+Zajc, Genoa, midfielder, 13
+Zanellato, Crotone, midfielder, 7
+Zaniolo, Roma, midfielder, 25
+Zapata C, Genoa, defender, 7
+Zapata D, Atalanta, forward, 38
+Zappa, Cagliari, defender, 8
+Zappacosta, Genoa, defender, 13
+Zaza, Torino, forward, 12
+Zeegelaar, Udinese, defender, 9
+Zielinski, Napoli, midfielder, 24
+Zima, Genoa, goalkeeper, 1
+Zoet, Spezia, goalkeeper, 8
