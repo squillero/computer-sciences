@@ -2,8 +2,7 @@
 
 Create a Python program to simulate a (simplified) game of Guess Who...
 
-Guess Who.. is a game featuring 24 characters / caricatures. Each character has distinctive traits (gender,
-length and color of hair, glasses, hat, mustache, beard or baldness).
+Guess Who.. is a game featuring 24 characters / caricatures. Each character has distinctive traits (Name, Gender, Hair color, Hair length, Glasses, Hat, Mustache, Beard, Bald).
 
 The goal of the game is to guess the character chosen by the opponent by asking a series of questions to which the opponent
 can answer with "YES" or "NO".
@@ -22,12 +21,12 @@ In particular, the program must:
 
         feature_name = feature_value
 
-(for example, Beard = YES, or Hair Length = Short).
+(for example, Beard = YES, or Hair length = Short).
 
 3. print all the characters present and related information on the screen
 
 4. show, following each question, the characters who respond to that characteristic and to the previous ones (e.g., if the question is 
-   "Hair Color = Blonde", only blond characters will be shown), by printing the number
+   "Hair color = Blond", only blond characters will be shown), by printing the number
    of the question and the question, followed by the list of characters
 
 5. print the final result on the screen: in particular, if at the end of the questions there is only one character left, the
@@ -39,46 +38,133 @@ player selects first the blond characters, then the ones with glasses, the remai
 glasses (not with brown, red hair, etc.).
 
 ## Example of program execution with the file "questions1.txt":
-
+```text
 Game characters:
+Alex - Gender: Male, Hair color: Black, Hair length: Short, Mustache 
+Alfred - Gender: Male, Hair color: Red, Hair length: Long, Mustache 
+Anita - Gender: Female, Hair color: Blond, Hair length: Long
+Anne - Gender: Female, Hair color: Black, Hair length: Short
+Bernard - Gender: Male, Hair color: Brown, Hair length: Short, Hat
+Bill - Gender: Male, Hair color: Red, Hair length: Short, Beard, Bald
+Charles - Gender: Male, Hair color: Blond, Hair length: Short, Mustache 
+Claire - Gender: Female, Hair color: Red, Hair length: Short, Glasses, Hat
+David - Gender: Male, Hair color: Blond, Hair length: Short, Beard
+Eric - Gender: Male, Hair color: Blond, Hair length: Short, Hat
+Frans - Gender: Male, Hair color: Red, Hair length: Short
+George - Gender: Male, Hair color: White, Hair length: Short, Hat
+Herman - Gender: Male, Hair color: Red, Hair length: Short, Bald
+Joe - Gender: Male, Hair color: Blond, Hair length: Short, Glasses
+Maria - Gender: Female, Hair color: Brown, Hair length: Long, Hat
+Max - Gender: Male, Hair color: Black, Hair length: Short, Mustache 
+Paul - Gender: Male, Hair color: White, Hair length: Short, Glasses
+Peter - Gender: Male, Hair color: White, Hair length: Short
+Philip - Gender: Male, Hair color: Black, Hair length: Short, Beard
+Richard - Gender: Male, Hair color: Brown, Hair length: Short, Mustache , Beard, Bald
+Robert - Gender: Male, Hair color: Brown, Hair length: Short
+Sam - Gender: Male, Hair color: White, Hair length: Short, Glasses, Bald
+Susan - Gender: Female, Hair color: White, Hair length: Long
+Tom - Gender: Male, Hair color: Black, Hair length: Short, Glasses, Bald
 
-    Alex - Gender: Men, Hair Color: Black, Hair Length: Short, Mustache
-    Alfred - Gender: Male, Hair Color: Red, Hair Length: Long, Mustache
-    Anita - Gender: Woman, Hair color: Blond, Hair length: Long
-    Anne - Gender: Woman, Hair Color: Black, Hair Length: Short
-    Bernard - Gender: Men, Hair Color: Brown, Hair Length: Short, Hat
-    Bill - Gender: Male, Hair Color: Red, Hair Length: Short, Beard, Bald
-    Charles - Gender: Male, Hair Color: Blond, Hair Length: Short, Mustache
-    Claire - Gender: Woman, Hair Color: Red, Hair Length: Short, Glasses, Hat
-    David - Gender: Male, Hair Color: Blond, Hair Length: Short, Beard
-    Eric - Gender: Men, Hair Color: Blond, Hair Length: Short, Hat
-    Frans - Gender: Men, Hair Color: Red, Hair Length: Short
-    George - Gender: Men, Hair Color: White, Hair Length: Short, Hat
-    Herman - Gender: Male, Hair Color: Red, Hair Length: Short, Bald
-    Joe - Gender: Male, Hair color: Blond, Hair length: Short, Glasses
-    Maria - Gender: Woman, Hair color: Brown, Hair length: Long, Hat
-    Max - Gender: Men, Hair Color: Black, Hair Length: Short, Mustache
-    Paul - Gender: Men, Hair color: White, Hair length: Short, Glasses
-    Peter - Gender: Men, Hair Color: White, Hair Length: Short
-    Philip - Gender: Male, Hair color: Black, Hair length: Short, Beard
-    Richard - Gender: Male, Hair Color: Brown, Hair Length: Short, Mustache, Beard, Bald
-    Robert - Gender: Male, Hair Color: Brown, Hair Length: Short
-    Sam - Gender: Male, Hair Color: White, Hair Length: Short, Glasses, Bald
-    Susan - Gender: Woman, Hair Color: White, Hair Length: Long
-    Tom - Gender: Men, Hair Color: Black, Hair Length: Short, Glasses, Bald
-
-Step 1 - question: Hair Color = Blonde
+Step 1 - question: Hair color = Blond
 Selected characters:
+Anita - Gender: Female, Hair color: Blond, Hair length: Long
+Charles - Gender: Male, Hair color: Blond, Hair length: Short, Mustache 
+David - Gender: Male, Hair color: Blond, Hair length: Short, Beard
+Eric - Gender: Male, Hair color: Blond, Hair length: Short, Hat
+Joe - Gender: Male, Hair color: Blond, Hair length: Short, Glasses
 
-    Anita - Gender: Woman, Hair color: Blond, Hair length: Long
-    Charles - Gender: Male, Hair Color: Blond, Hair Length: Short, Mustache
-    David - Gender: Male, Hair Color: Blond, Hair Length: Short, Beard
-    Eric - Gender: Men, Hair Color: Blond, Hair Length: Short, Hat
-    Joe - Gender: Male, Hair color: Blond, Hair length: Short, Glasses
-
-Step 2 - question: Hair Length = Short
+Step 2 - question: Hair length = Short
 Selected characters:
+Charles - Gender: Male, Hair color: Blond, Hair length: Short, Mustache 
+David - Gender: Male, Hair color: Blond, Hair length: Short, Beard
+Eric - Gender: Male, Hair color: Blond, Hair length: Short, Hat
+Joe - Gender: Male, Hair color: Blond, Hair length: Short, Glasses
 
-    Charles - Gender: Male, Hair Color: Blond, Hair Length: Short, Mustache
-    David - Gender: Male, Hair Color: Blond, Hair Length: Short, Beard
-    Eric - Gender: Male, Hair color: Blonde, Length 
+Step 3 - question: Glasses = YES
+Selected characters:
+Joe - Gender: Male, Hair color: Blond, Hair length: Short, Glasses
+
+Congratulations, you win! Character selected:
+Joe - Gender: Male, Hair color: Blond, Hair length: Short, Glasses
+```
+
+## Example of program execution with the file "questions2.txt":
+```text
+Game characters:
+Alex - Gender: Male, Hair color: Black, Hair length: Short, Mustache 
+Alfred - Gender: Male, Hair color: Red, Hair length: Long, Mustache 
+Anita - Gender: Female, Hair color: Blond, Hair length: Long
+Anne - Gender: Female, Hair color: Black, Hair length: Short
+Bernard - Gender: Male, Hair color: Brown, Hair length: Short, Hat
+Bill - Gender: Male, Hair color: Red, Hair length: Short, Beard, Bald
+Charles - Gender: Male, Hair color: Blond, Hair length: Short, Mustache 
+Claire - Gender: Female, Hair color: Red, Hair length: Short, Glasses, Hat
+David - Gender: Male, Hair color: Blond, Hair length: Short, Beard
+Eric - Gender: Male, Hair color: Blond, Hair length: Short, Hat
+Frans - Gender: Male, Hair color: Red, Hair length: Short
+George - Gender: Male, Hair color: White, Hair length: Short, Hat
+Herman - Gender: Male, Hair color: Red, Hair length: Short, Bald
+Joe - Gender: Male, Hair color: Blond, Hair length: Short, Glasses
+Maria - Gender: Female, Hair color: Brown, Hair length: Long, Hat
+Max - Gender: Male, Hair color: Black, Hair length: Short, Mustache 
+Paul - Gender: Male, Hair color: White, Hair length: Short, Glasses
+Peter - Gender: Male, Hair color: White, Hair length: Short
+Philip - Gender: Male, Hair color: Black, Hair length: Short, Beard
+Richard - Gender: Male, Hair color: Brown, Hair length: Short, Mustache , Beard, Bald
+Robert - Gender: Male, Hair color: Brown, Hair length: Short
+Sam - Gender: Male, Hair color: White, Hair length: Short, Glasses, Bald
+Susan - Gender: Female, Hair color: White, Hair length: Long
+Tom - Gender: Male, Hair color: Black, Hair length: Short, Glasses, Bald
+
+Step 1 - question: Gender = Male
+Selected characters:
+Alex - Gender: Male, Hair color: Black, Hair length: Short, Mustache 
+Alfred - Gender: Male, Hair color: Red, Hair length: Long, Mustache 
+Bernard - Gender: Male, Hair color: Brown, Hair length: Short, Hat
+Bill - Gender: Male, Hair color: Red, Hair length: Short, Beard, Bald
+Charles - Gender: Male, Hair color: Blond, Hair length: Short, Mustache 
+David - Gender: Male, Hair color: Blond, Hair length: Short, Beard
+Eric - Gender: Male, Hair color: Blond, Hair length: Short, Hat
+Frans - Gender: Male, Hair color: Red, Hair length: Short
+George - Gender: Male, Hair color: White, Hair length: Short, Hat
+Herman - Gender: Male, Hair color: Red, Hair length: Short, Bald
+Joe - Gender: Male, Hair color: Blond, Hair length: Short, Glasses
+Max - Gender: Male, Hair color: Black, Hair length: Short, Mustache 
+Paul - Gender: Male, Hair color: White, Hair length: Short, Glasses
+Peter - Gender: Male, Hair color: White, Hair length: Short
+Philip - Gender: Male, Hair color: Black, Hair length: Short, Beard
+Richard - Gender: Male, Hair color: Brown, Hair length: Short, Mustache , Beard, Bald
+Robert - Gender: Male, Hair color: Brown, Hair length: Short
+Sam - Gender: Male, Hair color: White, Hair length: Short, Glasses, Bald
+Tom - Gender: Male, Hair color: Black, Hair length: Short, Glasses, Bald
+
+Step 2 - question: Hair length = Short
+Selected characters:
+Alex - Gender: Male, Hair color: Black, Hair length: Short, Mustache 
+Bernard - Gender: Male, Hair color: Brown, Hair length: Short, Hat
+Bill - Gender: Male, Hair color: Red, Hair length: Short, Beard, Bald
+Charles - Gender: Male, Hair color: Blond, Hair length: Short, Mustache 
+David - Gender: Male, Hair color: Blond, Hair length: Short, Beard
+Eric - Gender: Male, Hair color: Blond, Hair length: Short, Hat
+Frans - Gender: Male, Hair color: Red, Hair length: Short
+George - Gender: Male, Hair color: White, Hair length: Short, Hat
+Herman - Gender: Male, Hair color: Red, Hair length: Short, Bald
+Joe - Gender: Male, Hair color: Blond, Hair length: Short, Glasses
+Max - Gender: Male, Hair color: Black, Hair length: Short, Mustache 
+Paul - Gender: Male, Hair color: White, Hair length: Short, Glasses
+Peter - Gender: Male, Hair color: White, Hair length: Short
+Philip - Gender: Male, Hair color: Black, Hair length: Short, Beard
+Richard - Gender: Male, Hair color: Brown, Hair length: Short, Mustache , Beard, Bald
+Robert - Gender: Male, Hair color: Brown, Hair length: Short
+Sam - Gender: Male, Hair color: White, Hair length: Short, Glasses, Bald
+Tom - Gender: Male, Hair color: Black, Hair length: Short, Glasses, Bald
+
+Step 3 - question: Beard = YES
+Selected characters:
+Bill - Gender: Male, Hair color: Red, Hair length: Short, Beard, Bald
+David - Gender: Male, Hair color: Blond, Hair length: Short, Beard
+Philip - Gender: Male, Hair color: Black, Hair length: Short, Beard
+Richard - Gender: Male, Hair color: Brown, Hair length: Short, Mustache , Beard, Bald
+
+Too bad, you lose.
+```
