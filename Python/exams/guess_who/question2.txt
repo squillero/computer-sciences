@@ -1,3 +1,3 @@
-Gender = Man
-Hair Length = Short
+Gender = Male
+Hair length = Short
 Beard = YES 
