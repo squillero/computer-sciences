@@ -43,7 +43,7 @@ Eg:
 Write a Python program to identify Murphy's laws that address certain topics.
 
 The program must identify all maxims in which at least one of these words appears
-** in the sentence ** (it doesn't matter whether it appears in the title or not).
+** in the statement ** (it doesn't matter whether it appears in the title or not).
 The searched word must appear as a "complete" word in the text, partial matches are not allowed.
 For example, if the word were "with", a maxim containing "accounts" should not be selected.
 The comparison must be done by ignoring the difference between upper and lower case, and removing the punctuation characters.
