@@ -6,38 +6,38 @@ In the text file, each maxim is made up of _two or more_ lines of text: on the f
 
 Eg:
 
-    Principle of the lost elements
-    The radius of fall from the workbench of small elements varies inversely with their size and
-    directly to their importance for the completion of the work undertaken.
-    
-    Perussel's law
-    There is no such simple job that cannot be done wrong.
-    
-    Ray's rule of accuracy
-    Measure with a micrometer.
-    Mark with a piece of chalk.
-    Cut with an ax.
-    
-    Law of traffic lights
-    If it's green, you're not in a hurry.
-    
-    Pudder's law
-    Who starts well, ends badly. Those who start badly end up worse.
-    
-    Second Law of Horowitz
-    Whenever you turn on the radio, you will hear the last notes of your favorite song.
-    
-    Vile's law of value
-    The more an item costs, the farther it will have to be shipped to have it repaired.
+    Principio degli elementi persi
+    Il raggio di caduta dal banco di lavoro di piccoli elementi varia inversamente alle loro dimensioni e 
+    direttamente alla loro importanza per il completamento del lavoro intrapreso.
+
+    Legge di Perussel
+    Non c'è lavoro tanto semplice che non possa essere fatto male.
+
+    Regola di Ray sulla precisione
+    Misura con un micrometro.
+    Segna con un gessetto.
+    Taglia con un'ascia.
+
+    Legge dei semafori
+    Se è verde non hai fretta.
+
+    Legge di Pudder
+    Chi ben comincia, finisce male. Chi comincia male, finisce peggio.
+
+    Seconda Legge di Horowitz
+    In qualunque momento tu accenda la radio, sentirai le ultime note della tua canzone preferita.
+
+    Legge di Vile sul valore
+    Più un oggetto costa, più lontano bisognerà spedirlo per farlo riparare.
 
 
 A second text file, named `arguments.txt` contains a series of words (one per line, without spaces or punctuation).
 
 Eg:
 
-    bad
-    rush
-    work
+    male
+    fretta
+    lavoro
 
 
 Write a Python program to identify Murphy's laws that address certain topics.
@@ -54,10 +54,10 @@ of the statement. If the statement were longer than 50 characters, indicate with
 
 In the case of files with the contents indicated in the examples, the program must produce the following output:
 
-    Principle of the lost elements - The radius of falling from the workbench of small ...
-    Perussel's Law - There is no such simple job that it cannot be ...
-    Law of traffic lights - If it is green you are not in a hurry.
-    Pudder's Law - Whoever starts well ends badly. Who starts badly, ...
+    Principio degli elementi persi - Il raggio di caduta dal banco di lavoro di piccoli...
+    Legge di Perussel - Non c'è lavoro tanto semplice che non possa essere...
+    Legge dei semafori - Se è verde non hai fretta.
+    Legge di Pudder - Chi ben comincia, finisce male. Chi comincia male,...
 
 
 (Source: http://www.fenice.info/Wisdom/Aforismi/index.asp)
