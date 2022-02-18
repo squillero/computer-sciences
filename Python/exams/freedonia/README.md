@@ -5,10 +5,10 @@ Write a Python program to keep track of the regulations in Freedonia. The progra
 In more details, the file `rules.dat` contains the rules in the format:
 
 ```
-date1: +/-rule1 ... +/-ruleN
-date2: +/-rule1 ... +/-ruleM
+date1: +/-rule1 ... +/-ruleI
+date2: +/-rule1 ... +/-ruleJ
 ...
-dateK: +/-rule1 ... +/-ruleK
+dateN: +/-rule1 ... +/-ruleK
 ```
 
 Where the **date** is a string in the format `dd-mm-yyyy`; a **rule** is a string without spaces, for instance *FFP2_mask_in_closed_spaces*, the leading plus `+` or minus `-` signifies that the rule is enforced (`+`) or removed (`-`). One or more rules might be specified in each date. Dates are in strict chronological order, but they might be non consecutive. The format of the file is correct.
