@@ -20,7 +20,7 @@ def string_to_date(string):
 
 
 def read_ruels(filename):
-    """Reads `filename` and return a list of tuples (date, add, sub), where 
+    """Reads `filename` and returns a list of tuples (date, add, sub), where 
     * `date` is a tuple (y, m, d)
     * `add` is the set of the rules enforced in that specific day
     * `sub` is the set of the rules lifted in that specific day
