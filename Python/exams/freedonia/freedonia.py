@@ -2,7 +2,8 @@
 # Free for personal or classroom use; see 'LICENCE.md' for details.
 # https://github.com/squillero/computer-sciences
 
-from pprint import pprint
+# Useful when debugging
+# from pprint import pprint
 
 FILENAME_RULES = 'rules-example1.dat'
 FILENAME_DATES = 'dates-example1.dat'
@@ -13,11 +14,17 @@ FILENAME_DATES = 'dates-example1.dat'
 
 
 def string_to_date(string):
+    """Converts a date string 'd-m-y' into a tuple (y, m, d)"""
     d, m, y = string.split('-')
     return int(y), int(m), int(d)
 
 
 def read_ruels(filename):
+    """Reads `filename` and return a list of tuples (date, add, sub), where 
+    * `date` is a tuple (y, m, d)
+    * `add` is the set of the rules enforced in that specific day
+    * `sub` is the set of the rules lifted in that specific day
+    """
     rules = list()
     try:
         with open(filename) as rules_in:
@@ -38,6 +45,7 @@ def read_ruels(filename):
 
 
 def get_active_rules(rules, day):
+    """Plays elements in `rules` keeping track of enforced/lifted rules up to `day`"""
     active = set()
     for d, ra, rd in rules:
         if d <= day:
@@ -49,6 +57,7 @@ def get_active_rules(rules, day):
 
 
 def main():
+    """Standard entry point"""
     rules = read_ruels(FILENAME_RULES)
     try:
         raw_dates = open(FILENAME_DATES).read().split()
@@ -63,5 +72,6 @@ def main():
         print()
 
 
+# Boilerplate code
 if __name__ == '__main__':
     main()
