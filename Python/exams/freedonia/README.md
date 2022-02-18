@@ -1,6 +1,6 @@
 # FREEDONIA REGULATIONS
 
-Write a Python program to keep track of regulations of Freedonia. The program reads the sequence of rules issued by Rufus T. Firefly and calculates the set of rules that are valid in specific days.
+Write a Python program to keep track of the regulations in Freedonia. The program reads the sequence of rules issued by Rufus T. Firefly and calculates the set of rules that are valid in specific days.
 
 In more details, the file `rules.dat` contains the rules in the format:
 
