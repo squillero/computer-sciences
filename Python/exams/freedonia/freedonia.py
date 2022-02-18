@@ -23,21 +23,20 @@ def read_ruels(filename):
     """Reads `filename` and returns a list of tuples (date, add, sub), where 
     * `date` is a tuple (y, m, d)
     * `add` is the set of the rules enforced in that specific day
-    * `sub` is the set of the rules lifted in that specific day
-    """
+    * `sub` is the set of the rules lifted in that specific day"""
     rules = list()
     try:
         with open(filename) as rules_in:
             for line in rules_in:
                 date_raw, rlist = line.split(':')
                 date = string_to_date(date_raw)
-                r_add, r_del = list(), list()
+                r_add, r_del = set(), set()
                 for r in rlist.split():
                     if r[0] == '+':
-                        r_add.append(r[1:])
+                        r_add.add(r[1:])
                     elif r[0] == '-':
-                        r_del.append(r[1:])
-                rules.append((date, set(r_add), set(r_del)))
+                        r_del.add(r[1:])
+                rules.append((date, r_add, r_del))
     except OSError as problem:
         print(f"OSError: {problem}")
         return list()
