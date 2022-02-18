@@ -11,7 +11,7 @@ date2: +/-rule1 ... +/-ruleJ
 dateN: +/-rule1 ... +/-ruleK
 ```
 
-Where the **date** is a string in the format `dd-mm-yyyy`; a **rule** is a string without spaces, for instance *FFP2_mask_in_closed_spaces*, the leading plus `+` or minus `-` signifies that the rule is enforced (`+`) or removed (`-`). One or more rules might be specified in each date. Dates are in strict chronological order, but they might be non consecutive. The format of the file is correct.
+Where the **date** is a string in the format `dd-mm-yyyy`; a **rule** is a string without spaces, for instance *FFP2_mask_in_closed_spaces*, the leading plus `+` or minus `-` signifies that the rule is enforced (`+`) or lifted (`-`). One or more rules might be specified in each date. Dates are in strict chronological order, but they might be non consecutive. The format of the file is correct.
 
 A second file, `dates.dat` contains a list of interesting dates in the same format, these dates might not be in chronological order.
 
