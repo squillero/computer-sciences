@@ -2,8 +2,7 @@
 # Free for personal or classroom use; see 'LICENCE.md' for details.
 # https://github.com/squillero/computer-sciences
 
-from random import choice, random
-from pprint import pprint
+#from pprint import pprint
 
 NUM_MAGIC_BOXES = 42
 #ACTION_FILENAME = 'actions.txt'
