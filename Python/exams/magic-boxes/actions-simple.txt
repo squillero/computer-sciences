@@ -1,0 +1,5 @@
+Bob gives a APPLE
+Bob gives a BANANA
+Bob gives a APPLE
+Carl takes a BANANA
+Bob gives a CHERRY
