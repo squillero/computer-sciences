@@ -21,7 +21,7 @@ The *official* text book for all Politecnico's courses is:
 
 ### Online
 
-The official Python's reference can be found at <[https://docs.python.org](https://docs.python.org)>
+The official Python's reference documentation can be found at <[https://docs.python.org](https://docs.python.org)>
 
 The web is full of free, high-quality resources. This is an incomplete, already outdated list: you should look for something like **"PYTHON FREE BEGINNERS"** on your favorite search engine.
 
