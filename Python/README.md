@@ -17,7 +17,7 @@ The *official* text book for all Politecnico's courses is:
 * Cay Horstmann, Rance D. Necaise; [*Concetti di informatica e fondamenti di Python*](http://www.apogeoeducation.com/concetti-di-informatica-e-fondamenti-di-python.html) (Edizione italiana a cura di Marcello Dalpasso); Apogeo Education [**Seconda edizione**]
   * Both [CLUT](https://www.clut.it/ita/elettrotecnica-elettronica-informatica/-/concetti-di-informatica-e-fondamenti-di-python/348.html) and [Levrotto e Bella](https://www.levrotto-bella.net/concetti-informatica-fondamenti-python-horstmann) offer a small discount for Politecnico's students
 
-:warning: Python is being actively developed and few, yet important details may be different from what is described in the book.
+:exclamation: Python is being actively developed and few, yet important details may be different from what is described in the book.
 
 ### Online
 
