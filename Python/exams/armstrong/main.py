@@ -1,4 +1,4 @@
-min# Copyright © 2022 Giovanni Squillero <squillero@polito.it>
+# Copyright © 2022 Giovanni Squillero <squillero@polito.it>
 # Free for personal or classroom use; see 'LICENCE.md' for details.
 # https://github.com/squillero/computer-sciences
 
