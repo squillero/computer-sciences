@@ -1,5 +1,5 @@
 # Copyright © 2020 Giovanni Squillero <squillero@polito.it>
-# Free for personal or classroom use; see 'LICENCE.md' for details.
+# Free for personal or classroom use; see 'LICENSE.md' for details.
 # https://github.com/squillero/computer-sciences
 FILE_URL = 'https://www.cia.gov/library/publications/the-world-factbook/rankorder/rawdata_2004.txt'
 

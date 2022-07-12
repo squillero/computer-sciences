@@ -1,5 +1,5 @@
 # Copyright © 2021 Giovanni Squillero <squillero@polito.it>
-# Free for personal or classroom use; see 'LICENCE.md' for details.
+# Free for personal or classroom use; see 'LICENSE.md' for details.
 # https://github.com/squillero/computer-sciences
 
 string = input()
