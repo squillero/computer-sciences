@@ -7,4 +7,4 @@ This repo contains past exams, notes, and all the code fragments developed durin
 * Since 2020/21 the course code starts with **07**JCJ and students should refer to directory [Python](./Python)
 
 > **Copyright (c) 2015-2022 [Giovanni Squillero](https://squillero.github.io/) <[squillero@polito.it](mailto:squillero@polito.it)**>  
-Copying and distributing these files are permitted under certain conditions, see [license](./LICENSE.md) for details.
+Copying and distributing these files are permitted under certain conditions, see the [license](./LICENSE.md) for details.
