@@ -7,7 +7,7 @@ AMSTRONG_NUMBERS = 'armstrong.txt'
 
 
 def armstrong(number):
-    return number == sum([int(d)**len(str(number)) for d in str(number)])
+    return number == sum(int(d)**len(str(number)) for d in str(number))
 
 
 def main():
