@@ -33,7 +33,7 @@ The web is full of free, high-quality resources. This is an incomplete, already 
 
 ### Offline
 
-* :warning: You need a recent version of Python ([**official distribution**](https://www.python.org/downloads/))
+* You need a recent version of Python ([**official distribution**](https://www.python.org/downloads/))
 * :star: [**PyCharm EDU**](https://www.jetbrains.com/pycharm-edu/): simplified IDE for novices, licensed under [Apache-2.0](https://www.tldrlegal.com/l/apache2) — this is the **suggested option for the course**
 * [**PyCharm**](https://www.jetbrains.com/pycharm/): professional IDE — a free [educational license](https://www.jetbrains.com/community/education/#students) is available for Politecnico's students
 * [**Visual Studio Code**](https://code.visualstudio.com/): a free and powerful editor loaded with IDE-like features
