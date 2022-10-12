@@ -3,7 +3,7 @@ PYTHON
 
 Computer Sciences is now in [Python](https://en.wikipedia.org/wiki/Python_(programming_language))!
 
-## Support Group
+## Support
 
 All students are invited to join the rather informal support group [`polito_07jcj`](https://t.me/polito_07jcj) on [*Telegram*](https://en.wikipedia.org/wiki/Telegram_(software)).
 
