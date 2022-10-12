@@ -7,6 +7,8 @@ Computer Sciences is now in [Python](https://en.wikipedia.org/wiki/Python_(progr
 
 All students are invited to join the rather informal support group [`polito_07jcj`](https://t.me/polito_07jcj) on [*Telegram*](https://en.wikipedia.org/wiki/Telegram_(software)).
 
+[Nick Deligiannis](https://www.linkedin.com/in/nikos-deligiannis) created the repo [CS-polito](https://github.com/NikosDelijohn/CS-polito) with hints and tips for the labs.
+
 ## References / Textbooks
 
 ### Offline
