@@ -9,13 +9,13 @@ a = float(input("a: "))
 b = float(input("b: "))
 c = float(input("c: "))
 
-delta = b**2 - 4 * a * c
-
 if a == 0:
     print(f"Let's solve {b} x + {c} = 0")
     print(f"x={-c/b}")
 else:
     print(f"Let's solve {a} x^2 + {b} x + {c} = 0")
+    delta = b**2 - 4 * a * c
+
     if delta >= 0:
         x1 = (-b + math.sqrt(delta)) / 2 / a
         x2 = (-b - math.sqrt(delta)) / 2 / a
