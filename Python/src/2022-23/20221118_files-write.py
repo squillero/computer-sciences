@@ -11,6 +11,5 @@ def main():
         my_file.write("Hello! This is my first file.\n")
 
 
-
 if __name__ == '__main__':
     main()

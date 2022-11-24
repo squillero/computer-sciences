@@ -6,6 +6,7 @@ from pprint import pprint
 
 DIM = 10
 
+
 def make_table(dim):
     table = list()
     for r in range(dim):
@@ -24,7 +25,7 @@ def main():
     table = make_table(DIM)
     for x in range(DIM):
         for y in range(DIM):
-            table[x][y] = (x+1)*(y+1)
+            table[x][y] = (x + 1) * (y + 1)
     #pprint((table))
     print_table(table)
 

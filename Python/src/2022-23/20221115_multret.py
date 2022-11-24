@@ -6,8 +6,6 @@
 def main():
     _, x = foo()
 
-
-
     print(type(x), x)
     print(x[1])
 
