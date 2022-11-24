@@ -4,12 +4,12 @@
 
 FILENAME = 'song.txt'
 
+
 def main():
     my_file = open(FILENAME)
     x = my_file.read()
     print(x)
     my_file.close()
-
 
 
 if __name__ == '__main__':
