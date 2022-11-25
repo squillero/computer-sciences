@@ -44,8 +44,11 @@ def fill(maze, start):
     num_rows = len(maze)
     water = list()
     water.append(start)
+    found_exit = False
     while water:
-        row, col = water.pop()
+        row, col = water.pop(0)
+        if col == num_columns - 1:
+            found_exit = True
         maze[row][col] = '+'
         print_maze(maze)
         if col < num_columns - 1 and maze[row][col + 1] == CORRIDOR:
@@ -56,6 +59,7 @@ def fill(maze, start):
             water.append((row - 1, col))
         if row < num_rows - 1 and maze[row + 1][col] == CORRIDOR:
             water.append((row + 1, col))
+    return found_exit
 
 
 def main():
@@ -63,7 +67,9 @@ def main():
     dim_x = len(maze[0])
     dim_y = len(maze)
     print(f"Maze: {dim_y} x {dim_x}")
-    fill(maze, (find_start(maze), 0))
+    res = fill(maze, (find_start(maze), 0))
+    if res:
+        print("There is a way out!")
 
 
 if __name__ == '__main__':
