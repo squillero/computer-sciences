@@ -27,8 +27,19 @@ def ParkCars(spaces : list, l : int, r : int):
     ParkCars(spaces, median + 1, r)
 
 
+def GetInput() -> int:
+    number = input("Enter number of available free slots to park in: ")
+    while number:
+        if not number.isdigit():
+            number = input("Please enter a valid number: ")
+        else:
+            number = int(number)
+            break
+    
+    return number
+
 def main():
-    numberOfSpaces = input("Enter number of free spaces: ")
+    numberOfSpaces = GetInput()
     spaces = [0 for _ in range(int(numberOfSpaces))] # 0 represents an empty space
     ParkCars(spaces, 0, len(spaces) - 1)
 
