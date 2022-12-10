@@ -2,48 +2,38 @@
 # https://github.com/squillero/computer-sciences
 # Free for personal or classroom use; see 'LICENSE.md' for details.
 
-# Solution proposed by Reda Fakih 308192
-
-def PrintParking(parkingSlots : list):
-    temp = ""
-    for space in parkingSlots:
-        if space:
-            temp += 'x'
-        else:
-            temp += '_'
-    
-    print(temp)
-
-def ParkCars(spaces : list, l : int, r : int):
-    if l > r:
-        return
-
-    median = (l + r) // 2
-    spaces[median] = 1
-
-    PrintParking(spaces)
-
-    ParkCars(spaces, l, median - 1)
-    ParkCars(spaces, median + 1, r)
+def park2list(parking):
+    """Convert parking [False, False, False, ...] to
+    list of tuples"""
+    slots = list()
+    end = 0
+    start = 0
+    while end < len(parking):
+        if parking[end]:
+            slots.append((start, end-start))
+            start = end+1
+        end += 1
+    else:
+        slots.append((start, end - start))
+    return slots
 
 
-def GetInput() -> int:
-    number = input("Enter number of available free slots to park in: ")
-    while number:
-        if not number.isdigit():
-            number = input("Please enter a valid number: ")
-        else:
-            number = int(number)
-            break
-    
-    return number
+def get_max_slot(slots):
+    m = slots.pop(0)
+    for s in slots:
+        if s[1] > m[1]:
+            m = s
+    return m
+
 
 def main():
-    numberOfSpaces = GetInput()
-    spaces = [0 for _ in range(int(numberOfSpaces))] # 0 represents an empty space
-    ParkCars(spaces, 0, len(spaces) - 1)
+    parking = [False, False, False, False, False, False, False, False, False]
+    for _ in range(5):
+        s, l = get_max_slot(park2list(parking))
+        parking[s+l//2] = True
+        print(parking)
 
-    PrintParking(spaces)
+
 
 if __name__ == '__main__':
     main()
