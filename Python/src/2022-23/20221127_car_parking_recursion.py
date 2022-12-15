@@ -1,8 +1,7 @@
-# Copyright © 2022 Giovanni Squillero <squillero@polito.it>
 # https://github.com/squillero/computer-sciences
+# Solution proposed by Reda Fakih 308192
 # Free for personal or classroom use; see 'LICENSE.md' for details.
 
-# Solution proposed by Reda Fakih 308192
 
 def PrintParking(parkingSlots : list):
     temp = ""
