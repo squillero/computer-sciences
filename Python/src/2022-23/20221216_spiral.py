@@ -4,7 +4,8 @@
 
 from pprint import pprint
 
-DIM = 10
+DIM = 30
+JINGLE = 'jingle.txt'
 
 
 def print_canvas(canvas):
@@ -13,32 +14,41 @@ def print_canvas(canvas):
     print()
 
 
-def hstroke(canvas, row, c_start, c_end):
-    if c_start > c_end:
-        c_start, c_end = c_end, c_start
-    for c in range(c_start, c_end + 1):
-        canvas[row][c] = '*'
-    print_canvas(canvas)
+def hstroke(canvas, row, c_start, c_end, color=None):
+    step = 1 if c_start < c_end else -1
+    if color is None:
+        color = ['*'] * (abs(c_end - c_start) + 1)
+    for c in range(c_start, c_end + step, step):
+        canvas[row][c] = color.pop(0)
 
 
-def vstroke(canvas, col, r_start, r_end):
-    if r_start > r_end:
-        r_start, r_end = r_end, r_start
-    for r in range(r_start, r_end + 1):
-        canvas[r][col] = '*'
-    print_canvas(canvas)
+def vstroke(canvas, col, r_start, r_end, color=None):
+    step = 1 if r_start < r_end else -1
+    if color is None:
+        color = ['*'] * (abs(r_end - r_start) + 1)
+    for r in range(r_start, r_end + step, step):
+        canvas[r][col] = color.pop(0)
 
 
 def main():
     canvas = list()
     for _ in range(DIM):
-        canvas.append(['.'] * DIM)
+        canvas.append([' '] * DIM)
 
-    for n in range(2):
-        hstroke(canvas, DIM - 1 - n * 2, n * 2, DIM - 1 - n * 2)
-        vstroke(canvas, DIM - 1 - n * 2, DIM - 1 - n * 2, n * 2)
-        hstroke(canvas, n * 2, DIM - 1 - n * 2, 2 + n * 2)
-        vstroke(canvas, n * 2, n * 2, DIM - 1 - n * 2)
+    try:
+        with open(JINGLE) as jingle:
+            song = list(jingle.read().replace('\n', '*').replace(' ', '*'))
+    except OSError:
+        print("Happy holiday!")
+        exit(1)
+
+    for step in range(7):
+        vstroke(canvas, 0 + 2 * step, 0 + 2 * step, DIM - 2 - 2 * step, color=song)
+        hstroke(canvas, DIM - 1 - 2 * step, 0 + 2 * step, DIM - 2 - 2 * step, color=song)
+        vstroke(canvas, DIM - 1 - 2 * step, DIM - 1 - 2 * step, 1 + 2 * step, color=song)
+        hstroke(canvas, 0 + 2 * step, DIM - 1 - 2 * step, 2 + 2 * step, color=song)
+        canvas[1 + 2 * step][2 + 2 * step] = song.pop(0)
+    print_canvas(canvas)
 
 
 if __name__ == '__main__':
