@@ -24,7 +24,7 @@ def main():
 
     try:
         coords = input("Please, enter the coordinates (x,y): ")
-        xs, ys = coords[1:-1].split(',')
+        xs, ys = coords.split(',')[0], coords.split(',')[1]
         x, y = int(xs), int(ys)
         size = int(input("Please, enter the square size: "))
     except ValueError:
