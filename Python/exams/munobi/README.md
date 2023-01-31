@@ -1,8 +1,8 @@
 # MUNODI SEQUENCES
 
-A Munodi sequence is a sequence of `k` integer numbers `c[0], c[1], ..., c[k]` where `c[n+1] = c[n]/2`  if `c[n]` is even or `c[n+1] = 3*c[n]+1` if `c[n]` is odd. The sequence teminates when *one* appears (i.e., `c[k-1] = 1`).
+A Munodi sequence is a sequence of $k$ integer numbers $c_0, c_{1}, \..., c_{k}$ where $c_{n+1} = c_{n}/2$ if $c_{n}$ is even or $c_{n+1} = 3 c_{n}+1$ if $c_{n}$ is odd. The sequence teminates when *one* appears (i.e., $c_{k-1} = 1$).
 
-Note: Whatever number is used as `c[0]`, the Munodi sequence is guaranteed to be finite.
+Note: Whatever number is used as $c_0$, the Munodi sequence is guaranteed to be finite.
 
 Given the file `seq.dat` containing an unknown number of integer sequences, one per line, with number separated by spaces; write a Python program that check if the sequences are Munodi sequences and print the result on the screen.
 
@@ -19,3 +19,7 @@ If the sequence is a Munodi sequence, the program should also print its length. 
 > `Sequence 2 is NOT a Munodi sequence`  
 > `Sequence 3 is a Munodi sequence (length 17)`  
 > `Sequence 4 is a Munodi sequence (length 1)`  
+
+## Note
+
+*Munobi* is a fantasy name, the sequence is technically an "irregular triangle read by rows giving trajectory of $n$ in Collatz problem". See the [OEIS entry](https://oeis.org/A070165) for more details.
