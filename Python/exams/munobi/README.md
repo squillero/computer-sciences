@@ -1,6 +1,6 @@
 # MUNODI SEQUENCES
 
-A Munodi sequence is a sequence of $k$ integer numbers $c_0, c_{1}, \..., c_{k}$ where $c_{n+1} = c_{n}/2$ if $c_{n}$ is even or $c_{n+1} = 3 c_{n}+1$ if $c_{n}$ is odd. The sequence teminates when *one* appears (i.e., $c_{k-1} = 1$).
+A Munodi sequence is a sequence of $k$ integer numbers $c_0, c_{1}, \..., c_{k-1}$ where $c_{n+1} = c_{n}/2$ if $c_{n}$ is even or $c_{n+1} = 3 c_{n}+1$ if $c_{n}$ is odd. The sequence teminates when *one* appears (i.e., $c_{k-1} = 1$).
 
 Note: Whatever number is used as $c_0$, the Munodi sequence is guaranteed to be finite.
 
