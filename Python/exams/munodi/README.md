@@ -26,6 +26,6 @@ Sequence 3 is a Munodi sequence (length 17)
 Sequence 4 is a Munodi sequence (length 1)
 ```
 
-## Note
+## Notes
 
-*Munodi Sequences* is a fantasy name, the sequences are technically rows in an irregular triangle giving trajectory of $n$ in Collatz problem. See the OEIS's entry [A070165](https://oeis.org/A070165) for more details. [Lord Munodi](https://www.sparknotes.com/lit/gulliver/character/lord-munodi/) is a minor character in Gulliver's Travels.
+*Munodi Sequences* is a fantasy name, the sequences are technically rows in an irregular triangle giving trajectory of $n$ in Collatz problem. See the OEIS's entry [A070165](https://oeis.org/A070165) for more details. [Lord Munodi](https://www.sparknotes.com/lit/gulliver/character/lord-munodi/) is a minor character in *Gulliver's Travels*.
