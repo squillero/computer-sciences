@@ -9,16 +9,22 @@ Given the file `seq.dat` containing an unknown number of integer sequences, one 
 If the sequence is a Munodi sequence, the program should also print its length. For example
 
 **`seq.dat`**  
-> `12 6 3 10 5 16 8 4 2 1`  
-> `12 6 3 10 4 16 8 4 2 1`  
-> `7 22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1`  
-> `1`  
+
+```text
+12 6 3 10 5 16 8 4 2 1
+12 6 3 10 4 16 8 4 2 1
+7 22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1
+1
+```
 
 **`Output:`**  
-> `Sequence 1 is a Munodi sequence (length 10)`  
-> `Sequence 2 is NOT a Munodi sequence`  
-> `Sequence 3 is a Munodi sequence (length 17)`  
-> `Sequence 4 is a Munodi sequence (length 1)`  
+
+```text
+Sequence 1 is a Munodi sequence (length 10)
+Sequence 2 is NOT a Munodi sequence
+Sequence 3 is a Munodi sequence (length 17)
+Sequence 4 is a Munodi sequence (length 1)
+```
 
 ## Note
 
