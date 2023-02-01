@@ -22,4 +22,4 @@ If the sequence is a Munodi sequence, the program should also print its length. 
 
 ## Note
 
-*Munodi* is a fantasy name, the sequence is technically an irregular triangle read by rows giving trajectory of $n$ in Collatz problem. See the OEIS's entry [A070165](https://oeis.org/A070165) for more details.
+*Munodi Sequences* is a fantasy name, the sequences are technically rows in an irregular triangle giving trajectory of $n$ in Collatz problem. See the OEIS's entry [A070165](https://oeis.org/A070165) for more details. [Lord Munodi](https://www.sparknotes.com/lit/gulliver/character/lord-munodi/) is a minor character in Gulliver's Travels.
