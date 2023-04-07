@@ -2,7 +2,7 @@
     # ###### #| CLASS EXAMPLE FOR "COMPUTER SCIENCES"(0JCJ **) |
 # ####   \ | https: //github.com/squillero/computer-sciences            |
 # ## #G c\ | |
-# ##_\ | Copyright © 2015 Giovanni Squillero <squillero @polito.it> |
+# ##_\ | Copyright © 2015 Giovanni Squillero <giovanni.squillero @polito.it> |
 #| _ / | Licensed under the EUPL - 1.2 <https: //eupl.eu/>            |
 #| _ /      \== == == == == == == == == == == == == == == == == == == == == == == == == == == == == = /
 

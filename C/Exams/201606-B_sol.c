@@ -1,6 +1,6 @@
 /*-**********************************************************************-*\
 *             * CLASS SAMPLE FOR "COMPUTER SCIENCES" (04JCJ**)             *
-*   #####     * (!) 2016, Giovanni Squillero <squillero@polito.it>         *
+*   #####     * (!) 2016, Giovanni Squillero <giovanni.squillero@polito.it>         *
 *  ######     *                                                            *
 *  ###   \    * Copying and distributing this file, either with or without *
 *   ##G  c\   * modification, is permitted in any medium without royalty,  *

@@ -1,4 +1,4 @@
-// Copyright © 2015-2016 Giovanni Squillero <squillero@polito.it>
+// Copyright © 2015-2016 Giovanni Squillero <giovanni.squillero@polito.it>
 // Free for personal or classroom use; see 'LICENSE.md' for details.
 // https://github.com/squillero/computer-sciences
 
