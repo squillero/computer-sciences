@@ -13,7 +13,7 @@ Implement a basic version of the battleship game: The position of each player's 
     -#---##---
     -#--------
 
-The program asks the names of the files containing the ship positions. It then reads the players' moves from the file moves.txt. Each row of the file contains the coordinates of a shot in the format `R,C` where `R` (row index) is a letter between A and J, and `C` (column index) is a number between 1 and 10. The shots are related to alternating players: first row player 1, second row player 2, third row player 1, etc.
+The program asks the names of the files containing the ship positions. It then reads the players' moves from the file `moves.txt`. Each row of the file contains the coordinates of a shot in the format `R,C` where `R` (row index) is a letter between A and J, and `C` (column index) is a number between 1 and 10. The shots are related to alternating players: first row player 1, second row player 2, third row player 1, etc.
 
     A,1
     F,5
