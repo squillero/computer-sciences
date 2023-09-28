@@ -48,13 +48,13 @@ Abdessamad Ezzalzouli,FW,Morocco,2001,93,0,0,0,1,0,2,0,4,1,2
 
 ```
 The most efficient Forward players are:
-Name                 Team      			Forward_efficiency
+Name                 Team         Forward_efficiency
 Niclas Füllkrug      Germany            0.043
 Rafael Leão          Portugal           0.023
 Vincent Aboubakar    Cameroon           0.021
 
 The most efficient Midfield players are:
-Name                 Team      			Midfield_efficiency
+Name                 Team         Midfield_efficiency
 Roan Wilson          Costa Rica         0.029
 Sorba Thomas         Wales              0.068
 Christian Nørgaard   Denmark            0.021
@@ -65,8 +65,7 @@ United States   25.85 years
 Ghana           26.50 years
 
 The most efficient team is England:
-Callum Wilson Forward_efficiency 0.021
-Marcus Rashford  Forward_efficiency 0.014
-Harry Kane con  Froward_efficiency 0.012
-
+Callum Wilson's forward efficiency: 0.021
+Marcus Rashford's forward efficiency: 0.014
+Harry Kane con's forward efficiency: 0.012
 ```
