@@ -2,7 +2,7 @@
 # https://github.com/squillero/computer-sciences
 # Free for personal or classroom use; see 'LICENSE.md' for details.
 
-CSV_FILE = 'player_stats.csv'
+CSV_FILE = 'player_stats-small.csv'
 TEXT_FIELDS = {'player', 'position', 'team'}
 
 import csv
