@@ -2,6 +2,8 @@
 # https://github.com/squillero/computer-sciences
 # Free for personal or classroom use; see 'LICENSE.md' for details.
 
+"""Hello. This is how to pass the exam!"""
+
 from pprint import pprint
 
 PLAYER_STATS_FILENAME = "player-stats.csv"
@@ -68,6 +70,21 @@ def calculatre_midfield_efficency(players):
     return mid_efficency
 
 
+def calculate_team_average_age(players):
+    """Get the team's avg age"""
+    team_ages = dict()
+    for data in players.values():
+        if data[INDEX_TEAM] not in team_ages:
+            team_ages[data[INDEX_TEAM]] = list()
+        team_ages[data[INDEX_TEAM]].append(
+            2023 - data[INDEX_BIRTH_YEAR]
+        )
+    team_avg_age = dict()
+    for team, ages in team_ages.items():
+        team_avg_age[team] = sum(ages) / len(ages)
+    return team_avg_age
+
+
 def main():
     """This is main. Oh yeah!"""
     players = read_player_stat(PLAYER_STATS_FILENAME)
@@ -85,6 +102,28 @@ def main():
         reverse=True,
     )
     print(sorted_stuff[0], midfield_efficiency[sorted_stuff[0]])
+
+    team_avg_age = calculate_team_average_age(players)
+    tmp = sorted(team_avg_age, key=lambda n: team_avg_age[n])
+    for name in tmp[:3]:
+        print(f"* {name}: {team_avg_age[name]:.2f}")
+
+    team_fwd_eff = dict()
+    for name, efficency in fwd_efficiency.items():
+        team = players[name][INDEX_TEAM]
+        if team not in team_fwd_eff:
+            team_fwd_eff[team] = list()
+        team_fwd_eff[team].append(efficency)
+
+    for team, data in team_fwd_eff.items():
+        team_fwd_eff[team] = sorted(data)[:3]
+
+    sum_eff = dict()
+    for team, data in team_fwd_eff.items():
+        sum_eff[team] = sum(data)
+
+    tmp = sorted(sum_eff, key=lambda t: sum_eff[t], reverse=True)
+    print(tmp[0], sum_eff[tmp[0]])
 
 
 if __name__ == "__main__":
