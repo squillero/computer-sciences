@@ -1,0 +1,6 @@
+01-01-2021: +surgical_mask_outdoor +surgical_mask_indoor
+05-01-2021: -surgical_mask_indoor +ffp2_mask_indoor
+08-01-2021: +green_pass_workplace
+05-03-2021: +super_green_pass_workplace -green_pass_workplace
+01-02-2021: -ffp2_mask_indoor +surgical_mask_indoor -surgical_mask_outdoor
+01-03-2021: +surgical_mask_outdoor
