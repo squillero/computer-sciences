@@ -1,3 +1,0 @@
-01023;police.txt
-02346;naganuma.txt
-16750;woyh.txt
