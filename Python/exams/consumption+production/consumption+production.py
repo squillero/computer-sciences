@@ -22,8 +22,8 @@ def read_data(filename):
 def main():
     """Standard entry point."""
 
-    # Turn consumption into a dictionary to allow lookups such as:
-    # [(Household_ID, Date, Time)] -> energy
+    # Turn consumption into a dictionary to allow lookups with tuple such as:
+    # (Household_ID, Date, Time) -> energy
     consumption = dict()
     for row in read_data(CONSUMPTIONS_FILENAME):
         consumption[(row['Household_ID'], row['Date'], row['Time'])] = float(row['Energy_consumption'])
