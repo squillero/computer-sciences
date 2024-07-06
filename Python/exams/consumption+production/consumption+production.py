@@ -22,7 +22,7 @@ def read_data(filename):
 def main():
     """Standard entry point."""
 
-    # Turn consumption into a dictionary to allow lookups with tuple such as:
+    # Turn consumption into a dictionary to allow lookups with tuple like:
     # (Household_ID, Date, Time) -> energy
     consumption = dict()
     for row in read_data(CONSUMPTIONS_FILENAME):
