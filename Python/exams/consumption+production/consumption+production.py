@@ -4,7 +4,7 @@
 
 
 from csv import DictReader
-from icecream import ic  # really cool debug print
+# from icecream import ic  # really cool debug print
 
 CONSUMPTIONS_FILENAME = 'consumptions.csv'
 WHEATHER_FILENAME = 'weather.csv'
@@ -14,18 +14,21 @@ SYSTEMS_FILENAME = 'systems.csv'
 def read_data(filename):
     """Read a CSV file and return an unrolled list of dictionaries."""
     with open(filename, newline='') as csvfile:
-        reader = list(DictReader(csvfile, delimiter=';'))
-    return reader
+        reader = DictReader(csvfile, delimiter=';')
+        data = list(reader)
+    return data
 
 
 def main():
+    """Standard entry point."""
+
     # Turn consumption into a dictionary to allow lookups such as:
     # [(Household_ID, Date, Time)] -> energy
     consumption = dict()
     for row in read_data(CONSUMPTIONS_FILENAME):
         consumption[(row['Household_ID'], row['Date'], row['Time'])] = float(row['Energy_consumption'])
 
-    # Parse weather, convert TIME and DATE into tuples
+    # Parse weather, convert GHI into floats
     weather = read_data(WHEATHER_FILENAME)
     for row in weather:
         row['GHI'] = float(row['GHI'])
