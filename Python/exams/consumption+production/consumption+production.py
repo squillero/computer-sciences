@@ -4,46 +4,39 @@
 
 
 from csv import DictReader
-from icecream import ic
+from icecream import ic  # really cool debug print
 
 CONSUMPTIONS_FILENAME = 'consumptions.csv'
 WHEATHER_FILENAME = 'weather.csv'
 SYSTEMS_FILENAME = 'systems.csv'
 
 
-def parse(raw, sep):
-    time = list()
-    for token in raw.split(sep):
-        time.append(int(token))
-    return tuple(time)
-
-
 def read_data(filename):
+    """Read a CSV file and return an unrolled list of dictionaries."""
     with open(filename, newline='') as csvfile:
         reader = list(DictReader(csvfile, delimiter=';'))
-
     return reader
 
 
 def main():
-    # Read data
+    # Turn consumption into a dictionary to allow lookups such as:
+    # [(Household_ID, Date, Time)] -> energy
     consumption = dict()
     for row in read_data(CONSUMPTIONS_FILENAME):
-        consumption[(row['Household_ID'], parse(row['Date'], '/'), parse(row['Time'], ':'))] = float(
-            row['Energy_consumption']
-        )
-    # ic(consumption)  # Cool debug print
+        consumption[(row['Household_ID'], row['Date'], row['Time'])] = float(row['Energy_consumption'])
+
+    # Parse weather, convert TIME and DATE into tuples
     weather = read_data(WHEATHER_FILENAME)
     for row in weather:
-        row['DATE'] = parse(row['DATE'], '/')
-        row['TIME'] = parse(row['TIME'], ':')
         row['GHI'] = float(row['GHI'])
-    # ic(weather)   # Cool debug print
+
+    # Parse systems, convert System_size and Efficiency into floats
     systems = read_data(SYSTEMS_FILENAME)
     for row in systems:
         row['System_size'] = float(row['System_size'])
         row['Efficiency'] = float(row['Efficiency'])
-    # ic(systems)   # Cool debug print
+
+    # Let's roll
 
     db_produced_energy = dict()
     db_excess_energy = dict()
