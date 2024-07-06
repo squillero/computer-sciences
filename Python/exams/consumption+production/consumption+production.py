@@ -47,7 +47,6 @@ def main():
 
     for rec1 in weather:
         for rec2 in systems:
-            household = rec2['Household_ID']
             produced_energy = rec2['System_size'] * rec2['Efficiency'] * rec1['GHI']
             consumed_energy = consumption[(rec2['Household_ID'], rec1['DATE'], rec1['TIME'])]
             tot_produced_energy += produced_energy
