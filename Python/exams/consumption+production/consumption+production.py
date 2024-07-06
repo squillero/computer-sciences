@@ -41,32 +41,27 @@ def main():
 
     # Let's roll
 
-    db_produced_energy = dict()
-    db_excess_energy = dict()
-    db_self_consumed_energy = dict()
-    for rec2 in systems:
-        # a DefaultDict would have been better ;-)
-        db_produced_energy[rec2['Household_ID']] = 0
-        db_excess_energy[rec2['Household_ID']] = 0
-        db_self_consumed_energy[rec2['Household_ID']] = 0
+    tot_produced_energy = 0
+    tot_excess_energy = 0
+    tot_self_consumed_energy = 0
 
     for rec1 in weather:
         for rec2 in systems:
             household = rec2['Household_ID']
             produced_energy = rec2['System_size'] * rec2['Efficiency'] * rec1['GHI']
             consumed_energy = consumption[(rec2['Household_ID'], rec1['DATE'], rec1['TIME'])]
-            db_produced_energy[household] += produced_energy
-            db_excess_energy[household] += max(0, produced_energy - consumed_energy)
-            db_self_consumed_energy[household] += min(produced_energy, consumed_energy)
+            tot_produced_energy += produced_energy
+            tot_excess_energy += max(0, produced_energy - consumed_energy)
+            tot_self_consumed_energy += min(produced_energy, consumed_energy)
 
     print("Aggregate report:")
 
-    print(f"Produced Energy: {sum(db_produced_energy.values()):.2f} kWh")
+    print(f"Produced Energy: {tot_produced_energy:.2f} kWh")
     print(f"Consumed Energy: {sum(consumption.values()):.2f} kWh")
-    print(f"Self-consumed Energy: {sum(db_self_consumed_energy.values()):.2f} kWh")
-    print(f"Energy Fed into the Grid: {sum(db_excess_energy.values()):.2f} kWh")
-    print(f"Self-consumption Percentage: {sum(db_self_consumed_energy.values())/sum(db_produced_energy.values()):.2%}")
-    print(f"Self-sufficiency Percentage: {sum(db_self_consumed_energy.values())/sum(consumption.values()):.2%}")
+    print(f"Self-consumed Energy: {tot_self_consumed_energy:.2f} kWh")
+    print(f"Energy Fed into the Grid: {tot_excess_energy:.2f} kWh")
+    print(f"Self-consumption Percentage: {tot_self_consumed_energy/tot_produced_energy:.2%}")
+    print(f"Self-sufficiency Percentage: {tot_self_consumed_energy/sum(consumption.values()):.2%}")
 
 
 if __name__ == '__main__':
