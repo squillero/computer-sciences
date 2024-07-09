@@ -13,9 +13,12 @@ SYSTEMS_FILENAME = 'systems.csv'
 
 def read_data(filename):
     """Read a CSV file and return an unrolled list of dictionaries."""
-    with open(filename, newline='') as csvfile:
-        reader = DictReader(csvfile, delimiter=';')
-        data = list(reader)
+    try:
+        with open(filename, newline='') as csvfile:
+            reader = DictReader(csvfile, delimiter=';')
+            data = list(reader)
+    except OSError as problem:
+        exit(f"{filename}: {problem}")
     return data
 
 

@@ -1,4 +1,4 @@
-# Consumption and Production Analysis
+# CONSUMPTION AND PRODUCTION ANALYSIS
 
 An energy company has collected the energy consumption of a series of households by sampling data every 15 minutes. The company wants to estimate the energy benefit of installing photovoltaic systems in various households. For each household, the size of the installable photovoltaic system (in m2) and the system's efficiency are known. Additionally, the company has collected solar radiation data for the area of interest. The goal is to analyze these data to calculate self-consumption, self-sufficiency, self-consumed energy, produced energy, and energy fed into the grid for each household (and for the aggregate of households). To do this, various indicators need to be calculated and a statistics report generated.
 
