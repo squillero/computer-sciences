@@ -3,8 +3,8 @@
 ## BASIC PYTHON: 4
 
 * Check `__name__` and use of `main()`: 2 point
-* Coherent naming (GLOBAL_SYMBOLS + either all `snake_case` or all `camelCase`): 1
-* No global symbols except for *constants*: 1
+* Coherent naming (`GLOBAL_SYMBOLS` + either all `snake_case` or all `camelCase`): 1
+* No global symbols except for the so-called *constants*: 1
 
 ## INPUT/OUTPUT: 10
 
