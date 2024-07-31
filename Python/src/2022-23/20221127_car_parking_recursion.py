@@ -1,6 +1,6 @@
 # https://github.com/squillero/computer-sciences
 # Solution proposed by Reda Fakih 308192
-# Free for personal or classroom use; see 'LICENSE.md' for details.
+# Free under certain conditions — see the license for details.
 
 
 def PrintParking(parkingSlots : list):

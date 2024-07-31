@@ -1,6 +1,6 @@
 # Copyright © 2021 Giovanni Squillero <giovanni.squillero@polito.it>
-# Free for personal or classroom use; see 'LICENSE.md' for details.
 # https://github.com/squillero/computer-sciences
+# Free under certain conditions — see the license for details.
 
 INPUT_FILE = '20211209_input.gx'
 OUTPUT_FILE = '20211209_output.gx'

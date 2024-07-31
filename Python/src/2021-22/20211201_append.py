@@ -1,6 +1,6 @@
 # Copyright © 2021 Giovanni Squillero <giovanni.squillero@polito.it>
-# Free for personal or classroom use; see 'LICENSE.md' for details.
 # https://github.com/squillero/computer-sciences
+# Free under certain conditions — see the license for details.
 
 FILE_A = '20211201_song.txt'
 FILE_B = '20211201_input.txt'

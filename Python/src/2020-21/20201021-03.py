@@ -1,6 +1,6 @@
 # Copyright © 2020 Giovanni Squillero <giovanni.squillero@polito.it>
-# Free for personal or classroom use; see 'LICENSE.md' for details.
 # https://github.com/squillero/computer-sciences
+# Free under certain conditions — see the license for details.
 
 for n in range(0, 100):
     if n == 42:

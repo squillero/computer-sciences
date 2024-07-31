@@ -1,6 +1,6 @@
 # Copyright © 2022 Giovanni Squillero <giovanni.squillero@polito.it>
 # https://github.com/squillero/computer-sciences
-# Free for personal or classroom use; see 'LICENSE.md' for details.
+# Free under certain conditions — see the license for details.
 
 DATA = [1, 3, 5, 7, 9, 11, 23, 45]
 #DATA = [1, 3, -5, 7, 9, 11, 23, 45]

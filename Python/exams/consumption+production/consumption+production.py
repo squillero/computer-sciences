@@ -1,6 +1,6 @@
 ﻿# Copyright © 2024 Giovanni Squillero <giovanni.squillero@polito.it>
 # https://github.com/squillero/computer-sciences
-# Free for personal or classroom use; see 'LICENSE' for details.
+# Free under certain conditions — see the license for details.
 
 
 from csv import DictReader
