@@ -1,4 +1,6 @@
 BOWLING_FILE = "bowling.txt"
+MAX_SCORE = 10
+MIN_SCORE = 0
 
 def extract_data(filename):
     data = list()
@@ -25,7 +27,7 @@ def sum_scores(data):
 def max_full_knock_down(data):
     max = -1
     for item in data:
-        if item[1].count(10) > max:
+        if item[1].count(MAX_SCORE) > max:
             max = item[1].count(10)
             candidate_name = item[0]
     return (candidate_name, max)
@@ -34,7 +36,7 @@ def max_full_knock_down(data):
 def max_miss(data):
     max = -1
     for item in data:
-        if item[1].count(0) > max:
+        if item[1].count(MIN_SCORE) > max:
             max = item[1].count(0)
             candidate_name = item[0]
     return (candidate_name, max)
