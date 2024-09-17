@@ -8,12 +8,13 @@
 
 ## I/O  (11 point)
 
-* Use of `try/except`: 1 point (per file)
-* Correct exception (`OSError`): 1 point (per file)
+* Use of `try/except`: 2 points (1 for each file)
+* Use of `try/except` check around the smallest possible fragment of code: 2 points (1 for each file)
+* Correct exception (`OSError`): 1 point
 * Reading timezones and storing them in a suitable data structure: 2 point
 * Reading events and going through them: 2 point
 * Noticing that the two files have a similar format and exploiting it: 1 point
-* Formally correct output (even if wrong): 2 point
+* Formally correct output (even if wrong): 1 point
 
 ## ALGORITHM (12 points)
 
