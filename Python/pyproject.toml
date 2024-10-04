@@ -2,12 +2,8 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-[tool.black]
-    exclude     = "(^\\.|^__pycache__)"
-    include     = "\\.py$"
-    line-length = 120
-
 [tool.poetry]
+    name         = "CS"
     authors      = ["Giovanni Squillero <giovanni.squillero@polito.it>"]
     description  = "Clean environment for Computater Sciences"
     license      = "proprietary"
@@ -20,13 +16,10 @@
 
     [tool.poetry.dev-dependencies]
 
-[tool.ruff]
-    line-length    = 120
-    extend-include = ["*.ipynb"]
-
-    [tool.ruff.format]
-        quote-style                = "preserve"
-        docstring-code-line-length = 76
+[tool.black]
+    exclude     = "(^\\.|^__pycache__)"
+    include     = "\\.py$"
+    line-length = 120
 
 [build-system]
     requires      = ["poetry-core"]
