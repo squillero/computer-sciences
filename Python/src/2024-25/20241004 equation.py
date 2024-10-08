@@ -1,3 +1,7 @@
+# Copyright © 2024 Giovanni Squillero <giovanni.squillero@polito.it>
+# https://github.com/squillero/computer-sciences
+# Free under certain conditions — see the license for details.
+
 # solve equation ax**2 + bx + c = 0
 
 a = int(input('a: '))
