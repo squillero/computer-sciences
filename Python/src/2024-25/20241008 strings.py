@@ -22,3 +22,7 @@ print(name[1:])
 print(name[:])
 
 print("ABBA"[1:3])
+
+name = "Giovanni"
+name.upper()  # Useless!
+print(name)
