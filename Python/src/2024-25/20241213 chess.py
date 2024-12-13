@@ -2,6 +2,7 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
+import csv
 from icecream import ic
 
 PLAYERS_FILENAME = '20241213 players.csv'
@@ -22,6 +23,19 @@ def read_players(filename):
                 players[player.strip()] = int(selo)
     except OSError as problem:
         exit(problem)
+    return players
+
+
+def read_players_csv(filename):
+    players = dict()
+    try:
+        with open(filename) as file:
+            file.readline()
+            for line in csv.reader(file, delimiter=';'):
+                ic(line)
+    except OSError as problem:
+        exit(problem)
+    exit()
     return players
 
 
@@ -54,10 +68,11 @@ def swap(tuple_in):
 
 
 def main():
-    players = read_players(PLAYERS_FILENAME)
+    players = read_players_csv(PLAYERS_FILENAME)
     players = update_scores(players, GAMES_FILENAME)
     for p, s in sorted(players.items(), key=swap, reverse=True):
-        print(f"{p:.<30}{s:>6.0f}")
+        # print(f"{p:.<30}{s:>6.0f}")
+        print(f"{p}: {round(s)}")
 
 
 if __name__ == '__main__':
