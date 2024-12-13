@@ -15,9 +15,17 @@ def read_rules(filename):
             for line in file:
                 n1, n2 = line.strip().split('|')
                 rules.append((int(n1), int(n2)))
-    except OSError:
-        exit("Yeuch!")
+    except OSError as problem:
+        exit(problem)
     return rules
+
+
+def string_to_list(text):
+    """convert string "x,y,z\n" to list of int [x, y, z]"""
+    seq = list()
+    for w in text.split(','):
+        seq.append(int(w))
+    return seq
 
 
 def main():
@@ -25,15 +33,15 @@ def main():
     try:
         with open(UPDATES_FILENAME) as file:
             for line in file:
-                seq = list()
-                for token in line.split(','):
-                    seq.append(int(token))
-                ic(seq)
+                seq = string_to_list(line)
+                correct_flag = True
                 for n1, n2 in rules:
-                    if n1 in seq and n2 in seq:
-                        if seq.index(n1) > seq.index(n2):
-                            ic(n1, n2, seq)
-                            exit()
+                    if n1 in seq and n2 in seq and seq.index(n1) > seq.index(n2):
+                        correct_flag = False
+                if correct_flag:
+                    print(f"Line: {seq} is ok")
+                else:
+                    print(f"Line: {seq} is NOT ok")
 
     except OSError:
         exit("Aaaaaaaararggghghggg!")
