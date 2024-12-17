@@ -28,7 +28,6 @@ def read_text(filename):
             file.readline()
             for line in file:
                 record = dict()
-                ic(line.rstrip().split(','))
                 name, surname, email, food, movie = line.rstrip().split(',')
                 record['NAME'] = name
                 record['SURNAME'] = surname
