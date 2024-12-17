@@ -1,4 +1,4 @@
-NAME,SURNAME,EMAIL,FAVORITE FOOD,FAVORITE MOVIE
+NAME,SURNAME,EMAIL,FOOD,MOVIE
 John,Doe,doe@polito.it,Pizza,Interstellar
 Jane,Row,row@stanford.edu,Pizza,Inception
-"GiovanniAdolfo, Pietro, Pio",Squillero,squillero@polito.it,Ice cream,The Banshee of Inisherin
+Giovanni,Squillero,squillero@polito.it,Ice cream,The Banshee of Inisherin
