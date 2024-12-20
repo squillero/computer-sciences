@@ -1,0 +1,25 @@
+Name;Gender;Hair color;Hair length;Glasses;Hat;Mustache;Beard;Bald
+Alex;Male;Black;Short;NO;NO;YES;NO;NO
+Alfred;Male;Red;Long;NO;NO;YES;NO;NO
+Anita;Female;Blond;Long;NO;NO;NO;NO;NO
+Anne;Female;Black;Short;NO;NO;NO;NO;NO
+Bernard;Male;Brown;Short;NO;YES;NO;NO;NO
+Bill;Male;Red;Short;NO;NO;NO;YES;YES
+Charles;Male;Blond;Short;NO;NO;YES;NO;NO
+Claire;Female;Red;Short;YES;YES;NO;NO;NO
+David;Male;Blond;Short;NO;NO;NO;YES;NO
+Eric;Male;Blond;Short;NO;YES;NO;NO;NO
+Frans;Male;Red;Short;NO;NO;NO;NO;NO
+George;Male;White;Short;NO;YES;NO;NO;NO
+Herman;Male;Red;Short;NO;NO;NO;NO;YES
+Joe;Male;Blond;Short;YES;NO;NO;NO;NO
+Maria;Female;Brown;Long;NO;YES;NO;NO;NO
+Max;Male;Black;Short;NO;NO;YES;NO;NO
+Paul;Male;White;Short;YES;NO;NO;NO;NO
+Peter;Male;White;Short;NO;NO;NO;NO;NO
+Philip;Male;Black;Short;NO;NO;NO;YES;NO
+Richard;Male;Brown;Short;NO;NO;YES;YES;YES
+Robert;Male;Brown;Short;NO;NO;NO;NO;NO
+Sam;Male;White;Short;YES;NO;NO;NO;YES
+Susan;Female;White;Long;NO;NO;NO;NO;NO
+Tom;Male;Black;Short;YES;NO;NO;NO;YES
