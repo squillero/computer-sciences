@@ -3,6 +3,9 @@
 # Free under certain conditions — see the license for details.
 
 FILENAME = '20250110 map.dat'
+SEA = '.'
+ISLAND = '#'
+STAR = '*'
 
 
 def read_map(filename):
@@ -21,13 +24,22 @@ def print_map(map_):
         print(' '.join(line))
 
 
+def find_stars(map_):
+    stars = list()
+    for r, row in enumerate(map_):
+        for c, point in enumerate(row):
+            if point == STAR:
+                stars.append((r, c))
+    return stars
+
+
 def main():
     map_ = read_map(FILENAME)
-    print_map(map_)
-
-    map_[10][12] = '!'
-    print()
-    print_map(map_)
+    for r_star, c_star in find_stars(map_):
+        r, c = r_star, c_star
+        while r >= 0 and map[r][c] == SEA:
+            r -= 1
+            ...
 
 
 if __name__ == '__main__':
