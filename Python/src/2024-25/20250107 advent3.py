@@ -53,7 +53,7 @@ def main():
         for start in range(len(line)):
             n1, n2 = extract_mul(line[start:])
             total += n1 * n2
-    print(f"{total=}")
+    print(f"{total=:,}")
 
 
 if __name__ == '__main__':
