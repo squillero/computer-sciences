@@ -1,6 +1,6 @@
 STUDENT_ID,Name,Surname,Computer Sciences,Math,Chemistry,Physics,Sanskrit
 d3584,Giovanni,Squillero,18,17,16,15,30L
-d0666,Belcebu,Boh,30,2,23,19.44,21
+d0666,Belcebu,Boh,30,2,23,19,21
 s338712,Lorenzo,Cattolico,25,16,21,22,30L
 d5678,Indalecio,Green,,,29,,
 s336975,Amose Romeo,Buzzi,30,18,18,18,18
@@ -10,18 +10,17 @@ s339203,Noemi,DiCaprio,27,24,26,30L,2
 s42,Bianca,Black,21,23,30L,18,
 s2345,Adam,Asaad,30,20,17,22,10
 s335546,Jad,AlSaadi,25,26,23,25,23
-s1234,Brad, Pitt,30,2,27,8,21
+s1234,Brad,Pitt,30,2,27,8,21
 s0707,rana,daoud,25,20,20,17,
 d55678,Gennaro,Nocerino,21,19,30L,24,
 s2678,Greta,Delpiano,25,20,28,19,
 s336612,Suleyman,Daziroglu,25,18,18,20,20
 s341607,Riccardo,Aimino,23,18,19,26,30L
-s341395,Ahmed,Essid,30,24,-2,20,20
+s341395,Ahmed,Essid,30,24,2,20,20
 s343461,,Berghenti,27,20,26,24,29
 s3353693,Anita,Corpetti,20,23,18,20,30
 s342223,Franco,Fabbian,29,29,29,29,
 s337934,Alan,Bodaubay,30,30,30,30,30
-s567892, ismail,Alex,30L,,,,
+s567892,Ismail,Alex,30L,,,,
 s453345,MBAPPE,kylian,30,30,30,30,
-,,,,,,,
-s443388,,,,,,,
+s443388,Jake,Sullivan,,,,,
