@@ -1,0 +1,16 @@
+BOOK AZ1452 Jane Smith 1
+BOOK AZ1452 John Thompson 3
+BOOK OS316 Bob Green 2
+BOOK OS316 William Evans 4
+BOOK AZ1452 Sarah Taylor 3
+BOOK AZ1452 John Davies 2
+CANCEL AZ1452 John Thompson
+CANCEL OS316 Bob Green
+BOOK LH1120 Anne Brown 2
+BOOK OS316 Daniel Walker 4
+BOOK OS316 Clara Taylor 3
+CANCEL OS316 William Evans
+BOOK OS316 Elizabeth Smith 3
+BOOK OS316 Anne White 4
+BOOK AZ1452 Robert Wilson 2
+BOOK AZ1452 Jack Brown 2
