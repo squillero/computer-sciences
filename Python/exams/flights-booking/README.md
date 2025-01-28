@@ -30,15 +30,15 @@ After all requests have been processed, the program should print, for each fligh
 
 Given the following file **flights.txt**
 
-``
+```
 AZ1452 A320 2 3
 OS316 A330-300 3 3
 LH1120 767-300ER 3 2
-``
+```
 
 and the following file **bookings.txt**
 
-``
+```
 BOOK AZ1452 Jane Smith 1
 BOOK AZ1452 John Thompson 3
 BOOK OS316 Bob Green 2
@@ -55,10 +55,10 @@ BOOK OS316 Elizabeth Smith 3
 BOOK OS316 Anne White 4
 BOOK AZ1452 Robert Wilson 2
 BOOK AZ1452 Jack Brown 2
-``
+```
 the program should print the following:
 
-``
+```
 BOOK AZ1452 Sarah Taylor 3 - Fail
 BOOK OS316 Clara Taylor 3 - Fail
 BOOK OS316 Anne White 4 - Fail
@@ -80,7 +80,7 @@ Flight OS316:
 2 2 Elizabeth Smith
 3 1 Daniel Walker
 3 2 Daniel Walker
-``
+```
 
 FILES
 flights.txt
