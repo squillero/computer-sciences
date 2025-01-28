@@ -81,8 +81,3 @@ Flight OS316:
 3 1 Daniel Walker
 3 2 Daniel Walker
 ```
-
-FILES
-flights.txt
-bookings.txt
-
