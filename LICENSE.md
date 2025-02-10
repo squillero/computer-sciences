@@ -2,7 +2,7 @@
 
 <https://github.com/squillero/computer-sciences>
 
-#### Copyright © 2015-2024 by Giovanni Squillero
+#### Copyright © 2015-2025 by Giovanni Squillero
 
 Permission to make digital or hard copies of some or all of these files for
 personal or classroom use is granted without fee provided that copies are not
