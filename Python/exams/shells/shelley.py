@@ -48,7 +48,8 @@ def main():
 
     for requisites, gift in read_column_file(FILENAME_OFFERS):
         requisites = requisites.split()
-        while includes(requisites, cart) and includes([gift], cart):
+        both = requisites + [gift]
+        while includes(both, cart):
             print(f"As you buy {', '.join(requisites)}; you got {gift} for free")
             items_to_pay.remove(gift)
             cart.remove(gift)
