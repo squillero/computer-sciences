@@ -1,4 +1,4 @@
-# Copyright © 2024 Giovanni Squillero <squillero@polito.it>
+# Copyright © Giovanni Squillero <squillero@polito.it>
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
@@ -13,8 +13,6 @@
         python   = "^3.10"
         black    = "^24.4.2"
         icecream = "^2.1.3"
-
-    [tool.poetry.dev-dependencies]
 
 [tool.black]
     exclude     = "(^\\.|^__pycache__)"
