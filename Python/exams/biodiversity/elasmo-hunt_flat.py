@@ -57,7 +57,6 @@ def main():
     species_database = read_species(FILE_DNA_DATA)
     dna_samples = read_samples(FILE_SAMPLES)
 
-    # match
     matches = dict()
     matched_samples = set()
 
@@ -73,6 +72,7 @@ def main():
     print(f"Match percentage: {len(matched_samples) / len(dna_samples):.2%}")
     print()
 
+    # stats (order is irrelevant, but we need to sort out taxonomies)
     print("Taxonomic tree:")
     last_taxonomy = ('', '', '')
     for taxonomy in sorted(matches):
