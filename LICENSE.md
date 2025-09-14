@@ -10,6 +10,6 @@ made or distributed for profit or commercial advantage, and that copies bear
 both this copyright notice and the full reference to the source repository.
 To republish, to redistribute to lists, or to post on servers, contact the
 Author. Copyrights for third-party components must be honored.
-The Author reserves all rights to prohibit text and data mining (TDM)
-of the content on this repository under Article 4(3) of E.U. Directive 2019/790.
+The Author does not permit text and data mining (TDM) of the content on this
+repository under Article 4(3) of Directive (EU) 2019/790.
 These files are offered as-is, without any warranty.
