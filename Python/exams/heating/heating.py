@@ -25,6 +25,7 @@ MONTH_NAMES = [
 def strseq_to_inttuple(strseq):
     """Convert a sequence of strings into a tuple of ints
     Eg. ['18', '5', '1872'] -> (18, 5, 1872)
+    Pythonic one liner: tuple(int(_) for _ in strseq)
     """
     result = list()
     for n in strseq:
@@ -38,15 +39,17 @@ def read_building_data(filename):
     Note: I always prefer tuples over lists if data are read-only
     """
     building_data = list()
-    with open(filename, newline='') as data:
-        data.readline()  # discard first line
-        for line in data:
-            timestamp, consumption = line.split(',')
-            timestamp = timestamp.split(' ')
-            # Pythonic one liner: date = tuple(int(_) for _ in timestamp[0].split('-'))
-            date = strseq_to_inttuple(timestamp[0].split('-'))
-            consumption = float(consumption)
-            building_data.append((date, consumption))
+    try:
+        with open(filename, newline='') as data:
+            data.readline()  # discard first line
+            for line in data:
+                timestamp, consumption = line.split(',')
+                timestamp = timestamp.split(' ')
+                date = strseq_to_inttuple(timestamp[0].split('-'))
+                consumption = float(consumption)
+                building_data.append((date, consumption))
+    except OSError as problem:
+        exit(f"Yeuch: {problem}")
     return building_data
 
 
@@ -86,15 +89,16 @@ def main():
 
     print("Statistics:")
     for b in range(len(BUILDING_DATA_FILENAME)):
-        # Repeat for all buildings, slower but simpler (and maybe cleaner)
+        # Repeat for all buildings, much slower but sligthly simpler
         maximum_daily_consumption = ((0, 0, 0), 0)
         building_consumption = list()
         for building, date, consumption in all_building_data:
             if building != b:
-                continue  # not the building we are interest in, go to next
-            building_consumption.append(consumption)  # big list for the building
-            if consumption > maximum_daily_consumption[1]:  # update max
+                continue  # Not the building we are interest in, go to next record
+            building_consumption.append(consumption)  # big list for the building b
+            if consumption > maximum_daily_consumption[1]:  # update max of building b
                 maximum_daily_consumption = (date, consumption)
+        # The string is split in multiple lines just to ease reading
         print(
             f"building {b+1}: "
             + f"average daily consumption {sum(building_consumption)/len(building_consumption):.2f}W,"
@@ -104,4 +108,5 @@ def main():
 
 
 if __name__ == '__main__':
+    # Entry point
     main()
