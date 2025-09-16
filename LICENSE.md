@@ -11,5 +11,5 @@ both this copyright notice and the full reference to the source repository.
 To republish, to redistribute to lists, or to post on servers, contact the
 Author. Copyrights for third-party components must be honored.
 The Author does not permit text and data mining (TDM) of this repository under
-Article 4(3) of Directive (EU) 2019/790.
+Article 4(3) of Directive EU/2019/790.
 These files are offered as-is, without any warranty.
