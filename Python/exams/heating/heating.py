@@ -69,8 +69,8 @@ def main():
     monthly_consumption = dict()  # more idiomatic: use a defaultdict()
     for _, date, consumption in all_building_data:
         day, month, year = date  # unpacking
-        all_days.add((day, month, year))  # add (month, year) toi the set
-        all_months.add((month, year))  # add (month, year) toi the set
+        all_days.add((day, month, year))  # count different (day, month, year)
+        all_months.add((month, year))  # count different (month, year)
         if consumption > 0:
             # I'm only interested if consuption > 0
             if month not in monthly_consumption:  # terrible without a defaultdict()

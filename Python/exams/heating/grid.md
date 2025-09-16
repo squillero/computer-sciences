@@ -26,7 +26,7 @@
 
 ## ALGORITHM (10 points)
 
-- Correct counting of the number of months: 1 point
+- Correct counting of the number of months [note: both month or month+year are correct]: 1 point
 - Correct counting of the number of days: 1 point
 - Correct evaluation of the maximum monthly consumption: 1 point
 - Correct evaluation of the minimum monthly consumption: 2 point
