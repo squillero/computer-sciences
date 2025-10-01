@@ -9,6 +9,7 @@ personal or classroom use is granted without fee provided that copies are not
 made or distributed for profit or commercial advantage, and that copies bear
 both this copyright notice and the full reference to the source repository.
 To republish, to redistribute to lists, or to post on servers, contact the
-Author. Text and Data Mining (TDM) of this repository is not permitted under
-Article 4(3) of Directive EU/2019/790. Copyrights for third-party components
+Author. This repository is subject to the reservation of rights under Article
+4(3) of Directive (EU) 2019/790; text and data mining (TDM) is not permitted
+without the Author's express consent. Copyrights for third-party components
 must be honored. These files are offered as-is, without any warranty.
