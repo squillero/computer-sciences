@@ -1,0 +1,11 @@
+# Copyright © 2025 Giovanni Squillero <giovanni.squillero@polito.it>
+# https://github.com/squillero/computer-sciences
+# Free under certain conditions — see the license for details.
+
+[project]
+    name            = "classes"
+    version         = "0.1.0"
+    description     = "Add your description here"
+    readme          = "README.md"
+    requires-python = ">=3.13"
+    dependencies    = ["icecream>=2.1.8"]
