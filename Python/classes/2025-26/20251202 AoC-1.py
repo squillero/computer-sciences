@@ -38,6 +38,14 @@ def main():
         step = rot / abs(rot)
         for _ in range(abs(rot)):
             dial = (dial + step) % 100
+
+            # alt without %
+            # dial += step
+            # if dial >= 100:
+            #     dial -= 100
+            # elif dial < 0:
+            #     dial += 100
+
             if dial == 0:
                 password += 1
     print(f"The password is {password}")
