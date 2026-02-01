@@ -2,23 +2,22 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-[tool.poetry]
-    name         = "CS"
-    authors      = ["Giovanni Squillero <giovanni.squillero@polito.it>"]
-    description  = "Clean environment for Computater Sciences"
-    license      = "proprietary"
-    package-mode = false
+[project]
+    name = "cs"
+    version = "2026.1"
+    description = "Code bites from Computer Sciences @ Politecnico di Torino"
+    authors = [
+        { name = "Giovanni Squillero", email = "giovanni.squillero@polito.it" },
+    ]
+    readme = "README.md"
+    license = "licenseRef-SQUILLERO-1.2"
+    license-files = ["LICENSE.md"]
+    requires-python = ">=3.10"
+    dependencies = ["icecream (>=2.1.10,<3.0.0)"]
 
-    [tool.poetry.dependencies]
-        python   = "^3.10"
-        black    = "^24.4.2"
-        icecream = "^2.1.3"
-
-[tool.black]
-    exclude     = "(^\\.|^__pycache__)"
-    include     = "\\.py$"
-    line-length = 120
+    [project.urls]
+        GitHub = "https://github.com/squillero/computer-sciences"
 
 [build-system]
-    requires      = ["poetry-core"]
+    requires      = ["poetry-core>=2.0.0,<3.0.0"]
     build-backend = "poetry.core.masonry.api"
