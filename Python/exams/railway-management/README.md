@@ -21,6 +21,7 @@ The user operations to be performed are saved in the file **operazioni.txt**. Ea
 ## Example 
 
 **File corse.txt**
+
 ```
 R101 Torino:08:00 Chivasso:08:18 Santhia:08:40 Vercelli:08:55 Novara:09:10 Oleggio:09:25 SestoCalende:09:40 Gallarate:09:55 Busto:10:05 Milano:10:20
 
@@ -33,8 +34,10 @@ R104 Vercelli:11:20 Novara:11:35 Oleggio:11:48 SestoCalende:12:02 Gallarate:12:1
 R105 Santhia:12:15 Vercelli:12:30 Novara:12:45 Gallarate:13:10 Busto:13:20 Rho:13:35 Milano:13:50
 
 R106 Milano:15:00 Gallarate:15:38 SestoCalende:15:52 Oleggio:16:05 Novara:16:20 Vercelli:16:40 Santhia:16:55 Chivasso:17:15 Torino:17:35
+```
 
 **File operazioni.txt**
+
 ```
 Stazioni
 Orario Gallarate 10:00
@@ -42,9 +45,9 @@ Viaggio Novara 11:00 Milano
 ```
 
 **Output**:
+
 ```
 Ordered list of stations served:  Busto, Chivasso, Gallarate, Legnano, Milano, Novara, Oleggio, Oleglio, Rho, Santhia, SestoCalende, Torino, Vercelli.
-```
 
 Timetable for Gallarate station from 10:00 onwards: R103 10:42 bound for Milano; R104 12:18 bound for Milano; R105 13:10 bound for Milano; R106 15:38 bound for Torino.
 
