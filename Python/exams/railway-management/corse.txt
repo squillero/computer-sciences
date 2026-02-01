@@ -1,0 +1,6 @@
+R101 Torino:08:00 Chivasso:08:18 Santhia:08:40 Vercelli:08:55 Novara:09:10 Oleggio:09:25 SestoCalende:09:40 Gallarate:09:55 Busto:10:05 Milano:10:20
+R102 Milano:07:45 Rho:07:58 Legnano:08:10 Busto:08:18 Gallarate:08:28 SestoCalende:08:42 Oleggio:08:55 Novara:09:10 Vercelli:09:28 Santhia:09:45
+R103 Novara:10:00 Oleglio:10:13 SestoCalende:10:28 Gallarate:10:42 Busto:10:55 Legnano:11:05 Rho:11:18 Milano:11:35
+R104 Vercelli:11:20 Novara:11:35 Oleggio:11:48 SestoCalende:12:02 Gallarate:12:18 Busto:12:30 Legnano:12:42 Rho:12:55 Milano:13:10
+R105 Santhia:12:15 Vercelli:12:30 Novara:12:45 Gallarate:13:10 Busto:13:20 Rho:13:35 Milano:13:50
+R106 Milano:15:00 Gallarate:15:38 SestoCalende:15:52 Oleggio:16:05 Novara:16:20 Vercelli:16:40 Santhia:16:55 Chivasso:17:15 Torino:17:35
