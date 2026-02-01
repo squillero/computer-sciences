@@ -44,6 +44,7 @@ Viaggio Novara 11:00 Milano
 **Output**:
 ```
 Ordered list of stations served:  Busto, Chivasso, Gallarate, Legnano, Milano, Novara, Oleggio, Oleglio, Rho, Santhia, SestoCalende, Torino, Vercelli.
+```
 
 Timetable for Gallarate station from 10:00 onwards: R103 10:42 bound for Milano; R104 12:18 bound for Milano; R105 13:10 bound for Milano; R106 15:38 bound for Torino.
 
