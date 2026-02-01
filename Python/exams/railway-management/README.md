@@ -1,6 +1,6 @@
 # RAILWAY LINE MANAGEMENT
 
-Write a Python program for the management of a regional railway line. The program must read the set of scheduled trips for a day from the file **corse.txt**. Each line of the file contains the trip identification code, the ordered sequence of stations where the train will stop, and the arrival time at each station, in the following format:  
+Write a Python program for the management of a regional railway line. The program must read the set of scheduled trips for a day from the file **corse.txt**. Each line of the file contains the trip identification code, the ordered sequence of stations where the train will stop, and the arrival time at each station, in the following format: 
 
 ```
 TripCode DepartureStation:hh:min Station1:hh:min Station2:hh:min Station3:hh:min ... ArrivalStation:hh:min
@@ -11,7 +11,7 @@ where `TripCode` is a string, `DepartureStation` and `ArrivalStation` are respec
 The program must perform the following three operations numbered from 1 to 3:
 
 1. **Print the list of stations**: the program prints on the screen, in alphabetical order, the list of all stations served by the trains of the line, without duplicates.
-2. **Print the timetable**: the program identifies all trips that stop at a specified station starting from a certain time and prints the result on the screen. For each identified trip, the following must be printed: the trip code, the departure time, and the final destination of the trip.  
+2. **Print the timetable**: the program identifies all trips that stop at a specified station starting from a certain time and prints the result on the screen. For each identified trip, the following must be printed: the trip code, the departure time, and the final destination of the trip. 
 3. **Search for shortest journey**: the program searches for and prints on the screen the direct journey **(without transfers)** with minimum total duration between a departure station and an arrival station, starting from a specified time. If no direct train exists, the program prints: There are no direct trains between the entered stations after the specified time.
 
 The user operations to be performed are saved in the file **operazioni.txt**. Each line of the file contains the information for a single operation to be executed. When the first field of the line in the file **operazioni.txt** is the word `Stazioni`, operation 1 must be executed. If it is the word `Orario`, the line will also contain the name of a station and a departure time, which are input data to perform operation 2. Finally, if the first field is `Viaggio`, the line will also contain a departure station, a departure time, and an arrival station, which represent input data to perform operation 3. 
@@ -47,7 +47,7 @@ Viaggio Novara 11:00 Milano
 **Output**:
 
 ```
-Ordered list of stations served:  Busto, Chivasso, Gallarate, Legnano, Milano, Novara, Oleggio, Oleglio, Rho, Santhia, SestoCalende, Torino, Vercelli.
+Ordered list of stations served: Busto, Chivasso, Gallarate, Legnano, Milano, Novara, Oleggio, Oleglio, Rho, Santhia, SestoCalende, Torino, Vercelli.
 
 Timetable for Gallarate station from 10:00 onwards: R103 10:42 bound for Milano; R104 12:18 bound for Milano; R105 13:10 bound for Milano; R106 15:38 bound for Torino.
 
