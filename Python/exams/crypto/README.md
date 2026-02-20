@@ -22,7 +22,7 @@ Date;Token;Price_USD
 
 For example, with reference to the row
 
-```
+```csv
 2025-11-01;BTC;110026.69
 ```
 
