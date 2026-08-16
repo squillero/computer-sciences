@@ -8,5 +8,5 @@ This repo contains past exams, notes, and all the code fragments developed durin
 
 :biohazard: This repository is subject to the reservation of rights under Article 4(3) of Directive (EU) 2019/790; text and data mining (TDM) is not permitted without the Author's express consent.
 
-**Copyright (c) [Giovanni Squillero](https://squillero.github.io/) <[giovanni.squillero@polito.it](mailto:giovanni.squillero@polito.it)**>  
-Copying and distributing these files are permitted under certain conditions, see the [license](./LICENSE.md) for details.
+**Copyright © [Giovanni Squillero](https://squillero.github.io/) <[giovanni.squillero@polito.it](mailto:giovanni.squillero@polito.it)**>  
+Copying and distributing these files are permitted under certain conditions, see the [license](./LICENSE) for details.
