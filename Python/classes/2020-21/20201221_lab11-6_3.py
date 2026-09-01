@@ -1,4 +1,4 @@
-# Copyright © 2020 Giovanni Squillero <giovanni.squillero@polito.it>
+# Copyright © 2020 Giovanni Squillero / Politecnico di Torino
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 FILE_URL = 'https://www.cia.gov/library/publications/the-world-factbook/rankorder/rawdata_2004.txt'
