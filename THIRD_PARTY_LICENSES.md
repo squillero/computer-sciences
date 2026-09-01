@@ -1,8 +1,8 @@
-===========================================================================
+---
 Library: icecream
 Project: https://pypi.org/project/icecream/
 License: MIT License
-===========================================================================
+---
 
 Copyright 2018 Ansgar Grunseid
 
