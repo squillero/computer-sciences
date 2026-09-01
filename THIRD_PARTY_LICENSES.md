@@ -1,6 +1,6 @@
 # THIRD PARTY LICENSES
 
-### icecream (https://pypi.org/project/icecream/)
+### icecream — https://pypi.org/project/icecream/
 
 > Copyright 2018 Ansgar Grunseid
 >
