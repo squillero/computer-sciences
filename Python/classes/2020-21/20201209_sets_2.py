@@ -4,9 +4,9 @@
 
 
 def main():
-    beatles = {'John', 'Paul', 'George', 'Ringo'}
-    stones = {'Mick', 'Keith', 'Charlie', 'Ronnie'}
-    queen = {'Freddie', 'Brian', 'Roger', 'John'}
+    beatles = {"John", "Paul", "George", "Ringo"}
+    stones = {"Mick", "Keith", "Charlie", "Ronnie"}
+    queen = {"Freddie", "Brian", "Roger", "John"}
 
     # functions
     print(beatles.union(stones))
@@ -35,5 +35,5 @@ def main():
     print(f"SUPERGROUP: {sorted(supergroup)}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

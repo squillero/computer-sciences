@@ -9,15 +9,15 @@ FILE_OUT = "20241122 movies2.gx"
 
 def main():
     try:
-        with open(FILE_IN) as file_in, open(FILE_OUT, 'w') as file_out:
+        with open(FILE_IN) as file_in, open(FILE_OUT, "w") as file_out:
             for line in file_in:
                 line = line.rstrip()
                 if line != ERROR:
                     file_out.write(line)
-                    file_out.write('\n')
+                    file_out.write("\n")
     except OSError:
         line = None
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

@@ -13,9 +13,7 @@ def slurp():
 
 def line_by_line():
     try:
-        with open(
-            "20231117 test.txt", encoding="utf-8"
-        ) as input_file:
+        with open("20231117 test.txt", encoding="utf-8") as input_file:
             for line in input_file:
                 line = line.rstrip()
                 print(f'Doing something with: "{line}"')

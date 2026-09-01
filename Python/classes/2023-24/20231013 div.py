@@ -11,4 +11,3 @@ while num > 1:
         num = num // n
     else:
         n = n + 1
-        

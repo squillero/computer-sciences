@@ -2,7 +2,7 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-FILENAME = 'numbers.dat'
+FILENAME = "numbers.dat"
 
 
 def main():
@@ -25,5 +25,5 @@ def main():
     print(f"Sum is {sum(numbers2):,}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

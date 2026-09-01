@@ -5,7 +5,7 @@
 from csv import reader as csv_reader
 from icecream import ic
 
-BOWLING_FILE = '20241220 bowling.txt'
+BOWLING_FILE = "20241220 bowling.txt"
 
 
 def read_data(filename):
@@ -14,7 +14,7 @@ def read_data(filename):
     try:
         with open(filename) as file:
             for line in file:
-                data = line.rstrip().split(';')
+                data = line.rstrip().split(";")
                 surname = data.pop(0)
                 name = data.pop(0)
                 scores = list()
@@ -31,8 +31,8 @@ def read_data_expert(filename):
     r"""Pythonic version of `read_data`"""
     players = dict()
     try:
-        with open(filename, newline='') as file:
-            for surname, name, *scores in csv_reader(file, delimiter=';'):
+        with open(filename, newline="") as file:
+            for surname, name, *scores in csv_reader(file, delimiter=";"):
                 players[surname, name] = [int(s) for s in scores]
     except OSError as problem:
         print(f"YEUCH! {problem}")
@@ -61,12 +61,14 @@ def main():
     r"""Standard entry point"""
     players_data = read_data(BOWLING_FILE)
 
-    for player, scores in sorted(players_data.items(), key=get_key_from_element, reverse=True):
+    for player, scores in sorted(
+        players_data.items(), key=get_key_from_element, reverse=True
+    ):
         print(f"{player[0]} {player[1]} {sum(scores)}")
 
     ic(players_with_most_frequent_score(players_data, 10))
     ic(players_with_most_frequent_score(players_data, 0))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

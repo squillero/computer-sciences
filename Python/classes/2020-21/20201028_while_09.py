@@ -18,4 +18,4 @@ while not finished:  # handling sentinel: extra variable
 if not num:  # that is: num == 0 or something else
     print("D'ho!?")
 else:
-    print(f"{num} votes, average is {sum_/num:.1f}")
+    print(f"{num} votes, average is {sum_ / num:.1f}")

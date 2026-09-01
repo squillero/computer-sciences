@@ -24,11 +24,7 @@ def main():
             cost = int(user[1:])
             place_row, place_col = find_cost(seats, cost)
 
-        if (
-            place_row
-            and place_col
-            and seats[place_row][place_col] > 0
-        ):
+        if place_row and place_col and seats[place_row][place_col] > 0:
             seats[place_row][place_col] = 0
         else:
             print("Yeuch")

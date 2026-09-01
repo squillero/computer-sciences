@@ -7,7 +7,7 @@ from random import choice
 dna = str.join("", [choice(list("ACTG")) for _ in range(20_000_000)])
 gene = str.join("", [choice(list("ACTG")) for _ in range(10)])
 
-#print(dna)
+# print(dna)
 print(f"Looking for: {gene}")
 
 num_found = 0

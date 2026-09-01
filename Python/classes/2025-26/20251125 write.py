@@ -4,12 +4,12 @@
 
 import os
 
-OUTPUT_FILE = 'out.gx'
+OUTPUT_FILE = "out.gx"
 
 
 def main():
     try:
-        with open(OUTPUT_FILE, 'at') as output:
+        with open(OUTPUT_FILE, "at") as output:
             output.write("Hello!\n")
             output.write("Hello!\n")
             output.write("Hello!\n")
@@ -18,5 +18,5 @@ def main():
         exit("Panik")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

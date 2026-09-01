@@ -3,17 +3,18 @@
 # Free under certain conditions — see the license for details.
 
 
-def PrintParking(parkingSlots : list):
+def PrintParking(parkingSlots: list):
     temp = ""
     for space in parkingSlots:
         if space:
-            temp += 'x'
+            temp += "x"
         else:
-            temp += '_'
-    
+            temp += "_"
+
     print(temp)
 
-def ParkCars(spaces : list, l : int, r : int):
+
+def ParkCars(spaces: list, l: int, r: int):
     if l > r:
         return
 
@@ -34,15 +35,17 @@ def GetInput() -> int:
         else:
             number = int(number)
             break
-    
+
     return number
+
 
 def main():
     numberOfSpaces = GetInput()
-    spaces = [0 for _ in range(int(numberOfSpaces))] # 0 represents an empty space
+    spaces = [0 for _ in range(int(numberOfSpaces))]  # 0 represents an empty space
     ParkCars(spaces, 0, len(spaces) - 1)
 
     PrintParking(spaces)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

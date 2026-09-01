@@ -12,5 +12,5 @@ def main():
     yoda()  # same as before
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

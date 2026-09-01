@@ -13,5 +13,5 @@ def main():
     foo(month=10, day=23)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

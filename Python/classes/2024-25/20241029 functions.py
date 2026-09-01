@@ -3,7 +3,7 @@
 # Free under certain conditions — see the license for details.
 
 
-def func(): 
+def func():
     print("Hello! This is my first function")
 
 
@@ -12,4 +12,3 @@ func()
 print("2")
 func()
 func()
-

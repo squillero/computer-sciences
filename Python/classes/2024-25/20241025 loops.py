@@ -51,4 +51,4 @@ for i in range(len(data) - 1):
     if diff > max_diff:
         max_i = i
         max_diff = diff
-print(f"Max distance: {data[max_i]}-{data[max_i+1]} (max diff is {max_diff:,})")
+print(f"Max distance: {data[max_i]}-{data[max_i + 1]} (max diff is {max_diff:,})")

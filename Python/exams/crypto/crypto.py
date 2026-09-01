@@ -5,25 +5,25 @@
 # from icecream import ic
 from csv import DictReader
 
-TOKEN_FILENAME = 'token.csv'
-PRICES_FILENAME = 'token_prices.csv'
+TOKEN_FILENAME = "token.csv"
+PRICES_FILENAME = "token_prices.csv"
 
-FIELD_TOKEN = 'Token'
-FIELD_QTY = 'Quantità'
-FIELD_DATE = 'Data'
-FIELD_PRICE = 'Prezzo_USD'
+FIELD_TOKEN = "Token"
+FIELD_QTY = "Quantità"
+FIELD_DATE = "Data"
+FIELD_PRICE = "Prezzo_USD"
 
 
 def read_token(filename):
     """Read portfolio CSV"""
     portfolio = dict()
     try:
-        with open(filename, newline='') as csv_file:
-            reader = DictReader(csv_file, delimiter=';')
+        with open(filename, newline="") as csv_file:
+            reader = DictReader(csv_file, delimiter=";")
             for record in reader:
                 portfolio[record[FIELD_TOKEN]] = float(record[FIELD_QTY])
     except OSError:
-        print(f"Yeuch. Problem with file \"{filename}\"")
+        print(f'Yeuch. Problem with file "{filename}"')
         portfolio = dict()
     return portfolio
 
@@ -32,16 +32,18 @@ def read_prices(filename):
     """Read prices CSV"""
     prices = dict()
     try:
-        with open(filename, newline='') as csv_file:
-            reader = DictReader(csv_file, delimiter=';')
+        with open(filename, newline="") as csv_file:
+            reader = DictReader(csv_file, delimiter=";")
             for record in reader:
                 # Note: Pythonistas would use a defaultdict
                 if record[FIELD_DATE] not in prices:
                     prices[record[FIELD_DATE]] = list()
-                prices[record[FIELD_DATE]].append((record[FIELD_TOKEN], float(record[FIELD_PRICE])))
+                prices[record[FIELD_DATE]].append(
+                    (record[FIELD_TOKEN], float(record[FIELD_PRICE]))
+                )
 
     except OSError:
-        print(f"Yeuch. Problem with file \"{filename}\"")
+        print(f'Yeuch. Problem with file "{filename}"')
         prices = dict()
     return prices
 

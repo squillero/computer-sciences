@@ -2,6 +2,6 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-zap = 'endless'
+zap = "endless"
 while zap:
     ...

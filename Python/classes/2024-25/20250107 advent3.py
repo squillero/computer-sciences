@@ -2,7 +2,7 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-INPUT_FILE = '20250107 input.txt'
+INPUT_FILE = "20250107 input.txt"
 
 
 def read_dump(filename):
@@ -18,7 +18,7 @@ def read_dump(filename):
 
 def read_dump2(filename):
     r"""Read memory dump from file (single line)"""
-    dump = ''
+    dump = ""
     try:
         with open(filename) as file:
             for line in file:
@@ -32,13 +32,13 @@ def extract_mul(line):
     r"""Try to parse mul(n1,n2) in the beginning of the line
     and returns (n1, n2) or (0, 0) if failed
     """
-    if not line.startswith('mul('):
+    if not line.startswith("mul("):
         return 0, 0
-    line = line.removeprefix('mul(')  # 683,461) >,~select()wha
+    line = line.removeprefix("mul(")  # 683,461) >,~select()wha
     try:
-        number1, line = line.split(',', maxsplit=1)
+        number1, line = line.split(",", maxsplit=1)
         number1 = int(number1)  # 461) >,~select()wha
-        number2, line = line.split(')', maxsplit=1)
+        number2, line = line.split(")", maxsplit=1)
         number2 = int(number2)  # >,~select()wha
     except ValueError:
         return 0, 0
@@ -56,5 +56,5 @@ def main():
     print(f"{total=:,}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

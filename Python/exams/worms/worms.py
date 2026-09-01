@@ -4,7 +4,7 @@
 
 from pprint import pprint
 
-SEQUENCES_FILE = 'seq.txt'
+SEQUENCES_FILE = "seq.txt"
 
 
 def find_all(word, sequence):
@@ -30,8 +30,8 @@ def read_sequences(filename):
 
 def main():
     sequences = read_sequences(SEQUENCES_FILE)
-    word1 = input('Enter the first word: ')
-    word2 = input('Enter the second word: ')
+    word1 = input("Enter the first word: ")
+    word2 = input("Enter the second word: ")
 
     min_distance = 0
     sequence_with_min_distance = None
@@ -46,10 +46,12 @@ def main():
                     min_distance = abs(p0 - p1)
 
     if sequence_with_min_distance is not None:
-        print(f"Min distance: sequence {sequence_with_min_distance+1} (distance={min_distance})")
+        print(
+            f"Min distance: sequence {sequence_with_min_distance + 1} (distance={min_distance})"
+        )
     else:
         print("The two words never appear in the same sequence")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

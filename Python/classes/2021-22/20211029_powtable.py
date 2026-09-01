@@ -6,10 +6,10 @@ NUM_ROWS = 10
 NUM_COLUMNS = 6
 
 for c in range(NUM_COLUMNS):
-    header = f"x**{c+1}"
-    print(f"{header:>10s}", end=' |')
+    header = f"x**{c + 1}"
+    print(f"{header:>10s}", end=" |")
 print()
 for r in range(NUM_ROWS):
     for c in range(NUM_COLUMNS):
-        print(f"{(r+1)**(c+1):10,d}", end=' |')
+        print(f"{(r + 1) ** (c + 1):10,d}", end=" |")
     print()

@@ -11,5 +11,5 @@ def main():
     print(name[10:2:-1])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

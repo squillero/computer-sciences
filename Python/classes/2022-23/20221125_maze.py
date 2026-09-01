@@ -4,14 +4,14 @@
 
 from pprint import pprint
 
-MAZE_FILENAME = '20221125_maze.dat'
-CORRIDOR = '#'
-WALL = '.'
+MAZE_FILENAME = "20221125_maze.dat"
+CORRIDOR = "#"
+WALL = "."
 
 
 def print_maze(maze):
     for line in maze:
-        print(''.join(line))
+        print("".join(line))
     print()
 
 
@@ -21,8 +21,8 @@ def read_maze(filename):
         with open(filename) as file_in:
             for line in file_in:
                 maze.append(list(line.strip()))
-        #ammar's alternative
-        #with open(filename) as file_in:
+        # ammar's alternative
+        # with open(filename) as file_in:
         #    maze = file_in.read().split('\n')[:-1]
     except OSError as problem_description:
         print(f"Yeuch, we have a problem: {problem_description}")
@@ -49,7 +49,7 @@ def fill(maze, start):
         row, col = water.pop(0)
         if col == num_columns - 1:
             found_exit = True
-        maze[row][col] = '+'
+        maze[row][col] = "+"
         print_maze(maze)
         if col < num_columns - 1 and maze[row][col + 1] == CORRIDOR:
             water.append((row, col + 1))
@@ -72,5 +72,5 @@ def main():
         print("There is a way out!")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

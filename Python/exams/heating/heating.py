@@ -4,21 +4,21 @@
 
 from icecream import ic
 
-BUILDING_DATA_FILENAME = ['building1.csv', 'building2.csv']
+BUILDING_DATA_FILENAME = ["building1.csv", "building2.csv"]
 MONTH_NAMES = [
-    '',  # month 0 ;-)
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
+    "",  # month 0 ;-)
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
 ]
 
 
@@ -40,12 +40,12 @@ def read_building_data(filename):
     """
     building_data = list()
     try:
-        with open(filename, newline='') as data:
+        with open(filename, newline="") as data:
             data.readline()  # discard first line
             for line in data:
-                timestamp, consumption = line.split(',')
-                timestamp = timestamp.split(' ')
-                date = strseq_to_inttuple(timestamp[0].split('-'))
+                timestamp, consumption = line.split(",")
+                timestamp = timestamp.split(" ")
+                date = strseq_to_inttuple(timestamp[0].split("-"))
                 consumption = float(consumption)
                 building_data.append((date, consumption))
     except OSError as problem:
@@ -100,13 +100,13 @@ def main():
                 maximum_daily_consumption = (date, consumption)
         # The string is split in multiple lines just to ease reading
         print(
-            f"building {b+1}: "
-            + f"average daily consumption {sum(building_consumption)/len(building_consumption):.2f}W,"
+            f"building {b + 1}: "
+            + f"average daily consumption {sum(building_consumption) / len(building_consumption):.2f}W,"
             + f" maximum daily consumption {maximum_daily_consumption[1]:.2f}W"
             + f" ({maximum_daily_consumption[0][0]}-{maximum_daily_consumption[0][1]}-{maximum_daily_consumption[0][2]})"
         )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Entry point
     main()

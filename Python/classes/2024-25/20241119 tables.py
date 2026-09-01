@@ -33,9 +33,9 @@ def real_main():
 def print_table(table):
     for row in table:
         for element in row:
-            print(f"{element:6d} ", end='')
+            print(f"{element:6d} ", end="")
         print()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

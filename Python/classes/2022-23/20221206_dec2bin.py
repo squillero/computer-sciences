@@ -9,9 +9,9 @@ def dec2bin(num):
         mods.append(num % 2)
         num = num // 2
     if not mods:
-        result = '0'
+        result = "0"
     else:
-        result = ''
+        result = ""
         for d in reversed(mods):
             result += str(d)
     return result
@@ -27,5 +27,5 @@ def main():
     print(f"{number}|10 -> {binary}|2")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

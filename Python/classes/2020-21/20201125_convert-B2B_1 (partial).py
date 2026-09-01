@@ -24,12 +24,12 @@ def main():
 
 def convert_to_generic_base(number, base):
     """Conver a number in base10 to a different base (return a str)"""
-    result = ''
+    result = ""
     while number > 0:
         result = result + hexadecimal_digit(number % base)
         number = number // base
-    if result == '':
-        result = '0'  # !!!
+    if result == "":
+        result = "0"  # !!!
     return result[::-1]
 
 
@@ -68,5 +68,5 @@ def hexadecimal_digit(val):
         return "F"
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

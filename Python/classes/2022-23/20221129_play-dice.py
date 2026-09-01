@@ -20,7 +20,7 @@ def myprint(lst):
     out = ""
     for e in lst:
         out += f"{e} "
-    print(out, end='')
+    print(out, end="")
 
 
 def main():
@@ -44,12 +44,12 @@ def main():
     pos = 0
     for rep_index, rep_length in max_:
         myprint(rolls[pos:rep_index])
-        print("(", end=' ')
-        myprint(rolls[rep_index:rep_index + rep_length])
-        print(")", end=' ')
+        print("(", end=" ")
+        myprint(rolls[rep_index : rep_index + rep_length])
+        print(")", end=" ")
         pos = rep_index + rep_length
     myprint(rolls[pos:])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

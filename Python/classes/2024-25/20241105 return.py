@@ -2,12 +2,13 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
+
 def square(x):
-    result = x ** 2
+    result = x**2
     return result
+
 
 result = 1
 print(square(result))
 print(result)
-print(square(result+1))
-
+print(square(result + 1))

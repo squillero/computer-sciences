@@ -2,7 +2,7 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-FILENAME = 'song.txt'
+FILENAME = "song.txt"
 
 
 def main():
@@ -14,7 +14,7 @@ def main():
 
     with open(FILENAME) as song:
         whole_file = song.read()
-    lines = whole_file.split('\n')
+    lines = whole_file.split("\n")
     print(lines[4])
 
     # ;-)
@@ -27,5 +27,5 @@ def main():
     print(lines[4].strip())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

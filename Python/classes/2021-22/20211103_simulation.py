@@ -24,4 +24,5 @@ for t in range(NUM_TOSSES):
         n7 += 1  ### n7 = n7 + 1
 
 print(
-    f"2's {n2/NUM_TOSSES*100:.2f}% -- 3's {n3/NUM_TOSSES*100:.2f}% -- 7's {n7/NUM_TOSSES*100:.2f}%")
+    f"2's {n2 / NUM_TOSSES * 100:.2f}% -- 3's {n3 / NUM_TOSSES * 100:.2f}% -- 7's {n7 / NUM_TOSSES * 100:.2f}%"
+)

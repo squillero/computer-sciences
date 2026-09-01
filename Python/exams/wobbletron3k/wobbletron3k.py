@@ -3,8 +3,8 @@
 # Free for personal or classroom use; see 'LICENSE' for details.
 
 
-INPUT_FILE = 'reports_small.dat'
-OUTPUT_FILE = 'correct-reports.dat'
+INPUT_FILE = "reports_small.dat"
+OUTPUT_FILE = "correct-reports.dat"
 
 
 def read_reports(filename):
@@ -25,7 +25,7 @@ def read_reports(filename):
 def write_reports(reports, filename):
     r"""Reads reports as a list of lists"""
     try:
-        with open(filename, 'w') as file:
+        with open(filename, "w") as file:
             for rep in reports:
                 for level in rep[:-1]:
                     file.write(f"{level} ")
@@ -52,8 +52,10 @@ def main():
             correct_reports.append(report)
     write_reports(correct_reports, OUTPUT_FILE)
 
-    print(f"Read {len(all_reports)} reports: {len(correct_reports)/len(all_reports):.2%} correct")
+    print(
+        f"Read {len(all_reports)} reports: {len(correct_reports) / len(all_reports):.2%} correct"
+    )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

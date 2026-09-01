@@ -27,9 +27,7 @@ def find_lines(transcript, taboo_words):
 
 def save_uncensored_lines(transcript, dangerous_lines):
     try:
-        with open(
-            CENSORED_FILENAME, "w", encoding="utf-8"
-        ) as file_out:
+        with open(CENSORED_FILENAME, "w", encoding="utf-8") as file_out:
             for line_number, line in enumerate(transcript):
                 if line_number not in dangerous_lines:
                     file_out.write(line)

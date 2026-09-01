@@ -18,5 +18,5 @@ def foo():
     return 18, 23
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

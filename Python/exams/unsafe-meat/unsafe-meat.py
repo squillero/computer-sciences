@@ -5,20 +5,20 @@
 from icecream import ic
 
 
-REPORT_FILENAME = 'report-small.txt'
+REPORT_FILENAME = "report-small.txt"
 
 
 def read_report(filename):
     """Read the report, split the two blocks"""
     try:
         with open(filename) as file:
-            ranges_raw, batches_raw = file.read().split('\n\n')
+            ranges_raw, batches_raw = file.read().split("\n\n")
     except OSError as problem:
         print(problem)
         exit(1)
     dangerous_ranges = list()
     for block in ranges_raw.split():
-        from_, to = block.strip().split('-')
+        from_, to = block.strip().split("-")
         dangerous_ranges.append((int(from_), int(to)))
     batches = list()
     for batch in batches_raw.split():
@@ -35,5 +35,5 @@ def main():
                 break
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

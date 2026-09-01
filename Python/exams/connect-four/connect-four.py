@@ -5,9 +5,9 @@
 # Cool replacement of print()'s for debugging
 from icecream import ic
 
-MOVES_FILENAME = 'moves.txt'
+MOVES_FILENAME = "moves.txt"
 
-EMPTY = '-'
+EMPTY = "-"
 NUM_COLUMNS = 7
 NUM_ROWS = 6
 
@@ -29,7 +29,7 @@ def print_board(board):
     """Pretty print the board"""
     for r in range(NUM_ROWS):
         for c in range(NUM_COLUMNS):
-            print(f"{board[r][c]:^3}", end='')
+            print(f"{board[r][c]:^3}", end="")
         print()
 
 
@@ -65,14 +65,20 @@ def check_win(board):
         for c in range(NUM_COLUMNS - 3):
             if (
                 board[r][c] != EMPTY
-                and board[r][c] == board[r + 1][c + 1] == board[r + 2][c + 2] == board[r + 3][c + 3]
+                and board[r][c]
+                == board[r + 1][c + 1]
+                == board[r + 2][c + 2]
+                == board[r + 3][c + 3]
             ):
                 return board[r][c]
         # Check diagonal (top-right to bottom-left)
         for c in range(3, NUM_COLUMNS):
             if (
                 board[r][c] != EMPTY
-                and board[r][c] == board[r + 1][c - 1] == board[r + 2][c - 2] == board[r + 3][c - 3]
+                and board[r][c]
+                == board[r + 1][c - 1]
+                == board[r + 2][c - 2]
+                == board[r + 3][c - 3]
             ):
                 return board[r][c]
 
@@ -90,7 +96,7 @@ def main():
     num_moves = 0
     for player, column in moves:
         num_moves += 1
-        symbol = 'O' if num_moves % 2 == 1 else 'X'
+        symbol = "O" if num_moves % 2 == 1 else "X"
         pos = find_bottom(board, column)
         # ic(player, symbol, column, pos)
         board[pos][column] = symbol
@@ -102,6 +108,6 @@ def main():
             break
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     """This is executed when run from the command line"""
     main()

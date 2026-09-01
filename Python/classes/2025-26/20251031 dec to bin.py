@@ -12,22 +12,22 @@ def main():
     while number > 0:
         r = number % 2
         binary.append(r)
-        number = number // 2        # number //= 2
+        number = number // 2  # number //= 2
 
     for i in range(len(binary) - 1, -1, -1):
-        print(binary[i], end='')
+        print(binary[i], end="")
     print()
 
     for i in range(len(binary)):
-        print(binary[-(i + 1)], end='')
+        print(binary[-(i + 1)], end="")
     print()
 
     for d in reversed(binary):
-        print(d, end='')
+        print(d, end="")
     print()
 
     for d in binary[::-1]:
-        print(d, end='')
+        print(d, end="")
     print()
 
 

@@ -8,7 +8,7 @@ def dec2bin(num):
     while num > 0 or not digits:
         digits.append(str(num % 2))
         num = num // 2
-    return ''.join(reversed(digits))
+    return "".join(reversed(digits))
 
 
 def main():
@@ -21,5 +21,5 @@ def main():
     print(f"{number}|10 -> {binary}|2")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

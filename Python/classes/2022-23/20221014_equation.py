@@ -11,7 +11,7 @@ c = float(input("c: "))
 
 if a == 0:
     print(f"Let's solve {b} x + {c} = 0")
-    print(f"x={-c/b}")
+    print(f"x={-c / b}")
 else:
     print(f"Let's solve {a} x^2 + {b} x + {c} = 0")
     delta = b**2 - 4 * a * c

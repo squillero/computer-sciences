@@ -13,5 +13,5 @@ def main():
     print(repr(a), repr(b), repr(c))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

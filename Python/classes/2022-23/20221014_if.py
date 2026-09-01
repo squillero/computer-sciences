@@ -5,8 +5,8 @@
 name = input("What's your name? ")
 
 # name = input("What's your name? ").upper()
-#if name[-1] == 'a' or name[-1] == 'A':
-if name[-1].upper() == 'A':
+# if name[-1] == 'a' or name[-1] == 'A':
+if name[-1].upper() == "A":
     print("Hello girl")
 else:
     print("Hello boy")

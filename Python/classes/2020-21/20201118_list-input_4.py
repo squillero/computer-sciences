@@ -12,7 +12,7 @@ def main():
     continue_asking = True
     while continue_asking:
         val = input()
-        if val.upper() == 'Q':
+        if val.upper() == "Q":
             continue_asking = False
 
         if continue_asking:
@@ -22,5 +22,5 @@ def main():
     print(f"Min is {min(values)}, max is {max(values)}")
 
 
-if __name__ == '__main__':  # BLACK MAGIC!
+if __name__ == "__main__":  # BLACK MAGIC!
     main()

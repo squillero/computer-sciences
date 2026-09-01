@@ -5,14 +5,14 @@
 
 def main():
     stones = {
-        'Jagger': 'Mick',
-        'Richards': 'Keith',
-        'Wood': 'Ronnie',
-        'Jones': 'Brian',
-        'Stewart': 'Ian',
-        'Wyman': 'Bill',
-        'Watts': 'Charlie',
-        'Taylor': 'Mick',
+        "Jagger": "Mick",
+        "Richards": "Keith",
+        "Wood": "Ronnie",
+        "Jones": "Brian",
+        "Stewart": "Ian",
+        "Wyman": "Bill",
+        "Watts": "Charlie",
+        "Taylor": "Mick",
     }
 
     for name in stones:
@@ -40,5 +40,5 @@ def main():
     print(min(stones), max(stones))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

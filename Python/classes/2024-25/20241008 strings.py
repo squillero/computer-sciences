@@ -6,7 +6,7 @@ name = "Giovanni"
 surname = "Squillero"
 
 # Concat
-full_name = name + ' ' + surname
+full_name = name + " " + surname
 
 # Take one letter
 print(name[0])

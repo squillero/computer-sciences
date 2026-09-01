@@ -19,5 +19,5 @@ def my_index(list_, element):
     return pos
 
 
-if __name__ == '__main__':  # BLACK MAGIC!
+if __name__ == "__main__":  # BLACK MAGIC!
     main()

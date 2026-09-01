@@ -4,21 +4,21 @@
 
 from csv import DictReader
 
-FILENAME = '20250110 university.csv'
+FILENAME = "20250110 university.csv"
 
 
 def read_data(filename):
     student_names = dict()
     student_grades = dict()
     try:
-        with open(filename, newline='') as file:
+        with open(filename, newline="") as file:
             for rec in DictReader(file):
-                id = rec['STUDENT_ID']
-                student_names[id] = (rec['Surname'], rec['Name'])
-                del rec['STUDENT_ID'], rec['Name'], rec['Surname']
+                id = rec["STUDENT_ID"]
+                student_names[id] = (rec["Surname"], rec["Name"])
+                del rec["STUDENT_ID"], rec["Name"], rec["Surname"]
                 grades = list()
                 for v in rec.values():
-                    if v == '30L':
+                    if v == "30L":
                         grades.append(32)
                     elif v:
                         grades.append(int(v))
@@ -38,7 +38,7 @@ def main():
 
     for id in sorted(names, key=super_smart_mapping):
         print(
-            f"{names[id][0] + ' ' + names[id][1]:<24} {id:<10}: {sum(grades[id])/len(grades[id]):.2f}"
+            f"{names[id][0] + ' ' + names[id][1]:<24} {id:<10}: {sum(grades[id]) / len(grades[id]):.2f}"
         )
 
     avgs = list()
@@ -49,7 +49,7 @@ def main():
 
     for id in grades:
         if sum(grades[id]) / len(grades[id]) > 23:
-            print(' '.join(names[id]))
+            print(" ".join(names[id]))
 
     grades = list()
     for id in grades:
@@ -57,5 +57,6 @@ def main():
     print(f"Highest grade: {max(avgs):.2f}")
     print(f"Lowest grade: {min(avgs):.2f}")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

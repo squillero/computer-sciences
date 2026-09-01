@@ -7,12 +7,12 @@ for t in range(10, 0, -1):
 print(f"KABOOOOM!")
 
 for letter in "Giovanni Adolfo Pietro Pio":
-    print(ord(letter), end=' ')
+    print(ord(letter), end=" ")
 print()
 
 name = "Giovanni Adolfo Pietro Pio"
 for i in range(0, len(name), 2):
-    print(f"{name[i:i+2]}", end='|')
+    print(f"{name[i : i + 2]}", end="|")
 print()
 
 

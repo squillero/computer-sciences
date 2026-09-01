@@ -23,6 +23,6 @@ print("[{foo:10d}] [{foo:<10d}] [{foo:<+10d}]".format(foo=bar))  # note < instea
 
 # f-string -- the right way
 print(f"The value of foo is {foo}!")
-print(f"The value of foo is {10*foo}!")
-print(f"The value of foo is {foo/10:.4f}!")
+print(f"The value of foo is {10 * foo}!")
+print(f"The value of foo is {foo / 10:.4f}!")
 print(f"[{bar:10d}] [{bar:<10d}]")  # as format method

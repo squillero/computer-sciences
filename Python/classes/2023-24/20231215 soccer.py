@@ -62,8 +62,7 @@ def calculatre_midfield_efficency(players):
             mid_efficency[name] = (
                 data[INDEX_INTERCEPTIONS]
                 + data[INDEX_BALL_RECOVERIES]
-                + (data[INDEX_ASSISTS] / data[INDEX_CROSSES])
-                / data[INDEX_MINUTES]
+                + (data[INDEX_ASSISTS] / data[INDEX_CROSSES]) / data[INDEX_MINUTES]
             )
         except ZeroDivisionError:
             pass
@@ -76,9 +75,7 @@ def calculate_team_average_age(players):
     for data in players.values():
         if data[INDEX_TEAM] not in team_ages:
             team_ages[data[INDEX_TEAM]] = list()
-        team_ages[data[INDEX_TEAM]].append(
-            2023 - data[INDEX_BIRTH_YEAR]
-        )
+        team_ages[data[INDEX_TEAM]].append(2023 - data[INDEX_BIRTH_YEAR])
     team_avg_age = dict()
     for team, ages in team_ages.items():
         team_avg_age[team] = sum(ages) / len(ages)
@@ -91,9 +88,7 @@ def main():
     fwd_efficiency = calculate_forward_efficiency(players)
     midfield_efficiency = calculatre_midfield_efficency(players)
 
-    sorted_stuff = sorted(
-        fwd_efficiency, key=lambda p: fwd_efficiency[p], reverse=True
-    )
+    sorted_stuff = sorted(fwd_efficiency, key=lambda p: fwd_efficiency[p], reverse=True)
     print(sorted_stuff[0], fwd_efficiency[sorted_stuff[0]])
 
     sorted_stuff = sorted(

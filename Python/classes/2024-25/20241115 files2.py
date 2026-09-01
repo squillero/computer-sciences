@@ -2,7 +2,8 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-FILENAME = '20241115 song.txt'
+FILENAME = "20241115 song.txt"
+
 
 def sing(song):
     try:
@@ -18,5 +19,5 @@ def main():
     sing(FILENAME)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

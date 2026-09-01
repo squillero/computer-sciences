@@ -2,16 +2,16 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-FILENAME = 'heaven.txt'
+FILENAME = "heaven.txt"
 
 
 def main():
-    with open(FILENAME, 'r') as input_file:
+    with open(FILENAME, "r") as input_file:
         for line in input_file:
             for word in line.split():
-                trimmed_word = word.strip('.,!?\'"')
+                trimmed_word = word.strip(".,!?'\"")
                 print(f">>{trimmed_word}<<")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

@@ -5,13 +5,13 @@
 import sys
 from string import ascii_lowercase
 
-FILENAME = '===song.txt'
-OUTPUT = 'jp.txt'
+FILENAME = "===song.txt"
+OUTPUT = "jp.txt"
 
 
 def cook(raw):
     cooked = raw.lower()
-    cooked = cooked.strip(' \n"\'+-,.?!')
+    cooked = cooked.strip(" \n\"'+-,.?!")
     return cooked
 
 
@@ -35,7 +35,7 @@ def main():
             words_dict[letter].add(word)
 
     try:
-        with open(OUTPUT, 'w') as output_file:
+        with open(OUTPUT, "w") as output_file:
             for letter in ascii_lowercase:
                 if words_dict[letter]:
                     output_file.write(f"Words containing '{letter}':\n")
@@ -47,5 +47,5 @@ def main():
         sys.exit(10)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

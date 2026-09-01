@@ -2,7 +2,7 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-FILENAME = 'song.txt'
+FILENAME = "song.txt"
 
 
 def main():
@@ -12,5 +12,5 @@ def main():
     my_file.close()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

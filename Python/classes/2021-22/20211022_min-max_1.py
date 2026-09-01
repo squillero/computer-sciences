@@ -3,8 +3,8 @@
 # Free under certain conditions — see the license for details.
 
 # That would be a terrble idea...
-#min_ = 99999
-#max_ = 0
+# min_ = 99999
+# max_ = 0
 
 # Reasonable, but we got duplicated code
 user_input = input()

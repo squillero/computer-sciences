@@ -23,5 +23,5 @@ def main():
     print(f"Min is {min(values)}, max is {max(values)}")
 
 
-if __name__ == '__main__':  # BLACK MAGIC!
+if __name__ == "__main__":  # BLACK MAGIC!
     main()

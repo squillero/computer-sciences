@@ -4,8 +4,8 @@
 
 from icecream import ic
 
-RULES_FILENAME = '20241210 rules.dat'
-UPDATES_FILENAME = '20241210 updates.dat'
+RULES_FILENAME = "20241210 rules.dat"
+UPDATES_FILENAME = "20241210 updates.dat"
 
 
 def read_rules(filename):
@@ -13,7 +13,7 @@ def read_rules(filename):
     try:
         with open(filename) as file:
             for line in file:
-                n1, n2 = line.strip().split('|')
+                n1, n2 = line.strip().split("|")
                 rules.append((int(n1), int(n2)))
     except OSError as problem:
         exit(problem)
@@ -23,7 +23,7 @@ def read_rules(filename):
 def string_to_list(text):
     """convert string "x,y,z\n" to list of int [x, y, z]"""
     seq = list()
-    for w in text.split(','):
+    for w in text.split(","):
         seq.append(int(w))
     return seq
 
@@ -47,5 +47,5 @@ def main():
         exit("Aaaaaaaararggghghggg!")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

@@ -2,11 +2,12 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
+
 def main():
     abook = dict()
-    abook['giovanni'] = 'giovanni.squillero@polito.it'
+    abook["giovanni"] = "giovanni.squillero@polito.it"
 
-    key = 'paola'
+    key = "paola"
     if key not in abook:
         print("Yeuch")
     else:
@@ -15,9 +16,9 @@ def main():
     try:
         value = abook[key]
     except KeyError:
-        value = 'Yeuch'
+        value = "Yeuch"
     print(value)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

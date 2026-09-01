@@ -2,8 +2,8 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-INPUT_FILE_NAME = 'seq.dat'
-#INPUT_FILE_NAME = 'seq_long.dat'
+INPUT_FILE_NAME = "seq.dat"
+# INPUT_FILE_NAME = 'seq_long.dat'
 
 
 def munodi(num):
@@ -35,10 +35,10 @@ def main():
     sequences = get_sequences(INPUT_FILE_NAME)
     for num, seq in enumerate(sequences):
         if seq == munodi(seq[0]):
-            print(f"Sequence {num+1} is a Munodi sequence (length {len(seq)})")
+            print(f"Sequence {num + 1} is a Munodi sequence (length {len(seq)})")
         else:
-            print(f"Sequence {num+1} is NOT a Munodi sequence")
+            print(f"Sequence {num + 1} is NOT a Munodi sequence")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

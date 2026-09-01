@@ -2,6 +2,7 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
+
 def park2list(parking):
     """Convert parking [False, False, False, ...] to
     list of tuples"""
@@ -10,8 +11,8 @@ def park2list(parking):
     start = 0
     while end < len(parking):
         if parking[end]:
-            slots.append((start, end-start))
-            start = end+1
+            slots.append((start, end - start))
+            start = end + 1
         end += 1
     else:
         slots.append((start, end - start))
@@ -30,10 +31,9 @@ def main():
     parking = [False, False, False, False, False, False, False, False, False]
     for _ in range(5):
         s, l = get_max_slot(park2list(parking))
-        parking[s+l//2] = True
+        parking[s + l // 2] = True
         print(parking)
 
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

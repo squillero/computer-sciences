@@ -20,10 +20,10 @@ def read_list(file_name):
 
 def write_list(file_name, list_):
     try:
-        with open(file_name, 'w') as file:
+        with open(file_name, "w") as file:
             for line in list_:
                 file.write(line)
-                file.write('\n')
+                file.write("\n")
     except OSError as problem:
         print(problem)
 
@@ -37,5 +37,5 @@ def main():
     write_list(FILE_OUT, movies2)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

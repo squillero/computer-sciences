@@ -3,8 +3,8 @@
 # Free under certain conditions — see the license for details.
 
 
-FLIGHTS_INFO = 'flights.txt'
-BOOKINGS_INFO = 'bookings.txt'
+FLIGHTS_INFO = "flights.txt"
+BOOKINGS_INFO = "bookings.txt"
 ROWS = 0
 SEATS = 1
 PASSENGERS = 2
@@ -35,7 +35,7 @@ def read_bookings(filename):
     try:
         with open(filename) as file:
             for line in file:
-                if line.startswith('BOOK'):
+                if line.startswith("BOOK"):
                     code, flight, name, surname, seats = line.split()
                     seats = int(seats)
                 else:
@@ -60,11 +60,14 @@ def main():
     # the front, while maintaining their relative order.
     # A Counter() with random shuffling would be the most efficient choice
     for code, flight, name, seats in read_bookings(BOOKINGS_INFO):
-        if code == 'BOOK' and len(passengers[flight]) + seats > info[flight][0] * info[flight][1]:
+        if (
+            code == "BOOK"
+            and len(passengers[flight]) + seats > info[flight][0] * info[flight][1]
+        ):
             print(f"BOOK {flight} {name} {seats} - Fail")
-        elif code == 'BOOK':
+        elif code == "BOOK":
             passengers[flight].extend([name] * seats)
-        elif code == 'CANCEL':
+        elif code == "CANCEL":
             while name in passengers[flight]:
                 passengers[flight].remove(name)
         else:
@@ -74,11 +77,11 @@ def main():
         print(f"Fligh {flight}")
         r, s = 0, 0
         while passengers[flight]:
-            print(f"{r+1} {s+1} {passengers[flight].pop(0)}")
+            print(f"{r + 1} {s + 1} {passengers[flight].pop(0)}")
             s += 1
             r += s // info[flight][1]
             s %= info[flight][1]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

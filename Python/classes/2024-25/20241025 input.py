@@ -6,7 +6,7 @@ print("Tell me 10 positive integer")
 numbers = list()
 
 while len(numbers) < 10:
-    num = int(input(''))
+    num = int(input(""))
 
     if num < 0:
         print("D'ho!")

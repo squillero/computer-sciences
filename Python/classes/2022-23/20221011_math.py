@@ -2,8 +2,8 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-#foo = math.sqrt(3.2)
-#print(foo)
+# foo = math.sqrt(3.2)
+# print(foo)
 
 import math
 import cmath

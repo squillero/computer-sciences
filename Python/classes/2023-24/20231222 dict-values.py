@@ -37,9 +37,7 @@ def main():
             print(f"{str(keys):.<70s} {value}")
 
     # print the 3 more common runes
-    tmp_data = sorted(
-        my_data.items(), key=lambda t: t[1], reverse=True
-    )
+    tmp_data = sorted(my_data.items(), key=lambda t: t[1], reverse=True)
     for t in tmp_data[:3]:
         print(f"'{t[0]}' -> {t[1]}")
 

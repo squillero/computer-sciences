@@ -2,19 +2,19 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-FILENAME = '20211203_long-text.txt'
+FILENAME = "20211203_long-text.txt"
 
 
 def get_words(filename):
     """Returns the list of words found in a file"""
     try:
         with open(filename) as input_:
-            cooked_text = ''
+            cooked_text = ""
             for c in input_.read():
                 if c.isalnum():
                     cooked_text += c.casefold()
                 else:
-                    cooked_text += ' '
+                    cooked_text += " "
         word_list = cooked_text.split()
     except OSError as problem:
         print(f"Yeuch: {problem}")
@@ -31,7 +31,7 @@ def examine(wordlist):
         if count > common_word_count:
             common_word_count = count
             common_word = word
-    print(f"Most common word: \"{common_word}\", reaped {common_word_count:,} times")
+    print(f'Most common word: "{common_word}", reaped {common_word_count:,} times')
 
 
 def main():
@@ -39,5 +39,5 @@ def main():
     examine(word_list)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

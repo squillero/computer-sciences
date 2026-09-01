@@ -4,22 +4,22 @@
 
 from pprint import pprint
 
-BUILDING1_FILENAME = 'building1.csv'
-BUILDING2_FILENAME = 'building2.csv'
+BUILDING1_FILENAME = "building1.csv"
+BUILDING2_FILENAME = "building2.csv"
 
 MONTH_NAME = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
 ]
 
 
@@ -29,12 +29,19 @@ def read_building(building_number, filename):
         with open(filename) as file:
             file.readline()
             for line in file:
-                timestamp, consumption = line.split(',')
+                timestamp, consumption = line.split(",")
                 date, time = timestamp.split()
-                day, month, year = date.split('-')
-                hour, minute = time.split(':')
+                day, month, year = date.split("-")
+                hour, minute = time.split(":")
                 report[
-                    (building_number, int(year), int(month), int(day), int(hour), int(minute))
+                    (
+                        building_number,
+                        int(year),
+                        int(month),
+                        int(day),
+                        int(hour),
+                        int(minute),
+                    )
                 ] = float(consumption)
     except OSError as problem:
         print(f"Yeuch: {problem}")
@@ -66,5 +73,5 @@ def main():
     # pprint(monthly_consumption)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

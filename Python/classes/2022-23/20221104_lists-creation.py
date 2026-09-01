@@ -6,12 +6,12 @@
 def main():
     # creating lists...
     foo = list()
-    foo = list('Giovanni')
+    foo = list("Giovanni")
     foo = []
-    foo = [18, 5, 'Paola']
+    foo = [18, 5, "Paola"]
     print(foo[0])
     print(foo[-1])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

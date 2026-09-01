@@ -4,10 +4,10 @@
 
 
 def main():
-    beatles = ['John', 'Paul', 'George', 'Ringo']
+    beatles = ["John", "Paul", "George", "Ringo"]
     for singer in beatles:
         print(f"I love {singer}!")
 
 
-if __name__ == '__main__':  # BLACK MAGIC!
+if __name__ == "__main__":  # BLACK MAGIC!
     main()

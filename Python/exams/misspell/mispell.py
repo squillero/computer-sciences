@@ -2,7 +2,7 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-ITALIAN_WORDS = 'parole_italiane.txt'
+ITALIAN_WORDS = "parole_italiane.txt"
 
 
 # boilerplate code
@@ -10,7 +10,7 @@ def read_list(file_name):
     words = list()
     try:
         with open(file_name) as fin:
-            words = fin.read().split('\n')
+            words = fin.read().split("\n")
     except OSError as problem:
         print(f"Problem reading {file_name}: {problem}")
     return words
@@ -55,5 +55,5 @@ def mispell_alt(word1, word2):
 
 
 # entry point
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

@@ -2,17 +2,17 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-INPUT_FILE_NAME = 'numbers.ku'
-OUTPUT_FILE_NAME = 'numbers.tu'
+INPUT_FILE_NAME = "numbers.ku"
+OUTPUT_FILE_NAME = "numbers.tu"
 
 
 def main():
-    input_file = open(INPUT_FILE_NAME, 'r')
-    output_file = open(OUTPUT_FILE_NAME, 'w')
+    input_file = open(INPUT_FILE_NAME, "r")
+    output_file = open(OUTPUT_FILE_NAME, "w")
     token = input_file.readline()
     sum_ = 0
     cnt = 0
-    while token != '':
+    while token != "":
         num = float(token)
         sum_ += num  # ie. sum_ = sum_ + num
         cnt += 1  # ie. cnt = cnt + 1
@@ -22,9 +22,9 @@ def main():
 
     output_file.write(f"{'-' * 8}\n")
     output_file.write(f"Total: {sum_:.2f}\n")
-    output_file.write(f"Average: {sum_/cnt:.2f}\n")
+    output_file.write(f"Average: {sum_ / cnt:.2f}\n")
     output_file.close()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

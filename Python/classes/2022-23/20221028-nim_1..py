@@ -7,14 +7,14 @@ from math import log2
 
 
 def nim_smart(marbles):
-    return marbles-2**int(log2(marbles))+1
+    return marbles - 2 ** int(log2(marbles)) + 1
 
 
 def nim_dumb(marbles):
     if marbles == 1:
         return 1
     else:
-        return randint(1, marbles//2)
+        return randint(1, marbles // 2)
 
 
 def main():
@@ -39,5 +39,5 @@ def main():
     print(f"Player {player} won!")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

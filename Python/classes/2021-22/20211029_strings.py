@@ -7,22 +7,22 @@ string = "Giovanni Adolfo Pietro Pio"
 
 # Take 1
 for i in range(len(string), 0, -1):
-    print(string[i - 1], end='')
+    print(string[i - 1], end="")
 print()
 
 # Take 1, alt
 for i in range(len(string) - 1, -1, -1):
-    print(string[i], end='')
+    print(string[i], end="")
 print()
 
 # Take 2
 for i in range(len(string)):
-    print(string[len(string) - i - 1], end='')
+    print(string[len(string) - i - 1], end="")
 print()
 
 # Take 3
 for i in range(len(string)):
-    print(string[-i - 1], end='')
+    print(string[-i - 1], end="")
 print()
 
 # Take 4 -- not this class, sorry

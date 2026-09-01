@@ -2,9 +2,9 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-FILENAME_PRICE = 't2_prices.dat'
-FILENAME_OFFERS = 't2_offers.dat'
-FILENAME_CART = 't2_cart.dat'
+FILENAME_PRICE = "t2_prices.dat"
+FILENAME_OFFERS = "t2_offers.dat"
+FILENAME_CART = "t2_cart.dat"
 
 
 def read_column_file(filename):
@@ -13,7 +13,7 @@ def read_column_file(filename):
     try:
         with open(filename) as input_file:
             for line in input_file:
-                a, b = line.split(':')
+                a, b = line.split(":")
                 data.append((a.strip(), b.strip()))
     except OSError as problem:
         exit(problem)
@@ -62,5 +62,5 @@ def main():
     print(f"Final price: {total_price:.2f} EUR")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

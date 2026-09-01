@@ -6,12 +6,12 @@ single = input("Are you single? [y/n] ")
 income = float(input("Income: "))
 
 if single.lower() == "y" and income < 32000:
-    net = income - income * .1
+    net = income - income * 0.1
 elif single.lower() == "y" and income >= 32000:
-    net = income - 3200 - (income - 32000) * .25
+    net = income - 3200 - (income - 32000) * 0.25
 elif single.lower() != "y" and income < 64000:
-    net = income - income * .1
+    net = income - income * 0.1
 else:
-    net = income - 6400 - (income - 64000) * .25
+    net = income - 6400 - (income - 64000) * 0.25
 
 print(f"Net income: {net}")

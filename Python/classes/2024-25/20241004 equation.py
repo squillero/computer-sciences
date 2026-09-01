@@ -4,9 +4,9 @@
 
 # solve equation ax**2 + bx + c = 0
 
-a = int(input('a: '))
-b = int(input('b: '))
-c = int(input('c: '))
+a = int(input("a: "))
+b = int(input("b: "))
+c = int(input("c: "))
 
 if a == 0:
     # b x + c = 0

@@ -47,7 +47,9 @@ def parse_report(path: str) -> Tuple[List[Tuple[int, int]], List[int]]:
                 try:
                     a, b = int(a_str), int(b_str)
                 except ValueError:
-                    raise ValueError(f"Invalid integers in range line: {line!r}") from None
+                    raise ValueError(
+                        f"Invalid integers in range line: {line!r}"
+                    ) from None
                 if a > b:
                     a, b = b, a  # allow reversed inputs like "14-10"
                 ranges.append((a, b))
@@ -56,7 +58,9 @@ def parse_report(path: str) -> Tuple[List[Tuple[int, int]], List[int]]:
                 try:
                     purchases.append(int(line))
                 except ValueError:
-                    raise ValueError(f"Invalid purchased batch number: {line!r}") from None
+                    raise ValueError(
+                        f"Invalid purchased batch number: {line!r}"
+                    ) from None
 
     if not ranges:
         # It's valid to have zero ranges (then nothing is dangerous),

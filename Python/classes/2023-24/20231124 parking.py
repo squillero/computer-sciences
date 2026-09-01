@@ -33,9 +33,7 @@ def main():
         slots = find_available(parking)
         print(slots)
         largest_slot = max(slots, key=slot_size)
-        middle = (
-            largest_slot[0] + (largest_slot[1] - largest_slot[0]) // 2
-        )
+        middle = largest_slot[0] + (largest_slot[1] - largest_slot[0]) // 2
         parking[middle] = "#"
         print("".join(parking))
 

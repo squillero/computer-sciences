@@ -8,12 +8,12 @@ GLOBAL_CONSTANT = "I'm a liar, I'm not a constant"
 
 
 def main():
-    friends = {'Giovanni': 'squillero@polito.it', 'Mick': 'jagger@rollingstones.com'}
-    friends[(23, 10)] = 'Giovanni'
-    friends[42] = ['Meaning', 'of', 'Life']
-    print(friends['Giovanni'])
+    friends = {"Giovanni": "squillero@polito.it", "Mick": "jagger@rollingstones.com"}
+    friends[(23, 10)] = "Giovanni"
+    friends[42] = ["Meaning", "of", "Life"]
+    print(friends["Giovanni"])
 
-    friends[42].extend(['Universe', 'Everything Else'])
+    friends[42].extend(["Universe", "Everything Else"])
     ic(friends)
 
     # del friends[42]
@@ -35,15 +35,15 @@ def main():
         print(f"{f} -> {v}")
 
     bag = set()
-    bag.add('bread')
-    bag.add('milk')
-    bag.add('eggs')
+    bag.add("bread")
+    bag.add("milk")
+    bag.add("eggs")
     ic(bag)
-    bag -= {'milk'}
-    bag -= {'milk'}
-    bag -= {'milk'}
-    bag -= {'milk'}
-    bag -= {'milk'}
+    bag -= {"milk"}
+    bag -= {"milk"}
+    bag -= {"milk"}
+    bag -= {"milk"}
+    bag -= {"milk"}
     ic(bag)
 
     foo = dict()
@@ -52,17 +52,17 @@ def main():
     try:
         ic(foo[42])
     except KeyError:
-        ic('?')
+        ic("?")
 
     # ask permission
     if 42 in foo:
         ic(foo[42])
     else:
-        ic('?')
+        ic("?")
 
     # read the manual
-    ic(foo.get(42, '?'))
+    ic(foo.get(42, "?"))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

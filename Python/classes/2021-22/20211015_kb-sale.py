@@ -18,4 +18,4 @@ print(f"Item price: {final_price:g}")
 discount = 8 / 100
 if original_price >= 128:
     discount *= 2  # shortcut for discount = discount * 2
-print(f"Item price: {original_price*(1-discount):g}")
+print(f"Item price: {original_price * (1 - discount):g}")

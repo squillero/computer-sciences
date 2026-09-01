@@ -14,6 +14,6 @@ while user != "end":
         total = total + number
 
 if count > 0:
-    print(f"Average is: {total/count:.2f}")
+    print(f"Average is: {total / count:.2f}")
 else:
     print("D'ho!?")

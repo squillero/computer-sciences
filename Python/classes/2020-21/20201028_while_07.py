@@ -13,4 +13,4 @@ while vote >= 0:
     num = num + 1
     vote = int(input(":"))  # handling sentinel: duplicate code
 
-print(f"{num} votes, average is {sum_/num:.1f}")
+print(f"{num} votes, average is {sum_ / num:.1f}")

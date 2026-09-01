@@ -18,7 +18,7 @@ def read_file(file_name):
         # whole_text = file.readlines() # returns a list with all the lines as element
         # for line in file.readlines(): # terrible: I'm reading the whole file
         for line in file:  # correct: reading 1 line at a time
-            line = line.rstrip('\n')
+            line = line.rstrip("\n")
             print(f">>>{line}<<<")
 
 

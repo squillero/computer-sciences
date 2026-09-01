@@ -17,10 +17,10 @@ while extra_variable:
         sum_ += num
 
     # Alternative solution
-    #if input_.isdigit():
+    # if input_.isdigit():
     #    num = int(input_)
     #    sum_ += num
-    #else:
+    # else:
     #    extra_variable = False
 
 print(f"Sum: {sum_:,}")

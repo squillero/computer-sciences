@@ -4,7 +4,7 @@
 
 from pprint import pprint
 
-COURSE_DIRECTORY = '20211210_courses.lst'
+COURSE_DIRECTORY = "20211210_courses.lst"
 
 
 def get_courses():
@@ -42,5 +42,5 @@ def main():
     pprint(students)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

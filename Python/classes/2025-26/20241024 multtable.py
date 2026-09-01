@@ -9,9 +9,9 @@ def main():
     for row in range(1, DIM + 1):
         print("|", end="")
         for col in range(1, DIM + 1):
-            print(f"{row*col:5d} |", end='')
+            print(f"{row * col:5d} |", end="")
         print()
-        print("+------" * DIM, end='')
+        print("+------" * DIM, end="")
         print("+")
 
 

@@ -18,5 +18,5 @@ def convert10(number, base):
     return value
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

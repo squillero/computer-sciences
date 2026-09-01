@@ -2,7 +2,7 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-PLAYERS_FILE = '20241126 players.csv'
+PLAYERS_FILE = "20241126 players.csv"
 
 
 def open_csv(filename):
@@ -19,5 +19,5 @@ def main():
     print(players)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

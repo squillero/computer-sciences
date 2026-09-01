@@ -23,7 +23,7 @@ pprint(list(data.values()))
 print()
 pprint(list(data.items()))
 print()
-del data['giovanni']
+del data["giovanni"]
 pprint(list(data.items()))
 print()
 print()

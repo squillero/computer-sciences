@@ -18,7 +18,7 @@ if a == 0:
     elif b == 0:
         print("Impossible")
     else:
-        print(f"x = {-c/b:g}")
+        print(f"x = {-c / b:g}")
 else:
     delta = b**2 - 4 * a * c
     if delta >= 0:

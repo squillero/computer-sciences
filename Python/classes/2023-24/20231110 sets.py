@@ -16,9 +16,9 @@ data.add("muhammadmahdi")
 
 pprint(data)
 print()
-data = data - {'giovanni'}
+data = data - {"giovanni"}
 pprint(data)
 print()
-data = data - {'giovanni'}
+data = data - {"giovanni"}
 pprint(data)
 print()

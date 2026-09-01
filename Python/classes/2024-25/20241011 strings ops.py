@@ -10,4 +10,3 @@ if s.isalnum():
     print("All letters or numbers")
 if s.isdecimal():
     print("Decimal number")
-

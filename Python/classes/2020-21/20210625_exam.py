@@ -25,7 +25,7 @@ def main():
             f"The two cities where more trolls have been reported are {max_city_names[0]} and {max_city_names[1]}, with {max_city_trolls:,} trolls."
         )
     else:
-        max_city_names[-1] = 'and ' + max_city_names[-1]
+        max_city_names[-1] = "and " + max_city_names[-1]
         print(
             f"The cities where more trolls have been reported are {', '.join(max_city_names)}, all with {max_city_trolls:,} trolls."
         )
@@ -36,7 +36,7 @@ def read_file(filename):
     try:
         with open(filename) as file:
             for line in file:
-                city, data = line.split(':')
+                city, data = line.split(":")
                 trolls[city] = [int(_) for _ in data.split()]
     except OSError as error:
         print(f"Yeuch: {error}")

@@ -12,14 +12,14 @@ def main():
 
 
 def convert(number, base):
-    result = ''
+    result = ""
     while number > 0:
         result = result + str(number % base)
         number = number // base
-    if result == '':
-        result = '0'  # !!!
+    if result == "":
+        result = "0"  # !!!
     return result[::-1]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

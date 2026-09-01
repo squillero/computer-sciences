@@ -2,7 +2,7 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-DATA_FILE = '20251202 AoC-1.data.txt'
+DATA_FILE = "20251202 AoC-1.data.txt"
 # DATA_FILE = '20251202 AoC-1.small.txt'
 
 
@@ -11,7 +11,7 @@ def read_sequence(filename):
     try:
         with open(filename) as file:
             for line in file:
-                if line[0] == 'R':
+                if line[0] == "R":
                     rotations.append(int(line[1:]))
                 else:
                     rotations.append(-int(line[1:]))
@@ -51,5 +51,5 @@ def main():
     print(f"The password is {password}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

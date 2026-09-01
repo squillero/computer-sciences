@@ -4,7 +4,7 @@
 
 from pprint import pprint
 
-FILENAME = '20221216_phonebook.xyz'
+FILENAME = "20221216_phonebook.xyz"
 
 
 def read_phonebook(filename):
@@ -35,5 +35,5 @@ def main():
         print(f"{v}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

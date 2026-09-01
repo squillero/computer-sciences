@@ -5,7 +5,7 @@
 
 def simple():
     """Don't do it!"""
-    gaga = open('20241115 song.txt')
+    gaga = open("20241115 song.txt")
     text = gaga.read()
     gaga.close()
     return text
@@ -14,7 +14,7 @@ def simple():
 def smart():
     """Correct way to open/close a file"""
     try:
-        with open('20241115 song2.txt') as gaga:
+        with open("20241115 song2.txt") as gaga:
             text = gaga.read()
     except OSError as problem:
         # print(f"Yeuch, we have a problem: {problem}")
@@ -27,5 +27,5 @@ def main():
     print(smart())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

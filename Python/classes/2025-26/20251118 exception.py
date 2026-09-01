@@ -4,6 +4,7 @@
 
 # 無 or 无
 
+
 def main():
     a = 3
     b = list(range(8))
@@ -17,5 +18,5 @@ def main():
         print(f"n={n} / x={x}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

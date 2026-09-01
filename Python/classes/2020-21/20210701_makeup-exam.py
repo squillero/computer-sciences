@@ -2,7 +2,7 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-DATAFILE = '20210701_wines.dat'
+DATAFILE = "20210701_wines.dat"
 
 
 def read_file(filename):
@@ -10,9 +10,9 @@ def read_file(filename):
     try:
         with open(filename) as input_file:
             for line in input_file.readlines():
-                region, wines = line.split(':')
-                for wine in wines.split(','):
-                    wine = wine.strip(' \n')
+                region, wines = line.split(":")
+                for wine in wines.split(","):
+                    wine = wine.strip(" \n")
                     if wine not in data:
                         data[wine] = set([region])
                     else:
@@ -29,5 +29,5 @@ def main():
 
 
 # Press the green button in the gutter to run the script.
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

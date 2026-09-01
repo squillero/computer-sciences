@@ -5,11 +5,11 @@
 
 def main():
     friends = dict()
-    friends['Giovanni'] = (23, 10)
-    friends['Paola'] = (18, 5)
-    friends['Karam'] = (21, 10)
-    friends['Fabrizio'] = (12, 5)
-    friends['Defne'] = (21, 8)
+    friends["Giovanni"] = (23, 10)
+    friends["Paola"] = (18, 5)
+    friends["Karam"] = (21, 10)
+    friends["Fabrizio"] = (12, 5)
+    friends["Defne"] = (21, 8)
 
     for f in friends.keys():
         print(f"Oh, I like {f}!")
@@ -28,5 +28,5 @@ def main():
         print(f"Oh, I like my friend {f} born in {friends[f]}!!!")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

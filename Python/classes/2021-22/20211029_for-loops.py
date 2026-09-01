@@ -9,7 +9,7 @@ for i in range(100, -100, 10):
     print(f"Back: {i}")
 
 for i in "range":
-    print(f"Letter \"{i}\"")
+    print(f'Letter "{i}"')
 
 del i
 print(f"And now 'i' is \"{i}\"")

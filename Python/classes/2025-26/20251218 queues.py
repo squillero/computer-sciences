@@ -2,7 +2,7 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-DESCRIPTION = 'queue-large.txt'
+DESCRIPTION = "queue-large.txt"
 
 
 def read_problem(filename):
@@ -10,19 +10,19 @@ def read_problem(filename):
 
     try:
         with open(filename) as file:
-            rules_raw, queues_raw = file.read().split('\n\n')
+            rules_raw, queues_raw = file.read().split("\n\n")
     except OSError:
         print("Yeuch")
         exit(1)
 
     rules = set()
     for line in rules_raw.split():
-        b, a = line.split('|')
+        b, a = line.split("|")
         rules.add((int(b), int(a)))
     queues = list()
     for line in queues_raw.split():
         tmp = list()
-        for page in line.split(','):
+        for page in line.split(","):
             tmp.append(int(page))
         queues.append(tmp)
 
@@ -48,5 +48,5 @@ def main():
     print(checksum)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

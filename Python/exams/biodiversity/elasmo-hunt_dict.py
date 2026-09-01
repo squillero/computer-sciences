@@ -2,10 +2,10 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-FILE_SAMPLES = 'edna_samples_short.txt'
-FILE_DNA_DATA = 'species_dna_data_short.csv'
-FILE_SAMPLES = 'edna_samples.txt'
-FILE_DNA_DATA = 'species_dna_data.csv'
+FILE_SAMPLES = "edna_samples_short.txt"
+FILE_DNA_DATA = "species_dna_data_short.csv"
+FILE_SAMPLES = "edna_samples.txt"
+FILE_DNA_DATA = "species_dna_data.csv"
 
 import csv
 from icecream import ic
@@ -27,7 +27,7 @@ def read_species(filename):
 
     db = dict()
     try:
-        with open(filename, newline='') as csvfile:
+        with open(filename, newline="") as csvfile:
             csvfile.readline()
             for row in csv.reader(csvfile):
                 store(db, row[3:5] + row[:1], row[-1])  # row[1:5]
@@ -65,7 +65,7 @@ def read_samples(filename):
                 continue
 
             parsed_lines.add(text)
-            _, dna = text.split(';')
+            _, dna = text.split(";")
             samples.add(dna)
     return samples
 
@@ -95,7 +95,7 @@ def main():
 
     # stats (order is irrelevant)
     print("Taxonomic tree:")
-    link = ''
+    link = ""
     for order in species_database:
         print(f"{link}{order}")
         for family in species_database[order]:
@@ -104,8 +104,8 @@ def main():
                 num = match(species_database[order][family][species], dna_samples)
                 if num:
                     print(f" |      \\_ {species} ({num})")
-        link = '|\n'
+        link = "|\n"
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

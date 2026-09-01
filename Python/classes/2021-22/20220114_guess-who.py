@@ -5,18 +5,18 @@
 from csv import DictReader
 from pprint import pprint
 
-FILENAME_CHARACTERS = '20220114_characters.txt'
-FILENAME_QUESTIONS = '20220114_questions-1.txt'
-#FILENAME_QUESTIONS = '20220114_questions-2.txt'
+FILENAME_CHARACTERS = "20220114_characters.txt"
+FILENAME_QUESTIONS = "20220114_questions-1.txt"
+# FILENAME_QUESTIONS = '20220114_questions-2.txt'
 
 
 def read_characters(filename):
     characters = dict()
     try:
-        with open(filename, newline='') as raw_data:
-            for d in DictReader(raw_data, delimiter=';'):
-                name = d['Name']
-                del d['Name']
+        with open(filename, newline="") as raw_data:
+            for d in DictReader(raw_data, delimiter=";"):
+                name = d["Name"]
+                del d["Name"]
                 characters[name] = d
     except OSError as problem:
         print(f"Yeuch: {problem}")
@@ -28,7 +28,7 @@ def read_filter(filename):
     try:
         with open(filename) as data_in:
             for line in data_in:
-                key, value = line.split('=')
+                key, value = line.split("=")
                 filter_[key.strip()] = value.strip()
     except OSError as problem:
         print(f"Yeuch: {problem}")
@@ -64,5 +64,5 @@ def main():
     print_characters(result)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

@@ -5,7 +5,7 @@
 
 def main():
     """Main entry point"""
-    friends = ['Alice', 'Bob', 'Carla', 'David']
+    friends = ["Alice", "Bob", "Carla", "David"]
 
     result = ""
     for n in friends[:-1]:
@@ -15,5 +15,5 @@ def main():
     print(f">>>> {result} <<<<")
 
 
-if __name__ == '__main__':  # BLACK MAGIC!
+if __name__ == "__main__":  # BLACK MAGIC!
     main()

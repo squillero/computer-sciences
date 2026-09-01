@@ -2,18 +2,20 @@ BOWLING_FILE = "bowling.txt"
 MAX_SCORE = 10
 MIN_SCORE = 0
 
+
 def extract_data(filename):
     data = list()
     with open(filename, "r") as b_file:
         for line in b_file:
             line = line.rstrip()
-            values = line.split(';')
-            surname_name = values[0] + ' ' + values[1]
+            values = line.split(";")
+            surname_name = values[0] + " " + values[1]
             scores = list()
             for score in values[2:]:
                 scores.append(int(score))
             data.append([surname_name, scores])
     return data
+
 
 def sum_scores(data):
     players_stat = dict()
@@ -21,8 +23,11 @@ def sum_scores(data):
         player = item[0]
         score = sum(item[1])
         players_stat[player] = score
-    players_stat = dict(sorted(players_stat.items(), key=lambda item: item[1], reverse=True))
+    players_stat = dict(
+        sorted(players_stat.items(), key=lambda item: item[1], reverse=True)
+    )
     return players_stat
+
 
 def max_full_knock_down(data):
     max = -1
@@ -48,11 +53,14 @@ def main():
     max_full_score_player, max_full_score_num = max_full_knock_down(match_data)
     max_zero_score_player, max_zero_score_num = max_miss(match_data)
     for player, score in players_score.items():
-        print(f'{player} {score}')
-    print(f'{max_full_score_player} has knocked down all the pins {max_full_score_num} time(s)')
-    print(f'{max_zero_score_player} has knocked down all the pins {max_zero_score_num} time(s)')
-    
-    
+        print(f"{player} {score}")
+    print(
+        f"{max_full_score_player} has knocked down all the pins {max_full_score_num} time(s)"
+    )
+    print(
+        f"{max_zero_score_player} has knocked down all the pins {max_zero_score_num} time(s)"
+    )
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

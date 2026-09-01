@@ -4,9 +4,9 @@
 
 
 def get_file_list():
-    text = input('List of files: ')
+    text = input("List of files: ")
     files = list()
-    for file in text.split(','):
+    for file in text.split(","):
         files.append(file.strip())
     return files
 
@@ -23,10 +23,10 @@ def search(filename, text):
 
 def main():
     files = get_file_list()
-    text = input('Text: ')
+    text = input("Text: ")
     for file in files:
         search(file, text)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

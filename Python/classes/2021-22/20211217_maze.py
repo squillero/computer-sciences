@@ -4,9 +4,9 @@
 
 from pprint import pprint
 
-FILE_NAME = '20211217_maze.txt'
-MAZE_WALL = '*'
-MAZE_CORRIDOR = ' '
+FILE_NAME = "20211217_maze.txt"
+MAZE_WALL = "*"
+MAZE_CORRIDOR = " "
 
 
 def read_maze(filename):
@@ -42,5 +42,5 @@ def main():
     pprint(corridors)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

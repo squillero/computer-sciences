@@ -19,9 +19,7 @@ def read_stat(filename):
                 # for x in scores:
                 #     tmp.append(int(x))
                 # player_scores[(surname, name)] = tmp
-                player_scores[(surname, name)] = [
-                    int(s) for s in scores
-                ]
+                player_scores[(surname, name)] = [int(s) for s in scores]
     except OSError as problem:
         exit(problem)
     return player_scores
@@ -40,9 +38,7 @@ def main():
         #    if s == 10:
         #        count += 1
         count = sum(s == 10 for s in player_scores[name])
-        print(
-            f"{name[1]} {name[0]} knocked down all the pins {count} times"
-        )
+        print(f"{name[1]} {name[0]} knocked down all the pins {count} times")
 
     lebowski = max(
         player_scores,

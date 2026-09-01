@@ -9,7 +9,7 @@ while number < 1:
 
 assert number > 0
 while number != 1:
-    print(number, end=' ')
+    print(number, end=" ")
     if number % 2 == 0:
         number = number // 2
     else:

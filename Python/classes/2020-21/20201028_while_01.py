@@ -13,6 +13,6 @@ while balance == target:
     year = year + 1
     interest = balance * RATE / 100
     balance = balance + interest
-    print(f"Expected balance in year {2020+year} is {balance:.2f}$")
+    print(f"Expected balance in year {2020 + year} is {balance:.2f}$")
 else:
     print("Achievement accomplished!")

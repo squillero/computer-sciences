@@ -4,7 +4,7 @@
 
 
 def main():
-    beatles = open('20251118 song.txt')
+    beatles = open("20251118 song.txt")
     # stones = open('20251118 song.txt')
     line1 = beatles.readline().rstrip()
     line2 = beatles.readline().rstrip()
@@ -15,5 +15,5 @@ def main():
     print(line3)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

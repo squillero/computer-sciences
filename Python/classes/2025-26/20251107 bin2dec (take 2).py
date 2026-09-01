@@ -12,7 +12,9 @@ def main():
         bits = int(bits)
 
     padded_binary_number = "0" * (bits - len(binary_number)) + binary_number
-    value = -int(padded_binary_number[0]) * 2 ** (bits - 1) + int(padded_binary_number[1:], base=2)
+    value = -int(padded_binary_number[0]) * 2 ** (bits - 1) + int(
+        padded_binary_number[1:], base=2
+    )
 
     print(f"{padded_binary_number[0]}|{padded_binary_number[1:]} = {value:,}")
 

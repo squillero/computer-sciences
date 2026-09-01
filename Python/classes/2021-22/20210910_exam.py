@@ -3,45 +3,45 @@
 # Free under certain conditions — see the license for details.
 
 """
-An assurance company labels its own customers as "Reliable" or "Unreliable" 
+An assurance company labels its own customers as "Reliable" or "Unreliable"
 based on the punctuality how the pay their loan installments. In this context,
 you are asked to analyze the customers information understanding if there are
 differences between the customers labeled as Reliable and the ones labeled as
-Unreliable. 
+Unreliable.
 
 You will receive a file named `customers.txt` having the information of the
 customers in every line. This is a comma separated file having the following
 fields in every line:
 
 Name,Last Name,Age,EnrollmentTime,Home,Reliability
-  
+
 where:
-- Age is given as an integer number 
+- Age is given as an integer number
 - EnrollmentTime is a real number indicating the number of years in the current
   position, for example, 3.5 means that the customer is hired since three years
   and a half.
 - Home is a string showing if the customer owns "o" or rents "r" the house were
   she/he is living.
-- Reliability is an integer number indicating the reliability level: 
+- Reliability is an integer number indicating the reliability level:
   0 Unreliable, 1 Reliable
 
 you are asked to read the file and then analyze this **printing in the screen**
 the following:
 
-1. The absolute value of the difference between the average age of the Reliable 
+1. The absolute value of the difference between the average age of the Reliable
    and the unreliable customers
 2. The minimum value of the EnrollmentTime of the Reliable customers
 3. The percentage of Reliable customers living in his/her own houses
 
 Additionally, you have also to report in a new file named `anomalies.txt` the
 Unreliable customers that comply with the characteristics of the Reliable
-customers. 
+customers.
 
-This file must include in every line the "Name" and "Last Name" of the 
+This file must include in every line the "Name" and "Last Name" of the
 Unreliable customers that comply with all the next constraints:
 
 - The customer is older than the average age of the Reliable customers
-- Their enrollment time is higher than the minimum value of the Reliable 
+- Their enrollment time is higher than the minimum value of the Reliable
   customers
 - They own the house where they live
 - They are identified as Unreliable customers
@@ -64,14 +64,14 @@ Unreliable customers that comply with all the next constraints:
 The Reliable customers have an average age of 9.0 years higher than the Unreliable ones
 Minimum EnrollmentTime of the Reliable customers: 5.0 years 75% of the Reliable customers own the house where they live
 ```
-	
-# The file anomalies.txt must contain this information at the end of the program: 
+
+# The file anomalies.txt must contain this information at the end of the program:
 | Tony Stark
 | Bruce Banner
 """
 
-CUSTOMERS_FILE_NAME = 'customers.txt'
-ANOMALIES_FILE_NAME = 'anomalies.txt'
+CUSTOMERS_FILE_NAME = "customers.txt"
+ANOMALIES_FILE_NAME = "anomalies.txt"
 
 # Resourceful students should consider collections.namedtuple()
 FIRST_NAME = 0
@@ -90,13 +90,17 @@ def load_customers():
     try:
         with open(CUSTOMERS_FILE_NAME) as input:
             for line in input:
-                first_name, last_name, age, enrollment_time, home, reliability = line.strip().split(
-                    ',')
+                first_name, last_name, age, enrollment_time, home, reliability = (
+                    line.strip().split(",")
+                )
                 age = int(age)
                 enrollment_time = float(enrollment_time)
-                reliability = reliability == '1'
+                reliability = reliability == "1"
                 customers.append(
-                    tuple((first_name, last_name, age, enrollment_time, home, reliability)))
+                    tuple(
+                        (first_name, last_name, age, enrollment_time, home, reliability)
+                    )
+                )
     except OSError as problem:
         print(f"Yeuch: {problem}")
         sys.exit(10)
@@ -120,7 +124,9 @@ def average_ages(customers):
     # reliable_age = [c[AGE] for c in customers if c[RELIABILITY] == True]
     # unreliable_age = [c[AGE] for c in customers if c[RELIABILITY] == False]
 
-    return sum(reliable_age) / len(reliable_age), sum(unreliable_age) / len(unreliable_age)
+    return sum(reliable_age) / len(reliable_age), sum(unreliable_age) / len(
+        unreliable_age
+    )
 
 
 def get_min_enrollment_time(customers, reliability):
@@ -140,7 +146,7 @@ def get_percentage_own_house(customers, reliability):
     for c in customers:
         if c[RELIABILITY] == reliability:
             cnt_tot += 1
-            if c[HOME] == 'o':
+            if c[HOME] == "o":
                 cnt += 1
     return cnt / cnt_tot
 
@@ -155,11 +161,15 @@ def main():
     # detect anomalies and save them
     anomalies = list()
     for c in customers:
-        if c[RELIABILITY] == False and c[AGE] > avg_age_reliable and c[
-                ENROLLMENT_TIME] > min_enroll_reliable and c[HOME] == 'o':
+        if (
+            c[RELIABILITY] == False
+            and c[AGE] > avg_age_reliable
+            and c[ENROLLMENT_TIME] > min_enroll_reliable
+            and c[HOME] == "o"
+        ):
             anomalies.append(c)
     try:
-        with open(ANOMALIES_FILE_NAME, 'w') as out:
+        with open(ANOMALIES_FILE_NAME, "w") as out:
             for c in anomalies:
                 out.write(f"{c[FIRST_NAME]} {c[LAST_NAME]}\n")
     except OSError as problem:
@@ -169,19 +179,21 @@ def main():
     # print info
     if avg_age_reliable > avg_age_unreliable:
         print(
-            f"The Reliable customers have an average age of {avg_age_reliable-avg_age_unreliable:.1f} years higher than the Unreliable ones"
+            f"The Reliable customers have an average age of {avg_age_reliable - avg_age_unreliable:.1f} years higher than the Unreliable ones"
         )
     elif avg_age_reliable < avg_age_unreliable:
         print(
-            f"The Unreliable customers have an average age of {avg_age_unreliable-avg_age_reliable:.1f} years higher than the Reliable ones"
+            f"The Unreliable customers have an average age of {avg_age_unreliable - avg_age_reliable:.1f} years higher than the Reliable ones"
         )
     else:
-        print(f"The Reliable customers have the same average age of the Unreliable ones")
+        print(
+            f"The Reliable customers have the same average age of the Unreliable ones"
+        )
 
     print(
-        f"Minimum EnrollmentTime of the Reliable customers: {min_enroll_reliable:.1f} years {100*perc_reliable_own_house:.0f}% of the Reliable customers own the house where they live"
+        f"Minimum EnrollmentTime of the Reliable customers: {min_enroll_reliable:.1f} years {100 * perc_reliable_own_house:.0f}% of the Reliable customers own the house where they live"
     )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

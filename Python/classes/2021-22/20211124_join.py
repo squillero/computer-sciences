@@ -4,12 +4,12 @@
 
 
 def main():
-    the_beatles = ['John', 'Paul', 'George', 'Ringo']
+    the_beatles = ["John", "Paul", "George", "Ringo"]
 
     string = the_beatles[0]
     for name in the_beatles[1:-1]:
-        string += ', ' + name
-    string += ', and ' + the_beatles[-1]  # add Oxford comma!
+        string += ", " + name
+    string += ", and " + the_beatles[-1]  # add Oxford comma!
 
     print(f">>>>{string}<<<<")
     print(f">>>>{', '.join(the_beatles)}<<<<")

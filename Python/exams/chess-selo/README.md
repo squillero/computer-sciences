@@ -6,7 +6,7 @@ In details, defining the *delta* function as
 
 ```python
 def delta(player_1, player_2):
-    return 1 / (1 + 2**((player_1 - player_2) / 100))
+    return 1 / (1 + 2 ** ((player_1 - player_2) / 100))
 ```
 
 After a match, the winner's *SELO* scores is **increased** by `200 * delta(winner, loser)`; while the loser's *SELO* is **decreased** by the same amount. *SELO* scores are integer, their value should be approximated to the closest integer after each calculation.

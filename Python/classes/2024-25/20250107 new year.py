@@ -9,13 +9,13 @@ def main():
     for x in range(10):
         happy += x
     happy **= 2
-    print(f'{happy=}')
+    print(f"{happy=}")
 
     happy = 0
     for x in range(10):
         happy += x**3
-    print(f'{happy=}')
+    print(f"{happy=}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

@@ -24,7 +24,7 @@ for num in range(10_000_000):
         break
 else:
     print("The for loop ended smoothly")
-    
+
 ic()
 for num in range(4):
     print(num)

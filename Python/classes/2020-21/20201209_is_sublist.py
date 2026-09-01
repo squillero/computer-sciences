@@ -16,5 +16,5 @@ def main():
     print(is_sublist(list1, "XYZ"))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

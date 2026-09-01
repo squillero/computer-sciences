@@ -5,10 +5,10 @@
 from pprint import pprint
 from copy import deepcopy
 
-DATA_FILE = '20251205 AoC-4.data.txt'
-DATA_FILE = '20251205 AoC-4.small.txt'
-SYMBOL_ROLL = '@'
-SYMBOL_EMPTY = '.'
+DATA_FILE = "20251205 AoC-4.data.txt"
+DATA_FILE = "20251205 AoC-4.small.txt"
+SYMBOL_ROLL = "@"
+SYMBOL_EMPTY = "."
 
 
 def read_file(filename):
@@ -28,7 +28,13 @@ def count_rolls(data, pos):
     count = 0
     for row in range(pos[0] - 1, pos[0] + 1 + 1):
         for col in range(pos[1] - 1, pos[1] + 1 + 1):
-            if row >= 0 and row < len_row and col >= 0 and col < len_col and (row, col) != pos:
+            if (
+                row >= 0
+                and row < len_row
+                and col >= 0
+                and col < len_col
+                and (row, col) != pos
+            ):
                 if data[row][col] == SYMBOL_ROLL:
                     count += 1
     return count
@@ -67,5 +73,5 @@ def main():
     print(tot_rolls)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

@@ -8,4 +8,4 @@ print("Giovanni's birthday", day, month)
 
 month = 5
 day = 18
-print("Paola's birthday", day, 'BINGO', month)
+print("Paola's birthday", day, "BINGO", month)

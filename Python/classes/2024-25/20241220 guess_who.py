@@ -5,17 +5,17 @@
 from csv import DictReader
 from icecream import ic
 
-CHARACTERS_FILE = '20241220 guess_who - characters.txt'
-QUESTIONS_FILE = '20241220 guess_who - questions1.txt'
+CHARACTERS_FILE = "20241220 guess_who - characters.txt"
+QUESTIONS_FILE = "20241220 guess_who - questions1.txt"
 
 
 def read_characters(filename):
     characters = dict()
     try:
-        with open(filename, newline='') as file:
-            for c in DictReader(file, delimiter=';'):
-                name = c['Name']
-                del c['Name']
+        with open(filename, newline="") as file:
+            for c in DictReader(file, delimiter=";"):
+                name = c["Name"]
+                del c["Name"]
                 characters[name] = c
     except OSError as problem:
         exit(problem)
@@ -27,7 +27,7 @@ def read_questions(filename):
     try:
         with open(filename) as file:
             for line in file:
-                q, a = line.split('=')
+                q, a = line.split("=")
                 questions.append((q.strip(), a.strip()))
     except OSError as problem:
         exit(problem)
@@ -61,11 +61,11 @@ def main():
         k, v = q
         characters = filter_character(characters, k, v)
         print()
-        print(f"Step {n+1} - question: {k} = {v}")
+        print(f"Step {n + 1} - question: {k} = {v}")
         print("Selected characters:")
         for n, p in characters.items():
             print_character(n, p)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

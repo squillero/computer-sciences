@@ -10,4 +10,4 @@ print(f"Total number of pairs: {n_pairs}")
 total_gap = total_width - TILE_WIDTH - n_pairs * 2 * TILE_WIDTH
 print(f"Gap: {total_gap}")
 
-print(f"Gap in each side: {total_gap/2:g}in")
+print(f"Gap in each side: {total_gap / 2:g}in")

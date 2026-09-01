@@ -19,11 +19,11 @@ def convert(number, base):
         number = number // base
 
     result.reverse()
-    tmp = ''
+    tmp = ""
     for r in result:
         tmp = tmp + str(r)
     return tmp
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

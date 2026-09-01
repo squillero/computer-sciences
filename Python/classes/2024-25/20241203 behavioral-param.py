@@ -8,7 +8,13 @@ GLOBAL_CONSTANT = "I'm a liar, I'm not a constant"
 
 
 def main():
-    price_list = {'milk': 2, 'bread': 0.78, 'eggs': 6, 'airplane': 3_000_000, 'book': 23}
+    price_list = {
+        "milk": 2,
+        "bread": 0.78,
+        "eggs": 6,
+        "airplane": 3_000_000,
+        "book": 23,
+    }
 
     for i in sorted(price_list):
         print(f"{i:.<20}{price_list[i]:.>10}")
@@ -31,5 +37,5 @@ def completely_different():
     ic(a(23, 10))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

@@ -2,15 +2,15 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-CSV_FILE = 'player_stats-small.csv'
-TEXT_FIELDS = {'player', 'position', 'team'}
+CSV_FILE = "player_stats-small.csv"
+TEXT_FIELDS = {"player", "position", "team"}
 
 import csv
 
 
 def read_players_stats(filename):
     players = list()
-    with open(filename, newline='') as csvfile:
+    with open(filename, newline="") as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
             for k, v in row.items():
@@ -23,20 +23,24 @@ def read_players_stats(filename):
 
 def calculate_efficiencies(players):
     for p in players:
-        p['forward_efficiency'] = (p['goals'] + p['assists'] - p['offsides']) / p['minutes']
-        if p['crosses'] == 0:
+        p["forward_efficiency"] = (p["goals"] + p["assists"] - p["offsides"]) / p[
+            "minutes"
+        ]
+        if p["crosses"] == 0:
             t = 0
         else:
-            t = p['assists'] / p['crosses']
-        p['midfield_efficiency'] = (p['interceptions'] + p['ball_recoveries'] + t) / p['minutes']
+            t = p["assists"] / p["crosses"]
+        p["midfield_efficiency"] = (p["interceptions"] + p["ball_recoveries"] + t) / p[
+            "minutes"
+        ]
 
 
 def split_teams(players):
     teams = dict()
     for p in players:
-        if p['team'] not in teams:
-            teams[p['team']] = list()
-        teams[p['team']].append(dict(p))
+        if p["team"] not in teams:
+            teams[p["team"]] = list()
+        teams[p["team"]].append(dict(p))
     return teams
 
 
@@ -46,13 +50,13 @@ def main():
 
     # More efficient Forward players
     print(f"{'Name':<30s} {'Team':<30s} {'Forward efficiency':>20s}")
-    for p in sorted(players, key=lambda p: p['forward_efficiency'], reverse=True)[:3]:
+    for p in sorted(players, key=lambda p: p["forward_efficiency"], reverse=True)[:3]:
         print(f"{p['player']:<30s} {p['team']:<30s} {p['forward_efficiency']:20.3f}")
     print()
 
     # More efficient Midfield players
     print(f"{'Name':<30s} {'Team':<30s} {'Midfield efficiency':>20s}")
-    for p in sorted(players, key=lambda p: p['midfield_efficiency'], reverse=True)[:3]:
+    for p in sorted(players, key=lambda p: p["midfield_efficiency"], reverse=True)[:3]:
         print(f"{p['player']:<30s} {p['team']:<30s} {p['midfield_efficiency']:20.3f}")
     print()
 
@@ -63,8 +67,8 @@ def main():
     total_age = dict()
     for team, team_players in all_teams.items():
         total_age[team] = list()
-        for player in sorted(team_players, key=lambda p: p['birth_year'])[:3]:
-            total_age[team].append(2022 - player['birth_year'])
+        for player in sorted(team_players, key=lambda p: p["birth_year"])[:3]:
+            total_age[team].append(2022 - player["birth_year"])
     avg_age = dict()
     for team, ages in total_age.items():
         avg_age[team] = sum(ages) / len(ages)
@@ -79,8 +83,10 @@ def main():
     for team, team_players in all_teams.items():
         efficiency_tot[team] = 0
         efficiency_players[team] = list()
-        for p in sorted(team_players, key=lambda p: p['forward_efficiency'], reverse=True)[:3]:
-            efficiency_tot[team] += p['forward_efficiency']
+        for p in sorted(
+            team_players, key=lambda p: p["forward_efficiency"], reverse=True
+        )[:3]:
+            efficiency_tot[team] += p["forward_efficiency"]
             efficiency_players[team].append(p)
     most_efficient_team = max(efficiency_tot, key=lambda t: efficiency_tot[t])
     print(f"The most efficient team is {most_efficient_team}")
@@ -88,5 +94,5 @@ def main():
         print(f"{p['player']}'s forward efficiency: {p['forward_efficiency']:.3f}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

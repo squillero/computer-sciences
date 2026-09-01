@@ -2,11 +2,11 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-FILENAME = 'snow.x'
+FILENAME = "snow.x"
 
 
 def main():
-    input_file = open(FILENAME, 'r')
+    input_file = open(FILENAME, "r")
     whole_file = input_file.read()
     input_file.close()
 
@@ -14,5 +14,5 @@ def main():
         print(f"Chunk: >>{line.rstrip()}<<")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

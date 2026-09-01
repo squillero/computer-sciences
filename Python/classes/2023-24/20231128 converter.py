@@ -18,8 +18,7 @@ def base_to_decimal(number, base):
     return value
 
 
-def decimal_to_base(number, base):
-    ...
+def decimal_to_base(number, base): ...
 
 
 def main():

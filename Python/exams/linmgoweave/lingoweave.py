@@ -2,8 +2,8 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-PATTERN = 'pattern.txt'
-WORDS = 'words.txt'
+PATTERN = "pattern.txt"
+WORDS = "words.txt"
 
 
 def calculate_score(word, pattern):
@@ -42,5 +42,5 @@ def main():
             print(f"{w}: {s}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

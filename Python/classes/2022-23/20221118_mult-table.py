@@ -17,7 +17,7 @@ def make_table(dim):
 def print_table(table):
     for row in table:
         for element in row:
-            print(f"{element:4d}", end='')
+            print(f"{element:4d}", end="")
         print()
 
 
@@ -26,9 +26,9 @@ def main():
     for x in range(DIM):
         for y in range(DIM):
             table[x][y] = (x + 1) * (y + 1)
-    #pprint((table))
+    # pprint((table))
     print_table(table)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

@@ -1,8 +1,8 @@
-﻿# Copyright © 2022 Giovanni Squillero / Politecnico di Torino
+# Copyright © 2022 Giovanni Squillero / Politecnico di Torino
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-FILENAME = 'landscape-small.txt'
+FILENAME = "landscape-small.txt"
 
 
 def readfile(filename):
@@ -24,7 +24,7 @@ def main():
 
     try:
         coords = input("Please, enter the coordinates (x,y): ")
-        xs, ys = coords[1:-1].split(',')
+        xs, ys = coords[1:-1].split(",")
         x, y = int(xs), int(ys)
         size = int(input("Please, enter the square size: "))
     except ValueError:
@@ -44,14 +44,14 @@ def main():
             stat[symbol] += 1
 
     # more idiomatic...
-    #from collections import Counter
-    #stat = Counter()
-    #for line in landscape[y:y + size]:
+    # from collections import Counter
+    # stat = Counter()
+    # for line in landscape[y:y + size]:
     #    stat.update(line[x:x + size])
 
     for s in sorted(stat, key=lambda k: stat[k], reverse=True):
-        print(f"{s}-> {stat[s]/size/size*100:4.1f}%")
+        print(f"{s}-> {stat[s] / size / size * 100:4.1f}%")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

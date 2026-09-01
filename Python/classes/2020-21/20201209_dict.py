@@ -2,23 +2,23 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-FILE_NAME = 'heaven.txt'
+FILE_NAME = "heaven.txt"
 
 
 def main():
     words = dict()
-    with open(FILE_NAME, 'r') as song:
+    with open(FILE_NAME, "r") as song:
         for line in song:
             for w in line.split():
-                stripped_word = w.upper().strip('!?,.\'"')
+                stripped_word = w.upper().strip("!?,.'\"")
 
                 # TAKE 1 - EXPLICIT GET
                 # num = words.get(stripped_word, 0)
 
                 # TAKE 2 - SAY SORRY
-                #try:
+                # try:
                 #    num = words[stripped_word]
-                #except KeyError:
+                # except KeyError:
                 #    num = 0
 
                 # TAKE 3 - ASK FOR PERMISSION
@@ -42,5 +42,5 @@ def main():
     print(f"The most common word is {most_common_word} ({most_common_cnt:,} times)")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

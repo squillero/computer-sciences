@@ -5,12 +5,12 @@
 from pprint import pprint
 
 # MAP_FILENAME = 'lab-small.txt'
-MAP_FILENAME = 'lab-large.txt'
+MAP_FILENAME = "lab-large.txt"
 
-MAP_EMPTY = '.'
-MAP_BEAM = '|'
-MAP_SPLITTER = '^'
-MAP_START = 'S'
+MAP_EMPTY = "."
+MAP_BEAM = "|"
+MAP_SPLITTER = "^"
+MAP_START = "S"
 
 
 def read_map(filename):
@@ -30,7 +30,7 @@ def read_map(filename):
 def print_map(map):
     """Pretty print a map"""
     for line in map:
-        print(''.join(line))
+        print("".join(line))
 
 
 def count_splits(map):
@@ -60,5 +60,5 @@ def main():
     print(f"Found {splits} splits in map.")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

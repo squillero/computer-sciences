@@ -6,7 +6,7 @@
 def main():
     # lists contains generic objects, thus a list may contain lists
 
-    birthdays = [[23, 10, 'Giovanni'], [18, 5, 'Paola']]
+    birthdays = [[23, 10, "Giovanni"], [18, 5, "Paola"]]
 
     for b in birthdays:
         print(f"{b[0]}-{b[1]} -> {b[2]}")
@@ -20,5 +20,5 @@ def main():
     print(birthdays)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

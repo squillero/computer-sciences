@@ -23,7 +23,7 @@ def multiply(values):
 def print_reversed(list_):
     """Prints the list_ starting from the end"""
     for v in reversed(list_):
-        print(v, end='\t')
+        print(v, end="\t")
     print()
 
 

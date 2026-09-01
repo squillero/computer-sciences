@@ -5,11 +5,11 @@
 
 def main():
     friends = set()
-    friends.add('Giovanni')
-    friends.add('Adolfo')
-    friends.add('Pietro')
-    friends.add('Pio')
-    friends.add('Giovanni')
+    friends.add("Giovanni")
+    friends.add("Adolfo")
+    friends.add("Pietro")
+    friends.add("Pio")
+    friends.add("Giovanni")
 
     print(friends)
     print(tuple(friends))
@@ -18,5 +18,5 @@ def main():
         print(x)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

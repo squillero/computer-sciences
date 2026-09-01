@@ -5,8 +5,8 @@
 import csv
 from icecream import ic
 
-PLAYERS_FILENAME = '20241213 players.csv'
-GAMES_FILENAME = '20241213 games.csv'
+PLAYERS_FILENAME = "20241213 players.csv"
+GAMES_FILENAME = "20241213 games.csv"
 
 
 def delta(player_1, player_2):
@@ -19,7 +19,7 @@ def read_players(filename):
         with open(filename) as file:
             file.readline()
             for line in file:
-                player, selo = line.strip().split(',')
+                player, selo = line.strip().split(",")
                 players[player.strip()] = int(selo)
     except OSError as problem:
         exit(problem)
@@ -31,7 +31,7 @@ def read_players_csv(filename):
     try:
         with open(filename) as file:
             file.readline()
-            for line in csv.reader(file, delimiter=';'):
+            for line in csv.reader(file, delimiter=";"):
                 ic(line)
     except OSError as problem:
         exit(problem)
@@ -44,7 +44,7 @@ def update_scores(players, filename):
         with open(filename) as file:
             file.readline()
             for line in file:
-                p1, p2, r = line.strip().split(',')
+                p1, p2, r = line.strip().split(",")
                 p1 = p1.strip()
                 p2 = p2.strip()
                 if p1 not in players:
@@ -52,10 +52,10 @@ def update_scores(players, filename):
                 if p2 not in players:
                     players[p2] = 1500
                 d = 200 * delta(players[p1], players[p2])
-                if r == '1-0':
+                if r == "1-0":
                     players[p1] += d
                     players[p2] -= d
-                elif r == '0-1':
+                elif r == "0-1":
                     players[p1] -= d
                     players[p2] += d
     except OSError as problem:
@@ -75,5 +75,5 @@ def main():
         print(f"{p}: {round(s)}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

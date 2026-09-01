@@ -16,11 +16,11 @@
 
 def get_min_distance(file, word1, word2):
     sequences = []
-    with open(file, 'r') as f:
+    with open(file, "r") as f:
         for line in f:
             sequences.append(line.strip().split())
 
-    min_distance = float('inf')
+    min_distance = float("inf")
     min_seq_num = None
     for i, seq in enumerate(sequences):
         word1_indices = [j for j, x in enumerate(seq) if x == word1]
@@ -34,13 +34,13 @@ def get_min_distance(file, word1, word2):
     return min_seq_num, min_distance
 
 
-file = 'seq.txt'
-word1 = input('Enter the first word: ')
-word2 = input('Enter the second word: ')
+file = "seq.txt"
+word1 = input("Enter the first word: ")
+word2 = input("Enter the second word: ")
 
 result = get_min_distance(file, word1, word2)
 if result[0] is not None:
     seq_num, distance = result
-    print(f'Min distance: sequence {seq_num + 1} (distance={distance})')
+    print(f"Min distance: sequence {seq_num + 1} (distance={distance})")
 else:
-    print('The two words never appear in the same sequence')
+    print("The two words never appear in the same sequence")

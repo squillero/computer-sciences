@@ -16,4 +16,4 @@ while not completed:
 if count == 0:
     print(f"D'oh")
 else:
-    print(f"Average of {count} values: {sum_/count:.2f}")
+    print(f"Average of {count} values: {sum_ / count:.2f}")

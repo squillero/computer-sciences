@@ -4,8 +4,8 @@
 
 from copy import copy
 
-EMPTY = '  '
-INPUT_FILE = 'game2.txt'
+EMPTY = "  "
+INPUT_FILE = "game2.txt"
 
 
 def parse_input(filename):
@@ -15,10 +15,10 @@ def parse_input(filename):
     try:
         with open(filename) as file:
             for r in range(8):
-                board.append(file.readline().rstrip().split('|'))
+                board.append(file.readline().rstrip().split("|"))
             board.reverse()
             for line in file:
-                moves.append(tuple(line.rstrip().split('-')))
+                moves.append(tuple(line.rstrip().split("-")))
     except OSError as problem:
         exit(problem)
     return board, moves
@@ -26,10 +26,10 @@ def parse_input(filename):
 
 def print_board(board):
     r"""Display the board with a1 as bottom left square"""
-    print('+'.join(['--'] * 8))
+    print("+".join(["--"] * 8))
     for row in reversed(board):
-        print('|'.join(row))
-        print('+'.join(['--'] * 8))
+        print("|".join(row))
+        print("+".join(["--"] * 8))
 
 
 def move_piece(board, from_square, to_square):
@@ -42,7 +42,7 @@ def move_piece(board, from_square, to_square):
         board[rl][cl] = EMPTY  # in case we taake a pawn ;-)
         for r in range(max(0, rl - 1), min(8, rl + 2)):
             for c in range(max(0, cl - 1), min(8, cl + 2)):
-                if 'p' not in board[r][c]:
+                if "p" not in board[r][c]:
                     board[r][c] = EMPTY
         print("Boooom!")
     board[rs][cs] = EMPTY
@@ -56,9 +56,9 @@ def square_to_indexes(square):
 def get_player(board, square):
     """Who is the player in a given square? +1 black, -1 white, 0 empty."""
     r, c = square_to_indexes(square)
-    if '+' in board[r][c]:
+    if "+" in board[r][c]:
         return +1
-    elif '-' in board[r][c]:
+    elif "-" in board[r][c]:
         return -1
     else:
         return 0
@@ -68,9 +68,9 @@ def winning_position(board):
     r"""Checks if game is over"""
     black_king, white_king = False, False
     for r in range(8):
-        if 'K+' in board[r]:
+        if "K+" in board[r]:
             black_king = True
-        if 'K-' in board[r]:
+        if "K-" in board[r]:
             white_king = True
 
     if black_king and not white_king:
@@ -103,5 +103,5 @@ def main():
         print("Black wins!")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

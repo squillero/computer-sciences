@@ -4,7 +4,7 @@
 
 from pprint import pprint
 
-MAIN_FILE = 'classes.txt'
+MAIN_FILE = "classes.txt"
 
 
 def read_classes(filename):
@@ -37,5 +37,5 @@ def main():
         pprint(students)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

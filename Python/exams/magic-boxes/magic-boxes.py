@@ -2,15 +2,15 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-#from pprint import pprint
+# from pprint import pprint
 
 NUM_MAGIC_BOXES = 42
-#ACTION_FILENAME = 'actions.txt'
-ACTION_FILENAME = 'actions-simple.txt'
-#ACTION_FILENAME = 'actions-fail_bob.txt'
-#ACTION_FILENAME = 'actions-fail_carl.txt'
-BOB = 'Bob'
-CARL = 'Carl'
+# ACTION_FILENAME = 'actions.txt'
+ACTION_FILENAME = "actions-simple.txt"
+# ACTION_FILENAME = 'actions-fail_bob.txt'
+# ACTION_FILENAME = 'actions-fail_carl.txt'
+BOB = "Bob"
+CARL = "Carl"
 
 
 def find_box(boxes, obj):
@@ -56,10 +56,10 @@ def main():
                     break
             else:
                 assert actor in [BOB, CARL], f"Unknown actor: {actor}"
-            #pprint(magic_boxes)
+            # pprint(magic_boxes)
         else:
             print("All ok")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

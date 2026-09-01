@@ -7,13 +7,9 @@ def main():
     bit_strings = input(": ")
     print(f"Assuming {len(bit_strings)} bits...")
     print(f"As pure binary: {bits_as_pure_binary(bit_strings)}")
-    print(
-        f"As twos complement: {bits_as_twos_complement(bit_strings)}"
-    )
+    print(f"As twos complement: {bits_as_twos_complement(bit_strings)}")
     print(f"As sign magnitude: {bits_as_sign_magnitude(bit_strings)}")
-    print(
-        f"As ones complement: {bits_as_ones_complement(bit_strings)}"
-    )
+    print(f"As ones complement: {bits_as_ones_complement(bit_strings)}")
 
 
 def bits_as_pure_binary(bits):

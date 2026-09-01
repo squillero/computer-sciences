@@ -4,15 +4,15 @@
 
 from pprint import pprint
 
-SYMBOL = ['X', 'O']
+SYMBOL = ["X", "O"]
 
 
 def print_board(board):
     """Pretty prints the board"""
     for r in range(3):
-        print('|', end='')
+        print("|", end="")
         for c in range(3):
-            print(f"{board[r][c]}|", end='')
+            print(f"{board[r][c]}|", end="")
         print()
 
 
@@ -32,7 +32,7 @@ def won(board, player):
 
 def main():
     """Entry point"""
-    board = [[' '] * 3 for _ in range(3)]
+    board = [[" "] * 3 for _ in range(3)]
     print_board(board)
     player = 0
     game_over = False

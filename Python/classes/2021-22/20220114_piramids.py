@@ -4,7 +4,7 @@
 
 from pprint import pprint
 
-MAP_FILENAME = '20220114_map.txt'
+MAP_FILENAME = "20220114_map.txt"
 
 
 def peak(map_, row, col):
@@ -40,5 +40,5 @@ def read_map(filename):
     return map_
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

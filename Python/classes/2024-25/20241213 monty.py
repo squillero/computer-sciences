@@ -5,8 +5,8 @@
 from random import randint, choice
 from icecream import ic
 
-GOAT = 'Goat'
-TESLA = 'Tesla'
+GOAT = "Goat"
+TESLA = "Tesla"
 NUM_TRIES = 1_000_000
 
 
@@ -46,9 +46,9 @@ def main():
         won = doors[player] == TESLA
         stat2 += won
 
-    print(f"Players won {stat1/NUM_TRIES:.0%} times if not swapping")
-    print(f"Players won {stat2/NUM_TRIES:.0%} times if swapping")
+    print(f"Players won {stat1 / NUM_TRIES:.0%} times if not swapping")
+    print(f"Players won {stat2 / NUM_TRIES:.0%} times if swapping")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

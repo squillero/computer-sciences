@@ -2,8 +2,8 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-TRIPS_FILENAME = 'corse.txt'
-OPERATIONS_FILENAME = 'operazioni.txt'
+TRIPS_FILENAME = "corse.txt"
+OPERATIONS_FILENAME = "operazioni.txt"
 
 
 def read_trips(filename):
@@ -16,10 +16,10 @@ def read_trips(filename):
                 trip_code = tokens.pop(0)
                 database[trip_code] = list()
                 for info in tokens:
-                    train, hour, minute = info.split(':')
+                    train, hour, minute = info.split(":")
                     database[trip_code].append((train, (int(hour), int(minute))))
     except:
-        print(f"Yeuch. Can't read \"{filename}\"")
+        print(f'Yeuch. Can\'t read "{filename}"')
         database = dict()
     return database
 
@@ -32,7 +32,7 @@ def read_operations(filename):
             for id in operations_file:
                 operations.append(tuple(id.split()))
     except:
-        print(f"Yeuch. Can't read \"{filename}\"")
+        print(f'Yeuch. Can\'t read "{filename}"')
         operations = list()
     print(operations)
     return operations
@@ -54,7 +54,7 @@ def print_stations(database):
     for stops in database.values():
         for s, _ in stops:
             stations.add(s)  # Set, avoid duplicates
-    print("Ordered list of stations served: ", ", ".join(sorted(stations)), ".", sep='')
+    print("Ordered list of stations served: ", ", ".join(sorted(stations)), ".", sep="")
 
 
 def print_trips_from(database, station, time):
@@ -64,12 +64,14 @@ def print_trips_from(database, station, time):
     for id, departure in trips.items():
         final_destination = database[id][-1][0]
         if departure > time and final_destination != station:
-            tmp.append(f"{id} {departure[0]:02d}:{departure[1]:02d} bound for {final_destination}")
+            tmp.append(
+                f"{id} {departure[0]:02d}:{departure[1]:02d} bound for {final_destination}"
+            )
     print(
         f"Timetable for {station} station from {time[0]:02d}:{time[1]:02d} onwards: ",
         "; ".join(tmp),
         ".",
-        sep='',
+        sep="",
     )
 
 
@@ -90,23 +92,25 @@ def print_shortest_jurney(database, departure, time, arrival):
         f"Shortest journey from {departure} to {arrival} from {time[0]:02d}:{time[1]:02d} onwards "
         + f"Train: {id} Departure: {departure} {trips_from[id][0]:02d}:{trips_from[id][1]:02d}; "
         + f"Arrival: {arrival} {trips_to[id][0]:02d}:{trips_to[id][1]:02d}; "
-        + f"Journey Duration: {travel_time//60}h {travel_time%60}min."
+        + f"Journey Duration: {travel_time // 60}h {travel_time % 60}min."
     )
 
 
 def main():
     database = read_trips(TRIPS_FILENAME)
     for operation in read_operations(OPERATIONS_FILENAME):
-        if operation[0] == 'Stazioni':
+        if operation[0] == "Stazioni":
             print_stations(database)
-        elif operation[0] == 'Orario':
-            h, m = operation[2].split(':')
+        elif operation[0] == "Orario":
+            h, m = operation[2].split(":")
             print_trips_from(database, operation[1], (int(h), int(m)))
-        elif operation[0] == 'Viaggio':
-            h, m = operation[2].split(':')
-            print_shortest_jurney(database, operation[1], (int(h), int(m)), operation[3])
+        elif operation[0] == "Viaggio":
+            h, m = operation[2].split(":")
+            print_shortest_jurney(
+                database, operation[1], (int(h), int(m)), operation[3]
+            )
         print()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

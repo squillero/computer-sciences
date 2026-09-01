@@ -13,5 +13,5 @@ while money < INITIAL_VALUE * 2:
     money = money + money * INTEREST_RATE
 
 print(
-    f"With a {INTEREST_RATE*100:.0f}% interest, after {num_years} years, my money is duobled ({money:,.0f} EUR)"
+    f"With a {INTEREST_RATE * 100:.0f}% interest, after {num_years} years, my money is duobled ({money:,.0f} EUR)"
 )

@@ -12,7 +12,7 @@ def load_report(filename):
     reading_ranges = True
 
     try:
-        with open(filename, 'r') as f:
+        with open(filename, "r") as f:
             for line in f:
                 line = line.strip()
 
@@ -25,7 +25,7 @@ def load_report(filename):
                 if reading_ranges:
                     # Parse range string "min-max" into integers
                     try:
-                        start, end = map(int, line.split('-'))
+                        start, end = map(int, line.split("-"))
                         ranges.append((start, end))
                     except ValueError:
                         print(f"Warning: Could not parse range '{line}'")
@@ -54,7 +54,7 @@ def is_dangerous(batch_num, dangerous_ranges):
 
 
 def main():
-    filename = 'report-small.txt'
+    filename = "report-small.txt"
     dangerous_ranges, purchased_batches = load_report(filename)
 
     # If file reading failed, exit

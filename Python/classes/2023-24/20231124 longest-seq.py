@@ -21,8 +21,7 @@ def sequence_length(sequence, start):
     """Returns the lenght of the sequence of identical elements starting at `start`"""
     length = 0
     while (
-        start + length < len(sequence)
-        and sequence[start + length] == sequence[start]
+        start + length < len(sequence) and sequence[start + length] == sequence[start]
     ):
         length += 1
     return length
@@ -42,9 +41,7 @@ def find_max_seq(sequence):
 
 
 def main():
-    sequence = create_random_seq(
-        NUMBER_MIN, NUMBER_MAX, SEQUENCE_LENGTH
-    )
+    sequence = create_random_seq(NUMBER_MIN, NUMBER_MAX, SEQUENCE_LENGTH)
     max_length, brackets = find_max_seq(sequence)
 
     for index, elem in enumerate(sequence):

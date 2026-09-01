@@ -15,7 +15,9 @@ def main():
 
     new_scores = remove_lowest(scores)
     average = compute_average(new_scores)
-    print(f"Original scores: {scores}, removing lowest: {new_scores}, average: {average}")
+    print(
+        f"Original scores: {scores}, removing lowest: {new_scores}, average: {average}"
+    )
 
 
 def remove_lowest(scores):
@@ -31,11 +33,11 @@ def remove_lowest(scores):
 
 def compute_average(scores):
     """Return average of list"""
-    sum_ = 0.
+    sum_ = 0.0
     for s in scores:
         sum_ = sum_ + s
     return sum_ / len(scores)
 
 
-if __name__ == '__main__':  # BLACK MAGIC!
+if __name__ == "__main__":  # BLACK MAGIC!
     main()

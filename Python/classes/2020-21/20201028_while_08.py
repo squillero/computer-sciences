@@ -14,4 +14,4 @@ while vote >= 0:
         sum_ = sum_ + vote
         num = num + 1
 
-print(f"{num} votes, average is {sum_/num:.1f}")
+print(f"{num} votes, average is {sum_ / num:.1f}")

@@ -46,7 +46,9 @@ def main():
         for line in f:
             time, tz_name, desc, is_yesterday, is_tomorrow = parse_event(line)
             timezone, _ = timezones[tz_name]
-            event_time = timezone.localize(datetime.combine(datetime.now().date(), time))
+            event_time = timezone.localize(
+                datetime.combine(datetime.now().date(), time)
+            )
             events.append((event_time, desc, is_yesterday, is_tomorrow))
 
     # Sort events by UTC time

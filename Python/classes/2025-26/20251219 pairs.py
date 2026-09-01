@@ -2,7 +2,7 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-PROBLEM_FILENAME = 'locations-large.txt'
+PROBLEM_FILENAME = "locations-large.txt"
 
 
 def main():
@@ -26,5 +26,5 @@ def main():
     print(distance)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

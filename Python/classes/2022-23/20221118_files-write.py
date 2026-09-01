@@ -2,7 +2,7 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-FILENAME = 'test.dat'
+FILENAME = "test.dat"
 
 
 def main():
@@ -11,5 +11,5 @@ def main():
         my_file.write("Hello! This is my first file.\n")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

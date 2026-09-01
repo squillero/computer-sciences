@@ -13,5 +13,5 @@ def main():
     print(list(map(add_one, data)))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

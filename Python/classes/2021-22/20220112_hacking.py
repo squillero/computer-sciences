@@ -2,8 +2,8 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-FILENAME_PRODUCTS = '20220112_products.txt'
-FILENAME_PURCHASES = '20220112_purchases.txt'
+FILENAME_PRODUCTS = "20220112_products.txt"
+FILENAME_PURCHASES = "20220112_purchases.txt"
 
 
 def read_data(filename):
@@ -37,5 +37,5 @@ def main():
     check_purchases(products, purchases)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

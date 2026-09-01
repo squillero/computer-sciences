@@ -31,5 +31,5 @@ def main():
     print(enes)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

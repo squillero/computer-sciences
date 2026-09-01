@@ -6,13 +6,13 @@ from pprint import pprint
 from csv import DictReader
 import random
 
-FILENAME = 'test.csv'
+FILENAME = "test.csv"
 
 
 def read_csv(filename):
     info = list()
     try:
-        with open(filename, encoding='utf8') as file_in:
+        with open(filename, encoding="utf8") as file_in:
             dict_reader = DictReader(file_in)
             for line in dict_reader:
                 info.append(line)
@@ -55,11 +55,11 @@ def main():
     print()
 
     def key_extractor(blob):
-        return len(blob['GREET'])
+        return len(blob["GREET"])
 
     info.sort(key=key_extractor, reverse=True)
     pprint(info)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

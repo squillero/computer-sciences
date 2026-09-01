@@ -5,14 +5,14 @@
 import csv
 from icecream import ic
 
-CSV_FILE = '20241217 friend.csv'
+CSV_FILE = "20241217 friend.csv"
 
 
 def read_csv(filename):
     r"""Reading friends from a csv file"""
     friends = list()
     try:
-        with open(filename, newline='') as file:
+        with open(filename, newline="") as file:
             for record in csv.DictReader(file):
                 friends.append(record)
     except OSError as problem:
@@ -28,12 +28,12 @@ def read_text(filename):
             file.readline()
             for line in file:
                 record = dict()
-                name, surname, email, food, movie = line.rstrip().split(',')
-                record['NAME'] = name
-                record['SURNAME'] = surname
-                record['EMAIL'] = email
-                record['FOOD'] = food
-                record['MOVIE'] = movie
+                name, surname, email, food, movie = line.rstrip().split(",")
+                record["NAME"] = name
+                record["SURNAME"] = surname
+                record["EMAIL"] = email
+                record["FOOD"] = food
+                record["MOVIE"] = movie
                 friends.append(record)
     except OSError as problem:
         exit(problem)
@@ -46,5 +46,5 @@ def main():
     read_csv(CSV_FILE)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

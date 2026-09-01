@@ -2,7 +2,7 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-DATA_FILE = '20251205 AoC-3.data.txt'
+DATA_FILE = "20251205 AoC-3.data.txt"
 
 
 def brute_force(bank):
@@ -20,7 +20,7 @@ def max2(bank):
 
 
 def maxn(bank, n):
-    result = ''
+    result = ""
 
     for i in range(n):
         m = max(bank[: len(bank) - n + i + 1])
@@ -53,5 +53,5 @@ def main():
     print(total)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

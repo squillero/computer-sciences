@@ -2,7 +2,7 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-FILENAME = '20251118 song.txt'
+FILENAME = "20251118 song.txt"
 
 
 def read_file(file_name):
@@ -18,8 +18,8 @@ def read_file(file_name):
 
 def main():
     print(read_file(FILENAME))
-    print(read_file('this file does not exist.txt'))
+    print(read_file("this file does not exist.txt"))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

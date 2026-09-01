@@ -44,5 +44,5 @@ def check(values):
     return all_correct
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

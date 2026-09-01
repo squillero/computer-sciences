@@ -2,9 +2,9 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-FILE_IN = '20241119 in.gx'
-FILE_OUT = '20241119 out.gx'
-TABOOS = ['lady', 'stairway']
+FILE_IN = "20241119 in.gx"
+FILE_OUT = "20241119 out.gx"
+TABOOS = ["lady", "stairway"]
 
 
 def main():
@@ -16,14 +16,14 @@ def main():
 
     redacted_text = text
     for taboo in TABOOS:
-        redacted_text = redacted_text.replace(taboo, '***')
+        redacted_text = redacted_text.replace(taboo, "***")
 
     try:
-        with open(FILE_OUT, 'w') as file_out:
+        with open(FILE_OUT, "w") as file_out:
             file_out.write(redacted_text)
     except OSError as problem:
         exit(problem)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

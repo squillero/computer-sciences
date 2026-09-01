@@ -17,5 +17,5 @@ def main():
     print(f"Inverse of {number} is {inverse}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

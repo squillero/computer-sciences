@@ -5,6 +5,5 @@
 name = "Giovanni Adolfo Pitro Pio"
 
 print(name[2])
-print(name[len(name)-1])
+print(name[len(name) - 1])
 print(name[-1])
-

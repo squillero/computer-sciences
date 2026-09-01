@@ -22,4 +22,4 @@ ratio = hit / miss
 print(f"hits: {hit:,}; misses: {miss:,}; ratio: {ratio:.2f}%")
 
 estimated_pi = 4 * hit / NUM_TRIES
-print(f"Estimated Pi: {estimated_pi}; error: {(estimated_pi-pi)/pi*100:.2g}%")
+print(f"Estimated Pi: {estimated_pi}; error: {(estimated_pi - pi) / pi * 100:.2g}%")

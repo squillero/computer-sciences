@@ -7,10 +7,10 @@ import random
 
 BATTLEFIELD_SIZE = (5, 20)
 SHIP_SIZES = [2, 3]
-BATTLEFIELD_SEA = '.'
-BATTLEFIELD_SHIP = '#'
-BATTLEFIELD_MISS = '@'
-BATTLEFIELD_HIT = '*'
+BATTLEFIELD_SEA = "."
+BATTLEFIELD_SHIP = "#"
+BATTLEFIELD_MISS = "@"
+BATTLEFIELD_HIT = "*"
 
 
 def position_ships(battlefield_size):
@@ -21,11 +21,11 @@ def position_ships(battlefield_size):
         table.append(row)
 
     for ship in SHIP_SIZES:
-        row = random.randint(0, battlefield_size[0]-1)
-        column = random.randint(0, battlefield_size[1]-ship-1)
+        row = random.randint(0, battlefield_size[0] - 1)
+        column = random.randint(0, battlefield_size[1] - ship - 1)
         # TODO: check overlapping
         for s in range(ship):
-            table[row][column+s] = BATTLEFIELD_SHIP
+            table[row][column + s] = BATTLEFIELD_SHIP
 
     return table
 
@@ -47,7 +47,7 @@ def print_battlefield(battlefield):
         for c in r:
             if c == BATTLEFIELD_SHIP:
                 c = BATTLEFIELD_SEA
-            print(f"{c}", end='')
+            print(f"{c}", end="")
         print()
 
 
@@ -56,8 +56,8 @@ def get_user_coordinates():
 
     Notez bien: no error checking yet
     """
-    row = int(input('Row: '))
-    column = int(input('Column: '))
+    row = int(input("Row: "))
+    column = int(input("Column: "))
     return row, column
 
 
@@ -86,5 +86,5 @@ def main():
     pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

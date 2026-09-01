@@ -15,7 +15,20 @@
 # Month 11: autumn
 # Month 12: autumn/winter
 
-months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+]
 seasons = ["Winter", "Spring", "Summer", "Autumn"]
 num_days = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 

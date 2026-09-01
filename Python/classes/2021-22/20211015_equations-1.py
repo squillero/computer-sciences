@@ -18,7 +18,7 @@ if a == 0 and b == 0 and c == 0:
 elif a == 0 and b == 0:
     print("Impossible")
 elif a == 0:
-    print(f"x = {-c/b:g}")
+    print(f"x = {-c / b:g}")
 elif delta >= 0:
     x1 = (-b + math.sqrt(delta)) / (2 * a)
     x2 = (-b - math.sqrt(delta)) / (2 * a)

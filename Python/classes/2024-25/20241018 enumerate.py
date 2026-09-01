@@ -16,11 +16,11 @@ kpops = [
 ]
 
 for band in kpops:
-    print(f"\"{band}\"")
+    print(f'"{band}"')
 
 # note: *really* terrible, but you don't know anything better, yet
 for i in range(len(kpops)):
-    print(f"{i+1:2d}. \"{kpops[i]}\"")
+    print(f'{i + 1:2d}. "{kpops[i]}"')
 
 # from icecream import ic
 # ic(kpops)

@@ -2,7 +2,7 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-DATA_FILE = '20251202 AoC-2.data.txt'
+DATA_FILE = "20251202 AoC-2.data.txt"
 
 
 def read_file(filename):
@@ -14,8 +14,8 @@ def read_file(filename):
     except OSError as problem:
         print(problem)
         return list()
-    for token in raw.split(','):
-        from_, to_ = token.split('-')
+    for token in raw.split(","):
+        from_, to_ = token.split("-")
         id_ranges.append((int(from_), int(to_)))
     return id_ranges
 
@@ -64,5 +64,5 @@ def main():
     print(f"Final check: {check}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

@@ -7,13 +7,13 @@ income = float(input("Income: "))
 
 if single.lower() == "y":
     if income < 32000:
-        net = income - income * .1
+        net = income - income * 0.1
     else:
-        net = income - 3200 - (income - 32000) * .25
+        net = income - 3200 - (income - 32000) * 0.25
 else:
     if income < 64000:
-        net = income - income * .1
+        net = income - income * 0.1
     else:
-        net = income - 6400 - (income - 64000) * .25
+        net = income - 6400 - (income - 64000) * 0.25
 
 print(f"Net income: {net}")

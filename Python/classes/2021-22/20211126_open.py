@@ -4,11 +4,11 @@
 
 
 def main():
-    input_file = open('stairway.txt')
+    input_file = open("stairway.txt")
     foo = input_file.readline()
-    print(f"My FIRST line from a file: \"{foo}\"")
+    print(f'My FIRST line from a file: "{foo}"')
     foo = input_file.readline()
-    print(f"My SECOND line from a file: \"{foo}\"")
+    print(f'My SECOND line from a file: "{foo}"')
 
 
 main()

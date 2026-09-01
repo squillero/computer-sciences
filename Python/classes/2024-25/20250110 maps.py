@@ -2,10 +2,10 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-FILENAME = '20250110 map.dat'
-SEA = '.'
-ISLAND = '#'
-STAR = '*'
+FILENAME = "20250110 map.dat"
+SEA = "."
+ISLAND = "#"
+STAR = "*"
 
 
 def read_map(filename):
@@ -21,7 +21,7 @@ def read_map(filename):
 
 def print_map(map_):
     for line in map_:
-        print(' '.join(line))
+        print(" ".join(line))
 
 
 def find_stars(map_):
@@ -42,5 +42,5 @@ def main():
             ...
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

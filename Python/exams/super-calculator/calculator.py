@@ -3,16 +3,16 @@
 # Free for personal or classroom use; see 'LICENSE' for details.
 
 
-INPUT_FILE = 'expressions_long.dat'
+INPUT_FILE = "expressions_long.dat"
 
 
 def operation(op, a, b):
     r"""Performs single operation"""
-    if op == '+':
+    if op == "+":
         return a + b
-    if op == '-':
+    if op == "-":
         return a - b
-    if op == '*':
+    if op == "*":
         return a * b
 
 
@@ -30,7 +30,7 @@ def read_expression(filename):
     try:
         with open(filename) as file:
             for line in file:
-                part_1, part_2 = line.split(':')
+                part_1, part_2 = line.split(":")
                 nums = list()
                 for t in part_1.split():
                     nums.append(int(t))
@@ -46,5 +46,5 @@ def main():
         print(evaluate_expression(nums, ops))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

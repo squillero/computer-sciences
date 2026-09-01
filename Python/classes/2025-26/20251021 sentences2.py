@@ -12,4 +12,4 @@ for rune in sentence:
     if rune.isalpha():
         num_characters += 1
 
-print(f"Percentage of uppercase: {num_uppercase/num_characters:.2%}")
+print(f"Percentage of uppercase: {num_uppercase / num_characters:.2%}")

@@ -11,4 +11,3 @@ print(type(first), len(first))
 
 print(name[1])
 print(name[2:5])
-

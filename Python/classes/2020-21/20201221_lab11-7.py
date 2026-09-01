@@ -2,7 +2,7 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-MAZE_NAME = 'maze.dat'
+MAZE_NAME = "maze.dat"
 
 
 def main():
@@ -10,7 +10,7 @@ def main():
 
     maze = list()
     try:
-        with open(MAZE_NAME, 'r') as maze_description:
+        with open(MAZE_NAME, "r") as maze_description:
             for line in maze_description:
                 maze.append(list(line[:-1]))
     except OSError as problem:
@@ -19,18 +19,18 @@ def main():
     maze_dictionary = dict()
     for r in range(len(maze)):
         for c in range(len(maze[r])):
-            if maze[r][c] == ' ':
+            if maze[r][c] == " ":
                 maze_dictionary[(r, c)] = set()
-                if r > 0 and maze[r - 1][c] == ' ':
+                if r > 0 and maze[r - 1][c] == " ":
                     maze_dictionary[(r, c)].add((r - 1, c))
-                if r < len(maze) - 1 and maze[r + 1][c] == ' ':
+                if r < len(maze) - 1 and maze[r + 1][c] == " ":
                     maze_dictionary[(r, c)].add((r + 1, c))
-                if c > 0 and maze[r][c - 1] == ' ':
+                if c > 0 and maze[r][c - 1] == " ":
                     maze_dictionary[(r, c)].add((r, c - 1))
-                if c < len(maze[r]) - 1 and maze[r][c + 1] == ' ':
+                if c < len(maze[r]) - 1 and maze[r][c + 1] == " ":
                     maze_dictionary[(r, c)].add((r, c + 1))
     print(maze_dictionary)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

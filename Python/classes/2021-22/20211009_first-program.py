@@ -22,6 +22,8 @@ minutes = seconds // MINUTE
 seconds %= MINUTE
 
 # print(weeks, "weeks", days, "days", hours, "hours", minutes, "minutes", "and", seconds, "seconds")
-print(f"{weeks} weeks, {days} days, {hours} hours, {minutes} minutes, and {seconds} seconds")
+print(
+    f"{weeks} weeks, {days} days, {hours} hours, {minutes} minutes, and {seconds} seconds"
+)
 
 print(round(2 / 7, 2))

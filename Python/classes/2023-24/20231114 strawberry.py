@@ -32,9 +32,9 @@ def main():
 
     # take 1
     for i in range(len(words) - 2):
-        if len(words[i]) == len(words[i + 1]) and len(
-            words[i + 1]
-        ) == len(words[i + 2]):
+        if len(words[i]) == len(words[i + 1]) and len(words[i + 1]) == len(
+            words[i + 2]
+        ):
             print(words[i : i + 3])
 
     # take 2

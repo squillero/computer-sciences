@@ -2,14 +2,14 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-FILE_IN = '20251118 song.txt'
-FILE_OU = 'output.txt'
+FILE_IN = "20251118 song.txt"
+FILE_OU = "output.txt"
 
 
 def read_file(filename):
     try:
         with open(filename) as data:
-            return data.read().split('\n')
+            return data.read().split("\n")
     except OSError as problem:
         exit(str(problem))
 
@@ -25,5 +25,5 @@ def main():
         print(line.title())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

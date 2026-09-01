@@ -5,6 +5,7 @@ GOAL = 0
 DATE = 1
 MAX_BAR = 50
 
+
 def sportivi_date_construct(date):
     dd, mm, _ = date.split("/")
     return mm + dd
@@ -31,20 +32,22 @@ def compare(start_date, end_date, goal_table):
     sum = 0
     i = 0
     while i < len(goal_table):
-        if start_date != "1222":            
+        if start_date != "1222":
             if start_date <= goal_table[i][DATE] <= end_date:
                 sum += goal_table[i][GOAL]
                 goal_table.pop(i)
             else:
                 i += 1
-        elif start_date == "1222":         
-            if start_date <= goal_table[i][DATE] <= "1231" or "0101" <= goal_table[i][DATE] <= end_date:
+        elif start_date == "1222":
+            if (
+                start_date <= goal_table[i][DATE] <= "1231"
+                or "0101" <= goal_table[i][DATE] <= end_date
+            ):
                 sum += goal_table[i][GOAL]
                 goal_table.pop(i)
             else:
                 i += 1
-    return sum                
-
+    return sum
 
 
 def read_zodiac(filename_z, filename_s):
@@ -58,7 +61,9 @@ def read_zodiac(filename_z, filename_s):
             e_date = zodiaco_date_construct(e_date)
             goals_num = compare(s_date, e_date, goals_table)
             zodiac_stat[zodiac] = goals_num
-    zodiac_stat = dict(sorted(zodiac_stat.items(), key=lambda item: item[1], reverse=True))
+    zodiac_stat = dict(
+        sorted(zodiac_stat.items(), key=lambda item: item[1], reverse=True)
+    )
     return zodiac_stat
 
 
@@ -66,8 +71,9 @@ def main():
     zodiac_dict = read_zodiac(ZODIACO_FILE, SPORTIVI_FILE)
     max_zodiac = max(zodiac_dict.values())
     for sign, number in zodiac_dict.items():
-        num_bar = int((number/max_zodiac) * MAX_BAR)
-        print(f'{sign:12}\t({number})\t{"*" * num_bar}')
+        num_bar = int((number / max_zodiac) * MAX_BAR)
+        print(f"{sign:12}\t({number})\t{'*' * num_bar}")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

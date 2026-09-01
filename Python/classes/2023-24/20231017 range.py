@@ -7,7 +7,7 @@ for num in range(5):
     print(num)
 
 print("START-END")
-for num in range(3, 5):     # ALL ranges are half-open ie. [3, 5)
+for num in range(3, 5):  # ALL ranges are half-open ie. [3, 5)
     print(num)
 
 print("START-END-STEP")

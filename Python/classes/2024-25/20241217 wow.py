@@ -4,7 +4,7 @@
 
 from icecream import ic
 
-FILENAME = '20241217 wow.txt'
+FILENAME = "20241217 wow.txt"
 
 
 def read_text(filename):
@@ -51,11 +51,11 @@ def check_all(full_text, word1, word2):
 
 def main():
     text = read_text(FILENAME)
-    w1 = input('Word 1:')
-    w2 = input('Word 2:')
+    w1 = input("Word 1:")
+    w2 = input("Word 2:")
     d = check_all(text, w1, w2)
     print(f"Min distance: {d}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

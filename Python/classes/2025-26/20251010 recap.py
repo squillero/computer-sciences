@@ -7,10 +7,10 @@ print("Hello\tB")
 print("Help\tC")
 print("Hi\nBob")
 
-print("Say \"hi\"")
+print('Say "hi"')
 print("Say 'hi'")
 print('Say "hi"')
-print('Say \'hi\'')
+print("Say 'hi'")
 
 beatles = """John
 Paul

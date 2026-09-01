@@ -10,8 +10,8 @@ if single.upper() != "Y":
     threshold = 64000
 
 if income < threshold:
-    net = income * .1
+    net = income * 0.1
 else:
-    net = income - threshold * .1 - (income - threshold) * .25
+    net = income - threshold * 0.1 - (income - threshold) * 0.25
 
 print(f"Net income: {net}")

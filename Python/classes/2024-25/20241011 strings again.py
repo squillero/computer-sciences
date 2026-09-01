@@ -3,7 +3,7 @@
 # Free under certain conditions — see the license for details.
 
 name = "Giovanni"
-surname = 'Squillero'
+surname = "Squillero"
 
 greet = "Say 'Hello!'"
 print(greet)
@@ -25,5 +25,3 @@ name = "Giovanni Adolfo Pietro Pio Squillero"
 print(name)
 print(name.lower())
 # print(str.lower(name)) no one is using it!
-
-

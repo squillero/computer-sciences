@@ -4,8 +4,9 @@
 
 
 def foo(x):
-    #x[1] = "X"
+    # x[1] = "X"
     x = "Paola"
+
 
 data = list("Giovanni")
 print(data)

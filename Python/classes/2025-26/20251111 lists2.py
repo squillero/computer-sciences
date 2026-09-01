@@ -5,7 +5,7 @@
 
 def main():
     foo = list("Giovanni Adolfo Pio Pietro")
-    foo[9] = 'X'
+    foo[9] = "X"
     bar = "".join(foo)
     print(bar)
 

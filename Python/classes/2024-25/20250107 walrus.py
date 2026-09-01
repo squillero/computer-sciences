@@ -12,5 +12,5 @@ def main():
     print(f"{friends=}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

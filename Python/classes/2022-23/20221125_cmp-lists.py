@@ -3,7 +3,7 @@
 # Free under certain conditions — see the license for details.
 
 DATA = [1, 3, 5, 7, 9, 11, 23, 45]
-#DATA = [1, 3, -5, 7, 9, 11, 23, 45]
+# DATA = [1, 3, -5, 7, 9, 11, 23, 45]
 
 
 def main():
@@ -14,8 +14,8 @@ def main():
         print("Yeah!")
 
     nd = True
-    for i in range(len(DATA)-1):
-        if DATA[i] > DATA[i+1]:
+    for i in range(len(DATA) - 1):
+        if DATA[i] > DATA[i + 1]:
             nd = False
     if nd:
         print("Yeah!")
@@ -28,5 +28,5 @@ def main():
         print("Yeah!")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

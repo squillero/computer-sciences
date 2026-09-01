@@ -19,5 +19,5 @@ def main():
         print(f"Value is {value}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

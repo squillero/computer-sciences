@@ -29,7 +29,7 @@ colors = [
 ]
 
 for color in colors:
-    print(f"\"{color}\"")
+    print(f'"{color}"')
 
 print("It's all over...")
 ic(color)

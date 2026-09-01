@@ -5,28 +5,28 @@
 from pprint import pprint
 from csv import DictReader
 
-STATS_FILENAME = 'player_stats.csv'
+STATS_FILENAME = "player_stats.csv"
 REFERENCE_YEAR = 2022
 
 
 def read_file(filename):
     players = list()
     try:
-        with open(filename, newline='') as file:
+        with open(filename, newline="") as file:
             reader = DictReader(file)
             for player in reader:
-                player['birth_year'] = int(player['birth_year'])
-                player['minutes'] = int(player['minutes'])
-                player['goals'] = int(player['goals'])
-                player['assists'] = int(player['assists'])
-                player['offsides'] = int(player['offsides'])
-                player['crosses'] = int(player['crosses'])
-                player['interceptions'] = int(player['interceptions'])
-                player['tackles_won'] = int(player['tackles_won'])
-                player['pens_conceded'] = int(player['pens_conceded'])
-                player['ball_recoveries'] = int(player['ball_recoveries'])
-                player['aerials_won'] = int(player['aerials_won'])
-                player['aerials_lost'] = int(player['aerials_lost'])
+                player["birth_year"] = int(player["birth_year"])
+                player["minutes"] = int(player["minutes"])
+                player["goals"] = int(player["goals"])
+                player["assists"] = int(player["assists"])
+                player["offsides"] = int(player["offsides"])
+                player["crosses"] = int(player["crosses"])
+                player["interceptions"] = int(player["interceptions"])
+                player["tackles_won"] = int(player["tackles_won"])
+                player["pens_conceded"] = int(player["pens_conceded"])
+                player["ball_recoveries"] = int(player["ball_recoveries"])
+                player["aerials_won"] = int(player["aerials_won"])
+                player["aerials_lost"] = int(player["aerials_lost"])
                 players.append(player)
 
     except OSError as problem:
@@ -37,15 +37,17 @@ def read_file(filename):
 
 # Forward_efficiency = (Goals / Minutes played) + (Goal Assists / Minutes played) - (Offsides / Minutes played)
 def forward_efficiency(player):
-    return (player['goals'] + player['assists'] - player['offsides']) / player['minutes']
+    return (player["goals"] + player["assists"] - player["offsides"]) / player[
+        "minutes"
+    ]
 
 
 # Midfield_efficiency = (Intercepted balls + Recovered balls + (Goal Assists / Reached crosses)) / Minutes played
 def midfield_efficency(player):
-    efficiency = player['interceptions'] + player['ball_recoveries']
-    if player['crosses'] > 0:
-        efficiency += player['assists'] / player['crosses']
-    efficiency /= player['minutes']
+    efficiency = player["interceptions"] + player["ball_recoveries"]
+    if player["crosses"] > 0:
+        efficiency += player["assists"] / player["crosses"]
+    efficiency /= player["minutes"]
     return efficiency
 
 
@@ -61,9 +63,9 @@ def main():
 
     ages = dict()
     for player in players:
-        if player['team'] not in ages:
-            ages[player['team']] = list()
-        ages[player['team']].append(REFERENCE_YEAR - player['birth_year'])
+        if player["team"] not in ages:
+            ages[player["team"]] = list()
+        ages[player["team"]].append(REFERENCE_YEAR - player["birth_year"])
 
     avg_ages = dict()
     for team in ages:
@@ -88,5 +90,5 @@ def main():
     print(sorted_teams)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

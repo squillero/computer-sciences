@@ -5,12 +5,12 @@
 
 def main():
     name = "Giovanni Adolfo Pio Pietro"
-    foo = name.split('i')  # ie. foo = str.split(name, "i")
+    foo = name.split("i")  # ie. foo = str.split(name, "i")
     print(foo)
     bar = "i".join(foo)
     print(bar)
 
-    foo = name.rsplit('i')  # ie. foo = str.split(name, "i")
+    foo = name.rsplit("i")  # ie. foo = str.split(name, "i")
     print(foo)
     bar = "i".join(foo)
     print(bar)

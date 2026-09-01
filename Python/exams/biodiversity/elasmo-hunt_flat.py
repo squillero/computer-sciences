@@ -6,10 +6,10 @@ import csv
 
 # from icecream import ic
 
-FILE_SAMPLES = 'edna_samples_short.txt'
-FILE_DNA_DATA = 'species_dna_data_short.csv'
-FILE_SAMPLES = 'edna_samples.txt'
-FILE_DNA_DATA = 'species_dna_data.csv'
+FILE_SAMPLES = "edna_samples_short.txt"
+FILE_DNA_DATA = "species_dna_data_short.csv"
+FILE_SAMPLES = "edna_samples.txt"
+FILE_DNA_DATA = "species_dna_data.csv"
 
 
 def read_species(filename):
@@ -24,7 +24,7 @@ def read_species(filename):
 
     db = list()
     try:
-        with open(filename, newline='') as csvfile:
+        with open(filename, newline="") as csvfile:
             csvfile.readline()
             for row in csv.reader(csvfile):
                 db.append((tuple(row[3:5] + row[:1]), row[-1]))
@@ -48,7 +48,7 @@ def read_samples(filename):
                 continue
 
             parsed_lines.add(text)
-            _, dna = text.split(';')
+            _, dna = text.split(";")
             samples.add(dna)
     return samples
 
@@ -74,11 +74,11 @@ def main():
 
     # stats (order is irrelevant, but we need to sort out taxonomies)
     print("Taxonomic tree:")
-    last_taxonomy = ('', '', '')
+    last_taxonomy = ("", "", "")
     for taxonomy in sorted(matches):
         if taxonomy[0] != last_taxonomy[0]:
             if last_taxonomy[0]:
-                print(' |')
+                print(" |")
             print(taxonomy[0])
         if taxonomy[1] != last_taxonomy[1]:
             print(f" \\_ {taxonomy[1]}")
@@ -87,5 +87,5 @@ def main():
             print(f" |      \\_ {taxonomy[2]} ({matches[taxonomy]})")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

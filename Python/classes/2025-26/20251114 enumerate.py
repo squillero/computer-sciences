@@ -10,10 +10,10 @@ def main():
         print(f"The element at position {index}")
 
     for element in name:
-        print(f"The element is \"{element}\"")
+        print(f'The element is "{element}"')
 
     for index, element in enumerate(name):
-        print(f"The element at position {index} is \"{element}\"")
+        print(f'The element at position {index} is "{element}"')
 
 
 if __name__ == "__main__":

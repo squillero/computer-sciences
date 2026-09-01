@@ -4,7 +4,7 @@
 
 from icecream import ic
 
-INPUT_FILE = '20241205 seq.dat'
+INPUT_FILE = "20241205 seq.dat"
 
 
 def check_sequences(filename):
@@ -13,9 +13,11 @@ def check_sequences(filename):
             for num, line in enumerate(file):
                 sequence = line_to_sequence(line)
                 if is_munodi(sequence):
-                    print(f"Sequence {num+1} is a Munodi sequence (length {len(sequence)})!")
+                    print(
+                        f"Sequence {num + 1} is a Munodi sequence (length {len(sequence)})!"
+                    )
                 else:
-                    print(f"Sequence {num+1} is NOT a Munodi sequence")
+                    print(f"Sequence {num + 1} is NOT a Munodi sequence")
     except OSError as problem:
         exit(problem)
 
@@ -47,5 +49,5 @@ def main():
     check_sequences(INPUT_FILE)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

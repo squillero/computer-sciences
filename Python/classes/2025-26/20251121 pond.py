@@ -2,22 +2,22 @@
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
-OLD_POND = '20251121 pond.txt'
+OLD_POND = "20251121 pond.txt"
 
 
 def read_file(filename):
     try:
-        with open(filename, encoding='utf8') as elwood:
+        with open(filename, encoding="utf8") as elwood:
             content = elwood.read()
     except OSError as error:
         print(f"Yeuch: {error}")
-        content = ''
+        content = ""
     return content
 
 
 def read_binary_file(filename):
     try:
-        with open(filename, 'rb') as elwood:
+        with open(filename, "rb") as elwood:
             content = elwood.read()
     except OSError as error:
         print(f"Yeuch: {error}")
@@ -37,5 +37,5 @@ def main():
     print(poem)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

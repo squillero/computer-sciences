@@ -15,5 +15,5 @@ def main():
     print(f"{len(numbers):,} vs. {len(numbers2):,}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

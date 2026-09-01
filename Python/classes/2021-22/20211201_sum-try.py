@@ -5,8 +5,8 @@
 from sys import exit
 from pprint import pprint
 
-FILENAME_IN = '20211201_inputXX.txt'
-FILENAME_OUT = '20211201_output.txt'
+FILENAME_IN = "20211201_inputXX.txt"
+FILENAME_OUT = "20211201_output.txt"
 
 
 def read_file(file_name):
@@ -16,17 +16,17 @@ def read_file(file_name):
             for line in input:
                 values.append(float(line))
     except OSError as problem:
-        print(f"Yeuch: \"{problem}\"")
+        print(f'Yeuch: "{problem}"')
         exit(1)
     except ValueError as problem:
-        print(f"ValueError: \"{problem}\" -- terminating input")
+        print(f'ValueError: "{problem}" -- terminating input')
     return values
 
 
 def write_file(file_name, values):
     total = sum(values)
     average = total / len(values)
-    with open(file_name, 'w') as output:
+    with open(file_name, "w") as output:
         for v in values:
             output.write(f"{v:.2f}\n")
         output.write("----------\n")

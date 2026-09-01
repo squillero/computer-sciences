@@ -2,7 +2,7 @@
 # https://chat.openai.com/chat
 
 # Read the sequences from the file
-with open('seq.dat', 'r') as f:
+with open("seq.dat", "r") as f:
     sequences = f.readlines()
 
 # Loop over the sequences
@@ -31,6 +31,6 @@ for i, seq in enumerate(sequences):
 
     # Print the result
     if is_munodi:
-        print('Sequence {} is a Munodi sequence (length {})'.format(i + 1, length))
+        print("Sequence {} is a Munodi sequence (length {})".format(i + 1, length))
     else:
-        print('Sequence {} is NOT a Munodi sequence'.format(i + 1))
+        print("Sequence {} is NOT a Munodi sequence".format(i + 1))

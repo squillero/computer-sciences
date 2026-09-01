@@ -23,7 +23,7 @@ while num >= 0:
 # patching is an alternative
 # total_sum -= num
 # number_of_elements -= 1
-print(f"The average is: {total_sum/number_of_elements:.2f}")
+print(f"The average is: {total_sum / number_of_elements:.2f}")
 print(f"The max is: {max_}")
 
 

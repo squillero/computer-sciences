@@ -4,9 +4,9 @@
 
 from pprint import pprint
 
-MAP_PLAYER_1 = 'map1.dat'
-MAP_PLAYER_2 = 'map2.dat'
-MOVES = 'moves.txt'
+MAP_PLAYER_1 = "map1.dat"
+MAP_PLAYER_2 = "map2.dat"
+MOVES = "moves.txt"
 
 
 def read_map(filename):
@@ -27,8 +27,8 @@ def read_moves(filename):
     try:
         with open(filename) as moves_file:
             for line in moves_file:
-                r, c = line.rstrip().split(',')
-                r = ord(r) - ord('A')
+                r, c = line.rstrip().split(",")
+                r = ord(r) - ord("A")
                 c = int(c) - 1
                 moves.append((r, c))
     except OSError as problem:
@@ -42,24 +42,24 @@ def play(map1, map2, moves):
     player = False
     for r, c in moves:
         if player:
-            player_name = 'Alice'
+            player_name = "Alice"
         else:
-            player_name = 'Bob'
-        if all_maps[player][r][c] == '#':
+            player_name = "Bob"
+        if all_maps[player][r][c] == "#":
             print(f"{player_name} shot @ {r}, {c} and hit")
-            all_maps[player][r][c] = '*'
+            all_maps[player][r][c] = "*"
         else:
             print(f"{player_name} shot @ {r}, {c} and missed")
-            all_maps[player][r][c] = 'o'
+            all_maps[player][r][c] = "o"
         player = not player
 
 
 def print_map(map):
     for line in map:
         for square in line:
-            if square == '#':
-                square = '-'
-            print(square, end='')
+            if square == "#":
+                square = "-"
+            print(square, end="")
         print()
 
 
@@ -75,5 +75,5 @@ def main():
     print_map(map2)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
