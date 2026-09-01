@@ -1,4 +1,4 @@
-# Copyright © 202324 Giovanni Squillero <giovanni.squillero@polito.it>
+# Copyright © 2024 Giovanni Squillero / Politecnico di Torino
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
@@ -24,9 +24,7 @@ def read_rules(filename):
                         remove.add(rule[1:])
                     else:
                         assert False, f"Yeuch: {rule}"
-                day_rules.append(
-                    (string_to_date(date), (add, remove))
-                )
+                day_rules.append((string_to_date(date), (add, remove)))
 
     except OSError as problem:
         exit(problem)
@@ -41,9 +39,7 @@ def string_to_date(string):
 def current_rules(date, rules_list):
     current_ruleset = set()
     index = 0
-    while index < len(rules_list) and rules_list[index][
-        0
-    ] < string_to_date(date):
+    while index < len(rules_list) and rules_list[index][0] < string_to_date(date):
         day, rules = rules_list[index]
         current_ruleset = current_ruleset.union(rules[0])
         current_ruleset = current_ruleset.difference(rules[1])

@@ -1,4 +1,4 @@
-// Copyright © 2019-2020 Giovanni Squillero <giovanni.squillero@polito.it>
+// Copyright © 2019-2020 Giovanni Squillero / Politecnico di Torino
 // https://github.com/squillero/computer-sciences
 // Free under certain conditions — see the license for details.
 
@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
         exit(1);
     }
 
-    // Copyright © 2021 Giovanni Squillero <giovanni.squillero@polito.it>
+    // Copyright © 2021 Giovanni Squillero / Politecnico di Torino
     // Free for personal or classroom use; see 'LICENSE.md' for details.
     // https://github.com/squillero/computer-sciences
 

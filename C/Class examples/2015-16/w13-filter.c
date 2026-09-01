@@ -2,7 +2,7 @@
  *  #######      * CLASS EXAMPLE FOR "COMPUTER SCIENCES" (07JCJ**)           *
  *  ####   \     * https://github.com/squillero/computer-sciences            *
  *   ###G  c\    *                                                           *
- *   ##     _\   * Copyright © 2020 Giovanni Squillero <giovanni.squillero@polito.it> *
+ *   ##     _\   * Copyright © 2020 Giovanni Squillero / Politecnico di Torino
  *   |    _/     * Licensed under the EUPL-1.2 <https://eupl.eu/>            *
 \*   |   _/      \***********************************************************/
 

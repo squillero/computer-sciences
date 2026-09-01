@@ -1,4 +1,4 @@
-// Copyright © Giovanni Squillero <giovanni.squillero@polito.it>
+// Copyright © Giovanni Squillero / Politecnico di Torino
 // https://github.com/squillero/computer-sciences
 // Free under certain conditions — see the license for details.
 
