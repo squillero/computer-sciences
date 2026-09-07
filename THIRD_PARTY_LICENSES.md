@@ -1,6 +1,15 @@
 # THIRD PARTY LICENSES
 
-### icecream | https://pypi.org/project/icecream/
+This software includes or depends on third-party packages. The following notices are provided to comply with the applicable license requirements of those packages.
+
+The names, trademarks, and project identifiers of third-party software are used solely for attribution and identification purposes. Their inclusion does not imply any affiliation with, sponsorship by, or endorsement from the respective authors or copyright holders.
+
+For the most current information, please refer to the original project repositories and license files.
+
+### icecream
+
+- URL: https://pypi.org/project/icecream/
+- License: MIT License
 
 > Copyright 2018 Ansgar Grunseid
 >
