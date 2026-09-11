@@ -1,0 +1,33 @@
+<p>A file named <code>Loans.csv</code> contains the list of books currently on loan from a library, one per line, in the following format:</p>
+<pre><code>copyCode;ISBpNCode;genre
+</code></pre>
+<p>where <code>ISBNCode</code> uniquely identifies a specific book, while <code>copyCode</code> uniquely identifies a particular physical copy of that book.
+In other words, if the library owns multiple copies of the same book, they will have the same <code>ISBNCode</code> but different <code>copyCode</code> values.</p>
+<p>The loan list is not sorted. Assume that none of the fields contains a semicolon, which appears in the file only as a separator.</p>
+<p>The library wants to identify all books for which more than 3 copies are currently on loan.</p>
+<p>The Python program must therefore:</p>
+<p>only if there are books with more than 3 copies on loan, generate a file named <code>LoansToCheck.csv</code> containing the list of excess copies to be checked. Otherwise, the program must display an appropriate message indicating that there are no excess loans. For simplicity, the choice of which copies are to be checked depends on the order in which they are read from the file.</p>
+<p>The <code>LoansToCheck.csv</code> file must list the books in a more compact format than the original file. In particular, the books must be sorted alphabetically by <code>ISBNCode</code>, and each <code>ISBNCode</code> must appear only once in the file.</p>
+<p>The new row format for this file is as follows:</p>
+<pre><code>ISBNCode;genre;copyCode1;copyCode2;…;copyCodeN
+</code></pre>
+<p>where <code>copyCode1</code>, <code>copyCode2</code>, …, <code>copyCodeN</code> represent the codes of the different copies of the book, listed in alphabetical order by <code>copyCode</code>.</p>
+<p>NB. The program must handle potential exceptions raised while opening the files.</p>
+<p>Example content of the input file <code>Loans.csv</code></p>
+<pre><code>L004;9788800000011;Narrativa
+S001;9788800000033;Saggi
+L001;9788800000011;Narrativa
+G002;9788800000022;Gialli
+L003;9788800000011;Narrativa
+S002;9788800000033;Saggi
+G001;9788800000022;Gialli
+L002;9788800000011;Narrativa
+F001;9788800000044;Fantasy
+L005;9788800000011;Narrativa
+F002;9788800000044;Fantasy
+G003;9788800000022;Gialli
+</code></pre>
+<p>The generated output file has the following content:</p>
+<p><code>LoansToCheck.csv</code></p>
+<pre><code>9788800000011;Narrativa;L002;L005
+</code></pre>
