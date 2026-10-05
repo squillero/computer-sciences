@@ -1,14 +1,7 @@
-/*****************************************************-*-c-*-*\
-*  Code sample for Computer Sciences 2015-16                  *
-*  (!) Guoping Xiao                                           *
-*                                                             *
-*  Copying and distribution of this file, with or without     *
-*  modification, are permitted in any medium without royalty  *
-*  provided this notice is preserved.                         *
-*  This file is offered as-is, without any warranty.          *
-*                                                             *
-*  See: http://staff.polito.it/giovanni.squillero/dida.php    *
-\*************************************************************/
+// Author: Guoping Xiao
+// Copyright © 2016 Giovanni Squillero / Politecnico di Torino
+// https://github.com/squillero/computer-sciences
+// Free under certain conditions — see the license for details.
 
 #include <stdio.h>
 #include <stdlib.h>

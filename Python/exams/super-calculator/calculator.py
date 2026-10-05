@@ -1,6 +1,7 @@
+# Author: Giovanni Squillero <giovanni.squillero@polito.it>
 # Copyright © 2025 Giovanni Squillero / Politecnico di Torino
 # https://github.com/squillero/computer-sciences
-# Free for personal or classroom use; see 'LICENSE' for details.
+# Free under certain conditions — see the license for details.
 
 
 INPUT_FILE = "expressions_long.dat"

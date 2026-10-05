@@ -1,4 +1,5 @@
-# Copyright © 2025 Giovanni Squillero <giovanni.squillero@polito.it>
+# Author: Giovanni Squillero <giovanni.squillero@polito.it>
+# Copyright © 2025 Giovanni Squillero / Politecnico di Torino
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
@@ -35,7 +36,7 @@ def print_setmap(setmap):
 def main():
     map1 = read_map(FILENAME_MAP1)
     map2 = read_map(FILENAME_MAP2)
-    print(f"Common #: {len(map1&map2)}")
+    print(f"Common #: {len(map1 & map2)}")
     print_setmap(map1 & map2)
 
 

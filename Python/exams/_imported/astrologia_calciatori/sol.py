@@ -1,3 +1,7 @@
+# Copyright © Politecnico di Torino
+# https://github.com/squillero/computer-sciences
+# Free under certain conditions — see the license for details.
+
 SPORTIVI_FILE = "sportivi.csv"
 ZODIACO_FILE = "zodiaco.csv"
 
@@ -61,9 +65,7 @@ def read_zodiac(filename_z, filename_s):
             e_date = zodiaco_date_construct(e_date)
             goals_num = compare(s_date, e_date, goals_table)
             zodiac_stat[zodiac] = goals_num
-    zodiac_stat = dict(
-        sorted(zodiac_stat.items(), key=lambda item: item[1], reverse=True)
-    )
+    zodiac_stat = dict(sorted(zodiac_stat.items(), key=lambda item: item[1], reverse=True))
     return zodiac_stat
 
 

@@ -1,5 +1,6 @@
+# Author: Giovanni Squillero <giovanni.squillero@polito.it>
 # Copyright © 2023 Giovanni Squillero / Politecnico di Torino
-# https://github.com/squillero/computational-intelligence
+# https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
 from pprint import pprint
@@ -46,9 +47,7 @@ def main():
                     min_distance = abs(p0 - p1)
 
     if sequence_with_min_distance is not None:
-        print(
-            f"Min distance: sequence {sequence_with_min_distance + 1} (distance={min_distance})"
-        )
+        print(f"Min distance: sequence {sequence_with_min_distance + 1} (distance={min_distance})")
     else:
         print("The two words never appear in the same sequence")
 

@@ -1,3 +1,4 @@
+# Copyright © Politecnico di Torino
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
@@ -77,9 +78,7 @@ def cerca_stampa_itinerario(D, fermata_A, ora_partenza, fermata_B):
 
         if verifica_se_oraA_maggiore_di_oraB(ora_A, ora_partenza):
             for elB in D[fermata_B]:
-                if codice == elB[0] and verifica_se_oraA_maggiore_di_oraB(
-                    elB[1], ora_A
-                ):
+                if codice == elB[0] and verifica_se_oraA_maggiore_di_oraB(elB[1], ora_A):
                     durata = Calcola_durata_viaggio(elB[1], ora_A)
 
                     if flag == 0 or durata < durata_min:
@@ -90,13 +89,9 @@ def cerca_stampa_itinerario(D, fermata_A, ora_partenza, fermata_B):
                         flag = 1
 
     if flag == 0:
-        print(
-            "Non ci sono treni diretti tra le stazioni inserite dopo l’orario specificato."
-        )
+        print("Non ci sono treni diretti tra le stazioni inserite dopo l’orario specificato.")
     else:
-        print(
-            f"Viaggio più breve da {fermata_A} a {fermata_B} dalle {ora_partenza} in poi"
-        )
+        print(f"Viaggio più breve da {fermata_A} a {fermata_B} dalle {ora_partenza} in poi")
         print(f"Treno: {corsa_migliore}")
         print(f"Partenza: {fermata_A} {ora_partenza_migliore}")
         print(f"Arrivo: {fermata_B} {ora_arrivo_migliore}")

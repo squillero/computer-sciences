@@ -1,6 +1,8 @@
-// Copyright © Giovanni Squillero / Politecnico di Torino
+// Author: Giovanni Squillero <giovanni.squillero@polito.it>
+// Copyright © 2020 Giovanni Squillero / Politecnico di Torino
 // https://github.com/squillero/computer-sciences
 // Free under certain conditions — see the license for details.
+
 
 #include <stdio.h>
 #include <stdlib.h>

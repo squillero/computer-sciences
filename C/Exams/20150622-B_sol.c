@@ -1,11 +1,7 @@
-/*****************************************************-*-c-*-*\
-*  (!) 2016, Guoping Xiao                                     *
-*                                                             *
-*  Copying and distribution of this file, with or without     *
-*  modification, are permitted in any medium without royalty  *
-*  provided this notice is preserved.                         *
-*  ===> THIS FILE IS OFFERED AS-IS, WITHOUT ANY WARRANTY <=== *
-\*************************************************************/
+// Author: Guoping Xiao
+// Copyright © 2016 Giovanni Squillero / Politecnico di Torino
+// https://github.com/squillero/computer-sciences
+// Free under certain conditions — see the license for details.
 
 #include <stdio.h>
 #include <strings.h>

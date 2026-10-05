@@ -1,3 +1,5 @@
+// Author: Giovanni Squillero <giovanni.squillero@polito.it>
+// Author: Giovanni Squillero <giovanni.squillero@polito.it>
 // Copyright © 2015-2016 Giovanni Squillero / Politecnico di Torino
 // https://github.com/squillero/computer-sciences
 // Free under certain conditions — see the license for details.

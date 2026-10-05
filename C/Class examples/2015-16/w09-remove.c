@@ -1,10 +1,7 @@
-# ######/= == == == == == == == == == == == == == == == == == == == == == == == == == == == == == \
-    # ###### #| CLASS EXAMPLE FOR "COMPUTER SCIENCES"(0JCJ **) |
-# ####   \ | https: //github.com/squillero/computer-sciences            |
-# ## #G c\ | |
-# ##_\ | Copyright © 2015 Giovanni Squillero / Politecnico di Torino
-#| _ / | Licensed under the EUPL - 1.2 <https: //eupl.eu/>            |
-#| _ /      \== == == == == == == == == == == == == == == == == == == == == == == == == == == == == = /
+// Author: Giovanni Squillero <giovanni.squillero@polito.it>
+// Copyright © 2016 Giovanni Squillero / Politecnico di Torino
+// https://github.com/squillero/computer-sciences
+// Free under certain conditions — see the license for details.
 
 #include <stdio.h>
 #include <stdlib.h>

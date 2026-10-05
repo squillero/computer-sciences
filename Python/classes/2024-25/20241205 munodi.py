@@ -1,6 +1,7 @@
+# Author: Giovanni Squillero <giovanni.squillero@polito.it>
 # Copyright © 2024 Giovanni Squillero / Politecnico di Torino
-# <https://github.com/squillero/computer-sciences>
-# Free under certain conditions — see the license for details
+# https://github.com/squillero/computer-sciences
+# Free under certain conditions — see the license for details.
 
 from icecream import ic
 
@@ -15,9 +16,7 @@ def check_sequences(filename):
                 if sequence != munodi(sequence[0]):
                     print(f"Sequence {num + 1} is NOT a Munodi sequence")
                 else:
-                    print(
-                        f"Sequence {num + 1} is a Munodi sequence (length {len(sequence)})!"
-                    )
+                    print(f"Sequence {num + 1} is a Munodi sequence (length {len(sequence)})!")
     except OSError as problem:
         exit(problem)
 

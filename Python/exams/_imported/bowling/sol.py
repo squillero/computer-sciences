@@ -1,3 +1,9 @@
+# Author: Giovanni Squillero <giovanni.squillero@polito.it>
+# Copyright © Giovanni Squillero / Politecnico di Torino
+# https://github.com/squillero/computer-sciences
+# Free under certain conditions — see the license for details.
+
+
 BOWLING_FILE = "bowling.txt"
 MAX_SCORE = 10
 MIN_SCORE = 0
@@ -23,9 +29,7 @@ def sum_scores(data):
         player = item[0]
         score = sum(item[1])
         players_stat[player] = score
-    players_stat = dict(
-        sorted(players_stat.items(), key=lambda item: item[1], reverse=True)
-    )
+    players_stat = dict(sorted(players_stat.items(), key=lambda item: item[1], reverse=True))
     return players_stat
 
 
@@ -54,12 +58,8 @@ def main():
     max_zero_score_player, max_zero_score_num = max_miss(match_data)
     for player, score in players_score.items():
         print(f"{player} {score}")
-    print(
-        f"{max_full_score_player} has knocked down all the pins {max_full_score_num} time(s)"
-    )
-    print(
-        f"{max_zero_score_player} has knocked down all the pins {max_zero_score_num} time(s)"
-    )
+    print(f"{max_full_score_player} has knocked down all the pins {max_full_score_num} time(s)")
+    print(f"{max_zero_score_player} has knocked down all the pins {max_zero_score_num} time(s)")
 
 
 if __name__ == "__main__":

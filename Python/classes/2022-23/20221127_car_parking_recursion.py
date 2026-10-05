@@ -1,5 +1,6 @@
+# Author: Reda Fakih
+# Copyright © 2022 Giovanni Squillero / Politecnico di Torino
 # https://github.com/squillero/computer-sciences
-# Solution proposed by Reda Fakih 308192
 # Free under certain conditions — see the license for details.
 
 

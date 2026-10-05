@@ -1,6 +1,7 @@
+# Author: Giovanni Squillero <giovanni.squillero@polito.it>
 # Copyright © 2025 Giovanni Squillero / Politecnico di Torino
 # https://github.com/squillero/computer-sciences
-# Free for personal or classroom use; see 'LICENSE' for details.
+# Free under certain conditions — see the license for details.
 
 
 INPUT_FILE = "reports_small.dat"
@@ -52,9 +53,7 @@ def main():
             correct_reports.append(report)
     write_reports(correct_reports, OUTPUT_FILE)
 
-    print(
-        f"Read {len(all_reports)} reports: {len(correct_reports) / len(all_reports):.2%} correct"
-    )
+    print(f"Read {len(all_reports)} reports: {len(correct_reports) / len(all_reports):.2%} correct")
 
 
 if __name__ == "__main__":
