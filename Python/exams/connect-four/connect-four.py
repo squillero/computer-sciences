@@ -1,3 +1,4 @@
+# Author: Giovanni Squillero <giovanni.squillero@polito.it>
 # Copyright © 2024 Giovanni Squillero / Politecnico di Torino
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
@@ -65,20 +66,14 @@ def check_win(board):
         for c in range(NUM_COLUMNS - 3):
             if (
                 board[r][c] != EMPTY
-                and board[r][c]
-                == board[r + 1][c + 1]
-                == board[r + 2][c + 2]
-                == board[r + 3][c + 3]
+                and board[r][c] == board[r + 1][c + 1] == board[r + 2][c + 2] == board[r + 3][c + 3]
             ):
                 return board[r][c]
         # Check diagonal (top-right to bottom-left)
         for c in range(3, NUM_COLUMNS):
             if (
                 board[r][c] != EMPTY
-                and board[r][c]
-                == board[r + 1][c - 1]
-                == board[r + 2][c - 2]
-                == board[r + 3][c - 3]
+                and board[r][c] == board[r + 1][c - 1] == board[r + 2][c - 2] == board[r + 3][c - 3]
             ):
                 return board[r][c]
 

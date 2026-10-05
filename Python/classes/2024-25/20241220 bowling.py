@@ -1,3 +1,4 @@
+# Author: Giovanni Squillero <giovanni.squillero@polito.it>
 # Copyright © 2024 Giovanni Squillero / Politecnico di Torino
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
@@ -61,9 +62,7 @@ def main():
     r"""Standard entry point"""
     players_data = read_data(BOWLING_FILE)
 
-    for player, scores in sorted(
-        players_data.items(), key=get_key_from_element, reverse=True
-    ):
+    for player, scores in sorted(players_data.items(), key=get_key_from_element, reverse=True):
         print(f"{player[0]} {player[1]} {sum(scores)}")
 
     ic(players_with_most_frequent_score(players_data, 10))

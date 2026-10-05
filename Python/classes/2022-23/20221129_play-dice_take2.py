@@ -1,3 +1,4 @@
+# Author: Giovanni Squillero <giovanni.squillero@polito.it>
 # Copyright © 2022 Giovanni Squillero / Politecnico di Torino
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
@@ -27,9 +28,7 @@ def main():
     rolls = [random.randint(1, 6) for _ in range(NUM_RANDOM_ROLLS)]
     pprint(rolls)
 
-    reps = [
-        (start, count_beginning(rolls[start:])) for start in range(NUM_RANDOM_ROLLS)
-    ]
+    reps = [(start, count_beginning(rolls[start:])) for start in range(NUM_RANDOM_ROLLS)]
     pprint(reps)
 
     max_ = [reps.pop(0)]

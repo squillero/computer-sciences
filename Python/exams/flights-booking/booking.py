@@ -1,3 +1,4 @@
+# Author: Giovanni Squillero <giovanni.squillero@polito.it>
 # Copyright © 2025 Giovanni Squillero / Politecnico di Torino
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
@@ -60,10 +61,7 @@ def main():
     # the front, while maintaining their relative order.
     # A Counter() with random shuffling would be the most efficient choice
     for code, flight, name, seats in read_bookings(BOOKINGS_INFO):
-        if (
-            code == "BOOK"
-            and len(passengers[flight]) + seats > info[flight][0] * info[flight][1]
-        ):
+        if code == "BOOK" and len(passengers[flight]) + seats > info[flight][0] * info[flight][1]:
             print(f"BOOK {flight} {name} {seats} - Fail")
         elif code == "BOOK":
             passengers[flight].extend([name] * seats)

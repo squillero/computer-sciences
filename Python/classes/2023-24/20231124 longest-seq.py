@@ -1,3 +1,4 @@
+# Author: Giovanni Squillero <giovanni.squillero@polito.it>
 # Copyright © 2023 Giovanni Squillero / Politecnico di Torino
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
@@ -20,9 +21,7 @@ def create_random_seq(min_, max_, len_):
 def sequence_length(sequence, start):
     """Returns the lenght of the sequence of identical elements starting at `start`"""
     length = 0
-    while (
-        start + length < len(sequence) and sequence[start + length] == sequence[start]
-    ):
+    while start + length < len(sequence) and sequence[start + length] == sequence[start]:
         length += 1
     return length
 

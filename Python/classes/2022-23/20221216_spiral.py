@@ -1,3 +1,4 @@
+# Author: Giovanni Squillero <giovanni.squillero@polito.it>
 # Copyright © 2022 Giovanni Squillero / Politecnico di Torino
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
@@ -44,12 +45,8 @@ def main():
 
     for step in range(7):
         vstroke(canvas, 0 + 2 * step, 0 + 2 * step, DIM - 2 - 2 * step, color=song)
-        hstroke(
-            canvas, DIM - 1 - 2 * step, 0 + 2 * step, DIM - 2 - 2 * step, color=song
-        )
-        vstroke(
-            canvas, DIM - 1 - 2 * step, DIM - 1 - 2 * step, 1 + 2 * step, color=song
-        )
+        hstroke(canvas, DIM - 1 - 2 * step, 0 + 2 * step, DIM - 2 - 2 * step, color=song)
+        vstroke(canvas, DIM - 1 - 2 * step, DIM - 1 - 2 * step, 1 + 2 * step, color=song)
         hstroke(canvas, 0 + 2 * step, DIM - 1 - 2 * step, 2 + 2 * step, color=song)
         canvas[1 + 2 * step][2 + 2 * step] = song.pop(0)
     print_canvas(canvas)

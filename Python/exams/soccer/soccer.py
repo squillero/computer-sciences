@@ -1,3 +1,4 @@
+# Author: Giovanni Squillero <giovanni.squillero@polito.it>
 # Copyright © 2023 Giovanni Squillero / Politecnico di Torino
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
@@ -23,16 +24,12 @@ def read_players_stats(filename):
 
 def calculate_efficiencies(players):
     for p in players:
-        p["forward_efficiency"] = (p["goals"] + p["assists"] - p["offsides"]) / p[
-            "minutes"
-        ]
+        p["forward_efficiency"] = (p["goals"] + p["assists"] - p["offsides"]) / p["minutes"]
         if p["crosses"] == 0:
             t = 0
         else:
             t = p["assists"] / p["crosses"]
-        p["midfield_efficiency"] = (p["interceptions"] + p["ball_recoveries"] + t) / p[
-            "minutes"
-        ]
+        p["midfield_efficiency"] = (p["interceptions"] + p["ball_recoveries"] + t) / p["minutes"]
 
 
 def split_teams(players):
@@ -83,9 +80,7 @@ def main():
     for team, team_players in all_teams.items():
         efficiency_tot[team] = 0
         efficiency_players[team] = list()
-        for p in sorted(
-            team_players, key=lambda p: p["forward_efficiency"], reverse=True
-        )[:3]:
+        for p in sorted(team_players, key=lambda p: p["forward_efficiency"], reverse=True)[:3]:
             efficiency_tot[team] += p["forward_efficiency"]
             efficiency_players[team].append(p)
     most_efficient_team = max(efficiency_tot, key=lambda t: efficiency_tot[t])

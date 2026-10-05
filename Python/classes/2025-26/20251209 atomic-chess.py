@@ -1,3 +1,4 @@
+# Author: Giovanni Squillero <giovanni.squillero@polito.it>
 # Copyright © 2025 Giovanni Squillero / Politecnico di Torino
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
@@ -54,11 +55,7 @@ def blast(board, ply):
     move(board, ply)
     for to_row in range(ply[1][0] - 1, ply[1][0] + 1 + 1):
         for to_col in range(ply[1][1] - 1, ply[1][1] + 1 + 1):
-            if (
-                is_valid(to_row)
-                and is_valid(to_col)
-                and board[to_row][to_col][0] != "p"
-            ):
+            if is_valid(to_row) and is_valid(to_col) and board[to_row][to_col][0] != "p":
                 board[to_row][to_col] = "  "
 
 

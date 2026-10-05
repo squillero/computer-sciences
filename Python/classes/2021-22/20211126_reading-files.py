@@ -1,11 +1,10 @@
+# Author: Giovanni Squillero <giovanni.squillero@polito.it>
 # Copyright © 2021 Giovanni Squillero / Politecnico di Torino
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
 
 FILE_NAME_OLD = "20211126_stairway.txt"
-FILE_NAME = (
-    "C:\\Users\\John Nefastis\\Documents\\C\\2018-19\\w04_12-for2\\w04_12-for2.c"
-)
+FILE_NAME = "C:\\Users\\John Nefastis\\Documents\\C\\2018-19\\w04_12-for2\\w04_12-for2.c"
 
 
 def main():

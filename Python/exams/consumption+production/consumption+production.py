@@ -1,3 +1,4 @@
+# Author: Giovanni Squillero <giovanni.squillero@polito.it>
 # Copyright © 2024 Giovanni Squillero / Politecnico di Torino
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
@@ -53,9 +54,7 @@ def main():
     for rec1 in weather:
         for rec2 in systems:
             produced_energy = rec2["System_size"] * rec2["Efficiency"] * rec1["GHI"]
-            consumed_energy = consumption[
-                (rec2["Household_ID"], rec1["DATE"], rec1["TIME"])
-            ]
+            consumed_energy = consumption[(rec2["Household_ID"], rec1["DATE"], rec1["TIME"])]
             tot_produced_energy += produced_energy
             tot_excess_energy += max(0, produced_energy - consumed_energy)
             tot_self_consumed_energy += min(produced_energy, consumed_energy)
@@ -66,9 +65,7 @@ def main():
     print(f"Consumed Energy: {sum(consumption.values()):.2f} kWh")
     print(f"Self-consumed Energy: {tot_self_consumed_energy:.2f} kWh")
     print(f"Energy Fed into the Grid: {tot_excess_energy:.2f} kWh")
-    print(
-        f"Self-consumption Percentage: {tot_self_consumed_energy / tot_produced_energy:.2%}"
-    )
+    print(f"Self-consumption Percentage: {tot_self_consumed_energy / tot_produced_energy:.2%}")
     print(
         f"Self-sufficiency Percentage: {tot_self_consumed_energy / sum(consumption.values()):.2%}"
     )

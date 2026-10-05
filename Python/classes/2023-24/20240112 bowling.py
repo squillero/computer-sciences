@@ -1,3 +1,4 @@
+# Author: Giovanni Squillero <giovanni.squillero@polito.it>
 # Copyright © 2024 Giovanni Squillero / Politecnico di Torino
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
@@ -27,9 +28,7 @@ def read_stat(filename):
 
 def main():
     player_scores = read_stat(BOWLING_SCORES)
-    for name, scores in sorted(
-        player_scores.items(), key=lambda e: sum(e[1]), reverse=True
-    ):
+    for name, scores in sorted(player_scores.items(), key=lambda e: sum(e[1]), reverse=True):
         print(f"{name[0]} {name[1]} {sum(scores)}")
 
     for name in sorted(player_scores):

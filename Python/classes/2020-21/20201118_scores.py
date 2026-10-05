@@ -1,3 +1,4 @@
+# Author: Giovanni Squillero <giovanni.squillero@polito.it>
 # Copyright © 2020 Giovanni Squillero / Politecnico di Torino
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
@@ -15,9 +16,7 @@ def main():
 
     new_scores = remove_lowest(scores)
     average = compute_average(new_scores)
-    print(
-        f"Original scores: {scores}, removing lowest: {new_scores}, average: {average}"
-    )
+    print(f"Original scores: {scores}, removing lowest: {new_scores}, average: {average}")
 
 
 def remove_lowest(scores):

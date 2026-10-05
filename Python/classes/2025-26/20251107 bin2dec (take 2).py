@@ -1,3 +1,4 @@
+# Author: Giovanni Squillero <giovanni.squillero@polito.it>
 # Copyright © 2025 Giovanni Squillero / Politecnico di Torino
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
@@ -12,9 +13,7 @@ def main():
         bits = int(bits)
 
     padded_binary_number = "0" * (bits - len(binary_number)) + binary_number
-    value = -int(padded_binary_number[0]) * 2 ** (bits - 1) + int(
-        padded_binary_number[1:], base=2
-    )
+    value = -int(padded_binary_number[0]) * 2 ** (bits - 1) + int(padded_binary_number[1:], base=2)
 
     print(f"{padded_binary_number[0]}|{padded_binary_number[1:]} = {value:,}")
 

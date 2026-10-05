@@ -1,3 +1,4 @@
+# Author: Giovanni Squillero <giovanni.squillero@polito.it>
 # Copyright © 2023 Giovanni Squillero / Politecnico di Torino
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
@@ -35,9 +36,7 @@ def main():
                 print(action, object)
                 if action == "gives":
                     if not add_object(magic_boxes, object):
-                        exit(
-                            f"Yeuch! All {NUM_BOXES} boxes are full (can't add a {object})"
-                        )
+                        exit(f"Yeuch! All {NUM_BOXES} boxes are full (can't add a {object})")
                 elif action == "takes":
                     if not remove_object(magic_boxes, object):
                         exit(f"Yeuch! No box with {object}")

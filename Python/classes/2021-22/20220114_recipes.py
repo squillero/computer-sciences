@@ -1,3 +1,4 @@
+# Author: Giovanni Squillero <giovanni.squillero@polito.it>
 # Copyright © 2022 Giovanni Squillero / Politecnico di Torino
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
@@ -49,15 +50,9 @@ def main():
         reverse=True,
     ):
         print(f"{ing} - {required_ingredients[ing]['Quantity']:.1f}")
-        cost += (
-            available_ingredients[ing]["Cost"]
-            / 1000
-            * required_ingredients[ing]["Quantity"]
-        )
+        cost += available_ingredients[ing]["Cost"] / 1000 * required_ingredients[ing]["Quantity"]
         calories += (
-            available_ingredients[ing]["Calories"]
-            / 1000
-            * required_ingredients[ing]["Quantity"]
+            available_ingredients[ing]["Calories"] / 1000 * required_ingredients[ing]["Quantity"]
         )
     print()
     print(f"Number of ingredients: {len(required_ingredients)}")

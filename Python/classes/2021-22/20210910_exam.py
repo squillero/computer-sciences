@@ -1,3 +1,4 @@
+# Author: Giovanni Squillero <giovanni.squillero@polito.it>
 # Copyright © 2021 Giovanni Squillero / Politecnico di Torino
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
@@ -90,16 +91,14 @@ def load_customers():
     try:
         with open(CUSTOMERS_FILE_NAME) as input:
             for line in input:
-                first_name, last_name, age, enrollment_time, home, reliability = (
-                    line.strip().split(",")
+                first_name, last_name, age, enrollment_time, home, reliability = line.strip().split(
+                    ","
                 )
                 age = int(age)
                 enrollment_time = float(enrollment_time)
                 reliability = reliability == "1"
                 customers.append(
-                    tuple(
-                        (first_name, last_name, age, enrollment_time, home, reliability)
-                    )
+                    tuple((first_name, last_name, age, enrollment_time, home, reliability))
                 )
     except OSError as problem:
         print(f"Yeuch: {problem}")
@@ -124,9 +123,7 @@ def average_ages(customers):
     # reliable_age = [c[AGE] for c in customers if c[RELIABILITY] == True]
     # unreliable_age = [c[AGE] for c in customers if c[RELIABILITY] == False]
 
-    return sum(reliable_age) / len(reliable_age), sum(unreliable_age) / len(
-        unreliable_age
-    )
+    return sum(reliable_age) / len(reliable_age), sum(unreliable_age) / len(unreliable_age)
 
 
 def get_min_enrollment_time(customers, reliability):
@@ -186,9 +183,7 @@ def main():
             f"The Unreliable customers have an average age of {avg_age_unreliable - avg_age_reliable:.1f} years higher than the Reliable ones"
         )
     else:
-        print(
-            f"The Reliable customers have the same average age of the Unreliable ones"
-        )
+        print(f"The Reliable customers have the same average age of the Unreliable ones")
 
     print(
         f"Minimum EnrollmentTime of the Reliable customers: {min_enroll_reliable:.1f} years {100 * perc_reliable_own_house:.0f}% of the Reliable customers own the house where they live"

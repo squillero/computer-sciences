@@ -1,3 +1,4 @@
+# Author: Giovanni Squillero <giovanni.squillero@polito.it>
 # Copyright © 2022 Giovanni Squillero / Politecnico di Torino
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
@@ -35,9 +36,7 @@ def main():
     if first is not None and count == 1:
         print(f"Whoa! found 1 match at position {first}")
     elif first is not None:
-        print(
-            f"Whoa! found {count} matches: first at position {first}, last at position {last}"
-        )
+        print(f"Whoa! found {count} matches: first at position {first}, last at position {last}")
     else:
         print("Yeuch, no matches found")
 

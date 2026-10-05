@@ -1,3 +1,4 @@
+# Author: Giovanni Squillero <giovanni.squillero@polito.it>
 # Copyright © 2025 Giovanni Squillero / Politecnico di Torino
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
@@ -28,13 +29,7 @@ def count_rolls(data, pos):
     count = 0
     for row in range(pos[0] - 1, pos[0] + 1 + 1):
         for col in range(pos[1] - 1, pos[1] + 1 + 1):
-            if (
-                row >= 0
-                and row < len_row
-                and col >= 0
-                and col < len_col
-                and (row, col) != pos
-            ):
+            if row >= 0 and row < len_row and col >= 0 and col < len_col and (row, col) != pos:
                 if data[row][col] == SYMBOL_ROLL:
                     count += 1
     return count

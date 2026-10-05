@@ -1,3 +1,4 @@
+# Author: Giovanni Squillero <giovanni.squillero@polito.it>
 # Copyright © 2025 Giovanni Squillero / Politecnico di Torino
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
@@ -37,9 +38,7 @@ def read_file(filename):
 
 # Forward_efficiency = (Goals / Minutes played) + (Goal Assists / Minutes played) - (Offsides / Minutes played)
 def forward_efficiency(player):
-    return (player["goals"] + player["assists"] - player["offsides"]) / player[
-        "minutes"
-    ]
+    return (player["goals"] + player["assists"] - player["offsides"]) / player["minutes"]
 
 
 # Midfield_efficiency = (Intercepted balls + Recovered balls + (Goal Assists / Reached crosses)) / Minutes played

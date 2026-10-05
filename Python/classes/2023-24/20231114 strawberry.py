@@ -1,3 +1,4 @@
+# Author: Giovanni Squillero <giovanni.squillero@polito.it>
 # Copyright © 2023 Giovanni Squillero / Politecnico di Torino
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
@@ -32,9 +33,7 @@ def main():
 
     # take 1
     for i in range(len(words) - 2):
-        if len(words[i]) == len(words[i + 1]) and len(words[i + 1]) == len(
-            words[i + 2]
-        ):
+        if len(words[i]) == len(words[i + 1]) and len(words[i + 1]) == len(words[i + 2]):
             print(words[i : i + 3])
 
     # take 2

@@ -1,3 +1,4 @@
+# Author: Giovanni Squillero <giovanni.squillero@polito.it>
 # Copyright © 2026 Giovanni Squillero / Politecnico di Torino
 # https://github.com/squillero/computer-sciences
 # Free under certain conditions — see the license for details.
@@ -38,9 +39,7 @@ def read_prices(filename):
                 # Note: Pythonistas would use a defaultdict
                 if record[FIELD_DATE] not in prices:
                     prices[record[FIELD_DATE]] = list()
-                prices[record[FIELD_DATE]].append(
-                    (record[FIELD_TOKEN], float(record[FIELD_PRICE]))
-                )
+                prices[record[FIELD_DATE]].append((record[FIELD_TOKEN], float(record[FIELD_PRICE])))
 
     except OSError:
         print(f'Yeuch. Problem with file "{filename}"')
